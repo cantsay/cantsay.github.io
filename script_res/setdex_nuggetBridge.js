@@ -35,7 +35,7 @@
         "Glare",
         "Synthesis"
       ]
-    }
+    },
     "All-Out Attacker": {
       "level": 50,
       "evs": {
