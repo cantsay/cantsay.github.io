@@ -779,7 +779,7 @@ $(".gen").change(function () {
 });
 
 function clearField() {
-    $("#doubles").prop("checked", true);
+    $("#singles").prop("checked", true);
     $("#clear").prop("checked", true);
     $("#gscClear").prop("checked", true);
     $("#gravity").prop("checked", false);
