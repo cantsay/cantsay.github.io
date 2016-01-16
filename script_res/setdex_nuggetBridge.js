@@ -11,8 +11,8 @@
         "sp": "0"
       },
       "nature": "Quiet",
-      "ability": "Stance Change",
-      "item": "Weakness Policy",
+      "ability": "",
+      "item": "",
       "moves": [
         "Shadow Ball",
         "Shadow Sneak",
@@ -28,11 +28,11 @@
         "sp": "252"
       },
       "nature": "Timid",
-      "ability": "Stance Change",
+      "ability": "",
       "item": "Leftovers",
       "moves": [
-        "Substitute",
-        "Toxic",
+        "",
+        "",
         "Shadow Ball",
         "Flash Cannon"
       ]
@@ -47,7 +47,7 @@
       "ivs": {
         "sp": "0"
       "nature": "Brave",
-      "ability": "Stance Change",
+      "ability": "",
       "item": "Life Orb",
       "moves": [
         "Shadow Sneak",
@@ -65,11 +65,11 @@
         "sp": "92"
       },
       "nature": "Modest",
-      "ability": "Stance Change",
+      "ability": "",
       "item": "Leftovers",
       "moves": [
-        "Substitute",
-        "Toxic",
+        "",
+        "",
         "Shadow Ball",
         "Flash Cannon"
       ]
@@ -162,7 +162,7 @@
         "sp": "252"
       },
       "nature": "Adamant",
-      "ability": "Speed Boost",
+      "ability": "",
       "item": "Blazikenite",
       "moves": [
         "Flare Blitz",
@@ -183,7 +183,7 @@
         "def": "30"
       },
       "nature": "Naive",
-      "ability": "Speed Boost",
+      "ability": "",
       "item": "Life Orb",
       "moves": [
         "Overheat",
@@ -200,12 +200,12 @@
         "sp": "252"
       },
       "nature": "Impish",
-      "ability": "Speed Boost",
-      "item": "Focus Sash",
+      "ability": "",
+      "item": "",
       "moves": [
-        "Swords Dance",
-        "Protect",
-        "Baton Pass",
+        "",
+        "",
+        "",
         "Blaze Kick"
       ]
     }
@@ -220,9 +220,9 @@
       },
       "nature": "Adamant",
       "ability": "Technician",
-      "item": "Focus Sash",
+      "item": "",
       "moves": [
-        "Spore",
+        "",
         "Mach Punch",
         "Bullet Seed",
         "Rock Tomb"
@@ -238,7 +238,7 @@
         "sd": "212"
       },
       "nature": "Bold",
-      "ability": "Natural Cure",
+      "ability": "",
       "item": "Eviolite",
       "moves": [
         "Seismic Toss",
@@ -255,7 +255,7 @@
         "sp": "252"
       },
       "nature": "Timid",
-      "ability": "Natural Cure",
+      "ability": "",
       "item": "Eviolite",
       "moves": [
         "Seismic Toss",
@@ -354,7 +354,7 @@
         "Earthquake",
         "Iron Head",
         "Rock Slide",
-        "Horn Drill"
+        ""
       ]
     },
     "Sand Sweeper": {
@@ -371,7 +371,7 @@
         "Earthquake",
         "Iron Head",
         "Rock Slide",
-        "Swords Dance"
+        ""
       ]
     },
     "Versatile Attacker": {
@@ -388,7 +388,7 @@
         "Earthquake",
         "Iron Head",
         "Rock Tomb",
-        "Horn Drill"
+        ""
       ]
     }
   },
@@ -404,7 +404,7 @@
         "sp": "0"
       },
       "nature": "Relaxed",
-      "ability": "Iron Barbs",
+      "ability": "",
       "item": "Leftovers",
       "moves": [
         "Power Whip",
@@ -423,13 +423,13 @@
         "sp": "172"
       },
       "nature": "Timid",
-      "ability": "Contrary",
-      "item": "Rock Helmet",
+      "ability": "",
+      "item": "",
       "moves": [
         "Leaf Storm",
-        "Reflect",
-        "Glare",
-        "Synthesis"
+        "",
+        "",
+        ""
       ]
     },
     "All-Out Attacker": {
@@ -445,7 +445,7 @@
         "sp": "30"
       },
       "nature": "Timid",
-      "ability": "Contrary",
+      "ability": "",
       "item": "Life Orb",
       "moves": [
         "Leaf Storm",
