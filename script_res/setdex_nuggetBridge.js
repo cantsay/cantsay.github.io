@@ -11,8 +11,8 @@
         "sp": "0"
       },
       "nature": "Quiet",
-      "ability": "",
-      "item": "",
+      "ability": "Stance Change",
+      "item": "Weakness Policy",
       "moves": [
         "Shadow Ball",
         "Shadow Sneak",
@@ -20,7 +20,7 @@
         "Flash Cannon"
       ]
     },
-    "Substitute": {
+    "SubToxic": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -28,11 +28,11 @@
         "sp": "252"
       },
       "nature": "Timid",
-      "ability": "",
+      "ability": "Stance Change",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
+        "Substitute",
+        "Toxic",
         "Shadow Ball",
         "Flash Cannon"
       ]
@@ -46,8 +46,9 @@
       },
       "ivs": {
         "sp": "0"
+      },
       "nature": "Brave",
-      "ability": "",
+      "ability": "Stance Change",
       "item": "Life Orb",
       "moves": [
         "Shadow Sneak",
@@ -65,11 +66,11 @@
         "sp": "92"
       },
       "nature": "Modest",
-      "ability": "",
+      "ability": "Stance Change",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
+        "Substitute",
+        "Toxic",
         "Shadow Ball",
         "Flash Cannon"
       ]
@@ -162,7 +163,7 @@
         "sp": "252"
       },
       "nature": "Adamant",
-      "ability": "",
+      "ability": "Speed Boost",
       "item": "Blazikenite",
       "moves": [
         "Flare Blitz",
@@ -183,7 +184,7 @@
         "def": "30"
       },
       "nature": "Naive",
-      "ability": "",
+      "ability": "Speed Boost",
       "item": "Life Orb",
       "moves": [
         "Overheat",
@@ -200,12 +201,12 @@
         "sp": "252"
       },
       "nature": "Impish",
-      "ability": "",
-      "item": "",
+      "ability": "Speed Boost",
+      "item": "Focus Sash",
       "moves": [
-        "",
-        "",
-        "",
+        "Protect",
+        "Swords Dance",
+        "Baton Pass",
         "Blaze Kick"
       ]
     }
@@ -220,9 +221,9 @@
       },
       "nature": "Adamant",
       "ability": "Technician",
-      "item": "",
+      "item": "Focus Sash",
       "moves": [
-        "",
+        "Spore",
         "Mach Punch",
         "Bullet Seed",
         "Rock Tomb"
@@ -238,13 +239,13 @@
         "sd": "212"
       },
       "nature": "Bold",
-      "ability": "",
+      "ability": "Natural Cure",
       "item": "Eviolite",
       "moves": [
         "Seismic Toss",
-        "",
-        "",
-        ""
+        "Ice Beam",
+        "Thunderbolt",
+        "Flamethrower"
       ]
     },
     "Minimize": {
@@ -259,9 +260,9 @@
       "item": "Eviolite",
       "moves": [
         "Seismic Toss",
-        "",
-        "",
-        ""
+        "Ice Beam",
+        "Thunderbolt",
+        "Flamethrower"
       ]
     }
   },
@@ -354,7 +355,7 @@
         "Earthquake",
         "Iron Head",
         "Rock Slide",
-        ""
+        "Horn Drill"
       ]
     },
     "Sand Sweeper": {
@@ -371,7 +372,7 @@
         "Earthquake",
         "Iron Head",
         "Rock Slide",
-        ""
+        "Swords Dance"
       ]
     },
     "Versatile Attacker": {
@@ -388,7 +389,7 @@
         "Earthquake",
         "Iron Head",
         "Rock Tomb",
-        ""
+        "Horn Drill"
       ]
     }
   },
@@ -404,7 +405,7 @@
         "sp": "0"
       },
       "nature": "Relaxed",
-      "ability": "",
+      "ability": "Iron Barbs",
       "item": "Leftovers",
       "moves": [
         "Power Whip",
@@ -423,13 +424,13 @@
         "sp": "172"
       },
       "nature": "Timid",
-      "ability": "",
-      "item": "",
+      "ability": "Contrary",
+      "item": "Rocky Helmet",
       "moves": [
         "Leaf Storm",
-        "",
-        "",
-        ""
+        "Reflect",
+        "Synthesis",
+        "Glare"
       ]
     },
     "All-Out Attacker": {
