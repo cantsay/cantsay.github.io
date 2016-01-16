@@ -181,7 +181,7 @@
       },
       "ivs": {
         "hp": "30",
-        "def": "30"
+        "df": "30"
       },
       "nature": "Naive",
       "ability": "Speed Boost",
