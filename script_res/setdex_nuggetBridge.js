@@ -242,9 +242,9 @@
       "item": "Eviolite",
       "moves": [
         "Seismic Toss",
-        "...",
-        "...",
-        "..."
+        "",
+        "",
+        ""
       ]
     },
     "Minimize": {
@@ -259,9 +259,9 @@
       "item": "Eviolite",
       "moves": [
         "Seismic Toss",
-        "...",
-        "...",
-        "..."
+        "",
+        "",
+        ""
       ]
     }
   },
