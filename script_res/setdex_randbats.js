@@ -1,6 +1,6 @@
 var SETDEX_RANDBATS={
-//some levels and items are still a bit inaccurate. hmu with changes
-/*  "Venusaur": {
+//some levels and items are still a bit inaccurate. hmu with changes 
+  "Venusaur": {
     "Randbats Regular": {
       "level": 79,
       "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
@@ -51,7 +51,7 @@ var SETDEX_RANDBATS={
       "nature": "Serious",
       "ability" "Blaze",
       "item": "Charizardite Y",
-      "moves": ["Fire Blast", "Air Slash", "Solarbeam", "Focus Blast"]
+      "moves": ["Fire Blast", "Air Slash", "Solar Beam", "Focus Blast"]
     }
   },
   "Blastoise": {
@@ -85,9 +85,9 @@ var SETDEX_RANDBATS={
       "level": 79,
       "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
       "nature": "Serious",
-      "ability": "Compoundeyes",
+      "ability": "",
       "item": "Leftovers",
       "moves": ["Bug Buzz", "Psychic", "Giga Drain", "Quiver Dance"]
     }
-  } d*/
+  } 
 };
