@@ -90,4 +90,4 @@ var SETDEX_RANDBATS={
       "moves": ["Bug Buzz", "Psychic", "Giga Drain", "Quiver Dance"]
     }
   }
-}
+};
