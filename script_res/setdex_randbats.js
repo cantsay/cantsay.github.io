@@ -1,6 +1,6 @@
 var SETDEX_RANDBATS={
 //some levels and items are still a bit inaccurate. hmu with changes
-  "Venusaur": {
+/*  "Venusaur": {
     "Randbats Regular": {
       "level": 79,
       "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
@@ -89,5 +89,5 @@ var SETDEX_RANDBATS={
       "item": "Leftovers",
       "moves": ["Bug Buzz", "Psychic", "Giga Drain", "Quiver Dance"]
     }
-  }
+  } d*/
 };
