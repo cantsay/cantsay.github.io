@@ -34,7 +34,7 @@ var SETDEX_RANDBATS={
       "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
       "nature": "Serious",
       "ability": "Blaze",
-      "item": "Life Orb" //I dunno what this one has lol
+      "item": "Life Orb", //I dunno what this one has lol
       "moves": ["Fire Blast", "Air Slash", "Focus Blast", "Roost"]
     },
     "Randbats Mega X": {
