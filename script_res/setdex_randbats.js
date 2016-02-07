@@ -19,7 +19,7 @@ var SETDEX_RANDBATS={
       "item": "Venusaurite",
       "moves": ["Giga Drain", "Sludge Bomb", "Hidden Power Fire", "Earthquake"]
     }
-  },
+  }/*,
   "Charizard": {
     "Randbats Regular Physical": {
       "level": 79,
