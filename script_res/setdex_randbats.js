@@ -44,15 +44,15 @@ var SETDEX_RANDBATS={
       "ability": "Blaze",
       "item": "Charizardite",
       "moves": ["Dragon Dance", "Flare Blitz", "Dragon Claw", "Earthquake"]
-    }/*,
+    },
     "Randbats Mega Y": {
       "level": 75,
       "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
       "nature": "Serious",
-      "ability" "Blaze",
+      "ability": "Blaze",
       "item": "Charizardite Y",
       "moves": ["Fire Blast", "Air Slash", "Solar Beam", "Focus Blast"]
-    }*/
+    }
   },
   "Blastoise": {
     "Randbats Regular": {
