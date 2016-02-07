@@ -19,7 +19,7 @@ var SETDEX_RANDBATS={
       "item": "Venusaurite",
       "moves": ["Giga Drain", "Sludge Bomb", "Hidden Power Fire", "Earthquake"]
     }
-  }/*,
+  },
   "Charizard": {
     "Randbats Regular Physical": {
       "level": 79,
@@ -53,7 +53,7 @@ var SETDEX_RANDBATS={
       "item": "Charizardite Y",
       "moves": ["Fire Blast", "Air Slash", "Solar Beam", "Focus Blast"]
     }
-  },
+  }/*,
   "Blastoise": {
     "Randbats Regular": {
       "level": 79,
