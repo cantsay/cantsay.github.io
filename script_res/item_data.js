@@ -156,7 +156,8 @@ ITEMS_XY.splice(ITEMS_XY.indexOf('DeepSeaTooth'), 1, 'Deep Sea Tooth');
 ITEMS_XY.splice(ITEMS_XY.indexOf('NeverMeltIce'), 1, 'Never-Melt Ice');
 ITEMS_XY.splice(ITEMS_XY.indexOf('SilverPowder'), 1, 'Silver Powder');
 ITEMS_XY.splice(ITEMS_XY.indexOf('TwistedSpoon'), 1, 'Twisted Spoon');
-ITEMS_XY.splice(ITEMS_XY.indexOf('Bug Gem'), 1);
+//remove removal of gems and soul dew
+/*ITEMS_XY.splice(ITEMS_XY.indexOf('Bug Gem'), 1);
 ITEMS_XY.splice(ITEMS_XY.indexOf('Dark Gem'), 1);
 ITEMS_XY.splice(ITEMS_XY.indexOf('Dragon Gem'), 1);
 ITEMS_XY.splice(ITEMS_XY.indexOf('Electric Gem'), 1);
@@ -172,7 +173,7 @@ ITEMS_XY.splice(ITEMS_XY.indexOf('Psychic Gem'), 1);
 ITEMS_XY.splice(ITEMS_XY.indexOf('Rock Gem'), 1);
 ITEMS_XY.splice(ITEMS_XY.indexOf('Steel Gem'), 1);
 ITEMS_XY.splice(ITEMS_XY.indexOf('Water Gem'), 1);
-ITEMS_XY.splice(ITEMS_XY.indexOf('Soul Dew'), 1);
+ITEMS_XY.splice(ITEMS_XY.indexOf('Soul Dew'), 1);*/
 
 function getItemBoostType(item) {
     switch (item) {
