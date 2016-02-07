@@ -4,7 +4,6 @@ var components = [
     SETDEX_SHOWDOWN,
     SETDEX_NUGGETBRIDGE,
     SETDEX_CUSTOM,
-    SETDEX_GLOBALLINK,
     SETDEX_RANDBATS
 ];
 
@@ -25,7 +24,6 @@ var reloadXYScript = function()
     SETDEX_SHOWDOWN,
     SETDEX_NUGGETBRIDGE,
     SETDEX_CUSTOM,
-    SETDEX_GLOBALLINK,
     SETDEX_RANDBATS
 ];
 
