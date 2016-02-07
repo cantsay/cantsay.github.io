@@ -19,14 +19,14 @@ var SETDEX_RANDBATS={
       "item": "Venusaurite",
       "moves": ["Giga Drain", "Sludge Bomb", "Hidden Power Fire", "Earthquake"]
     }
-  },
+  },/*
   "Charizard": {
     "Randbats Regular Physical": {
       "level": 79,
       "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
       "nature": "Serious",
       "ability": "Blaze",
-      "item": "Life Orb",
+      "item": "Flying Gem",
       "moves": ["Flare Blitz", "Acrobatics", "Earthquake", "Swords Dance"]
     },
     "Randbats Regular Special": {
@@ -53,7 +53,7 @@ var SETDEX_RANDBATS={
       "item": "Charizardite Y",
       "moves": ["Fire Blast", "Air Slash", "Solar Beam", "Focus Blast"]
     }
-  },
+  },*/
   "Blastoise": {
     "Randbats Regular": {
       "level": 79,
