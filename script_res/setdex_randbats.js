@@ -189,7 +189,7 @@ var SETDEX_RANDBATS={
             "item": "Life Orb",
             "moves": ["Fire Blast", "Ice Beam", "Earth Power", "Sludge Wave"]
         }
-    }/*,
+    },
     "Nidoking": {
         "Randbats": {
             "level": 77,
@@ -200,7 +200,7 @@ var SETDEX_RANDBATS={
             "item": "Life Orb",
             "moves": ["Fire Blast", "Ice Beam", "Earth Power", "Sludge Wave"]
         }
-    },
+    }/*,
     "Clefable": {
         "Randbats": {
             "level": 75,
