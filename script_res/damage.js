@@ -735,7 +735,7 @@ function checkIntimidate(source, target) {
             target.boosts[AT] = Math.max(-6, target.boosts[AT] - 2);
         } else if (target.ability === "Competitive") {
             target.boosts[AT] = Math.max(-6, target.boosts[AT] - 1);
-            target.boosts[SA] = Math.max(6, target.boosts[SA] + 2);
+            target.boosts[SA] = Math.min(6, target.boosts[SA] + 2);
         } else {
             target.boosts[AT] = Math.max(-6, target.boosts[AT] - 1);
         }
