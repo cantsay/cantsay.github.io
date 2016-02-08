@@ -209,7 +209,7 @@ var SETDEX_RANDBATS={
             "nature": "Serious",
             "ability": "Magic Guard",
             "item": "Leftovers",
-            "moves": ["Fire Blast", "Moonblast", "3", "4"]
+            "moves": ["Fire Blast", "Moonblast", "", ""]
         }
     }/*,
     "Ninetales": {
