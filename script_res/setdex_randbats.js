@@ -295,7 +295,7 @@ var SETDEX_RANDBATS={
             "item": "Black Sludge",
             "moves": ["Bug Buzz", "Sludge Bomb", "3", "4"]
         }
-    }/*,
+    },
     "Dugtrio": {
         "Randbats": {
             "level": 79,
@@ -373,5 +373,5 @@ var SETDEX_RANDBATS={
             "item": "Leftovers",
             "moves": ["Circle Throw", "Scald", "3", "4"]
         }
-    }*/
+    }
 };
