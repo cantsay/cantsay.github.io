@@ -3,8 +3,8 @@ var SETDEX_RANDBATS={
   "Venusaur": {
     "Randbats Regular": {
       "level": 79,
-      "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
-      "ivs": {"at": 30, "sa": 30, "sp": 30},
+      "evs": {"hp": 84, "at": 0, "df": 84, "sa": 84, "sd": 84, "sp": 84},
+      "ivs": {"at": 0, "sa": 30, "sp": 30},
       "nature": "Serious",
       "ability": "Chlorophyll",
       "item": "Life Orb",
@@ -47,7 +47,8 @@ var SETDEX_RANDBATS={
     },
     "Randbats Mega Y": {
       "level": 75,
-      "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
+      "evs": {"hp": 84, "at": 0, "df": 84, "sa": 84, "sd": 84, "sp": 84},
+      "ivs": {"at": 0},
       "nature": "Serious",
       "ability": "Blaze",
       "item": "Charizardite Y",
@@ -82,12 +83,31 @@ var SETDEX_RANDBATS={
   },
   "Butterfree": {
     "Randbats": {
-      "level": 79,
-      "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
+      "level": 83,
+      "evs": {"hp": 84, "at": 0, "df": 84, "sa": 84, "sd": 84, "sp": 84},
+      "ivs": {"at": 0},
       "nature": "Serious",
       "ability": "",
       "item": "Leftovers",
       "moves": ["Bug Buzz", "Psychic", "Giga Drain", "Quiver Dance"]
     }
-  } 
+  },
+  "Beedrill":{
+    "Randbats Regular": {
+      "level": 83,
+      "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
+      "nature": "Serious",
+      "ability": "Swarm",
+      "item": "Focus Sash",
+      "moves": ["U-Turn", "Poison Jab", "Knock Off", "Endeavor"]
+    },
+    "Randbats Mega": {
+      "level": 77,
+      "evs": {"hp": 84, "at": 0, "df": 84, "sa": 84, "sd": 84, "sp": 84},
+      "nature": "Serious",
+      "ability": "Swarm",
+      "item": "Beedrillnite",
+      "moves": ["U-Turn", "Knock Off", "Poison Jab", "Drill Run"]
+    }
+  }
 };
