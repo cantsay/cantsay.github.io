@@ -127,7 +127,7 @@ var SETDEX_RANDBATS={
             "item": "Pidgeotite",
             "moves": ["U-Turn", "Hurricane", "Heat Wave", "Roost"]
         }
-    }/*,
+    },
     "Raticate": {
         "Randbats": {
             "level": 83,
@@ -189,7 +189,7 @@ var SETDEX_RANDBATS={
             "item": "Life Orb",
             "moves": ["Fire Blast", "Ice Beam", "Earth Power", "Sludge Wave"]
         }
-    },
+    }/*,
     "Nidoking": {
         "Randbats": {
             "level": 77,
