@@ -90,6 +90,7 @@ var ABILITIES_XY = ABILITIES_BW.concat([
     'Aerilate',
     'Aura Break',
     'Bulletproof',
+    'Competitive',
     'Dark Aura',
     'Delta Stream',
     'Desolate Land',
