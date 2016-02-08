@@ -127,7 +127,7 @@ var SETDEX_RANDBATS={
             "item": "Pidgeotnite",
             "moves": ["U-Turn", "Hurricane", "Heat Wave", "Roost"]
         }
-    },
+    }/*,
     "Raticate": {
         "Randbats": {
             "level": 83,
@@ -373,5 +373,5 @@ var SETDEX_RANDBATS={
             "item": "Leftovers",
             "moves": ["Circle Throw", "Scald", "3", "4"]
         }
-    }
+    }*/
 };
