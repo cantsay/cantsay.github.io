@@ -196,11 +196,11 @@ var SETDEX_RANDBATS={
             "evs": {"hp": 84, "at": 0, "df": 84, "sa": 84, "sd": 84, "sp": 84},
             "ivs": {"at": 0},
             "nature": "Serious",
-            "ability": "Sheer Force"
+            "ability": "Sheer Force",
             "item": "Life Orb",
             "moves": ["Fire Blast", "Ice Beam", "Earth Power", "Sludge Wave"]
         }
-    }/*,
+    },
     "Clefable": {
         "Randbats": {
             "level": 75,
@@ -211,7 +211,7 @@ var SETDEX_RANDBATS={
             "item": "Leftovers",
             "moves": ["Fire Blast", "Moonblast", "3", "4"]
         }
-    },
+    }/*,
     "Ninetales": {
         "Randbats Flash Fire": {
             "level": 83,
