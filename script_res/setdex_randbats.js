@@ -109,7 +109,7 @@ var SETDEX_RANDBATS={
             "item": "Beedrillnite",
             "moves": ["U-Turn", "Knock Off", "Poison Jab", "Drill Run"]
         }
-    },
+    }/*,
     "Pidgeot": {
         "Randbats Regular": {
             "level": 83,
@@ -127,7 +127,7 @@ var SETDEX_RANDBATS={
             "item": "Pidgeotnite",
             "moves": ["U-Turn", "Hurricane", "Heat Wave", "Roost"]
         }
-    }/*,
+    },
     "Raticate": {
         "Randbats": {
             "level": 83,
