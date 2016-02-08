@@ -98,7 +98,7 @@ var SETDEX_RANDBATS={
             "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
             "nature": "Serious",
             "ability": "Swarm",
-            "item": "Focus Sash",
+            "item": "",
             "moves": ["U-Turn", "Poison Jab", "Knock Off", "Endeavor"]
         },
         "Randbats Mega": {
