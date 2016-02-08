@@ -242,7 +242,7 @@ var SETDEX_RANDBATS={
             "item": "Leftovers",
             "moves": ["Fire Blast", "Dazzling Gleam", "Hyper Voice", "4"]
         }
-    }/*,
+    },
     "Crobat": {
         "Randbats": {
             "level": 77,
@@ -295,7 +295,7 @@ var SETDEX_RANDBATS={
             "item": "Black Sludge",
             "moves": ["Bug Buzz", "Sludge Bomb", "3", "4"]
         }
-    },
+    }/*,
     "Dugtrio": {
         "Randbats": {
             "level": 79,
