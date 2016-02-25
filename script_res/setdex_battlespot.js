@@ -415,6 +415,279 @@
       ]
     }
   },
+  "Garchomp": {
+    "Lurechomp": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Rough Skin",
+      "item": "Focus Sash",
+      "moves": [
+        "Earthquake",
+        "Outrage",
+        "Rock Tomb",
+        "Dragon Claw"
+      ]
+    },
+    "Choice Scarf": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Rough Skin",
+      "item": "Choice Scarf",
+      "moves": [
+        "Outrage",
+        "Earthquake",
+        "Stone Edge",
+        "Fire Fang"
+      ]
+    },
+    "Choice Band": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Rough Skin",
+      "item": "Choice Band",
+      "moves": [
+        "Outrage",
+        "Earthquake",
+        "Poison Jab",
+        "Fire Fang"
+      ]
+    },
+    "Versatile Attacker": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Naive",
+      "ability": "Rough Skin",
+      "item": "Life Orb",
+      "moves": [
+        "Earthquake",
+        "Outrage",
+        "Draco Meteor",
+        "Fire Blast"
+      ]
+    }
+  },
+  "Gengar": {
+    "Bulky Trapper": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sp": "252",
+        "df": "4"
+      },
+      "ivs": {
+        "at": "0"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Gengarite",
+      "moves": [
+        "Destiny Bond",
+        "Will-O-Wisp",
+        "Hex",
+        "Sludge Bomb"
+      ]
+    },
+    "Offensive Trapper": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Gengarite",
+      "moves": [
+        "Destiny Bond",
+        "Shadow Ball",
+        "Sludge Bomb",
+        "Icy Wind"
+      ]
+    },
+    "Perish Trapper": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sp": "252",
+        "sa": "4"
+      },
+      "ivs": {
+        "at": "0"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Gengarite",
+      "moves": [
+        "Perish Song",
+        "Protect",
+        "Substitute",
+        "Sludge Bomb"
+      ]
+    },
+    "SubDisable": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Black Sludge",
+      "moves": [
+        "Substitute",
+        "Disable",
+        "Shadow Ball",
+        "Focus Blast"
+      ]
+    }
+    "Focus Sash": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Focus Sash",
+      "moves": [
+        "Shadow Ball",
+        "Sludge Bomb",
+        "Focus Blast",
+        "Icy Wind"
+      ]
+    }
+  },
+  "Gliscor": {
+    "Poison Healer": {
+      "level": 50,
+      "evs": {
+        "hp": "228",
+        "df": "68",
+        "sp": "212"
+      },
+      "nature": "Impish",
+      "ability": "Poison Heal",
+      "item": "Toxic Orb",
+      "moves": [
+        "Protect",
+        "Substitute",
+        "Earthquake",
+        "Guillotine"
+      ]
+    }
+  },
+  "Greninja": {
+    "All-Out Attacker": {
+      "level": 50,
+      "evs": {
+        "at": "20",
+        "sa": "236",
+        "sp": "252"
+      },
+      "nature": "Naive",
+      "ability": "Protean",
+      "item": "Life Orb",
+      "moves": [
+        "Ice Beam",
+        "Dark Pulse",
+        "Gunk Shot",
+        "Low Kick"
+      ]
+    },
+    "Focus Sash": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Protean",
+      "item": "Focus Sash",
+      "moves": [
+        "Ice Beam",
+        "Dark Pulse",
+        "Hydro Pump",
+        "Extrasensory"
+      ]
+    }
+  },
+  "Hippowdon": {
+    "Rocky Helmet Wall": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "252",
+        "sd": "4"
+      },
+      "nature": "Relaxed",
+      "ability": "Sand Stream",
+      "item": "Rocky Helmet",
+      "moves": [
+        "Slack Off",
+        "Yawn",
+        "Stealth Rock",
+        "Earthquake"
+      ]
+    },
+    "Specially Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sd": "252",
+        "df": "4"
+      },
+      "nature": "Sassy",
+      "ability": "Sand Stream",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Slack Off",
+        "Yawn",
+        "Stealth Rock",
+        "Earthquake"
+      ]
+    }
+  },
+  "Houndoom": {
+    "Mega Doom": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Flash Fire",
+      "item": "Houndoominite",
+      "moves": [
+        "Nasty Plot",
+        "Dark Pulse",
+        "Fire Blast",
+        "Idden Power Grass"
+      ]
+    }
+  },
   "Serperior": {
     "Solid Snake": {
       "level": 50,
