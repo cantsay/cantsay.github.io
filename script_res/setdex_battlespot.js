@@ -1,5 +1,5 @@
 ﻿var SETDEX_BATTLESPOT={
-  "Aegislash": {
+  /*"Aegislash": {
     "THE CRUMBLER (Special Attacker)": {
       "level": 50,
       "evs": {
@@ -728,5 +728,5 @@
         "Giga Drain"
       ]
     }
-  }
+  }*/
 };
