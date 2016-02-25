@@ -98,7 +98,7 @@ var SETDEX_RANDBATS={
             "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
             "nature": "Serious",
             "ability": "Swarm",
-            "item": "",
+            "item": "Focus Sash",
             "moves": ["U-Turn", "Poison Jab", "Knock Off", "Endeavor"]
         },
         "Randbats Mega": {
@@ -115,7 +115,7 @@ var SETDEX_RANDBATS={
             "level": 83,
             "evs": {"hp": 84, "at": 84, "df": 84, "sa": 84, "sd": 84, "sp": 84},
             "nature": "Serious",
-            "ability": "",
+            "ability": "Keen Eye",
             "item": "Life Orb",
             "moves": ["Hurricane", "Heat Wave", "Double-Edge", "U-Turn"]
         },
