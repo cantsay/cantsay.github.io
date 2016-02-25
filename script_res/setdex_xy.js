@@ -21,7 +21,7 @@ for (var i=0; i<components.length; i++) {
 var reloadXYScript = function()
 {
     components = [
-    SETDEX_NUGGETBRIDGE,
+    SETDEX_BATTLESPOT,
     SETDEX_CUSTOM,
     SETDEX_RANDBATS,
     SETDEX_SHOWDOWN
