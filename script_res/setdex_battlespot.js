@@ -1,4 +1,4 @@
-﻿var SETDEX_NUGGETBRIDGE={
+﻿var SETDEX_BATTLESPOT={
   "Aegislash": {
     "THE CRUMBLER (Special Attacker)": {
       "level": 50,
