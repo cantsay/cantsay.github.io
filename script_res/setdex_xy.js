@@ -1,7 +1,7 @@
 var SETDEX_XY = {};
 
 var components = [
-    SETDEX_NUGGETBRIDGE,
+    SETDEX_BATTLESPOT,
     SETDEX_CUSTOM,
     SETDEX_RANDBATS,
     SETDEX_SHOWDOWN
