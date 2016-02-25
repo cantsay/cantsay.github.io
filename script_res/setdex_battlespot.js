@@ -1,5 +1,5 @@
 ﻿var SETDEX_BATTLESPOT={
-  /*"Aegislash": {
+  "Aegislash": {
     "THE CRUMBLER (Special Attacker)": {
       "level": 50,
       "evs": {
@@ -202,7 +202,7 @@
       },
       "nature": "Impish",
       "ability": "Speed Boost",
-      "item": "Focus Sash",
+      "item": "",
       "moves": [
         "Protect",
         "Swords Dance",
@@ -221,7 +221,7 @@
       },
       "nature": "Adamant",
       "ability": "Technician",
-      "item": "Focus Sash",
+      "item": "",
       "moves": [
         "Spore",
         "Mach Punch",
@@ -425,7 +425,7 @@
       },
       "nature": "Jolly",
       "ability": "Rough Skin",
-      "item": "Focus Sash",
+      "item": "",
       "moves": [
         "Earthquake",
         "Outrage",
@@ -569,7 +569,7 @@
       },
       "nature": "Timid",
       "ability": "Levitate",
-      "item": "Focus Sash",
+      "item": "",
       "moves": [
         "Shadow Ball",
         "Sludge Bomb",
@@ -624,7 +624,7 @@
       },
       "nature": "Timid",
       "ability": "Protean",
-      "item": "Focus Sash",
+      "item": "",
       "moves": [
         "Ice Beam",
         "Dark Pulse",
@@ -728,5 +728,5 @@
         "Giga Drain"
       ]
     }
-  }*/
+  }
 };
