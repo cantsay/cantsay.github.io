@@ -485,7 +485,7 @@
       ]
     }
   },
-  /*"Gengar": {
+  "Gengar": {
     "Bulky Trapper": {
       "level": 50,
       "evs": {
@@ -506,7 +506,7 @@
         "Sludge Bomb"
       ]
     },
-    "Offensive Trapper": {
+    /*"Offensive Trapper": {
       "level": 50,
       "evs": {
         "sa": "252",
@@ -576,8 +576,8 @@
         "Focus Blast",
         "Icy Wind"
       ]
-    }
-  },*/
+    }*/
+  },
   "Gliscor": {
     "Poison Healer": {
       "level": 50,
