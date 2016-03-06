@@ -577,7 +577,7 @@
         "Icy Wind"
       ]
     }
-  },
+  },*/
   "Gliscor": {
     "Poison Healer": {
       "level": 50,
@@ -687,7 +687,7 @@
         "Idden Power Grass"
       ]
     }
-  },*/
+  },
   "Serperior": {
     "Solid Snake": {
       "level": 50,
