@@ -543,7 +543,7 @@
         "Sludge Bomb"
       ]
     },
-    /*"SubDisable": {
+    "SubDisable": {
       "level": 50,
       "evs": {
         "sa": "252",
@@ -560,7 +560,7 @@
         "Focus Blast"
       ]
     }
-    "Focus Sash": {
+    /*"Focus Sash": {
       "level": 50,
       "evs": {
         "sa": "252",
