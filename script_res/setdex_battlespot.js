@@ -506,7 +506,7 @@
         "Sludge Bomb"
       ]
     },
-    /*"Offensive Trapper": {
+    "Offensive Trapper": {
       "level": 50,
       "evs": {
         "sa": "252",
@@ -523,7 +523,7 @@
         "Icy Wind"
       ]
     },
-    "Perish Trapper": {
+    /*"Perish Trapper": {
       "level": 50,
       "evs": {
         "hp": "252",
