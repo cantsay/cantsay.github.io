@@ -560,7 +560,7 @@
         "Focus Blast"
       ]
     }
-    /*"Focus Sash": {
+    "Focus Sash": {
       "level": 50,
       "evs": {
         "sa": "252",
@@ -576,7 +576,7 @@
         "Focus Blast",
         "Icy Wind"
       ]
-    }*/
+    }
   },
   "Gliscor": {
     "Poison Healer": {
