@@ -1,5 +1,5 @@
 ﻿var SETDEX_BATTLESPOT={
-  /*"Aegislash": {
+  "Aegislash": {
     "THE CRUMBLER (Special Attacker)": {
       "level": 50,
       "evs": {
@@ -415,7 +415,7 @@
       ]
     }
   },
-  "Garchomp": {
+  /*"Garchomp": {
     "Lurechomp": {
       "level": 50,
       "evs": {
@@ -687,7 +687,7 @@
         "Idden Power Grass"
       ]
     }
-  },
+  },*/
   "Serperior": {
     "Solid Snake": {
       "level": 50,
@@ -728,5 +728,5 @@
         "Giga Drain"
       ]
     }
-  }*/
+  }
 };
