@@ -523,7 +523,7 @@
         "Icy Wind"
       ]
     },
-    /*"Perish Trapper": {
+    "Perish Trapper": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -543,7 +543,7 @@
         "Sludge Bomb"
       ]
     },
-    "SubDisable": {
+    /*"SubDisable": {
       "level": 50,
       "evs": {
         "sa": "252",
