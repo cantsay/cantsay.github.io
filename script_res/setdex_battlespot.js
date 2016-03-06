@@ -559,7 +559,7 @@
         "Shadow Ball",
         "Focus Blast"
       ]
-    }
+    },
     "Focus Sash": {
       "level": 50,
       "evs": {
@@ -569,7 +569,7 @@
       },
       "nature": "Timid",
       "ability": "Levitate",
-      "item": "",
+      "item": "Focus Sash",
       "moves": [
         "Shadow Ball",
         "Sludge Bomb",
