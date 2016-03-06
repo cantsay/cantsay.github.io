@@ -415,7 +415,7 @@
       ]
     }
   },
-  /*"Garchomp": {
+  "Garchomp": {
     "Lurechomp": {
       "level": 50,
       "evs": {
@@ -485,7 +485,7 @@
       ]
     }
   },
-  "Gengar": {
+  /*"Gengar": {
     "Bulky Trapper": {
       "level": 50,
       "evs": {
