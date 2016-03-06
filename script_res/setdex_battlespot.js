@@ -485,7 +485,7 @@
       ]
     }
   },
-  /*"Gengar": {
+  "Gengar": {
     "Bulky Trapper": {
       "level": 50,
       "evs": {
@@ -578,7 +578,7 @@
       ]
     }
   },
-  "Gliscor": {
+  /*"Gliscor": {
     "Poison Healer": {
       "level": 50,
       "evs": {
