@@ -684,7 +684,361 @@
         "Nasty Plot",
         "Dark Pulse",
         "Fire Blast",
-        "Idden Power Grass"
+        "Hidden Power Grass"
+      ]
+    }
+  },
+    "Hydreigon": {
+    "Choice Specs": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Choice Specs",
+      "moves": [
+        "Draco Meteor",
+        "Dark Pulse",
+        "Fire Blast",
+        "Earth Power"
+      ]
+    },
+    "Choice Scarf": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Draco Meteor",
+        "Dark Pulse",
+        "Fire Blast",
+        "Dragon Pulse"
+      ]
+    },
+    "Life Orb": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Life Orb",
+      "moves": [
+        "Draco Meteor",
+        "Dark Pulse",
+        "Fire Blast",
+        "Earth Power"
+      ]
+    }
+  },
+  "Kangaskhan": {
+    "Sweeper": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "sp": "252",
+        "sd": "4"
+      },
+      "nature": "Jolly",
+      "ability": "Scrappy",
+      "item": "Kangaskhanite",
+      "moves": [
+        "Power-Up Punch",
+        "Double-Edge",
+        "Sucker Punch",
+        "Earthquake"
+      ]
+    },
+    "All-Out Attacker": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "sp": "252",
+        "sd": "4"
+      },
+      "nature": "Adamant",
+      "ability": "Scrappy",
+      "item": "Kangaskhanite",
+      "moves": [
+        "Double-Edge",
+        "Sucker Punch",
+        "Earthquake",
+        "Ice Punch"
+      ]
+    }
+  },
+  "Lopunny": {
+    "Physical Attacker": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "df": "4",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Limber",
+      "item": "Lopunnite",
+      "moves": [
+        "Fake Out",
+        "Return",
+        "High Jump Kick",
+        "Ice Punch"
+      ]
+    }
+  },
+  "Lucario": {
+    "Physical": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "sp": "252",
+        "sd": "4"
+      },
+      "nature": "Jolly",
+      "ability": "Justified",
+      "item": "Lucarionite",
+      "moves": [
+        "Close Combat",
+        "Extreme Speed",
+        "Iron Tail",
+        "Ice Punch"
+      ]
+    },
+    "Special": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sp": "252",
+        "sd": "4"
+      },
+      "nature": "Timid",
+      "ability": "Inner Focus",
+      "item": "Lucarionite",
+      "moves": [
+        "Aura Sphere",
+        "Flash Cannon",
+        "Vacuum Wave",
+        "Dark Pulse"
+      ]
+    }
+  },
+  "Manectric": {
+    "All-Out Attacker": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Timid",
+      "ability": "Lightning Rod",
+      "item": "Manectite",
+      "moves": [
+        "Thunderbolt",
+        "Overheat",
+        "Hidden Power Ice",
+        "Volt Switch"
+      ]
+    }
+  },
+  "Metagross": {
+    "All-Out Attacker": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "sp": "252",
+        "df": "4"
+      },
+      "nature": "Jolly",
+      "ability": "Clear Body",
+      "item": "Metagrossite",
+      "moves": [
+        "Zen Headbutt",
+        "Bullet Punch",
+        "Ice Punch",
+        "Earthquake"
+      ]
+    },
+    "Substitute + Hone Claws": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sp": "252",
+        "df": "4"
+      },
+      "nature": "Jolly",
+      "ability": "Clear Body",
+      "item": "Metagrossite",
+      "moves": [
+        "Substitute",
+        "Hone Claws",
+        "Earthquake",
+        "Meteor Mash"
+      ]
+    }
+  },
+  "Pidgeot": {
+    "Specially Offensive": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Timid",
+      "ability": "Big Pecks",
+      "item": "Pidgeotite",
+      "moves": [
+        "Hurricane",
+        "Heat Wave",
+        "Hidden Power Ice",
+        "U-turn"
+      ]
+    }
+  },
+  "Porygon2": {
+    "Physically Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "sd": "12",
+        "df": "252"
+      },
+      "nature": "Bold",
+      "ability": "Trace",
+      "item": "Eviolite",
+      "moves": [
+        "Ice Beam",
+        "Foul Play",
+        "Discharge",
+        "Shadow Ball"
+      ]
+    },
+    "Offensive": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "12",
+        "sa": "252"
+      },
+      "nature": "Modest",
+      "ability": "Download",
+      "item": "Eviolite",
+      "moves": [
+        "Ice Beam",
+        "Shadow Ball",
+        "Tri Attack",
+        "Hidden Power Ground"
+      ]
+    },
+    "Trick Room": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "12",
+        "sa": "252"
+      },
+      "ivs": {
+        "sp": "0"
+      },
+      "nature": "Quiet",
+      "ability": "Download",
+      "item": "Eviolite",
+      "moves": [
+        "Shadow Ball",
+        "Ice Beam",
+        "Tri Attack",
+        "Hidden Power Ground"
+      ]
+    }
+  },
+  "Rhyperior": {
+    "Assault Vest": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "df": "4",
+        "sd": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Solid Rock",
+      "item": "Assault Vest",
+      "moves": [
+        "Earthquake",
+        "Rock Blast",
+        "Ice Punch",
+        "Horn Drill"
+      ]
+    }
+  },
+  "Salamence": {
+    "Dragon Dance": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Salamencite",
+      "moves": [
+        "Double-Edge",
+        "Earthquake",
+        "Facade",
+        "Stone Edge"
+      ]
+    },
+    "Mixed Attacker": {
+      "level": 50,
+      "evs": {
+        "at": "4",
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Rash",
+      "ability": "Intimidate",
+      "item": "Salamencite",
+      "moves": [
+        "Draco Meteor",
+        "Fire Blast",
+        "Double-Edge",
+        "Hyper Voice"
+      ]
+    },
+    "Toxicmence": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "4",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "item": "Salamencite",
+      "moves": [
+        "Toxic",
+        "Substitute",
+        "Roost",
+        "Return"
       ]
     }
   },
@@ -726,6 +1080,254 @@
         "Dragon Pulse",
         "Hidden Power Fire",
         "Giga Drain"
+      ]
+    }
+  },
+  "Scizor": {
+    "Bobo's Standard": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "108",
+        "df": "28",
+        "sd": "116",
+        "sp": "4"
+      },
+      "nature": "Adamant",
+      "ability": "Technician",
+      "item": "Scizorite",
+      "moves": [
+        "Bullet Punch",
+        "U-turn",
+        "Knock Off",
+        "Superpower"
+      ]
+    },
+    "Choice Band": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sp": "4",
+        "at": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Technician",
+      "item": "Choice Band",
+      "moves": [
+        "Bullet Punch",
+        "U-turn",
+        "Superpower",
+        "Pursuit"
+      ]
+    },
+    "Physically Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "4",
+        "df": "252"
+      },
+      "nature": "Impish",
+      "ability": "Technician",
+      "item": "Rock Helmet",
+      "moves": [
+        "Bullet Punch",
+        "U-turn",
+        "Roost",
+        "Toxic"
+      ]
+    },
+    "Specially Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "52",
+        "sd": "204"
+      },
+      "nature": "Careful",
+      "ability": "Technician",
+      "item": "Scizorite",
+      "moves": [
+        "Iron Defense",
+        "Roost",
+        "Bullet Punch",
+        "U-turn"
+      ]
+    }
+  },
+  "Skarmory": {
+    "Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sp": "4",
+        "df": "252"
+      },
+      "nature": "Impish",
+      "ability": "Sturdy",
+      "item": "Leftovers",
+      "moves": [
+        "Roost",
+        "Stealth Rock",
+        "Drill Peck",
+        "Iron Head"
+      ]
+    }
+  },
+  "Talonflame": {
+    "Choice Band": {
+      "level": 50,
+      "evs": {
+        "hp": "44",
+        "at": "244",
+        "sp": "220"
+      },
+      "nature": "Adamant",
+      "ability": "Gale Wings",
+      "item": "Choice Band",
+      "moves": [
+        "Brave Bird",
+        "Flare Blitz",
+        "U-turn",
+        "Giga Impact"
+      ]
+    },
+    "Bulky Rocky Helmet": {
+      "level": 50,
+      "evs": {
+        "hp": "172",
+        "df": "244",
+        "sp": "92"
+      },
+      "nature": "Jolly",
+      "ability": "Gale Wings",
+      "item": "Rocky Helmet",
+      "moves": [
+        "Brave Bird",
+        "Will-O-Wisp",
+        "Roost",
+        "Taunt"
+      ]
+    },
+    "Flexible Attacker": {
+      "level": 50,
+      "evs": {
+        "hp": "44",
+        "at": "252",
+        "sp": "212"
+      },
+      "nature": "Adamant",
+      "ability": "Gale Wings",
+      "item": "Life Orb",
+      "moves": [
+        "Brave Bird",
+        "Flare Blitz",
+        "U-turn",
+        "Swords Dance"
+      ]
+    },
+    "Specially Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "236",
+        "at": "4",
+        "df": "44",
+        "sd": "188",
+        "sp": "36"
+      },
+      "nature": "Careful",
+      "ability": "Gale Wings",
+      "item": "",
+      "moves": [
+        "Acrobatics",
+        "Taunt",
+        "Will-O-Wisp",
+        "Roost"
+      ]
+    }
+  },
+  "Thundurus": {
+    "Attacker": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Timid",
+      "ability": "Prankster",
+      "item": "Life Orb",
+      "moves": [
+        "Thunder Wave",
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "Focus Blast"
+      ]
+    },
+    "Tank": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "168",
+        "sa": "68",
+        "sp": "28"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Bold",
+      "ability": "Prankster",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Thunderwave",
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "Taunt"
+      ]
+    },
+    "Nasty Plot": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Timid",
+      "ability": "Prankster",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Nasty Plot",
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "Grass Knot"
+      ]
+    },
+    "SwagPlay": {
+      "level": 50,
+      "evs": {
+        "hp": "180",
+        "df": "44",
+        "sa": "4",
+        "sd": "252",
+        "sp": "28"
+      },
+      "nature": "Calm",
+      "ability": "Prankster",
+      "item": "Leftovers",
+      "moves": [
+        "Swagger",
+        "Thunder Wave",
+        "Substitute",
+        "Foul Play"
       ]
     }
   }
