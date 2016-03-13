@@ -777,6 +777,42 @@
       ]
     }
   },
+  "Klefki": {
+    "Standard": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sd": "252"
+      },
+      "nature": "Calm",
+      "ability": "Prankster",
+      "item": "Leftovers",
+      "moves": [
+        "Swagger",
+        "Foul Play",
+        "Thunder Wave",
+        "Substitute"
+      ]
+    },
+    "Dual Screens": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "252",
+        "sd": "4"
+      },
+      "nature": "Bold",
+      "ability": "Prankster",
+      "item": "Light Clay",
+      "moves": [
+        "Reflect",
+        "Light Screen",
+        "Foul Play",
+        "Thunder Wave"
+      ]
+    }
+  },
   "Lopunny": {
     "Physical Attacker": {
       "level": 50,
@@ -1328,6 +1364,85 @@
         "Thunder Wave",
         "Substitute",
         "Foul Play"
+      ]
+    }
+  },
+  "Weavile": {
+    "Physical Attacker": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Pressure",
+      "item": "Life Orb",
+      "moves": [
+        "Ice Shard",
+        "Knock Off",
+        "Low Kick",
+        "Icicle Crash"
+      ]
+    }
+  },
+  "Whimsicott": {
+    "Cotton Stall": {
+      "level": 50,
+      "evs": {
+        "hp": "204",
+        "sd": "52",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Prankster",
+      "item": "Leftovers",
+      "moves": [
+        "Encore",
+        "Leech Seed",
+        "Moonblast",
+        "Cotton Guard"
+      ]
+    }
+  },
+  "Wobbuffet": {
+    "\(>_<)7": {
+      "level": 50,
+      "evs": {
+        "df": "252",
+        "sd": "252",
+        "sp": "4"
+      },
+      "nature": "Bold",
+      "ability": "Shadow Tag",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Encore",
+        "Counter",
+        "Mirror Coat",
+        "Destiny Bond"
+      ]
+    }
+  },
+  "Zapdos": {
+    "Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "252",
+        "sa": "4"
+      },
+      "ivs": {
+        "sp": "30"
+      },
+      "nature": "Bold",
+      "ability": "Pressure",
+      "item": "Leftovers",
+      "moves": [
+        "Roost",
+        "Discharge",
+        "Heat Wave",
+        "Hidden Power Ice"
       ]
     }
   }
