@@ -74,6 +74,26 @@
         "Shadow Ball",
         "Flash Cannon"
       ]
+    },
+    "The Ethan Special": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "4",
+        "df": "252"
+      },
+      "ivs": {
+        "sp": "0"
+      },
+      "nature": "Relaxed",
+      "ability": "Stance Change",
+      "item": "Weakness Policy",
+      "moves": [
+        "King's Shield",
+        "Shadow Ball",
+        "Shadow Sneak",
+        "Sacred Sword"
+      ]
     }
   },
   "Azumarill": {
@@ -630,6 +650,27 @@
         "Dark Pulse",
         "Hydro Pump",
         "Extrasensory"
+      ]
+    }
+  },
+  "Heracross": {
+    "Mega Hera": {
+      "level": 50,
+      "evs": {
+        "hp": "156",
+        "at": "252",
+        "df": "4",
+        "sd": "4"
+        "sp": "92"
+      },
+      "nature": "Adamant",
+      "ability": "Guts",
+      "item": "Heracronite",
+      "moves": [
+        "Pin Missile",
+        "Close Combat",
+        "Rock Blast",
+        "Bullet Seed"
       ]
     }
   },
