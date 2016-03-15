@@ -1251,7 +1251,7 @@
       ]
     }
   },
-  "Species": {
+  "Suicune": {
     "Fully Defensive" : {
       "level": 50,
       "evs": {
