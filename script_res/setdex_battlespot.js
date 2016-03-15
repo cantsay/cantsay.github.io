@@ -1251,6 +1251,36 @@
       ]
     }
   },
+  "Species": {
+    "Fully Defensive" : {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "0",
+        "df": "252",
+        "sa": "0",
+        "sd": "4",
+        "sp": "0"
+      },
+      "ivs": {
+        "hp": "31",
+        "at": "0",
+        "df": "31",
+        "sa": "31",
+        "sd": "31",
+        "sp": "31"
+      },
+      "nature": "Bold",
+      "ability": "Pressure",
+      "item": "Rocky Helmet",
+      "moves": [
+        "Scald",
+        "Ice Beam",
+        "Icy Wind",
+        "Shadow Ball"
+      ]
+    }
+  },
   "Talonflame": {
     "Choice Band": {
       "level": 50,
@@ -1407,7 +1437,42 @@
         "Foul Play"
       ]
     }
+    "Max Special Defense": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sd": "252",
+      },
+      "nature": "Calm",
+      "ability": "Prankster",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Hidden Power Ice",
+        "Thunderbolt",
+        "Focus Blast",
+        "Grass Knot"
+      ]
+    }
+    "Max Defense": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "252",
+        "sd": "4",
+      },
+      "nature": "Bold",
+      "ability": "Prankster",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Hidden Power Ice",
+        "Thunderbolt",
+        "Focus Blast",
+        "Grass Knot"
+      ]
+    }
   },
+  
   "Weavile": {
     "Physical Attacker": {
       "level": 50,
