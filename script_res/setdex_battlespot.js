@@ -1436,7 +1436,7 @@
         "Substitute",
         "Foul Play"
       ]
-    }
+    },
     "Max Special Defense": {
       "level": 50,
       "evs": {
@@ -1453,7 +1453,7 @@
         "Focus Blast",
         "Grass Knot"
       ]
-    }
+    },
     "Max Defense": {
       "level": 50,
       "evs": {
