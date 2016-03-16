@@ -286,6 +286,25 @@
       ]
     }
   },
+  "Charizard": {
+    "SD Flame Charge X": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Blaze",
+      "item": "Charizardite",
+      "moves": [
+        "Flame Charge",
+        "Outrage",
+        "Flare Blitz",
+        "Dragon Claw"
+      ]
+    }
+  },
   "Conkeldurr": {
     "Assault Vest": {
       "level": 50,
@@ -1063,6 +1082,59 @@
         "Rock Blast",
         "Ice Punch",
         "Horn Drill"
+      ]
+    }
+  },
+  "Rotom-W": {
+    "Choice Specs": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "252"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Choice Specs",
+      "moves": [
+        "Hydro Pump",
+        "Thunderbolt",
+        "Volt Switch",
+        "Hidden Power Ice"
+      ]
+    },
+    "Physically Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "252",
+        "sa": "4"
+      },
+      "nature": "Bold",
+      "ability": "Levitate",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Hydro Pump",
+        "Thunderbolt",
+        "Volt Switch",
+        "Hidden Power Ice"
+      ]
+    },
+    "Choice Scarf": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Hydro Pump",
+        "Thunderbolt",
+        "Volt Switch",
+        "Hidden Power Ice"
       ]
     }
   },
