@@ -305,6 +305,25 @@
       ]
     }
   },
+  "Clefable": {
+    "Minimize": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "252",
+        "sd": "4"
+      },
+      "nature": "Bold",
+      "ability": "Unaware",
+      "item": "Kee Berry",
+      "moves": [
+        "Moonblast",
+        "Stored Power",
+        "Fire Blast",
+        "Thunderbolt"
+      ]
+    }
+  },
   "Conkeldurr": {
     "Assault Vest": {
       "level": 50,
@@ -873,6 +892,42 @@
       ]
     }
   },
+    "Landorus-T": {
+    "Scarf": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Earthquake",
+        "U-Turn",
+        "Rock Slide",
+        "Superpower"
+      ]
+    },
+    "Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "4",
+        "df": "252"
+      },
+      "nature": "Impish",
+      "ability": "Intimidate",
+      "item": "Rocky Helmet",
+      "moves": [
+        "Earthquake",
+        "Rock Tomb",
+        "U-Turn",
+        "Knock Off"
+      ]
+    }
+  },
   "Lopunny": {
     "Physical Attacker": {
       "level": 50,
@@ -925,6 +980,59 @@
         "Flash Cannon",
         "Vacuum Wave",
         "Dark Pulse"
+      ]
+    }
+  },
+  "Mamoswine": {
+    "Sash": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Thick Fat",
+      "item": "Focus Sash",
+      "moves": [
+        "Earthquake",
+        "Icicle Spear",
+        "Ice Shard",
+        "Knock Off"
+      ]
+    },
+    "Assault Vest": {
+      "level": 50,
+      "evs": {
+        "hp": "44",
+        "at": "212",
+        "sd": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Thick Fat",
+      "item": "Assault Vest",
+      "moves": [
+        "Earthquake",
+        "Icicle Spear",
+        "Ice Shard",
+        "Fissure"
+      ]
+    },
+    "Physically Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "4",
+        "df": "252"
+      },
+      "nature": "Impish",
+      "ability": "Thick Fat",
+      "item": "Rocky Helmet",
+      "moves": [
+        "Earthquake",
+        "Icicle Spear",
+        "Ice Shard",
+        "Knock Off"
       ]
     }
   },
@@ -1350,6 +1458,25 @@
         "Ice Beam",
         "Icy Wind",
         "Shadow Ball"
+      ]
+    }
+  },
+  "Sylveon": {
+    "Choice Specs": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sa": "252",
+        "sd": "4"
+      },
+      "nature": "Modest",
+      "ability": "Pixilate",
+      "item": "Choice Specs",
+      "moves": [
+        "Hyper Voice",
+        "Psyshock",
+        "Shadow Ball",
+        "Hidden Power Ground"
       ]
     }
   },
