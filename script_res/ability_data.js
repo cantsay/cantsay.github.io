@@ -22,6 +22,7 @@ var ABILITIES_ADV = [
     'Rain Dish',
     'Sand Stream',
     'Sand Veil',
+    'Shadow Tag',
     'Shell Armor',
     'Soundproof',
     'Swarm',
