@@ -991,7 +991,7 @@
         "at": "252",
         "sp": "252"
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "Thick Fat",
       "item": "Focus Sash",
       "moves": [
