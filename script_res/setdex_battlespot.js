@@ -96,6 +96,27 @@
       ]
     }
   },
+  "Alakazam": {
+    "Bulky Zam": {
+      "level": 50,
+      "evs": {
+        "hp": "100",
+        "df": "244",
+        "sa": "12",
+        "sd": "12",
+        "sp": "140"
+      },
+      "nature": "Timid",
+      "ability": "Magic Guard",
+      "item": "Alakazite",
+      "moves": [
+        "Psychic",
+        "Focus Blast",
+        "Shadow Ball",
+        "Hidden Power Ice"
+      ]
+    }
+  },
   "Azumarill": {
     "Belly Drum": {
       "level": 50,
