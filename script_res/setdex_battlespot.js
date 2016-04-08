@@ -1080,6 +1080,25 @@
       ]
     }
   },
+  "Mawile": {
+    "Physical Attacker": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "252",
+        "sp": "4"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Mawilite",
+      "moves": [
+        "Play Rough",
+        "Sucker Punch",
+        "Knock Off",
+        "Fire Fang"
+      ]
+    }
+  },
   "Metagross": {
     "All-Out Attacker": {
       "level": 50,
