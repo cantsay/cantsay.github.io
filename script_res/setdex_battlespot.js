@@ -875,6 +875,23 @@
         "Earthquake",
         "Ice Punch"
       ]
+    },
+    "Secret Power Kanghaxkhan": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "252",
+        "sd": "4"
+      },
+      "nature": "Adamant",
+      "ability": "Scrappy",
+      "item": "Kangaskhanite",
+      "moves": [
+        "Secret Power",
+        "Power-Up Punch",
+        "Rock Slide",
+        "Sucker Punch"
+      ]
     }
   },
   "Klefki": {
