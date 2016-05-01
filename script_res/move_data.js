@@ -487,6 +487,13 @@ var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
         hasSecondaryEffect: true,
         isBullet: true
     },
+    'Snore': {
+        bp: 40,
+        type: 'Normal',
+        category: 'Special',
+        hasSecondaryEffect: true,
+        isSound: true
+    },
     'SolarBeam': {
         bp: 120,
         type: 'Grass',
@@ -1774,6 +1781,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         isSpread: 'true'
     },
     'Rock Tomb': { bp: 60 },
+    'Snore': { bp: 50 },
     'Storm Throw': { bp: 60 },
     'Surf': { bp: 90 },
     'Synchronoise': { bp: 120 },
