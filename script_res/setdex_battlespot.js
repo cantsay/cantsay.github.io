@@ -657,6 +657,25 @@
       ]
     }
   },
+  "Glalie": {
+    "Moody": {
+      "level": 50,
+      "evs": {
+        "hp": "172",
+        "sd": "84",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Moody",
+      "item": "Leftovers",
+      "moves": [
+        "Frost Breath",
+        "Freeze-Dry",
+        "Sheer Cold",
+        "Substitute"
+      ]
+    }
+  },
   "Gliscor": {
     "Poison Healer": {
       "level": 50,
