@@ -731,6 +731,25 @@
       ]
     }
   },
+    "Gyarados": {
+    "Defensive": {
+      "level": 50,
+      "evs": {
+        "hp": "220",
+        "df": "244",
+        "sp": "44"
+      },
+      "nature": "Impish",
+      "ability": "Intimidate",
+      "item": "Rocky Helmet",
+      "moves": [
+        "Waterfall",
+        "Ice Fang",
+        "Earthquake",
+        "Aqua Tail"
+      ]
+    }
+  },
   "Heracross": {
     "Mega Hera": {
       "level": 50,
