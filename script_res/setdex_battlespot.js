@@ -1004,6 +1004,36 @@
       ]
     }
   },
+  "Latios": {
+    "Choice Specs": {
+      "level": 50,
+      "evs": {
+        "hp": "0",
+        "at": "0",
+        "df": "4",
+        "sa": "252",
+        "sd": "0",
+        "sp": "252"
+      },
+      "ivs": {
+        "hp": "31",
+        "at": "0",
+        "df": "31",
+        "sa": "31",
+        "sd": "31",
+        "sp": "31"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Choice Specs",
+      "moves": [
+        "Draco Meteor",
+        "Psyshock",
+        "Surf",
+        "Thunderbolt"
+      ]
+    }
+  },
   "Lopunny": {
     "Physical Attacker": {
       "level": 50,
