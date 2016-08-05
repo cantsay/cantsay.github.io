@@ -1957,7 +1957,7 @@
         "sd": "228",
         "sp": "28"
       },
-      "nature": "Calm",
+      "nature": "Careful",
       "ability": "Intimidate",
       "item": "Salamencite",
       "moves": [
