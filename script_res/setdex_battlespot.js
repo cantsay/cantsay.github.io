@@ -117,6 +117,46 @@
       ]
     }
   },
+  "Articuno": {
+    "Theorymon's Sheer Cold Fisher": {
+      "level": 50,
+      "evs": {
+        "hp": "220",
+        "df": "4",
+        "sa": "4",
+        "sd": "252",
+        "sp": "28"
+      },
+      "nature": "Calm",
+      "ability": "Pressure",
+      "item": "Leftovers",
+      "moves": [
+        "Sheer Cold",
+        "Substitute",
+        "Roost",
+        "Freeze-Dry"
+      ]
+    },
+    "Assault Vest": {
+      "level": 50,
+      "evs": {
+        "hp": "108",
+        "df": "4",
+        "sa": "252",
+        "sd": "4",
+        "sp": "140"
+      },
+      "nature": "Modest",
+      "ability": "Pressure",
+      "item": "Assault Vest",
+      "moves": [
+        "Sheer Cold",
+        "Freeze-Dry",
+        "Hurricane",
+        "Ice Shard"
+      ]
+    }
+  },
   "Azumarill": {
     "Belly Drum": {
       "level": 50,
@@ -195,6 +235,25 @@
       ]
     }
   },
+  "Blastoise": {
+    "Wallbreaker": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "252"
+      },
+      "nature": "Modest",
+      "ability": "Torrent",
+      "item": "Blastoisinite",
+      "moves": [
+        "Water Pulse",
+        "Aura Sphere",
+        "Ice Beam",
+        "Dark Pulse"
+      ]
+    }
+  },
   "Blaziken": {
     "Mega Sweeper": {
       "level": 50,
@@ -262,12 +321,29 @@
       },
       "nature": "Adamant",
       "ability": "Technician",
-      "item": "",
+      "item": "Focus Sash",
       "moves": [
         "Spore",
         "Mach Punch",
         "Bullet Seed",
         "Rock Tomb"
+      ]
+    },
+    "Tacticat Teammate": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "4",
+        "df": "252"
+      },
+      "nature": "Impish",
+      "ability": "Poison Heal",
+      "item": "Toxic Orb",
+      "moves": [
+        "Spore",
+        "Focus Punch",
+        "Substitute",
+        "Protect"
       ]
     }
   },
@@ -317,12 +393,46 @@
       },
       "nature": "Adamant",
       "ability": "Blaze",
-      "item": "Charizardite",
+      "item": "Charizardite X",
       "moves": [
         "Flame Charge",
         "Outrage",
         "Flare Blitz",
         "Dragon Claw"
+      ]
+    },
+    "Defensive X": {
+      "level": 50,
+      "evs": {
+        "hp": "172",
+        "df": "116",
+        "sp": "220"
+      },
+      "nature": "Jolly",
+      "ability": "Blaze",
+      "item": "Charizardite X",
+      "moves": [
+        "Will-O-Wisp",
+        "Roost",
+        "Flame Charge",
+        "Dragon Claw"
+      ]
+    },
+    "Drought Attacker": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Blaze",
+      "item": "Charizardite Y",
+      "moves": [
+        "Overheat",
+        "Solar Beam",
+        "Focus Blast",
+        "Hidden Power Ice"
       ]
     }
   },
@@ -342,6 +452,27 @@
         "Stored Power",
         "Fire Blast",
         "Thunderbolt"
+      ]
+    }
+  },
+  "Cloyster": {
+    "Shell Smash": {
+      "level": 50,
+      "evs": {
+        "hp": "108",
+        "at": "252",
+        "df": "4",
+        "sd": "4",
+        "sp": "140"
+      },
+      "nature": "Adamant",
+      "ability": "Skill Link",
+      "item": "King's Rock",
+      "moves": [
+        "Shell Smash",
+        "Icicle Spear",
+        "Rock Blast",
+        "Ice Shard"
       ]
     }
   },
@@ -416,6 +547,62 @@
         "Extreme Speed",
         "Earthquake",
         "Fire Punch"
+      ]
+    }
+  },
+  "Entei": {
+    "Assault Vest": {
+      "level": 50,
+      "evs": {
+        "hp": "132",
+        "at": "252",
+        "df": "52",
+        "sd": "52",
+        "sp": "20"
+      },
+      "nature": "Adamant",
+      "ability": "Pressure",
+      "item": "Assault Vest",
+      "moves": [
+        "Sacred Fire",
+        "Stone Edge",
+        "Bulldoze",
+        "Flame Charge"
+      ]
+    },
+    "Choice Band": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "df": "4",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Pressure",
+      "item": "Choice Band",
+      "moves": [
+        "Sacred Fire",
+        "Stone Edge",
+        "Bulldoze",
+        "Iron Head"
+      ]
+    },
+    "Pressure Stall": {
+      "level": 50,
+      "evs": {
+        "hp": "20",
+        "at": "232",
+        "df": "4",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Pressure",
+      "item": "Leftovers",
+      "moves": [
+        "Protect",
+        "Substitute",
+        "Toxic",
+        "Sacred Fire"
       ]
     }
   },
@@ -622,21 +809,42 @@
         "Sludge Bomb"
       ]
     },
-    "SubDisable": {
+    "CasinoGar": {
       "level": 50,
       "evs": {
-        "sa": "252",
+        "hp": "188",
+        "df": "116",
+        "sa": "4",
         "sd": "4",
-        "sp": "252"
+        "sp": "196"
       },
       "nature": "Timid",
       "ability": "Levitate",
-      "item": "Black Sludge",
+      "item": "Gengarite",
       "moves": [
-        "Substitute",
-        "Disable",
-        "Shadow Ball",
-        "Focus Blast"
+        "Hypnosis",
+        "Hex",
+        "Focus Blast",
+        "Sludge Bomb"
+      ]
+    },
+    "CasinoGar": {
+      "level": 50,
+      "evs": {
+        "hp": "188",
+        "df": "116",
+        "sa": "4",
+        "sd": "4",
+        "sp": "196"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Gengarite",
+      "moves": [
+        "Hypnosis",
+        "Hex",
+        "Focus Blast",
+        "Sludge Bomb"
       ]
     },
     "Focus Sash": {
@@ -655,7 +863,24 @@
         "Focus Blast",
         "Icy Wind"
       ]
-    }
+    },
+    "SubDisable": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Black Sludge",
+      "moves": [
+        "Substitute",
+        "Disable",
+        "Shadow Ball",
+        "Focus Blast"
+      ]
+    },
   },
   "Glalie": {
     "Moody": {
@@ -747,6 +972,78 @@
         "Ice Fang",
         "Earthquake",
         "Aqua Tail"
+      ]
+    },
+    "Mega Dragon Dance": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "df": "4",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Gyaradosite",
+      "moves": [
+        "Dragon Dance",
+        "Crunch",
+        "Earthquake",
+        "Ice Fang"
+      ]
+    }
+  },
+  "Heatran": {
+    "Fast Stall": {
+      "level": 50,
+      "evs": {
+        "hp": "212",
+        "sd": "44",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Flash Fire",
+      "item": "Leftovers",
+      "moves": [
+        "Magmar Storm",
+        "Toxic",
+        "Substitute",
+        "Earth Power"
+      ]
+    },
+    "Bulky Stall": {
+      "level": 50,
+      "evs": {
+        "hp": "212",
+        "df": "4",
+        "sa": "44",
+        "sd": "156",
+        "sp": "92"
+      },
+      "nature": "Calm",
+      "ability": "Flash Fire",
+      "item": "Leftovers",
+      "moves": [
+        "Magmar Storm",
+        "Toxic",
+        "Substitute",
+        "Earth Power"
+      ]
+    },
+    "Choice Specs": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sa": "252",
+        "sp": "4"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Choice Specs",
+      "moves": [
+        "Overheat",
+        "Flash Cannon",
+        "Earth Power",
+        "Ancient Power"
       ]
     }
   },
@@ -914,7 +1211,7 @@
         "Ice Punch"
       ]
     },
-    "Secret Power Kanghaxkhan": {
+    "Secret Power KangHAXkhan": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -929,6 +1226,25 @@
         "Power-Up Punch",
         "Rock Slide",
         "Sucker Punch"
+      ]
+    },
+    "Mixed Attacker": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "148",
+        "df": "4",
+        "sa": "100",
+        "sp": "252"
+      },
+      "nature": "Naive",
+      "ability": "Scrappy",
+      "item": "Kangaskhanite",
+      "moves": [
+        "Fake Out",
+        "Double-Edge",
+        "Fire Blast",
+        "Ice Beam"
       ]
     }
   },
@@ -1004,24 +1320,35 @@
       ]
     }
   },
+  "Lapras": {
+    "infinitymkds' Assault Vest": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "252"
+      },
+      "nature": "Quiet",
+      "ability": "Water Absorb",
+      "item": "Leftovers",
+      "moves": [
+        "Sheer Cold",
+        "Freeze-Dry",
+        "Surf",
+        "Ice Shard"
+      ]
+    }
+  },
   "Latios": {
     "Choice Specs": {
       "level": 50,
       "evs": {
-        "hp": "0",
-        "at": "0",
         "df": "4",
         "sa": "252",
-        "sd": "0",
         "sp": "252"
       },
       "ivs": {
-        "hp": "31",
-        "at": "0",
-        "df": "31",
-        "sa": "31",
-        "sd": "31",
-        "sp": "31"
+        "at": "0"
       },
       "nature": "Timid",
       "ability": "Levitate",
@@ -1031,6 +1358,28 @@
         "Psyshock",
         "Surf",
         "Thunderbolt"
+      ]
+    }
+  },
+  "Liepard": {
+    "Tacticat": {
+      "level": 50,
+      "evs": {
+        "hp": "44",
+        "df": "212",
+        "sp": "252"
+      },
+      "ivs": {
+        "at": "0"
+      },
+      "nature": "Timid",
+      "ability": "Prankster",
+      "item": "Leftovers",
+      "moves": [
+        "Assist",
+        "Substitute",
+        "Swagger",
+        "Foul Play"
       ]
     }
   },
@@ -1243,6 +1592,50 @@
       ]
     }
   },
+  "Raikou": {
+    "Choice Specs": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "12",
+        "sp": "244"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Timid",
+      "ability": "Pressure",
+      "item": "Choice Specs",
+      "moves": [
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "Volt Switch",
+        "Shadow Ball"
+      ]
+    },
+    "Substitute + Calm Mind": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "12",
+        "sp": "244"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Timid",
+      "ability": "Pressure",
+      "item": "Leftovers",
+      "moves": [
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "Substitute",
+        "Calm Mind"
+      ]
+    }
+  },
   "Porygon2": {
     "Physically Defensive": {
       "level": 50,
@@ -1318,6 +1711,113 @@
       ]
     }
   },
+  "Roserade": {
+    "Offensive": {
+      "level": 50,
+      "evs": {
+        "hp": "12",
+        "sa": "248",
+        "sp": "248"
+      },
+      "ivs": {
+        "at": "0",
+        "sa": "30",
+        "sp": "30"
+      },
+      "nature": "Modest",
+      "ability": "Technician",
+      "item": "Life Orb",
+      "moves": [
+        "Sludge Bomb",
+        "Magical Leaf",
+        "Hidden Power Fire",
+        "Extrasensory"
+      ]
+    }
+  },
+  "Rotom-H": {
+    "Tank": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sd": "252",
+        "sp": "4"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30",
+      },
+      "nature": "Calm",
+      "ability": "Levitate",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Volt Switch",
+        "Overheat",
+        "Thunderbolt",
+        "Hidden Power Ice"
+      ]
+    },
+    "Choice Specs": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sa": "252",
+        "sp": "4"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30",
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Choice Specs",
+      "moves": [
+        "Overheat",
+        "Volt Switch",
+        "Hidden Power Ice",
+        "Thunderbolt"
+      ]
+    },
+    "Choice Scarf": {
+      "level": 50,
+      "evs": {
+        "hp": "76",
+        "df": "24",
+        "sa": "188",
+        "sp": "220"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30",
+      },
+      "nature": "Timid",
+      "ability": "Levitate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Volt Switch",
+        "Overheat",
+        "Hidden Power Ice",
+        "Thunderbolt"
+      ]
+    },
+    "Substitute": {
+      "level": 50,
+      "evs": {
+        "hp": "156",
+        "sd": "220",
+        "sp": "132"
+      },
+      "nature": "Calm",
+      "ability": "Levitate",
+      "item": "Leftovers",
+      "moves": [
+        "Substitute",
+        "Overheat",
+        "Will-O-Wisp",
+        "Discharge"
+      ]
+    }
+  },
   "Rotom-W": {
     "Choice Specs": {
       "level": 50,
@@ -1371,6 +1871,48 @@
       ]
     }
   },
+  "Sableye": {
+    "Calm Mind Booster": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "252",
+        "sd": "4"
+      },
+      "ivs": {
+        "at": "0"
+      },
+      "nature": "Bold",
+      "ability": "Prankster",
+      "item": "Sablenite",
+      "moves": [
+        "Will-O-Wisp",
+        "Recover",
+        "Calm Mind",
+        "Snarl"
+      ]
+    },
+    "Defensive Utility": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "204",
+        "sd": "52"
+      },
+      "ivs": {
+        "at": "0"
+      },
+      "nature": "Impish",
+      "ability": "Prankster",
+      "item": "Sablenite",
+      "moves": [
+        "Will-O-Wisp",
+        "Recover",
+        "Foul Play",
+        "Sucker Punch"
+      ]
+    }
+  },
   "Salamence": {
     "Dragon Dance": {
       "level": 50,
@@ -1404,6 +1946,25 @@
         "Fire Blast",
         "Double-Edge",
         "Hyper Voice"
+      ]
+    },
+    "NOVED's SpD Facade": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "at": "4",
+        "df": "4",
+        "sd": "228",
+        "sp": "28"
+      },
+      "nature": "Calm",
+      "ability": "Intimidate",
+      "item": "Salamencite",
+      "moves": [
+        "Dragon Dance",
+        "Facade",
+        "Earthquake",
+        "Roost"
       ]
     },
     "Toxicmence": {
@@ -1537,6 +2098,25 @@
       ]
     }
   },
+  "Sharpedo": {
+    "Sashed Special Attacker": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Modest",
+      "ability": "Speed Bosst",
+      "item": "Focus Sash",
+      "moves": [
+        "Dark Pulse",
+        "Ice Beam",
+        "Hydro Pump",
+        "Destiny Bond"
+      ]
+    }
+  },
   "Skarmory": {
     "Defensive": {
       "level": 50,
@@ -1568,12 +2148,7 @@
         "sp": "0"
       },
       "ivs": {
-        "hp": "31",
-        "at": "0",
-        "df": "31",
-        "sa": "31",
-        "sd": "31",
-        "sp": "31"
+        "at": "0"
       },
       "nature": "Bold",
       "ability": "Pressure",
