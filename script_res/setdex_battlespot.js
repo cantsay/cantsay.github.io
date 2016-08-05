@@ -1330,7 +1330,7 @@
       },
       "nature": "Quiet",
       "ability": "Water Absorb",
-      "item": "Leftovers",
+      "item": "Assault Vest",
       "moves": [
         "Sheer Cold",
         "Freeze-Dry",
