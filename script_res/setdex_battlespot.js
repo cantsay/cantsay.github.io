@@ -1948,7 +1948,7 @@
         "Hyper Voice"
       ]
     },
-    "NOVED's SpD Facade": {
+    "SpD Facade": {
       "level": 50,
       "evs": {
         "hp": "244",
