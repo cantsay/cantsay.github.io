@@ -938,6 +938,23 @@
         "Low Kick"
       ]
     },
+    "Max Attack": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "sa": "4",
+        "sp": "252"
+      },
+      "nature": "Naive",
+      "ability": "Protean",
+      "item": "Life Orb",
+      "moves": [
+        "Low Kick",
+        "Gunk Shot",
+        "Ice Beam",
+        "Dark Pulse"
+      ]
+    },
     "Focus Sash": {
       "level": 50,
       "evs": {
