@@ -1,0 +1,9 @@
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
+  
+title: BSS calc by cant say
+redirect_to:
+  - https://cantsay.github.io/sumo-bss-calc/
