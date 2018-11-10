@@ -5,10 +5,10 @@
   "scripts": {
     "test": "eslint ."
   },
-  "homepage": "https://cantsay.github.io/sumo-bss-calc/",
+  "homepage": "https://cantsay.github.io/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cantsay/sumo-bss-calc.git"
+    "url": "https://github.com/cantsay/cantsay.github.io.git"
   },
   "license": "MIT",
   "devDependencies": {
