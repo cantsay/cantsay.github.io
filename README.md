@@ -1,5 +1,5 @@
 # B S S D A M A G E C A L C ~
-[![Build Status](https://travis-ci.org/cantsay/cantsay.github.io.svg)](https://travis-ci.org/cantsay/cantsay.github.io)
+[![Build Status](https://travis-ci.org/cantsay/cantsay.github.io.svg?branch=master)](https://travis-ci.org/cantsay/cantsay.github.io)
 
 for all your bs singles calculations. based on the work by Jake White ([@squirrelboyvgc](https://twitter.com/squirrelboyvgc))
 
