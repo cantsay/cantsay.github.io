@@ -1,7 +1,9 @@
-# Battle Spot Singles Damage Calculator
-First there was Honko's calculator for PS!, then the Bugget Bridge community modified it for their metagame, then the Smogon Battle Spot community came along and modified it to suit their meta. All credit to the original creators, this calculator merely has a facelift and BSS specific sets.
+# B S S D A M A G E C A L C ~
+[![Build Status](https://travis-ci.org/cantsay/sumo-bss-calc.svg)](https://travis-ci.org/cantsay/sumo-bss-calc)
 
-The calculator supports custom sets.  These can be input within the calculator using the official Pokemon Showdown format.
+for all your bs singles calculations. based on the work by Jake White ([@squirrelboyvgc](https://twitter.com/squirrelboyvgc))
+
+The calculator now supports custom sets. These can be input within the calculator using the official Pokemon Showdown format.
 
 ```
 Nickname (Species) @ Item
@@ -16,8 +18,19 @@ IVs: # Stat
 - Move Name
 ```
 
-The calculator also adds manual auras and aura breaks, as well as a completely new list of VGC '16 sets.  More detailed information can be found [in the blog post](http://nuggetbridge.com/blogs/entry/1149-vgc-2016-damage-calculator/).
+The calculator also adds manual auras and aura breaks, as well as a completely new list of USUM BSS sets.  
 
-The calculator is accessible online via http://cantsay.github.io
+## Handy Links:
 
-Calculator not working/showing the most recent updates? Clear your cache and cookies. If using Chrome, try using incognito mode!
+* [Calc](https://cantsay.github.io/sumo-bss-calc/)
+* [Parser (PS! Importable to calc format)](https://legofigure11.github.io/custom-calc-parser/)
+* [VGC Calc](https://jake-white.github.io/VGC-Damage-Calculator/) ([git](https://github.com/jake-white/VGC-Damage-Calculator))
+* [PS! Calc](https://pokemonshowdown.com/damagecalc/) ([git](https://github.com/Zarel/honko-damagecalc))
+* Contribute directly in this repo or at our smogon thread [here](https://www.smogon.com/forums/threads/3597699/)!
+
+## Testing with eslint (requires node)
+run ``npm i -g eslint`` (First time only)
+
+run ``npm test``
+
+run ``eslint --fix .``

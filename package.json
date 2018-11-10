@@ -1,0 +1,26 @@
+{
+  "name": "sumo-bss-calc",
+  "private": false,
+  "version": "1.0.0",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "homepage": "https://cantsay.github.io/sumo-bss-calc/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cantsay/sumo-bss-calc.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "dependencies": {
+    "npm": "^6.0.0"
+  }
+}
