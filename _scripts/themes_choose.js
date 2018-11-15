@@ -43,6 +43,24 @@ var changetheme = function () {
 		var selectedItem = select.value;
 		createCookie("selectedItem", selectedItem, 3000);
 		console.log("loaded legacy theme");
+	} else if (document.getElementById("theme").value === "lgpe") {
+		loadjscssfile("_css/lgpe_ap_calc.css", "css");
+		loadjscssfile("_css/lgpe_nb_calc.css", "css");
+		loadjscssfile("_css/lgpe_select2.css", "css");
+		removejscssfile("_css/volc_ap_calc.css", "css");
+		removejscssfile("_css/volc_nb_calc.css", "css");
+		removejscssfile("_css/volc_select2.css", "css");
+		removejscssfile("_css/dark_ap_calc.css", "css");
+		removejscssfile("_css/dark_nb_calc.css", "css");
+		removejscssfile("_css/legacy_ap_calc.css", "css");
+		removejscssfile("_css/legacy_nb_calc.css", "css");
+		removejscssfile("_css/ap_calc.css", "css");
+		removejscssfile("_css/nb_calc.css", "css");
+		document.getElementById("midimg").src = "https://i.imgur.com/sohWhy9.jpg";
+		var select = document.getElementById("theme");
+		var selectedItem = select.value;
+		createCookie("selectedItem", selectedItem, 3000);
+		console.log("loaded volcarona theme");
 	} else if (document.getElementById("theme").value === "volcarona") {
 		loadjscssfile("_css/volc_ap_calc.css", "css");
 		loadjscssfile("_css/volc_nb_calc.css", "css");
