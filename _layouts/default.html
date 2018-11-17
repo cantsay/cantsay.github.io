@@ -86,7 +86,22 @@ title: cantsaycalc BETA
 		{{ content }}
 		
 	</div>
-	
+	<script>
+	if (document.getElementById("theme") != null) {
+		var drop = document.getElementById("theme").value;
+		
+		if (drop === "aegislash") {
+			document.getElementById('midimg').src = "/_images/aegi trozei.png";
+		} else if (drop === "dark") {
+			document.getElementById('midimg').src = "/_images/shiny aegi trozei.png";
+		} else if (drop === "legacy") {
+			document.getElementById('midimg').src = "/_images/shiny aegi trozei.png";
+		} else if (drop === "volcarona") {
+			document.getElementById('midimg').src = "/_images/volc.png";
+		} else if (drop === "lgpe") {
+			document.getElementById('midimg').src = "/_images/pika.jpg";
+		}
+	</script>
 	<script type="text/javascript" src="/_scripts/themes_choose.js"></script>
 	
 </body>

@@ -56,7 +56,7 @@ var changetheme = function () {
 		removejscssfile("_css/legacy_nb_calc.css", "css");
 		removejscssfile("_css/ap_calc.css", "css");
 		removejscssfile("_css/nb_calc.css", "css");
-		document.getElementById("midimg").src = "https://i.imgur.com/sohWhy9.jpg";
+		document.getElementById("midimg").src = "/_images/pika.jpg";
 		var select = document.getElementById("theme");
 		var selectedItem = select.value;
 		createCookie("selectedItem", selectedItem, 3000);
