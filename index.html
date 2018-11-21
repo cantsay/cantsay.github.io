@@ -4,8 +4,9 @@ title: cantsaycalc BETA
 ---
 <div class="wrapper">
 	<div>
-		<span class="title-text">Battle Spot Singles Damage Calculator - Sun &amp; Moon Edition</span>
+		<span class="title-text">Battle Spot Singles Damage Calculator - Let's Go! Edition</span>
 		<span class="generation-select" title="Select the format.">
+			<!-- Gen 5: GBU, Gen 6: ORAS, Gen 7: USUM, Gen 20: Factory, Gen 21: Factory, Gen 22: LGPE -->
 			<input class="gen btn-input" type="radio" name="gen" value="5" id="gen5" /><label class="btn btn-small btn-left" for="gen5">GBU</label>
 
 			<input class="gen btn-input" type="radio" name="gen" value="6" id="gen6" /><label class="btn btn-small btn-mid" for="gen6">&Omega;R&alpha;S</label>
@@ -14,9 +15,11 @@ title: cantsaycalc BETA
 
 			<input class="gen btn-input" type="radio" name="gen" value="21" id="gen21" /><label class="btn btn-small btn-mid" for="gen21">Inverse</label>
 
-			<input class="gen btn-input" type="radio" name="gen" value="20" id="gen20" /><label class="btn btn-small btn-right" for="gen20">Factory</label>
+			<input class="gen btn-input" type="radio" name="gen" value="20" id="gen20" /><label class="btn btn-small btn-mid" for="gen20">Factory</label>
+			
+			<input class="gen btn-input" type="radio" name="gen" value="22" id="gen22" /><label class="btn btn-small btn-right" for="gen22" onclick="window.alert('Hi! \nLGPE Mode is still being worked on, so please be patient and excuse any imcomplete functionality for the time being!');">LGPE</label>
 		</span>
-		<span>Information on "Factory" can be found <a href="https://www.smogon.com/forums/threads/3604845/">here</a></span>
+		<span>What's "<a href="https://www.smogon.com/forums/threads/3604845/">Factory</a>"?</span>
 
 	</div>
 	<hr />
@@ -85,17 +88,19 @@ title: cantsaycalc BETA
 					<tr>
 						<th></th>
 						<th>Base</th>
-						<th class="gen-specific g3 g4 g5 g6 g7 g20 g21 g7 g20 g21">IVs</th>
+						<th class="gen-specific g3 g4 g5 g6 g7 g20 g21 g7 g20 g21 g22">IVs</th>
 						<th class="gen-specific g3 g4 g5 g6 g7 g20 g21 g7 g20 g21">EVs</th>
 						<th class="gen-specific g1 g2 hide">DVs</th>
+						<th class="gen-specific g22 hide">AVs</th>
 						<th></th>
 						<th></th>
 					</tr>
 					<tr class="hp">
 						<td><label>HP</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" disabled="disabled" /></td>
 						<td><span class="total">341</span></td>
 						<td></td>
@@ -103,8 +108,9 @@ title: cantsaycalc BETA
 					<tr class="at">
 						<td><label>Attack</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -126,8 +132,9 @@ title: cantsaycalc BETA
 					<tr class="df">
 						<td><label>Defense</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -146,11 +153,12 @@ title: cantsaycalc BETA
 								<option value="-6">-6</option>
 							</select></td>
 					</tr>
-					<tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g20 g21">
+					<tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g20 g21 g22">
 						<td><label>Sp. Atk</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -169,11 +177,12 @@ title: cantsaycalc BETA
 								<option value="-6">-6</option>
 							</select></td>
 					</tr>
-					<tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g20 g21">
+					<tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g20 g21 g22">
 						<td><label>Sp. Def</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" disabled="disabled" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -216,8 +225,9 @@ title: cantsaycalc BETA
 					<tr class="sp">
 						<td><label>Speed</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -251,7 +261,7 @@ title: cantsaycalc BETA
 						<th>
 						<th></th>
 						</th>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21">
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22">
 						<td><select class="boost calc-trigger">
 								<option value="6">+6</option>
 								<option value="5">+5</option>
@@ -275,7 +285,7 @@ title: cantsaycalc BETA
 						<th>
 						<th></th>
 						</th>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21">
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22">
 						<td><select class="boost calc-trigger">
 								<option value="6">+6</option>
 								<option value="5">+5</option>
@@ -296,7 +306,7 @@ title: cantsaycalc BETA
 				</table>
 			</div>
 			<div class="info-group info-selectors">
-				<div class="gen-specific g3 g4 g5 g6 g7 g20 g21">
+				<div class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22">
 					<label>Nature</label>
 					<select class="nature calc-trigger">
 						<option value="Adamant">Adamant (+Atk, -SpA)</option>
@@ -365,6 +375,11 @@ title: cantsaycalc BETA
 				</div>
 			</div>
 			<div class="info-group">
+			<label class="gen-specific g22 hide">Happiness</label>
+				<input class="gen-specific g22 hide current-happiness hapL calc-trigger" value="255" />
+				<button class="gen-specific g22 hide minHapL calc-trigger btn" id="minHapL" onclick="$('.hapL').val(0); $('.hapL').change()" />Min.</button> 
+				<button class="gen-specific g22 hide maxHapL calc-trigger btn" id="maxHapL" onclick="$('.hapL').val(255); $('.hapL').change()"/>Max.</button>
+				<br />
 				<label>Current HP</label>
 				<input class="current-hp calc-trigger" value="341" />/<span class="max-hp">341</span> (<input class="percent-hp calc-trigger" value="100" />%)
 			</div>
@@ -372,12 +387,12 @@ title: cantsaycalc BETA
 				<select class="move-selector calc-trigger small-select"></select>
 				<input class="move-bp calc-trigger" value="50" />
 				<select class="move-type calc-trigger"></select>
-				<select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g20 g21">
+				<select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g20 g21 g22">
 					<option value="Physical">Physical</option>
 					<option value="Special">Special</option>
 				</select>
 				<input class="move-crit calc-trigger btn-input" type="checkbox" id="critL1" /><label class="btn crit-btn" for="critL1" title="Force this attack to be a critical hit?">Crit</label>
-				<input class="move-z calc-trigger btn-input" type="checkbox" id="zL1" /><label class="btn x-btn" for="zL1" title="Use the corresponding Z-Move?">Z-Move</label>
+				<input class="move-z calc-trigger btn-input" type="checkbox" id="zL1" /><label class="btn x-btn gen-specific g7 g20 g21 g22" for="zL1" title="Use the corresponding Z-Move?">Z-Move</label>
 				<select class="move-hits calc-trigger hide">
 					<option value="2">2 hits</option>
 					<option value="3">3 hits</option>
@@ -389,12 +404,12 @@ title: cantsaycalc BETA
 				<select class="move-selector calc-trigger small-select"></select>
 				<input class="move-bp calc-trigger" value="0" />
 				<select class="move-type calc-trigger"></select>
-				<select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g20 g21">
+				<select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g20 g21 g22">
 					<option value="Physical">Physical</option>
 					<option value="Special">Special</option>
 				</select>
 				<input class="move-crit calc-trigger btn-input" type="checkbox" id="critL2" /><label class="btn crit-btn" for="critL2" title="Force this attack to be a critical hit?">Crit</label>
-				<input class="move-z calc-trigger btn-input" type="checkbox" id="zL2" /><label class="btn x-btn" for="zL2" title="Use the corresponding Z-Move?">Z-Move</label>
+				<input class="move-z calc-trigger btn-input" type="checkbox" id="zL2" /><label class="btn x-btn gen-specific g7 g20 g21 g22" for="zL2" title="Use the corresponding Z-Move?">Z-Move</label>
 				<select class="move-hits calc-trigger hide">
 					<option value="2">2 hits</option>
 					<option value="3">3 hits</option>
@@ -406,12 +421,12 @@ title: cantsaycalc BETA
 				<select class="move-selector calc-trigger small-select"></select>
 				<input class="move-bp calc-trigger" value="0" />
 				<select class="move-type calc-trigger"></select>
-				<select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g20 g21">
+				<select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g20 g21 g22">
 					<option value="Physical">Physical</option>
 					<option value="Special">Special</option>
 				</select>
 				<input class="move-crit calc-trigger btn-input" type="checkbox" id="critL3" /><label class="btn crit-btn" for="critL3" title="Force this attack to be a critical hit?">Crit</label>
-				<input class="move-z calc-trigger btn-input" type="checkbox" id="zL3" /><label class="btn x-btn" for="zL3" title="Use the corresponding Z-Move?">Z-Move</label>
+				<input class="move-z calc-trigger btn-input" type="checkbox" id="zL3" /><label class="btn x-btn gen-specific g7 g20 g21 g22" for="zL3" title="Use the corresponding Z-Move?">Z-Move</label>
 				<select class="move-hits calc-trigger hide">
 					<option value="2">2 hits</option>
 					<option value="3">3 hits</option>
@@ -423,12 +438,12 @@ title: cantsaycalc BETA
 				<select class="move-selector calc-trigger small-select"></select>
 				<input class="move-bp calc-trigger" value="0" />
 				<select class="move-type calc-trigger"></select>
-				<select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g20 g21">
+				<select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g20 g21 g22">
 					<option value="Physical">Physical</option>
 					<option value="Special">Special</option>
 				</select>
 				<input class="move-crit calc-trigger btn-input" type="checkbox" id="critL4" /><label class="btn crit-btn" for="critL4" title="Force this attack to be a critical hit?">Crit</label>
-				<input class="move-z calc-trigger btn-input" type="checkbox" id="zL4" /><label class="btn x-btn" for="zL4" title="Use the corresponding Z-Move?">Z-Move</label>
+				<input class="move-z calc-trigger btn-input" type="checkbox" id="zL4" /><label class="btn x-btn gen-specific g7 g20 g21 g22" for="zL4" title="Use the corresponding Z-Move?">Z-Move</label>
 				<select class="move-hits calc-trigger hide">
 					<option value="2">2 hits</option>
 					<option value="3">3 hits</option>
@@ -457,7 +472,7 @@ title: cantsaycalc BETA
 			</h4>
 		</div>
 		<div class="panel-body">
-			<div class="gen-specific g7 g20 g21" style="width: 3.0em; margin: 0 auto 5px;">
+			<div class="gen-specific g7 g20 g21 g22" style="width: 3.0em; margin: 0 auto 5px;">
 				<a href="https://www.youtube.com/watch?v=z1gFnq6VNTw">
 					<img id="midimg" align="middle" src="_images/aegi trozei.png" alt="cant say" height="50" width="50">
 				</a>
@@ -475,7 +490,7 @@ title: cantsaycalc BETA
 						}
 					}
 				</script>
-			<div class="gen-specific g3 g4 g5 g6 g7 g20 g21" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
+			<div class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
 				<input class="btn-input calc-trigger" type="radio" name="format" value="Singles" id="singles" /><label class="btn btn-left" for="singles">Singles</label>
 				<input class="btn-input calc-trigger" type="radio" name="format" value="Doubles" id="doubles" /><label class="btn btn-right" for="doubles">Doubles</label>
 			</div>
@@ -510,12 +525,12 @@ title: cantsaycalc BETA
 				<input class="btn-input calc-trigger" type="checkbox" name="aura" value="Fairy Aura" id="fairy-aura" /><label class="btn btn-wide btn-mid" for="fairy-aura">Fairy Aura</label>
 				<input class="btn-input calc-trigger" type="checkbox" name="aura" value="Dark Aura" id="dark-aura" /><label class="btn btn-wide btn-right" for="dark-aura">Dark Aura</label>
 			</div>
-			<div class="gen-specific g4 g5 g6 g7 g20 g21 g7 g20 g21" style="width: 5.3em; margin: 5px auto;" title="Is gravity in effect?">
+			<div class="gen-specific g4 g5 g6 g7 g20 g21" style="width: 5.3em; margin: 5px auto;" title="Is gravity in effect?">
 				<input class="btn-input calc-trigger" type="checkbox" id="gravity" /><label class="btn" for="gravity">Gravity</label>
 			</div>
-			<hr class="gen-specific g2 g3 g4 g5 g6 g7 g20 g21 g7 g20 g21" />
+			<hr class="gen-specific g2 g3 g4 g5 g6 g7 g20 g21 g7 g20 g21 g22" />
 
-			<div class="btn-group gen-specific g7 g20 g21">
+			<div class="btn-group gen-specific g7 g20 g21 g22">
 				<div class="left" title="Is this Pokemon protecting?">
 					<input class="btn-input calc-trigger" type="checkbox" id="protectL" /><label class="btn btn-xwide" for="protectL">Protect</label>
 				</div>
@@ -523,7 +538,7 @@ title: cantsaycalc BETA
 					<input class="btn-input calc-trigger" type="checkbox" id="protectR" /><label class="btn btn-xwide" for="protectR">Protect</label>
 				</div>
 			</div>
-			<div class="btn-group gen-specific g4 g5 g6 g7 g20 g21 g7 g20 g21">
+			<div class="btn-group gen-specific g4 g5 g6 g7 g20 g21 g7 g20 g21 g22">
 				<div class="left" title="Is Stealth Rock affecting this side of the field?">
 					<input class="btn-input calc-trigger" type="checkbox" id="srL" /><label class="btn btn-xwide" for="srL">Stealth Rock</label>
 				</div>
@@ -581,7 +596,7 @@ title: cantsaycalc BETA
 					<input class="btn-input calc-trigger" type="checkbox" id="foresightR" /><label class="btn btn-wide" for="foresightR">Foresight</label>
 				</div>
 			</div>
-			<div class="btn-group gen-specific g6 g7 g20 g21">
+			<div class="btn-group gen-specific g6 g7 g20 g21 g22">
 				<div class="left" title="Has this Pokemon used Minimize?">
 					<input class="btn-input calc-trigger" type="checkbox" id="minimL" /><label class="btn btn-xwide" for="minimL">Minimize</label>
 				</div>
@@ -589,7 +604,7 @@ title: cantsaycalc BETA
 					<input class="btn-input calc-trigger" type="checkbox" id="minimR" /><label class="btn btn-xwide" for="minimR">Minimize</label>
 				</div>
 			</div>
-			<div class="btn-group gen-specific g3 g4 g5 g6 g7 g20 g21 g7 g20 g21">
+			<div class="btn-group gen-specific g3 g4 g5 g6 g7 g20 g21 g7 g20 g21 g22">
 				<div class="left" title="Has this Pokemon's power been boosted by an ally's Helping Hand?">
 					<input class="btn-input calc-trigger" type="checkbox" id="helpingHandL" /><label class="btn btn-xxwide" for="helpingHandL">Helping Hand</label>
 				</div>
@@ -613,7 +628,7 @@ title: cantsaycalc BETA
 					<input class="btn-input calc-trigger" type="checkbox" id="batteryR" /><label class="btn btn-xxwide" for="batteryR">Battery</label>
 				</div>
 			</div>
-			<div class="btn-group gen-specific g7 g20 g21">
+			<div class="btn-group gen-specific g7 g20 g21 g22">
 				<div class="left" title="Has this Pokemon used Z-Conversion or Clangorous Soulblaze?">
 					<input class="btn-input calc-trigger" type="checkbox" id="clangL" /><label class="btn btn-xwide" for="clangL"><img src="_images/PZ.png"><img src="_images/kommo.png"><br>+1 All</label>
 				</div>
@@ -621,7 +636,7 @@ title: cantsaycalc BETA
 					<input class="btn-input calc-trigger" type="checkbox" id="clangR" /><label class="btn btn-xwide" for="clangR"><img src="_images/PZ.png"><img src="_images/kommo.png"><br>+1 All</label>
 				</div>
 			</div>
-			<div class="btn-group gen-specific g7 g20 g21">
+			<div class="btn-group gen-specific g7 g20 g21 g22">
 				<div class="left" title="Has this Pokemon used Extreme Evoboost?">
 					<input class="btn-input calc-trigger" type="checkbox" id="evoL" /><label class="btn btn-xwide" for="evoL"><img src="_images/eevee.png"><br>Extreme Evoboost</label>
 				</div>
@@ -630,11 +645,12 @@ title: cantsaycalc BETA
 				</div>
 			</div>
 			<div>&nbsp;</div>
-			<div class="btn-group gen-specific g7 g20 g21">
+			<div class="btn-group gen-specific g5 g6 g7 g20 g21">
 				<button class="left" type="button" id="exportL" onclick="exportToPsFormat($('#p1'))">Export Set</button>
 				<button class="right" type="button" id="exportR" onclick="exportToPsFormat($('#p2'))">Export Set</button>
 			</div>
 			<!--squirrelboy1225's HTML additions are right here-->
+			<span class="gen-specific g5 g6 g7 g20 g21">
 			<p>Please enter your custom set(s) here.</p>
 			Spread Name: <input type="text" id="spreadName" style="width: 60%" value="My Custom Set(s)">
 			<br>
@@ -643,6 +659,7 @@ title: cantsaycalc BETA
 			<script type="text/javascript" src="_scripts/setdex_custom.js"></script>
 			<button type="button" onclick="savecustom()">Save</button> <button type="button" onclick="deletecustom()">Delete Custom Sets</button>
 			<p>You may need to refresh the page after deleting your custom sets. If you encounter a bug, please try deleting your cookies or reporting it!</p>
+			</span>
 		</div>
 	</div>
 	<div class="panel poke-info" id="p2">
@@ -671,21 +688,24 @@ title: cantsaycalc BETA
 				</div>
 			</div>
 			<div class="info-group">
+							<div class="info-group">
 				<table>
 					<tr>
 						<th></th>
 						<th>Base</th>
-						<th class="gen-specific g3 g4 g5 g6 g7 g20 g21">IVs</th>
-						<th class="gen-specific g3 g4 g5 g6 g7 g20 g21">EVs</th>
+						<th class="gen-specific g3 g4 g5 g6 g7 g20 g21 g7 g20 g21 g22">IVs</th>
+						<th class="gen-specific g3 g4 g5 g6 g7 g20 g21 g7 g20 g21">EVs</th>
 						<th class="gen-specific g1 g2 hide">DVs</th>
+						<th class="gen-specific g22 hide">AVs</th>
 						<th></th>
 						<th></th>
 					</tr>
 					<tr class="hp">
 						<td><label>HP</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" disabled="disabled" /></td>
 						<td><span class="total">341</span></td>
 						<td></td>
@@ -693,8 +713,9 @@ title: cantsaycalc BETA
 					<tr class="at">
 						<td><label>Attack</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -716,8 +737,9 @@ title: cantsaycalc BETA
 					<tr class="df">
 						<td><label>Defense</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -736,11 +758,12 @@ title: cantsaycalc BETA
 								<option value="-6">-6</option>
 							</select></td>
 					</tr>
-					<tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g20 g21">
+					<tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g20 g21 g22">
 						<td><label>Sp. Atk</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -759,11 +782,12 @@ title: cantsaycalc BETA
 								<option value="-6">-6</option>
 							</select></td>
 					</tr>
-					<tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g20 g21">
+					<tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g20 g21 g22">
 						<td><label>Sp. Def</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" disabled="disabled" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -806,8 +830,9 @@ title: cantsaycalc BETA
 					<tr class="sp">
 						<td><label>Speed</label></td>
 						<td><input class="base calc-trigger" value="100" /></td>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="ivs calc-trigger" value="31" /></td>
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22"><input class="ivs calc-trigger" value="31" /></td>
 						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+						<td class="gen-specific g22 hide"><input class="avs calc-trigger" type="number" min="0" max="200" step="1" value="0" /></td>
 						<td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td>
 						<td><span class="total">236</span></td>
 						<td><select class="boost calc-trigger">
@@ -841,7 +866,7 @@ title: cantsaycalc BETA
 						<th>
 						<th></th>
 						</th>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21">
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22">
 						<td><select class="boost calc-trigger">
 								<option value="6">+6</option>
 								<option value="5">+5</option>
@@ -865,7 +890,7 @@ title: cantsaycalc BETA
 						<th>
 						<th></th>
 						</th>
-						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21">
+						<td class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22">
 						<td><select class="boost calc-trigger">
 								<option value="6">+6</option>
 								<option value="5">+5</option>
@@ -886,7 +911,7 @@ title: cantsaycalc BETA
 				</table>
 			</div>
 			<div class="info-group info-selectors">
-				<div class="gen-specific g3 g4 g5 g6 g7 g20 g21">
+				<div class="gen-specific g3 g4 g5 g6 g7 g20 g21 g22">
 					<label>Nature</label>
 					<select class="nature calc-trigger">
 						<option value="Adamant">Adamant (+Atk, -SpA)</option>
@@ -955,6 +980,11 @@ title: cantsaycalc BETA
 				</div>
 			</div>
 			<div class="info-group">
+				<label class="gen-specific g22 hide">Happiness</label>
+				<input class="gen-specific g22 hide current-happiness hapR calc-trigger" value="255" />
+				<button class="gen-specific g22 hide minHapR calc-trigger btn" id="minHapR" onclick="$('.hapR').val(0); $('.hapR').change()" />Min.</button> 
+				<button class="gen-specific g22 hide maxHapR calc-trigger btn" id="maxHapR" onclick="$('.hapR').val(255); $('.hapR').change()" />Max.</button>
+				<br />
 				<label>Current HP</label>
 				<input class="current-hp calc-trigger" value="341" />/<span class="max-hp">341</span> (<input class="percent-hp calc-trigger" value="100" />%)
 			</div>
@@ -1050,10 +1080,12 @@ title: cantsaycalc BETA
 <script type="text/javascript" src="_scripts/setdex_gen5_sets.js"></script>
 <script type="text/javascript" src="_scripts/setdex_gen6_sets.js"></script>
 <script type="text/javascript" src="_scripts/setdex_gen7_sets.js"></script>
+<script type="text/javascript" src="_scripts/setdex_LG_sets.js"></script>
 <script type="text/javascript" src="_scripts/setdex_factory_sets.js"></script>
 <script type="text/javascript" src="_scripts/setdex_gen5.js"></script>
 <script type="text/javascript" src="_scripts/setdex_gen6.js" id="XYScript"></script>
 <script type="text/javascript" src="_scripts/setdex_gen7.js" id="SMScript"></script>
+<script type="text/javascript" src="_scripts/setdex_LG.js"></script>
 <script type="text/javascript" src="_scripts/setdex_factory.js" id="BSSFScript"></script>
 <script type="text/javascript" src="_scripts/stat_data.js"></script>
 <script type="text/javascript" src="_scripts/type_data.js"></script>
