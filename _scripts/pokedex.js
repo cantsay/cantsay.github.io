@@ -12883,7 +12883,69 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
 
 });
 
+var POKEDEX_INTERMEDIATE = JSON.parse(JSON.stringify(POKEDEX_SM));
+
 delete POKEDEX_SM["Gengar"].ab;
 delete POKEDEX_SM["Raikou"].ab;
 delete POKEDEX_SM["Entei"].ab;
 delete POKEDEX_SM["Suicune"].ab;
+var delFrom = Object.keys(POKEDEX_INTERMEDIATE);
+var delStuff = Object.keys(POKEDEX_RBY);
+
+for (var i = 0; i != delFrom.length; i++) {
+	if (delStuff.indexOf(delFrom[i]) === -1) {
+		delete POKEDEX_INTERMEDIATE[delFrom[i]];
+	}
+}
+
+var POKEDEX_LG = $.extend(true, {}, POKEDEX_INTERMEDIATE, {
+	"Eevee-Starter": {
+		"t1": "Normal",
+		"bs": {
+			"hp": 65,
+			"at": 75,
+			"df": 70,
+			"sa": 65,
+			"sd": 85,
+			"sp": 75
+		},
+		"w": 6.5,
+	},
+	"Pikachu-Starter": {
+		"t1": "Electric",
+		"bs": {
+			"hp": 45,
+			"at": 80,
+			"df": 50,
+			"sa": 75,
+			"sd": 60,
+			"sp": 120
+		},
+		"w": 6,
+	},
+	"Meltan": {
+		"t1": "Steel",
+		"bs": {
+			"hp": 46,
+			"at": 65,
+			"df": 65,
+			"sa": 55,
+			"sd": 35,
+			"sp": 34
+		},
+		"w": 8,
+	},
+	"Melmetal": {
+		"t1": "Steel",
+		"bs": {
+			"hp": 135,
+			"at": 143,
+			"df": 143,
+			"sa": 80,
+			"sd": 65,
+			"sp": 34
+		},
+		"w": 800,
+	},
+});
+
