@@ -12893,10 +12893,15 @@ var delFrom = Object.keys(POKEDEX_INTERMEDIATE);
 var delStuff = Object.keys(POKEDEX_RBY);
 
 for (var i = 0; i != delFrom.length; i++) {
-	if (delStuff.indexOf(delFrom[i]) === -1) {
-		delete POKEDEX_INTERMEDIATE[delFrom[i]];
+	if (delStuff.indexOf(delFrom[i]) === -1 && delFrom[i].indexOf("Alola") === -1) {
+		var testMon = delFrom[i];
+		if (testMon.indexOf("Mega") === -1) {
+			delete POKEDEX_INTERMEDIATE[delFrom[i]];
+		}
 	}
 }
+
+delete POKEDEX_INTERMEDIATE["Meganium"];
 
 var POKEDEX_LG = $.extend(true, {}, POKEDEX_INTERMEDIATE, {
 	"Eevee-Starter": {

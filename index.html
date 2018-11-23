@@ -251,8 +251,12 @@ title: cantsaycalc BETA
 						<td></td>
 						<td></td>
 						<td class='ev-total'>&nbsp;</td>
-						<td></td>
-						<td></td>
+						<td><span class="info-group">
+							<button class="gen-specific g22 hide minAvL calc-trigger btn" id="minAvL" style="padding:0px; width: 4em; margin-left: 0.1em;" onclick="$('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').val(0); $('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').change()" />Min</button> 
+						</span></td>
+						<td><span class="info-group">
+							<button class="gen-specific g22 hide maxAvL calc-trigger btn" id="maxAvL" style="padding:0px; width: 4em; margin-left: 0.1em;" onclick="$('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').val(200); $('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').change()" />Max</button> 
+						</span></td>
 						<td></td>
 					</tr>
 					<tr class="ac">
@@ -377,8 +381,8 @@ title: cantsaycalc BETA
 			<div class="info-group">
 			<label class="gen-specific g22 hide">Happiness</label>
 				<input class="gen-specific g22 hide current-happiness hapL calc-trigger" value="255" />
-				<button class="gen-specific g22 hide minHapL calc-trigger btn" id="minHapL" onclick="$('.hapL').val(0); $('.hapL').change()" />Min.</button> 
-				<button class="gen-specific g22 hide maxHapL calc-trigger btn" id="maxHapL" onclick="$('.hapL').val(255); $('.hapL').change()"/>Max.</button>
+				<button class="gen-specific g22 hide minHapL calc-trigger btn" id="minHapL" style="padding:0px; width: 3em; margin-left: 0.1em;" onclick="$('.hapL').val(0); $('.hapL').change()" />Min</button> 
+				<button class="gen-specific g22 hide maxHapL calc-trigger btn" id="maxHapL" style="padding:0px; width: 3em; margin-left: 0.1em;" onclick="$('.hapL').val(255); $('.hapL').change()"/>Max</button>
 				<br />
 				<label>Current HP</label>
 				<input class="current-hp calc-trigger" value="341" />/<span class="max-hp">341</span> (<input class="percent-hp calc-trigger" value="100" />%)
@@ -856,8 +860,12 @@ title: cantsaycalc BETA
 						<td></td>
 						<td></td>
 						<td class='ev-total'>&nbsp;</td>
-						<td></td>
-						<td></td>
+						<td><span class="info-group">
+							<button class="gen-specific g22 hide minAvR calc-trigger btn" id="minAvR" style="padding:0px; width: 4em; margin-left: 0.1em;" onclick="$('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').val(0); $('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').change()" />Min</button> 
+						</span></td>
+						<td><span class="info-group">
+							<button class="gen-specific g22 hide maxAvR calc-trigger btn" id="maxAvR" style="padding:0px; width: 4em; margin-left: 0.1em;" onclick="$('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').val(200); $('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').change()" />Max</button> 
+						</span></td>
 						<td></td>
 					</tr>
 					<tr class="ac">
@@ -982,8 +990,8 @@ title: cantsaycalc BETA
 			<div class="info-group">
 				<label class="gen-specific g22 hide">Happiness</label>
 				<input class="gen-specific g22 hide current-happiness hapR calc-trigger" value="255" />
-				<button class="gen-specific g22 hide minHapR calc-trigger btn" id="minHapR" onclick="$('.hapR').val(0); $('.hapR').change()" />Min.</button> 
-				<button class="gen-specific g22 hide maxHapR calc-trigger btn" id="maxHapR" onclick="$('.hapR').val(255); $('.hapR').change()" />Max.</button>
+				<button class="gen-specific g22 hide minHapR calc-trigger btn" id="minHapR" style="padding:0px; width: 3em; margin-left: 0.1em;" onclick="$('.hapR').val(0); $('.hapR').change()" />Min</button> 
+				<button class="gen-specific g22 hide maxHapR calc-trigger btn" id="maxHapR" style="padding:0px; width: 3em; margin-left: 0.1em;" onclick="$('.hapR').val(255); $('.hapR').change()" />Max</button>
 				<br />
 				<label>Current HP</label>
 				<input class="current-hp calc-trigger" value="341" />/<span class="max-hp">341</span> (<input class="percent-hp calc-trigger" value="100" />%)
