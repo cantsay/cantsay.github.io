@@ -3531,3 +3531,99 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
 		zp: 160
 	}
 });
+
+var MOVES_LG = $.extend(true, {}, MOVES_SM, {
+	"Double Iron Bash": {
+		bp: 60,
+		type: "Steel",
+		category: "Physical",
+		isTwoHit: true,
+		makesContact: true,
+		isPunch: true,
+		hasSecondaryEffect: true
+	},
+	"Baddy Bad": {
+		bp: 90,
+		type: "Dark",
+		category: "Physical",
+	},
+	"Bouncy Bubble": {
+		bp: 90,
+		type: "Water",
+		category: "Special",
+		givesHealth: true,
+		percentHealed: 0.5
+	},
+	"Absorb": {bp: 40},
+	"Mega Drain": {bp: 75},
+	"Sky Attack": {bp: 200},
+	"Solar Beam": {bp: 200},
+	"Buzzy Buzz": {
+		bp: 90,
+		type: "Electric",
+		category: "Special",
+		hasSecondaryEffect: true
+	},
+	"Floaty Fall": {
+		bp: 90,
+		type: "Flying",
+		category: "Physical",
+		hasSecondaryEffect: true,
+		makesContact: true
+	},
+	"Freezy Frost": {
+		bp: 90,
+		type: "Ice",
+		category: "Special",
+		hasSecondaryEffect: true
+	},
+	"Glitzy Glow": {
+		bp: 90,
+		type: "Psychic",
+		category: "Special",
+		hasSecondaryEffect: true
+	},
+	"Pika Papow": {
+		bp: 102,
+		type: "Electric",
+		category: "Physical",
+		makesContact: true
+	},
+	"Sappy Seed": {
+		bp: 90,
+		type: "Grass",
+		category: "Physical",
+	},
+	"Sizzly Slide": {
+		bp: 90,
+		type: "Fire",
+		category: "Physical",
+		hasSecondaryEffect: true,
+		makesContact: true
+	},
+	"Sparkly Swirl": {
+		bp: 90,
+		type: "Fairy",
+		category: "Special",
+	},
+	"Splishy Splash": {
+		bp: 90,
+		type: "Water",
+		category: "Special",
+		hasSecondaryEffect: true,
+	},
+	"Veevee Volley": {
+		bp: 102,
+		type: "Normal",
+		category: "Physical",
+		makesContact: true
+	},
+	"Zippy Zap": {
+		bp: 50,
+		type: "Electric",
+		category: "Physical",
+		makesContact: true,
+		alwaysCrit: true
+	},
+});
+

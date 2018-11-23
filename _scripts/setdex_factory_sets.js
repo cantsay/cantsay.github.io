@@ -2917,8 +2917,8 @@ var SETDEX_FACTORY_SETS = {
 		"Belly Drum": {
 			"level": 50,
 			"evs": {
-				"hp": "4",
-				"at": "252",
+				"hp": "12",
+				"at": "244",
 				"sp": "252"
 			},
 			"nature": "Jolly",
