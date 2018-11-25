@@ -246,7 +246,7 @@ function saveCustom() {
 			"item": item,
 			"moves": moves,
 		};
-		
+
 		LGcustomFormat = {
 			"level": level,
 			"avs": {
@@ -268,7 +268,7 @@ function saveCustom() {
 			"nature": nature,
 			"moves": moves,
 		};
-		
+
 		LGMegaCustomFormat = {
 			"level": level,
 			"avs": {
@@ -291,7 +291,7 @@ function saveCustom() {
 			"item": item,
 			"moves": moves,
 		};
-		
+
 		if (rejectSet === true) {
 			alert("Set not saved: " + species);
 		} else {
@@ -306,12 +306,12 @@ function saveCustom() {
 					SETDEX_CUSTOM[species][spreadName] = LGMegaCustomFormat;
 				}
 			}
-			
+
 			$("#customMonOut").val(JSON.stringify(SETDEX_CUSTOM, null, 2));
 			if (rejectSet)
-				alert("Set not saved: " + species)
+				alert("Set not saved: " + species);
 			else
-			alert("Set saved: " + species);
+				alert("Set saved: " + species);
 		}
 	}
 }
