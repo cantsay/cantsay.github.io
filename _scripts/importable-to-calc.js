@@ -76,6 +76,8 @@ function saveCustom() {
 		var IVs = [31, 31, 31, 31, 31, 31];
 		var nature = "Serious";
 		var moves = [];
+		var LG = $("#LG").prop("checked");
+		var lgMega = false;
 
 		/*    Pokemon Showdown Export Format
 		0    Nickname (Species) @ Item
@@ -120,11 +122,16 @@ function saveCustom() {
 
 		if (lines[0].indexOf("@") != -1)
 			item = lines[0].substring(lines[0].indexOf("@") + 1).trim(); //item is always after @
-		ability = lines[1].substring(lines[1].indexOf(" ") + 1).trim(); //ability is always second
-		if (lines.length > 2) {
-			for (var i = 2; i < lines.length; ++i) {
+		if (LG && item.indexOf("ite") != -1 && item != "Eviolite" && item != "White Herb") {
+			lgMega = true;
+		}
+		if (lines.length > 1) {
+			for (var i = 1; i < lines.length; ++i) {
+				if (lines[i].indexOf("Ability") != -1) {
+					ability = lines[i].substring(lines[i].indexOf(" ") + 1).trim();
+				}
 				if (lines[i].indexOf("Level") != -1) {
-					level = lines[2].split(" ")[1].trim(); //level is sometimes third but uh not always
+					level = lines[i].split(" ")[1].trim(); //level is sometimes third but uh not always
 				}
 				if (lines[i].indexOf("EVs") != -1) { //If EVs are in this line
 					evList = lines[i].split(":")[1].split("/"); //splitting it into a list of " # Stat "
@@ -214,7 +221,7 @@ function saveCustom() {
 			rejectSet = true;
 			dispErrMsg = true;
 		}
-		if (dispErrMsg === true) alert("Please ensure that Power-up Punch is in the 4th moveslot, otherwise you may experience some errors in calcs!");
+		if (dispErrMsg === true) alert("Please ensure that " + species + "'s Power-up Punch is in the 4th moveslot, otherwise you may experience some errors in calcs!");
 
 		customFormat = {
 			"level": level,
@@ -239,13 +246,71 @@ function saveCustom() {
 			"item": item,
 			"moves": moves,
 		};
+		
+		LGcustomFormat = {
+			"level": level,
+			"avs": {
+				"hp": EVs[0],
+				"at": EVs[1],
+				"df": EVs[2],
+				"sa": EVs[3],
+				"sd": EVs[4],
+				"sp": EVs[5],
+			},
+			"ivs": {
+				"hp": IVs[0],
+				"at": IVs[1],
+				"df": IVs[2],
+				"sa": IVs[3],
+				"sd": IVs[4],
+				"sp": IVs[5],
+			},
+			"nature": nature,
+			"moves": moves,
+		};
+		
+		LGMegaCustomFormat = {
+			"level": level,
+			"avs": {
+				"hp": EVs[0],
+				"at": EVs[1],
+				"df": EVs[2],
+				"sa": EVs[3],
+				"sd": EVs[4],
+				"sp": EVs[5],
+			},
+			"ivs": {
+				"hp": IVs[0],
+				"at": IVs[1],
+				"df": IVs[2],
+				"sa": IVs[3],
+				"sd": IVs[4],
+				"sp": IVs[5],
+			},
+			"nature": nature,
+			"item": item,
+			"moves": moves,
+		};
+		
 		if (rejectSet === true) {
 			alert("Set not saved: " + species);
 		} else {
 			if (SETDEX_CUSTOM[species] == null)
 				SETDEX_CUSTOM[species] = {};
-			SETDEX_CUSTOM[species][spreadName] = customFormat;
+			if (!LG) {
+				SETDEX_CUSTOM[species][spreadName] = customFormat;
+			} else {
+				if (!lgMega) {
+					SETDEX_CUSTOM[species][spreadName] = LGcustomFormat;
+				} else {
+					SETDEX_CUSTOM[species][spreadName] = LGMegaCustomFormat;
+				}
+			}
+			
 			$("#customMonOut").val(JSON.stringify(SETDEX_CUSTOM, null, 2));
+			if (rejectSet)
+				alert("Set not saved: " + species)
+			else
 			alert("Set saved: " + species);
 		}
 	}

@@ -137,11 +137,13 @@ var savecustom = function () {
 
 		if (lines[0].indexOf("@") != -1)
 			item = lines[0].substring(lines[0].indexOf("@") + 1).trim(); //item is always after @
-		ability = lines[1].substring(lines[1].indexOf(" ") + 1).trim(); //ability is always second
-		if (lines.length > 2) {
-			for (var i = 2; i < lines.length; ++i) {
+		if (lines.length > 1) {
+			for (var i = 1; i < lines.length; ++i) {
+				if (lines[i].indexOf("Ability") != -1) {
+					ability = lines[i].substring(lines[i].indexOf(" ") + 1).trim();
+				}
 				if (lines[i].indexOf("Level") != -1) {
-					level = lines[2].split(" ")[1].trim(); //level is sometimes third but uh not always
+					level = lines[i].split(" ")[1].trim(); //level is sometimes third but uh not always
 				}
 				if (lines[i].indexOf("EVs") != -1) { //If EVs are in this line
 					evList = lines[i].split(":")[1].split("/"); //splitting it into a list of " # Stat "
@@ -236,6 +238,14 @@ var savecustom = function () {
 		customFormat = {
 			"level": level,
 			"evs": {
+				"hp": EVs[0],
+				"at": EVs[1],
+				"df": EVs[2],
+				"sa": EVs[3],
+				"sd": EVs[4],
+				"sp": EVs[5],
+			},
+			"avs": {
 				"hp": EVs[0],
 				"at": EVs[1],
 				"df": EVs[2],
