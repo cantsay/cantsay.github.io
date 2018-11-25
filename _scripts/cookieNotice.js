@@ -7,7 +7,9 @@ function checkCookie() {
 	}
 }
 
-checkCookie();
+$(document).ready(function () {
+	checkCookie();
+});
 
 $("#cookie-dismisser").click(function () {
 	createCookie("c", 1, 3000);
