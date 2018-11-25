@@ -1,6 +1,6 @@
 var SETDEX_LG_SETS = {
 	"Eevee-Starter": {
-		"Cleric": {
+		"OU Cleric": {
 			"level": 50,
 			"nature": "Jolly",
 			"item": "",
@@ -11,7 +11,7 @@ var SETDEX_LG_SETS = {
 				"Buzzy Buzz"
 			]
 		},
-		"Screens Supporter": {
+		"OU Screens Supporter": {
 			"level": 50,
 			"nature": "Jolly",
 			"item": "",
@@ -24,7 +24,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	  "Mew": {
-		"Stallbreaker": {
+		"OU Stallbreaker": {
 			"level": 50,
 			"ivs": {
 				"at": 0,
@@ -39,7 +39,7 @@ var SETDEX_LG_SETS = {
 				"Flamethrower"
 			]
 		},
-		"Phazer": {
+		"OU Phazer": {
 			"level": 50,
 			"nature": "Impish",
 			"item": "",
@@ -50,7 +50,7 @@ var SETDEX_LG_SETS = {
 				"Will-O-Wisp"
 			]
 		},
-		"Set Up Sweeper": {
+		"OU Set Up Sweeper": {
 			"level": 50,
 			"ivs": {
 				"at": 0,
@@ -66,7 +66,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Aerodactyl": {
-		"Mega Rocks Setter": {
+		"OU Mega Rocks Setter": {
 			"level": 50,
 			"nature": "Jolly",
 			"item": "Aerodactylite",
@@ -79,7 +79,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Alakazam": {
-		"Mega Set Up Sweeper": {
+		"OU Mega Set Up Sweeper": {
 			"level": 50,
 			"ivs": {
 				"at": 0,
@@ -93,7 +93,7 @@ var SETDEX_LG_SETS = {
 				"Psychic"
 			]
 		},
-		"Mega Revenge Killer": {
+		"OU Mega Revenge Killer": {
 			"level": 50,
 			"ivs": {
 				"at": 0,
@@ -109,7 +109,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Melmetal": {
-		"Tank": {
+		"OU Tank": {
 			"level": 50,
 			"nature": "Adamant",
 			"item": "",
@@ -122,7 +122,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Muk-Alola": {
-		"Tank": {
+		"OU Tank": {
 			"level": 50,
 			"nature": "Adamant",
 			"item": "",
@@ -135,7 +135,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Zapdos": {
-		"Pivot": {
+		"OU Pivot": {
 			"level": 50,
 			"nature": "Timid",
 			"ability": "Pressure",
@@ -147,7 +147,7 @@ var SETDEX_LG_SETS = {
 				"U-turn"
 			]
 		},
-		"Sweeper": {
+		"OU Sweeper": {
 			"level": 50,
 			"nature": "Naive",
 			"ability": "Pressure",
@@ -159,7 +159,7 @@ var SETDEX_LG_SETS = {
 				"Roost"
 			]
 		},
-		"Sub Toxic": {
+		"OU Sub Toxic": {
 			"level": 50,
 			"nature": "Timid",
 			"ability": "Pressure",
@@ -173,7 +173,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Gyarados": {
-		"Mega Tank": {
+		"OU Mega Tank": {
 			"level": 50,
 			"nature": "Careful",
 			"item": "Gyaradosite",
@@ -184,7 +184,7 @@ var SETDEX_LG_SETS = {
 				"Rest"
 			]
 		},
-		"Mega Attacker": {
+		"OU Mega Attacker": {
 			"level": 50,
 			"nature": "Jolly",
 			"item": "Gyaradosite",
@@ -197,7 +197,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Nidoqueen": {
-		"Stealth Rock Setter": {
+		"OU Rocks Setter": {
 			"level": 50,
 			"nature": "Sassy",
 			"item": "",
@@ -210,7 +210,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Rhydon": {
-		"Rocks Setter": {
+		"OU Rocks Setter": {
 			"level": 50,
 			"nature": "Adamant",
 			"item": "",
@@ -223,7 +223,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Starmie": {
-		"Special Attacker": {
+		"OU Special Attacker": {
 			"level": 50,
 			"ivs": {
 				"at": 0,
@@ -239,7 +239,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Venomoth": {
-		"Set Up Sweeper": {
+		"OU Set Up Sweeper": {
 			"level": 50,
 			"ivs": {
 				"at": 0,
@@ -255,7 +255,7 @@ var SETDEX_LG_SETS = {
 		}
 	},
 	"Venusaur": {
-		"Mega Tank": {
+		"OU Mega Tank": {
 			"level": 50,
 			"nature": "Calm",
 			"item": "Venusaurite",
@@ -266,7 +266,7 @@ var SETDEX_LG_SETS = {
 				"Toxic"
 			]
 		},
-		"Mega Mixed Attacker": {
+		"OU Mega Mixed Attacker": {
 			"level": 50,
 			"nature": "Naive",
 			"item": "Venusaurite",
