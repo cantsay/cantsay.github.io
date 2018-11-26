@@ -30,7 +30,20 @@ function clampIntRange(num, min, max) {
 }
 
 // auto-calc stats and current HP on change
-$(".level").keyup(function () {
+$("#levelswitch").change(function() {
+	if(this.checked) {
+		$("#p1").find(".level").val(50);
+		$("#p2").find(".level").val(50);
+		$(".level").change();
+	} else {
+		$("#p1").find(".level").val(100);
+		$("#p2").find(".level").val(100);
+		$(".level").change();
+	}
+});
+		
+
+$(".level").bind("keyup change", function () {
 	var poke = $(this).closest(".poke-info");
 	calcHP(poke);
 	calcStats(poke);
@@ -321,7 +334,7 @@ $(".move-selector").change(function () {
 });
 
 // auto-update set details on select
-$(".set-selector").change(function () {
+$(".set-selector, #levelswitch").bind("change click keyup keydown", function () {
 	var fullSetName = $(this).val();
 	var pokemonName, setName;
 	var Lv100 = !$("#levelswitch").is(":checked");
