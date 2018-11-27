@@ -30,8 +30,8 @@ function clampIntRange(num, min, max) {
 }
 
 // auto-calc stats and current HP on change
-$("#levelswitch").change(function() {
-	if(this.checked) {
+$("#levelswitch").change(function () {
+	if (this.checked) {
 		$("#p1").find(".level").val(50);
 		$("#p2").find(".level").val(50);
 		$(".level").change();
@@ -41,7 +41,6 @@ $("#levelswitch").change(function() {
 		$(".level").change();
 	}
 });
-		
 
 $(".level").bind("keyup change", function () {
 	var poke = $(this).closest(".poke-info");
