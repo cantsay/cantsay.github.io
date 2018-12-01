@@ -869,6 +869,13 @@ delete MOVES_GSC["Acid"];
 delete MOVES_GSC["Mega Drain"];
 
 var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
+	"Mega Drain": {
+		bp: 40,
+		type: "Grass",
+		category: "Special",
+		givesHealth: true,
+		percentHealed: 0.5
+	},
 	"Aerial Ace": {
 		bp: 60,
 		type: "Flying",
