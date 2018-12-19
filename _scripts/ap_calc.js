@@ -1064,6 +1064,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
+		createCookie("selectedGen", 5, 3000);
 		break;
 	case 6:
 		pokedex = POKEDEX_XY;
@@ -1076,6 +1077,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
+		createCookie("selectedGen", 6, 3000);
 		break;
 	case 7:
 		pokedex = POKEDEX_SM;
@@ -1088,6 +1090,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
+		createCookie("selectedGen", 7, 3000);
 		break;
 	case 20:
 		pokedex = POKEDEX_SM;
@@ -1100,6 +1103,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
+		createCookie("selectedGen", 20, 3000);
 		break;
 	case 21:
 		pokedex = POKEDEX_SM;
@@ -1112,6 +1116,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
+		createCookie("selectedGen", 21, 3000);
 		break;
 	case 22:
 		pokedex = POKEDEX_LG;
@@ -1124,6 +1129,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_LG;
 		calcHP = CALC_HP_LG;
 		calcStat = CALC_STAT_LG;
+		createCookie("selectedGen", 22, 3000);
 	}
 	clearField();
 	$(".gen-specific.g" + gen).show();
@@ -1237,8 +1243,47 @@ function getSelectOptions(arr, sort, defaultIdx) {
 }
 
 $(document).ready(function () {
-	$("#gen7").prop("checked", true);
-	$("#gen7").change();
+	if (readCookie("selectedGen") != null) {
+		switch (readCookie("selectedGen") + "") {
+
+		case "5":
+			$("#gen5").prop("checked", true);
+			$("#gen5").change();
+			break;
+
+		case "6":
+			$("#gen6").prop("checked", true);
+			$("#gen6").change();
+			break;
+
+		case "7":
+			$("#gen7").prop("checked", true);
+			$("#gen7").change();
+			break;
+
+		case "20":
+			$("#gen20").prop("checked", true);
+			$("#gen20").change();
+			break;
+
+		case "21":
+			$("#gen21").prop("checked", true);
+			$("#gen21").change();
+			break;
+
+		case "22":
+			$("#gen22").prop("checked", true);
+			$("#gen22").change();
+			break;
+
+		default:
+			$("#gen7").prop("checked", true);
+			$("#gen7").change();
+		}
+	} else {
+		$("#gen7").prop("checked", true);
+		$("#gen7").change();
+	}
 	$(".terrain-trigger").bind("change keyup", getTerrainEffects);
 	$(".calc-trigger").bind("change keyup", calculate);
 	$(".set-selector").select2({
