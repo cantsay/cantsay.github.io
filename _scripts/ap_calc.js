@@ -949,6 +949,7 @@ function getZMoveName(moveName, moveType, item) {
 
 function Field() {
 	var format = $("input:radio[name='format']:checked").val();
+	createCookie("selectedFormat", format.toLowerCase(), 3000);
 	var isGravity = $("#gravity").prop("checked");
 	var isSR = [$("#srL").prop("checked"), $("#srR").prop("checked")];
 	var isProtect = [$("#protectL").prop("checked"), $("#protectR").prop("checked")];
@@ -1149,7 +1150,23 @@ $(".gen").change(function () {
 });
 
 function clearField() {
-	$("#singles").prop("checked", true);
+	if (readCookie("selectedFormat") != null) {
+		switch (readCookie("selectedFormat") + "") {
+
+		case "singles":
+			$("#singles").prop("checked", true);
+			break;
+
+		case "doubles":
+			$("#doubles").prop("checked", true);
+			break;
+
+		default:
+			$("#singles").prop("checked", true);
+		}
+	} else {
+		$("#singles").prop("checked", true);
+	}
 	$("#clear").prop("checked", true);
 	$("#gscClear").prop("checked", true);
 	$("#gravity").prop("checked", false);
