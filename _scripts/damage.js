@@ -116,6 +116,7 @@ function getDamageResult(attacker, defender, move, field) {
 	var isPixilate = attacker.ability === "Pixilate" && move.type === "Normal";
 	var isRefrigerate = attacker.ability === "Refrigerate" && move.type === "Normal";
 	var isGalvanize = attacker.ability === "Galvanize" && move.type === "Normal";
+	var isNormalize = attacker.ability === "Normalize" && (["Hidden Power", "Weather Ball", "Natural Gift", "Judgment", "Techno Blast"].indexOf(move.name) === -1) && !move.isZ;
 	if (!move.isZ) { //Z-Moves don't receive -ate type changes
 		if (isAerilate) {
 			move.type = "Flying";
@@ -373,7 +374,7 @@ function getDamageResult(attacker, defender, move, field) {
 	if (gen == 6 && (isAerilate || isPixilate || isRefrigerate || isGalvanize)) {
 		bpMods.push(0x14CD);
 		description.attackerAbility = attacker.ability;
-	} else if (gen >= 7 && !move.isZ && (isAerilate || isPixilate || isRefrigerate || isGalvanize)) {
+	} else if (gen >= 7 && !move.isZ && (isAerilate || isPixilate || isRefrigerate || isNormalize || isGalvanize)) {
 		bpMods.push(0x1333);
 		description.attackerAbility = attacker.ability;
 	} else if (attacker.ability === "Mega Launcher" && move.isPulse ||

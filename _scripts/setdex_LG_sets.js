@@ -63,6 +63,16 @@ var SETDEX_LG_SETS = {
 				"Flamethrower",
 				"Roost"
 			]
+		},
+		"OU Chansey Lure": {
+			"level": "50",
+			"nature": "Quiet",
+			"moves": [
+				"Psychic",
+				"Brick Break",
+				"Flamethrower",
+				"Roost"
+			]
 		}
 	},
 	"Aerodactyl": {
