@@ -672,8 +672,7 @@ function getDamageResult(attacker, defender, move, field) {
 		if (applyBurn) {
 			damage[i] = Math.floor(damage[i] / 2);
 		}
-		damage[i] = Math.max(1, damage[i]);
-		damage[i] = pokeRound(damage[i] * finalMod / 0x1000);
+		damage[i] = Math.max(1, pokeRound(damage[i] * finalMod / 0x1000));
 		if (attacker.ability === "Parental Bond" && move.hits === 1 && (field.format === "Singles" || !move.isSpread)) {
 			for (j = 0; j < 16; j++) {
 				pbDamage[16 * i + j] = damage[i] + childDamage[j];
