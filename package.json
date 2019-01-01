@@ -3,7 +3,7 @@
   "private": false,
   "version": "1.0.0",
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint . --cache"
   },
   "homepage": "https://cantsay.github.io/",
   "repository": {

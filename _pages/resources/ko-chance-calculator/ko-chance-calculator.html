@@ -1,0 +1,79 @@
+---
+layout: default-min
+title: KO Chance Calculator
+permalink: "/resources/ko-chance-calculator/"
+---
+
+<div class="wrapper">
+	<style>
+		.setInput {
+			width: 600px
+		}
+		.setTInput {
+			width: 495px
+		}
+		.pm-btn {
+			padding: 0px;
+			width: 3em;
+			margin-left: 0.1em;
+		 	display: inline-block;
+		}
+	</style>
+	<div>
+		<span class="title-text">KO Chance Calculator</span>
+		<p style="display:inline;"><a href="https://github.com/DaWoblefet/KOChanceCalculator/">Originally by DaWoblefet and Stats</a>, Web implementation by LegoFigure11</p>
+		<div>
+			<hr />
+			<div>
+				HP Stat:
+				<input id="HpStat" type="text"></input>
+			</div>
+			<br />
+			<div>
+				Set 1:
+				<input class="setInput" id="set1" type="text"></input>
+			</div>
+			<div>
+				Set 2:
+				<input class="setInput" id="set2" type="text"></input>
+			</div>
+			<div>
+				Set 3:
+				<input class="setInput" id="set3" type="text"></input>
+			</div>
+			<div>
+				Set 4:
+				<input class="setInput" id="set4" type="text"></input>
+			</div>
+			<div>
+				Set 5:
+				<input class="setInput" id="set5" type="text"></input>
+			</div>
+			<br />
+			<!-- Buttons to allow for more than 5 inputs - INCOMPLETE -->
+			<!--<div id="buttons">
+				<button class="btn pm-btn crit-btn">+</button>&nbsp;&nbsp;/&nbsp;<button class="btn pm-btn crit-btn">-</button>
+			</div>
+			<br />-->
+			<button class="btn btn-xxwide" id="calculate">Calculate!</button>
+			<br />
+			<br />
+			<table>
+				<tr>
+					<td>Percent of the time:</td>
+					<td><input class="setTInput" id="percentOut" type="text"></input></td>
+				</tr>
+				<tr>
+					<td>Raw Fraction:</td>
+					<td><input class="setTInput" id="rawFractOut" type="text"></input></td>
+				</tr>
+				<tr>
+					<td>Simplified Fraction:</td>
+					<td><input class="setTInput" id="simpFractOut" type="text"></input></td>
+				</tr>
+			</table>
+			<br />
+			<br />
+			<a href="../../">Back to main calc</a>
+		</div>
+		<script type="text/javascript" src="../../_scripts/ko-chance-calculator.js"></script>
