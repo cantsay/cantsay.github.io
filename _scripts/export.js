@@ -86,6 +86,86 @@ function exportToPsFormat(pokeInfo) {
 	document.execCommand("Copy");
 }
 
+function exportToPsFormatLG(pokeInfo) {
+	var pokemon = new Pokemon(pokeInfo);
+	var finalText = "";
+	var avSum = 0;
+	var ivSum = 0;
+	var name = pokemon.name;
+	if (name.indexOf("Mega ") != -1) {
+		var speciesName = name.substring(0, name.indexOf("Mega") - 1) + name.substring(name.indexOf("Mega") + 4, name.length);
+	} else if (name.indexOf("-Blade") != -1) {
+		var speciesName = name.substring(0, name.indexOf("-")) + name.substring(name.indexOf("-") + 6, name.length);
+	} else if (name.indexOf("-Both") != -1) {
+		var speciesName = name.substring(0, name.indexOf("-")) + name.substring(name.indexOf("-") + 5, name.length);
+	} else if (name.indexOf("Primal ") != -1) {
+		var speciesName = name.substring(0, name.indexOf("Primal") - 1) + name.substring(name.indexOf("Primal") + 6, name.length);
+	} else {
+		var speciesName = name;
+	}
+
+	finalText = speciesName + "\n";
+	finalText += pokemon.nature && gen > 2 ? pokemon.nature + " Nature" + "\n" : "";
+	finalText += "EVs: ";
+	var AVs_Array = [];
+	if (pokemon.HPAVs && pokemon.HPAVs > 0) {
+		avSum += pokemon.HPAVs;
+		AVs_Array.push(pokemon.HPAVs + " HP");
+	}
+	for (stat in pokemon.avs) {
+		if (pokemon.avs[stat]) {
+			avSum += pokemon.avs[stat];
+			AVs_Array.push(pokemon.avs[stat] + " " + toSmogonStat(stat));
+		}
+	}
+
+	var ivArray = [];
+	var IVs_Array = [];
+	if (pokemon.HPIVs != -1) {
+		ivSum += pokemon.HPIVs;
+		//IVs_Array.push(pokemon.HPIVs + " HP");
+		if (pokemon.HPIVs != 31) {
+			ivArray.push(pokemon.HPIVs + " HP");
+		}
+	}
+	for (stat in pokemon.ivs) {
+		if (pokemon.ivs[stat]) {
+			ivSum += pokemon.ivs[stat];
+		}
+		if (pokemon.ivs[stat] < 31) {
+			ivArray.push(pokemon.ivs[stat] + " " + toSmogonStat(stat));
+		}
+	}
+
+	for (var i = 0; i < ivArray.length - 2; i++) {
+		IVs_Array.push(ivArray[i]);
+	}
+
+	finalText += serialize(AVs_Array, " / ");
+	finalText += "\n";
+
+	if (ivSum < 186) {
+		finalText += "IVs: ";
+		finalText += serialize(IVs_Array, " / ");
+		finalText += "\n";
+	}
+
+	var movesArray = [];
+	for (i = 0; i < 4; i++) {
+		var moveName = pokemon.moves[i].name;
+		if (moveName !== "(No Move)") {
+			finalText += "- " + moveName + "\n";
+		}
+	}
+	finalText = finalText.trim();
+
+	document.getElementById("customMon").innerHTML = finalText;
+
+	var copyText = document.getElementById("customMon");
+	copyText.select();
+	document.execCommand("Copy");
+}
+
 function serialize(array, separator) {
 	var text = "";
 	for (i = 0; i < array.length; i++) {

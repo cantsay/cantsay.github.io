@@ -649,12 +649,14 @@ title: cantsaycalc BETA
 				</div>
 			</div>
 			<div>&nbsp;</div>
-			<div class="btn-group gen-specific g5 g6 g7 g20 g21">
-				<button class="left" type="button" id="exportL" onclick="exportToPsFormat($('#p1'))">Export Set</button>
-				<button class="right" type="button" id="exportR" onclick="exportToPsFormat($('#p2'))">Export Set</button>
+			<div class="btn-group gen-specific g5 g6 g7 g20 g21 g22">
+				<button class="left gen-specific g5 g6 g7 g20 g21" type="button" id="exportL" onclick="exportToPsFormat($('#p1'))">Export Set</button>
+				<button class="right gen-specific g5 g6 g7 g20 g21" type="button" id="exportR" onclick="exportToPsFormat($('#p2'))">Export Set</button>
+				<button class="left gen-specific g22" type="button" id="exportL" onclick="exportToPsFormatLG($('#p1'))">Export Set</button>
+				<button class="right gen-specific g22" type="button" id="exportR" onclick="exportToPsFormatLG($('#p2'))">Export Set</button>
 			</div>
 			<!--squirrelboy1225's HTML additions are right here-->
-			<span class="gen-specific g5 g6 g7 g20 g21">
+			<span class="gen-specific g5 g6 g7 g20 g21 g22">
 				<p>Please enter your custom set(s) here.</p>
 				Spread Name: <input type="text" id="spreadName" style="width: 60%" value="My Custom Set(s)">
 				<br>
@@ -1079,7 +1081,7 @@ title: cantsaycalc BETA
 	<script type="text/javascript" src="_scripts/setdex_gen5.js"></script>
 	<script type="text/javascript" src="_scripts/setdex_gen6.js" id="XYScript"></script>
 	<script type="text/javascript" src="_scripts/setdex_gen7.js" id="SMScript"></script>
-	<script type="text/javascript" src="_scripts/setdex_LG.js"></script>
+	<script type="text/javascript" src="_scripts/setdex_LG.js" id="LGScript"></script>
 	<script type="text/javascript" src="_scripts/setdex_factory.js" id="BSSFScript"></script>
 	<script type="text/javascript" src="_scripts/stat_data.js"></script>
 	<script type="text/javascript" src="_scripts/type_data.js"></script>
