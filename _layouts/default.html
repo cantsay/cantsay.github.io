@@ -41,60 +41,8 @@ title: cantsaycalc BETA
 </head>
 
 <body>
-	<div class="header">
-		<div class="wrapper">
-			<span class="header-logo"><a href="https://www.smogon.com/forums/members/158401/"><img src="/_images/calcheader.png" alt="view my profile" height="50px" /></a></span><span class="nav"><a href="https://www.smogon.com/forums/forums/265/">Forum</a>
-				| <a href="https://play.pokemonshowdown.com/battlespot">Showdown Chatroom</a> | <a href="https://discord.gg/TXmgYKu">Discord Channel</a> | <a href="https://www.smogon.com/forums/threads/3641523/">SuMo BSS Speed Tiers</a> | <a href="https://boe2.github.io/bsus.html">Usage
-					Stats</a> | <a href="https://github.com/cantsay/cantsay.github.io">GitHub Page</a> | <a href="https://jake-white.github.io/VGC-Damage-Calculator/">Original VGC Calculator</a></span><span class="themeselect">Theme: <select id="theme" name="thch"
-				  onchange="changetheme()">
-					<option value="aegislash">Aegislash</option>
-					<option value="legacy">Legacy</option>
-					<option value="dark">Dark</option>
-					<option value="lgpe">LGPE</option>
-					<option value="volcarona">Volcarona</option>
-				</select></span>
-			<div style="clear:both"></div>
 
-			<script>
-				if (readCookie("selectedItem") != null) {
-					var selectedItem = readCookie("selectedItem");
-					var select = document.getElementById("theme");
-					select.value = selectedItem;
-				}
-
-				if (document.getElementById("theme") != null) {
-					var drop = document.getElementById("theme").value;
-
-					if (drop === "aegislash") {
-						loadjscssfile("/_css/ap_calc.css", "css");
-						loadjscssfile("/_css/nb_calc.css", "css");
-						loadjscssfile("/_css/select2.css", "css");
-					} else if (drop === "dark") {
-						loadjscssfile("/_css/dark_ap_calc.css", "css");
-						loadjscssfile("/_css/dark_nb_calc.css", "css");
-						loadjscssfile("/_css/select2.css", "css");
-					} else if (drop === "legacy") {
-						loadjscssfile("/_css/legacy_ap_calc.css", "css");
-						loadjscssfile("/_css/legacy_nb_calc.css", "css");
-						loadjscssfile("/_css/select2.css", "css");
-					} else if (drop === "volcarona") {
-						loadjscssfile("/_css/volc_ap_calc.css", "css");
-						loadjscssfile("/_css/volc_nb_calc.css", "css");
-						loadjscssfile("/_css/select2.css", "css");
-					} else if (drop === "lgpe") {
-						loadjscssfile("/_css/lgpe_ap_calc.css", "css");
-						loadjscssfile("/_css/lgpe_nb_calc.css", "css");
-						loadjscssfile("/_css/select2.css", "css");
-					}
-				} else {
-					loadjscssfile("/_css/ap_calc.css", "css");
-					loadjscssfile("/_css/nb_calc.css", "css");
-					loadjscssfile("/_css/select2.css", "css");
-				}
-			</script>
-
-		</div>
-	</div>
+	{% include header_bar.html %}
 
 	<div class="container">
 
