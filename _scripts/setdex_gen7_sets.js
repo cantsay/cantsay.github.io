@@ -1842,6 +1842,26 @@ var SETDEX_GEN7_SETS = {
 				"Hydro Pump",
 				"Extrasensory"
 			]
+		},
+		"Torrent Waterium Z": {
+			"level": "50",
+			"evs": {
+				"hp": "4",
+				"sa": "252",
+				"sp": "252"
+			},
+			"ivs": {
+				"at": "0"
+			},
+			"nature": "Timid",
+			"ability": "Torrent",
+			"item": "Waterium Z",
+			"moves": [
+				"Hydro Cannon",
+				"Scald",
+				"Dark Pulse",
+				"Water Shuriken"
+			]
 		}
 	},
 	"Groudon": {
