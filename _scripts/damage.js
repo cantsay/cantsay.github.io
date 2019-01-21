@@ -308,7 +308,7 @@ function getDamageResult(attacker, defender, move, field) {
 		description.isBattery = true;
 	}
 
-	if (field.isMinimized && (move.name === "Stomp" || move.name === "Heavy Slam")) {
+	if (field.isMinimized && (move.name === "Stomp" || move.name === "Heavy Slam" || move.name === "Dragon Rush" || move.name === "Body Slam")) {
 		bpMods.push(0x2000);
 		description.isMinimized = true;
 	}
