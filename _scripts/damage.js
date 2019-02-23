@@ -112,6 +112,12 @@ function getDamageResult(attacker, defender, move, field) {
 		}
 		break;
 
+	case "Techno Blast":
+		if (attacker.item.indexOf("Drive") !== -1) {
+			move.type = getTechnoBlast(attacker.item);
+		}
+		break;
+
 	case "Natural Gift":
 		if (attacker.item.indexOf("Berry") !== -1) {
 			var gift = getNaturalGift(attacker.item);
@@ -132,11 +138,11 @@ function getDamageResult(attacker, defender, move, field) {
 		break;
 	}
 
-	var isAerilate = attacker.ability === "Aerilate" && move.type === "Normal";
-	var isPixilate = attacker.ability === "Pixilate" && move.type === "Normal";
-	var isRefrigerate = attacker.ability === "Refrigerate" && move.type === "Normal";
-	var isGalvanize = attacker.ability === "Galvanize" && move.type === "Normal";
-	var isNormalize = attacker.ability === "Normalize" && (["Hidden Power", "Weather Ball", "Natural Gift", "Judgment", "Techno Blast"].indexOf(move.name) === -1) && !move.isZ;
+	var isAerilate = attacker.ability === "Aerilate" && move.type === "Normal" && move.name !== "Revelation Dance";
+	var isPixilate = attacker.ability === "Pixilate" && move.type === "Normal" && move.name !== "Revelation Dance";
+	var isRefrigerate = attacker.ability === "Refrigerate" && move.type === "Normal" && move.name !== "Revelation Dance";
+	var isGalvanize = attacker.ability === "Galvanize" && move.type === "Normal" && move.name !== "Revelation Dance";
+	var isNormalize = attacker.ability === "Normalize" && (["Hidden Power", "Weather Ball", "Natural Gift", "Judgment", "Techno Blast", "Revelation Dance", "Multi-Attack"].indexOf(move.name) === -1) && !move.isZ;
 	if (!move.isZ) { //Z-Moves don't receive -ate type changes
 		if (isAerilate) {
 			move.type = "Flying";

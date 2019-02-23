@@ -234,6 +234,21 @@ var ITEMS_SM = ITEMS_XY.concat([
 	"Kommonium Z"
 ]);
 
+function getTechnoBlast(item) {
+	switch (item) {
+	case "Burn Drive":
+		return "Fire";
+	case "Chill Drive":
+		return "Ice";
+	case "Douse Drive":
+		return "Water";
+	case "Shock Drive":
+		return "Electric";
+	default:
+		return "";
+	}
+}
+
 function getItemBoostType(item) {
 	switch (item) {
 	case "Draco Plate":
