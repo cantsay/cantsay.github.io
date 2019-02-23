@@ -126,6 +126,12 @@ function getDamageResult(attacker, defender, move, field) {
 	case "Nature Power":
 		move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : move.type = field.terrain === "Psychic" ? "Psychic" : "Normal";
 		break;
+
+	case "Revelation Dance":
+		if (attacker.name.indexOf("Oricorio") !== -1) {
+			move.type = attacker.type1;
+		}
+		break;
 	}
 
 	var isAerilate = attacker.ability === "Aerilate" && move.type === "Normal";
