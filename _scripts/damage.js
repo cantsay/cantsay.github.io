@@ -89,7 +89,8 @@ function getDamageResult(attacker, defender, move, field) {
 
 	var isCritical = move.isCrit && ["Battle Armor", "Shell Armor"].indexOf(defAbility) === -1;
 
-	if (move.name === "Weather Ball") {
+	switch (move.name) {
+	case "Weather Ball":
 		move.type = field.weather.indexOf("Sun") > -1 ? "Fire" :
 			field.weather.indexOf("Rain") > -1 ? "Water" :
 				field.weather === "Sand" ? "Rock" :
@@ -97,19 +98,34 @@ function getDamageResult(attacker, defender, move, field) {
 						"Normal";
 		description.weather = field.weather;
 		description.moveType = move.type;
-	} else if (move.name === "Judgment" && attacker.item.indexOf("Plate") !== -1) {
-		move.type = getItemBoostType(attacker.item);
-	} else if (move.name === "Multi Attack" && attacker.item.indexOf("Memory") !== -1) {
-		move.type = getMultiAttack(attacker.item);
-	} else if (move.name === "Natural Gift" && attacker.item.indexOf("Berry") !== -1) {
-		var gift = getNaturalGift(attacker.item);
-		move.type = gift.t;
-		move.bp = gift.p;
-		description.attackerItem = attacker.item;
-		description.moveBP = move.bp;
-		description.moveType = move.type;
-	} else if (move.name === "Nature Power") {
+		break;
+
+	case "Judgment":
+		if (attacker.item.indexOf("Plate") !== -1) {
+			move.type = getItemBoostType(attacker.item);
+		}
+		break;
+
+	case "Multi-Attack":
+		if (attacker.item.indexOf("Memory") !== -1) {
+			move.type = getMultiAttack(attacker.item);
+		}
+		break;
+
+	case "Natural Gift":
+		if (attacker.item.indexOf("Berry") !== -1) {
+			var gift = getNaturalGift(attacker.item);
+			move.type = gift.t;
+			move.bp = gift.p;
+			description.attackerItem = attacker.item;
+			description.moveBP = move.bp;
+			description.moveType = move.type;
+		}
+		break;
+
+	case "Nature Power":
 		move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : move.type = field.terrain === "Psychic" ? "Psychic" : "Normal";
+		break;
 	}
 
 	var isAerilate = attacker.ability === "Aerilate" && move.type === "Normal";
