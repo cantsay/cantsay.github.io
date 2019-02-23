@@ -128,9 +128,7 @@ function getDamageResult(attacker, defender, move, field) {
 		break;
 
 	case "Revelation Dance":
-		if (attacker.name.indexOf("Oricorio") !== -1) {
-			move.type = attacker.type1;
-		}
+		move.type = attacker.type1;
 		break;
 	}
 
