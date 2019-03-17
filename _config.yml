@@ -2,10 +2,7 @@ include: ['_pages', '_css', '_scripts', '_images']
 
 title: Battle Spot Damage Calculator
 
-github:
-  repository_url: https://github.com/cantsay/cantsay.github.io/
-  owner_name: cant say
-  owner_url: https://github.com/cantsay/
+github: [metadata]
   
 url: "https://cantsay.github.io"
   
