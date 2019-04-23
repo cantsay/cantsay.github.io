@@ -98,7 +98,7 @@ var SETDEX_LG_SETS = {
 			"item": "Alakazite",
 			"moves": [
 				"Dazzling Gleam",
-				"Recover",
+				"Shadow Ball",
 				"Calm Mind",
 				"Psychic"
 			]

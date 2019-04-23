@@ -235,7 +235,8 @@ var ITEMS_SM = ITEMS_XY.concat([
 	"Solganium Z",
 	"Lunalium Z",
 	"Lycanium Z",
-	"Kommonium Z"
+	"Kommonium Z",
+	"Marshadium Z"
 ]);
 
 function getTechnoBlast(item) {
