@@ -136,7 +136,7 @@ var savecustom = function () {
 				species = showdownFormes[i][1];
 		}
 
-		if (species.toLowerCase.includes("vivillon")) {
+		if (species.toLowerCase().includes("vivillon")) {
 			species = "Vivillon";
 		}
 
