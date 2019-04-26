@@ -136,6 +136,10 @@ var savecustom = function () {
 				species = showdownFormes[i][1];
 		}
 
+		if (species.toLowerCase.includes("vivillon")) {
+			species = "Vivillon";
+		}
+
 		if (lines[0].indexOf("@") != -1)
 			item = lines[0].substring(lines[0].indexOf("@") + 1).trim(); //item is always after @
 		if (lines.length > 1) {
