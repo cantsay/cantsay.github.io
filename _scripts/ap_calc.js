@@ -322,6 +322,15 @@ $(".move-selector").change(function () {
 	moveGroupObj.children(".move-bp").val(move.bp);
 	moveGroupObj.children(".move-type").val(move.type);
 	moveGroupObj.children(".move-cat").val(move.category);
+	if (move.acc) {
+		if (move.isZ || move.acc === 101) {
+			moveGroupObj.children(".move-acc").val(" - ");
+		} else {
+			moveGroupObj.children(".move-acc").val(move.acc);
+		}
+	} else {
+		moveGroupObj.children(".move-acc").val(" - ");
+	}
 	moveGroupObj.children(".move-crit").prop("checked", move.alwaysCrit === true);
 	if (move.isMultiHit) {
 		moveGroupObj.children(".move-hits").show();
@@ -846,6 +855,7 @@ function Pokemon(pokeInfo) {
 				type: defaultDetails.type,
 				category: defaultDetails.category,
 				isCrit: !!defaultDetails.alwaysCrit,
+				acc: defaultDetails.acc,
 				hits: defaultDetails.isMultiHit ? this.ability === "Skill Link" || this.item === "Grip Claw" ? 5 : 3 : defaultDetails.isTwoHit ? 2 : 1,
 				usedTimes: 1
 			}));
