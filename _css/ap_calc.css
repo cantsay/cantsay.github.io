@@ -49,7 +49,7 @@ th {
 }
 
 .poke-info {
-  width: 31em;
+  width: 28em;
 }
 
 .field-info {
@@ -219,7 +219,7 @@ select.toxic-counter {
   width: 4.5em;
 }
 
-.move-selector, .move-bp, .move-type, .move-cat, .move-hits, .move-acc {
+.move-selector, .move-bp, .move-type, .move-cat, .move-hits {
   font-size: 0.9em;
 }
 
