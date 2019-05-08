@@ -24,13 +24,14 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 			var evaMods = defender.boosts.es;
 			if (move.name === "Chip Away" || move.name === "Sacred Sword" || attacker.ability === "Unaware") {
 				evaMods = 0;
+				if (attacker.ability === "Unaware") {
+					accMods = 1; //Bulbapedia says that it ignores changes to accuracy, not specifically drops
+				}
 			}
 			var stages = getStages(accMods + (evaMods * -1));
-			//console.log(stages)
 			accuracyText = Math.min(accuracyText * stages /* * other mods */, 100);
 		}
 	}
-	//console.log(accuracyText)
 	if (damage[damage.length - 1] === 0) {
 		if (field.weather === "Harsh Sun" && move.type === "Water") {
 			return "the Water-Type attack evaporated in the harsh sunlight";
@@ -478,6 +479,6 @@ function getStages(stages) {
 	if (stages > 6) stages = 6;
 	if (stages < -6) stages = -6;
 	if (stages >= 0) stages = (parseInt(stages) + 3) / 3;
-  if (stages < 0) stages = 3 / (parseInt(stages * -1) + 3);
+	if (stages < 0) stages = 3 / (parseInt(stages * -1) + 3);
 	return stages;
 }
