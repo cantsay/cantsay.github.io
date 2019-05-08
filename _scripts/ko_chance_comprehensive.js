@@ -2,7 +2,6 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	if (isNaN(damage[0])) {
 		return "something broke; please tell cant say or LegoFigure11";
 	}
-
 	var accuracyText = "";
 	var ignoreAccMods = false;
 	if (move.acc || move.isZ) {
@@ -11,8 +10,13 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 			ignoreAccMods = true;
 		}
 		if (move.isMLG) {
-			accuracyText = 30;
-			ignoreAccMods = true;
+			if (move.name === "Sheer Cold" && attacker.type1 !== "Ice" && attacker.type2 !== "Ice") {
+				accuracyText = 20;
+				ignoreAccMods = true;
+			} else {
+				accuracyText = 30;
+				ignoreAccMods = true;
+			}
 		}
 		if (!ignoreAccMods) {
 			accuracyText = move.acc;
@@ -23,7 +27,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 			}
 			var stages = getStages(accMods + (evaMods * -1));
 			//console.log(stages)
-			accuracyText = accuracyText * stages /* * other mods */;
+			accuracyText = Math.min(accuracyText * stages /* * other mods */, 100);
 		}
 	}
 	//console.log(accuracyText)
