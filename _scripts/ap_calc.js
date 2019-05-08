@@ -322,15 +322,6 @@ $(".move-selector").change(function () {
 	moveGroupObj.children(".move-bp").val(move.bp);
 	moveGroupObj.children(".move-type").val(move.type);
 	moveGroupObj.children(".move-cat").val(move.category);
-	if (move.acc) {
-		if (move.isZ || move.acc === 101) {
-			moveGroupObj.children(".move-acc").val(" - ");
-		} else {
-			moveGroupObj.children(".move-acc").val(move.acc);
-		}
-	} else {
-		moveGroupObj.children(".move-acc").val(" - ");
-	}
 	moveGroupObj.children(".move-crit").prop("checked", move.alwaysCrit === true);
 	if (move.isMultiHit) {
 		moveGroupObj.children(".move-hits").show();
@@ -576,7 +567,7 @@ function calculate() {
 		maxPercent = Math.floor(maxDamage * 1000 / p2.maxHP) / 10;
 		result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
 		result.koChanceText = p1.moves[i].bp === 0 ? "nice move" :
-			getKOChanceText(result.damage, p1.moves[i], p2, field.getSide(1), p1.ability === "Bad Dreams", p1, p2.isMinimized);
+			getKOChanceText(result.damage, p1.moves[i], p2, field.getSide(1), p1.ability === "Bad Dreams", p1, p2.isMinimized, p1.isVictoryStar);
 		if (p1.moves[i].isMLG && p1.level >= p2.level) {
 			result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>"; //dank memes
 		}
@@ -644,7 +635,7 @@ function calculate() {
 		maxPercent = Math.floor(maxDamage * 1000 / p1.maxHP) / 10;
 		result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
 		result.koChanceText = p2.moves[i].bp === 0 ? "nice move" :
-			getKOChanceText(result.damage, p2.moves[i], p1, field.getSide(0), p2.ability === "Bad Dreams", p2, p1.isMinimized);
+			getKOChanceText(result.damage, p2.moves[i], p1, field.getSide(0), p2.ability === "Bad Dreams", p2, p1.isMinimized, p2.isVictoryStar);
 		if (p2.moves[i].isMLG) {
 			result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>";
 		}
@@ -982,6 +973,7 @@ function Field() {
 	var isFriendGuard = [$("#friendGuardL").prop("checked"), $("#friendGuardR").prop("checked")];
 	var isBattery = [$("#batteryR").prop("checked"), $("#batteryL").prop("checked")];
 	var isMinimized = [$("#minimL").prop("checked"), $("#minimR").prop("checked")];
+	var isVictoryStar = [$("#vicStarL").prop("checked"), $("#vicStarR").prop("checked")];
 
 	this.getWeather = function () {
 		return weather;
@@ -990,11 +982,11 @@ function Field() {
 		weather = "";
 	};
 	this.getSide = function (i) {
-		return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isSeeded[i], isForesight[i], isHelpingHand[i], isMinimized[i], isFriendGuard[i], isBattery[i], isProtect[i]);
+		return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isSeeded[i], isForesight[i], isHelpingHand[i], isMinimized[i], isVictoryStar[i], isFriendGuard[i], isBattery[i], isProtect[i]);
 	};
 }
 
-function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isSeeded, isForesight, isHelpingHand, isMinimized, isFriendGuard, isBattery, isProtect) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isSeeded, isForesight, isHelpingHand, isMinimized, isVictoryStar, isFriendGuard, isBattery, isProtect) {
 	this.format = format;
 	this.terrain = terrain;
 	this.weather = weather;
@@ -1007,6 +999,7 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
 	this.isForesight = isForesight;
 	this.isHelpingHand = isHelpingHand;
 	this.isMinimized = isMinimized;
+	this.isVictoryStar = isVictoryStar;
 	this.isFriendGuard = isFriendGuard;
 	this.isBattery = isBattery;
 	this.isProtect = isProtect;

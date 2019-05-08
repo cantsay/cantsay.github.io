@@ -1,11 +1,11 @@
-function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, isMinimized) {
+function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, isMinimized, isVictoryStar) {
 	if (isNaN(damage[0])) {
 		return "something broke; please tell cant say or LegoFigure11";
 	}
 	var accuracyText = "";
 	var ignoreAccMods = false;
 	if (move.acc || move.isZ) {
-		if (move.isZ || move.acc === 101 || (move.name === "Blizzard" && field.weather === "Hail") || ((move.name === "Thunder" || move.name === "Hurricane") && field.weather.includes("Rain")) || (["Astonish", "Body Slam", "Dragon Rush", "Extrasensory", "FLying Press", "Heat Crash", "Heavy Slam", "Malicious Moonsault", "Needle Arm", "Phantom Force", "Shadow Force", "Steamroller", "Stomp"].includes(move.name) && isMinimized)) {
+		if (move.isZ || move.acc === 101 || (move.name === "Blizzard" && field.weather === "Hail") || ((move.name === "Thunder" || move.name === "Hurricane") && field.weather.includes("Rain")) || (["Astonish", "Body Slam", "Dragon Rush", "Extrasensory", "Flying Press", "Heat Crash", "Heavy Slam", "Malicious Moonsault", "Needle Arm", "Phantom Force", "Shadow Force", "Steamroller", "Stomp"].includes(move.name) && isMinimized)) {
 			accuracyText = 100;
 			ignoreAccMods = true;
 		}
