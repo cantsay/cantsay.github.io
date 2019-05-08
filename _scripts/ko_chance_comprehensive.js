@@ -1,4 +1,4 @@
-function getKOChanceText(damage, move, defender, field, isBadDreams) {
+function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, isMinimized) {
 	if (isNaN(damage[0])) {
 		return "something broke; please tell cant say or LegoFigure11";
 	}
@@ -6,12 +6,24 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
 	var accuracyText = "";
 	var ignoreAccMods = false;
 	if (move.acc || move.isZ) {
-		if (move.isZ || move.acc === 101 || (move.name === "Blizzard" && field.weather === "Hail") || (move.name === "Thunder" && field.weather.includes("Rain"))) {
+		if (move.isZ || move.acc === 101 || (move.name === "Blizzard" && field.weather === "Hail") || ((move.name === "Thunder" || move.name === "Hurricane") && field.weather.includes("Rain")) || (["Astonish", "Body Slam", "Dragon Rush", "Extrasensory", "FLying Press", "Heat Crash", "Heavy Slam", "Malicious Moonsault", "Needle Arm", "Phantom Force", "Shadow Force", "Steamroller", "Stomp"].includes(move.name) && isMinimized)) {
 			accuracyText = 100;
+			ignoreAccMods = true;
+		}
+		if (move.isMLG) {
+			accuracyText = 30;
 			ignoreAccMods = true;
 		}
 		if (!ignoreAccMods) {
 			accuracyText = move.acc;
+			var accMods = attacker.boosts.ac;
+			var evaMods = defender.boosts.es;
+			if (move.name === "Chip Away" || move.name === "Sacred Sword" || attacker.ability === "Unaware") {
+				evaMods = 0;
+			}
+			var stages = getStages(accMods + (evaMods * -1));
+			//console.log(stages)
+			accuracyText = accuracyText * stages /* * other mods */;
 		}
 	}
 	//console.log(accuracyText)
@@ -456,4 +468,12 @@ function serializeText(arr) {
 		}
 		return text + "and " + arr[arr.length - 1];
 	}
+}
+
+function getStages(stages) {
+	if (stages > 6) stages = 6;
+	if (stages < -6) stages = -6;
+	if (stages >= 0) stages = (parseInt(stages) + 3) / 3;
+  if (stages < 0) stages = 3 / (parseInt(stages * -1) + 3);
+	return stages;
 }

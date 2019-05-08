@@ -576,7 +576,7 @@ function calculate() {
 		maxPercent = Math.floor(maxDamage * 1000 / p2.maxHP) / 10;
 		result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
 		result.koChanceText = p1.moves[i].bp === 0 ? "nice move" :
-			getKOChanceText(result.damage, p1.moves[i], p2, field.getSide(1), p1.ability === "Bad Dreams");
+			getKOChanceText(result.damage, p1.moves[i], p2, field.getSide(1), p1.ability === "Bad Dreams", p1, p2.isMinimized);
 		if (p1.moves[i].isMLG && p1.level >= p2.level) {
 			result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>"; //dank memes
 		}
@@ -644,7 +644,7 @@ function calculate() {
 		maxPercent = Math.floor(maxDamage * 1000 / p1.maxHP) / 10;
 		result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
 		result.koChanceText = p2.moves[i].bp === 0 ? "nice move" :
-			getKOChanceText(result.damage, p2.moves[i], p1, field.getSide(0), p2.ability === "Bad Dreams");
+			getKOChanceText(result.damage, p2.moves[i], p1, field.getSide(0), p2.ability === "Bad Dreams", p2, p1.isMinimized);
 		if (p2.moves[i].isMLG) {
 			result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>";
 		}
