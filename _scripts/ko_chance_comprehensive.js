@@ -197,7 +197,6 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	if (c === 1) {
 		return "guaranteed OHKO" + afterText + " (" + (100 * (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	} else if (c > 0) {
-		console.log(moveAccuracy);
 		return qualifier + Math.round(c * 1000) / 10 + "% chance to OHKO" + afterText + " (" + (Math.round(c * 1000) / 10 * moveAccuracy).toFixed(2) / 100 + "% chance to OHKO after accuracy)";
 	}
 
@@ -238,7 +237,6 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	for (i = 2; i <= 4; i++) {
 		c = getKOChance(damage, multihit, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony);
 		if (c === 1) {
-			console.log();
 			return "guaranteed " + i + "HKO" + afterText + " (" + (Math.pow(moveAccuracy / 100, i) * 100).toFixed(2) + "% chance to " + i + "HKO after accuracy)";
 		} else if (c > 0) {
 			var pct = Math.round(c * 1000) / 10;
