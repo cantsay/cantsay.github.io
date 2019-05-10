@@ -517,7 +517,7 @@ function getOtherAccMods(move, attacker, defender, field, isVictoryStar) {
 		mods *= 0.5;
 	}
 	if (gravity) {
-		mods *= 5/3;
+		mods *= 5 / 3;
 	}
 
 	return mods;
