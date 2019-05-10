@@ -2,24 +2,27 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	if (isNaN(damage[0])) {
 		return "something broke; please tell cant say or LegoFigure11";
 	}
-	var accuracyText = "";
+	var moveAccuracy = "";
 	var ignoreAccMods = false;
 	if (move.acc || move.isZ) {
 		if (move.isZ || move.acc === 101 || (move.name === "Blizzard" && field.weather === "Hail") || ((move.name === "Thunder" || move.name === "Hurricane") && field.weather.includes("Rain")) || (["Astonish", "Body Slam", "Dragon Rush", "Extrasensory", "Flying Press", "Heat Crash", "Heavy Slam", "Malicious Moonsault", "Needle Arm", "Phantom Force", "Shadow Force", "Steamroller", "Stomp"].includes(move.name) && isMinimized)) {
-			accuracyText = 100;
+			moveAccuracy = 100;
 			ignoreAccMods = true;
 		}
 		if (move.isMLG) {
 			if (move.name === "Sheer Cold" && attacker.type1 !== "Ice" && attacker.type2 !== "Ice") {
-				accuracyText = 20;
+				moveAccuracy = 20;
 				ignoreAccMods = true;
 			} else {
-				accuracyText = 30;
+				moveAccuracy = 30;
 				ignoreAccMods = true;
 			}
 		}
 		if (!ignoreAccMods) {
-			accuracyText = move.acc;
+			moveAccuracy = move.acc;
+			if ((move.name === "Thunder" || move.name === "Hurricane") && field.weather.includes("Sun")) {
+				moveAccuracy = 50;
+			}
 			var accMods = attacker.boosts.ac;
 			var evaMods = defender.boosts.es;
 			if (move.name === "Chip Away" || move.name === "Sacred Sword" || attacker.ability === "Unaware") {
@@ -28,8 +31,9 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 					accMods = 1; //Bulbapedia says that it ignores changes to accuracy, not specifically drops
 				}
 			}
-			var stages = getStages(accMods + (evaMods * -1));
-			accuracyText = Math.min(accuracyText * stages /* * other mods */, 100);
+			var modStages = getStages(accMods + (evaMods * -1));
+			var otherAccMods = getOtherAccMods(move, attacker, defender, field, isVictoryStar);
+			moveAccuracy = Math.min(moveAccuracy * modStages * otherAccMods, 100);
 		}
 	}
 	if (damage[damage.length - 1] === 0) {
@@ -48,19 +52,19 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	var hasMago = defender.item === "Mago Berry";
 	var gluttony = defender.ability === "Gluttony";
 	if ((damage.length !== 256 || !hasSitrus && !hasFigy && !hasIapapa && !hasWiki && !hasAguav && !hasMago) && damage[0] >= defender.curHP) {
-		return "guaranteed OHKO" + " (" + (100 / (accuracyText / 100)).toFixed(2) + "% after accuracy)";
+		return "guaranteed OHKO" + " (" + (100 / (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	} else if (damage.length === 256 && hasSitrus && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 4)) {
-		return "guaranteed OHKO" + " (" + (100 / (accuracyText / 100)).toFixed(2) + "% after accuracy)";
+		return "guaranteed OHKO" + " (" + (100 / (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	} else if (damage.length === 256 && hasFigy && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
-		return "guaranteed OHKO" + " (" + (100 / (accuracyText / 100)).toFixed(2) + "% after accuracy)";
+		return "guaranteed OHKO" + " (" + (100 / (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	} else if (damage.length === 256 && hasIapapa && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
-		return "guaranteed OHKO" + " (" + (100 / (accuracyText / 100)).toFixed(2) + "% after accuracy)";
+		return "guaranteed OHKO" + " (" + (100 / (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	} else if (damage.length === 256 && hasWiki && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
-		return "guaranteed OHKO" + " (" + (100 / (accuracyText / 100)).toFixed(2) + "% after accuracy)";
+		return "guaranteed OHKO" + " (" + (100 / (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	} else if (damage.length === 256 && hasAguav && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
-		return "guaranteed OHKO" + " (" + (100 / (accuracyText / 100)).toFixed(2) + "% after accuracy)";
+		return "guaranteed OHKO" + " (" + (100 / (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	} else if (damage.length === 256 && hasMago && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
-		return "guaranteed OHKO" + " (" + (100 / (accuracyText / 100)).toFixed(2) + "% after accuracy)";
+		return "guaranteed OHKO" + " (" + (100 / (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	}
 
 	var hazards = 0;
@@ -191,10 +195,10 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	var c = getKOChance(damage, multihit, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony);
 	var afterText = hazardText.length > 0 ? " after " + serializeText(hazardText) : "";
 	if (c === 1) {
-		return "guaranteed OHKO" + afterText + " (" + (100 / (accuracyText / 100)).toFixed(2) + "% after accuracy)";
+		return "guaranteed OHKO" + afterText + " (" + (100 / (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	} else if (c > 0) {
-		console.log(accuracyText);
-		return qualifier + Math.round(c * 1000) / 10 + "% chance to OHKO" + afterText + " (" + (Math.round(c * 1000) / 10 * accuracyText).toFixed(2) / 100 + "% chance to OHKO after accuracy)";
+		console.log(moveAccuracy);
+		return qualifier + Math.round(c * 1000) / 10 + "% chance to OHKO" + afterText + " (" + (Math.round(c * 1000) / 10 * moveAccuracy).toFixed(2) / 100 + "% chance to OHKO after accuracy)";
 	}
 
 	if (hasSitrus && move.name !== "Knock Off") {
@@ -235,17 +239,17 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 		c = getKOChance(damage, multihit, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony);
 		if (c === 1) {
 			console.log();
-			return "guaranteed " + i + "HKO" + afterText + " (" + (Math.pow(accuracyText / 100, i) * 100).toFixed(2) + "% chance to " + i + "HKO after accuracy)";
+			return "guaranteed " + i + "HKO" + afterText + " (" + (Math.pow(moveAccuracy / 100, i) * 100).toFixed(2) + "% chance to " + i + "HKO after accuracy)";
 		} else if (c > 0) {
 			var pct = Math.round(c * 1000) / 10;
 			var chance = pct ? qualifier + pct : "Miniscule";
-			return chance + "% chance to " + i + "HKO" + afterText + " (" + chance * (Math.pow(accuracyText / 100, i) * 100).toFixed(2) / 100 + "% chance to " + i + "HKO after accuracy)";
+			return chance + "% chance to " + i + "HKO" + afterText + " (" + chance * (Math.pow(moveAccuracy / 100, i) * 100).toFixed(2) / 100 + "% chance to " + i + "HKO after accuracy)";
 		}
 	}
 
 	for (i = 5; i <= 9; i++) {
 		if (predictTotal(damage[0], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony) >= defender.curHP - hazards) {
-			return "guaranteed " + i + "HKO" + afterText + " (" + (Math.pow(accuracyText / 100, i) * 100).toFixed(2) + "% chance to " + i + "HKO after accuracy)";
+			return "guaranteed " + i + "HKO" + afterText + " (" + (Math.pow(moveAccuracy / 100, i) * 100).toFixed(2) + "% chance to " + i + "HKO after accuracy)";
 		} else if (predictTotal(damage[damage.length - 1], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony) >= defender.curHP - hazards) {
 			return "possible " + i + "HKO" + afterText;
 		}
@@ -481,4 +485,40 @@ function getStages(stages) {
 	if (stages >= 0) stages = (parseInt(stages) + 3) / 3;
 	if (stages < 0) stages = 3 / (parseInt(stages * -1) + 3);
 	return stages;
+}
+
+function getOtherAccMods(move, attacker, defender, field, isVictoryStar) {
+	var mods = 1;
+	var weather = field.weather;
+	var gravity = field.isGravity;
+
+	if (isVictoryStar) {
+		mods *= 1.1;
+	}
+	if (attacker.item === "Wide Lens") {
+		mods *= 1.1;
+	}
+	if (attacker.item === "Zoom Lens" && attacker.stats.sp < defender.stats.sp) {
+		mods *= 1.2;
+	}
+	if (defender.item === "Bright Powder" || defender.item === "Lax Insence") {
+		mods *= 0.9;
+	}
+	if (attacker.ability === "Compound Eyes") {
+		mods *= 1.3;
+	}
+	if (attacker.ability === "Hustle" && move.category === "Physical") {
+		mods *= 0.8;
+	}
+	if ((weather === "Sand" && defender.ability === "Sand Veil") || (weather === "Hail" && defender.ability === "Snow Cloak")) {
+		mods *= 0.8;
+	}
+	if (defender.ability === "Tangled Feet" && defener.status === "Confused") {
+		mods *= 0.5;
+	}
+	if (gravity) {
+		mods *= 5/3;
+	}
+
+	return mods;
 }

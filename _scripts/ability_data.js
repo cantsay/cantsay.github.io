@@ -3,6 +3,7 @@ var ABILITIES_ADV = [
 	"Battle Armor",
 	"Blaze",
 	"Chlorophyll",
+	"Compound Eyes",
 	"Clear Body",
 	"Cloud Nine",
 	"Drizzle",
@@ -63,6 +64,7 @@ var ABILITIES_DPP = ABILITIES_ADV.concat([
 	"Snow Warning",
 	"Solar Power",
 	"Solid Rock",
+	"Tangled Feet",
 	"Technician",
 	"Tinted Lens",
 	"Unaware"
@@ -86,7 +88,8 @@ var ABILITIES_BW = ABILITIES_DPP.concat([
 	"Teravolt",
 	"Toxic Boost",
 	"Turboblaze",
-	"Unnerve"
+	"Unnerve",
+	"Victory Star"
 ]);
 
 var ABILITIES_XY = ABILITIES_BW.concat([

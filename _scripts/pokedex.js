@@ -10839,7 +10839,8 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
 			"sd": 50,
 			"sp": 89
 		},
-		"w": 17.0
+		"w": 17.0,
+		"ab": "Compound Eyes"
 	},
 	"Volcanion": {
 		"t1": "Fire",
@@ -12953,4 +12954,3 @@ var POKEDEX_LG = $.extend(true, {}, POKEDEX_INTERMEDIATE, {
 		"w": 800,
 	},
 });
-

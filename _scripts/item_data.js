@@ -114,9 +114,11 @@ var ITEMS_DPP = ITEMS_ADV.concat([
 	"Wacan Berry",
 	"Watmel Berry",
 	"Wave Incense",
+	"Wide Lens",
 	"Wise Glasses",
 	"Yache Berry",
-	"Zap Plate"
+	"Zap Plate",
+	"Zoom Lens"
 ]);
 
 var ITEMS_BW = ITEMS_DPP.concat([

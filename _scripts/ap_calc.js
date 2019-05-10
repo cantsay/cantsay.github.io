@@ -173,9 +173,11 @@ $(".ability").bind("keyup change", function () {
 
 $("#p1 .ability").bind("keyup change", function () {
 	autosetWeather($(this).val(), 0);
+	autoSetVicStar(1, "L");
 });
 $("#p2 .ability").bind("keyup change", function () {
 	autosetWeather($(this).val(), 1);
+	autoSetVicStar(2, "R");
 });
 
 var lastTerrain = "noterrain";
@@ -196,6 +198,14 @@ function autoSetAura() {
 		$("input:checkbox[id='aura-break']").prop("checked", true);
 	else
 		$("input:checkbox[id='aura-break']").prop("checked", lastAura[2]);
+}
+function autoSetVicStar(i, side) {
+	var ability = $("#p" + i + " .ability").val();
+	if (ability === "Victory Star") {
+		$("input:checkbox[id='vicStar" + side + "']").prop("checked", true);
+	} else {
+		$("input:checkbox[id='vicStar" + side + "']").prop("checked", false);
+	}
 }
 function autoSetTerrain() {
 	var ability1 = $("#p1 .ability").val();
