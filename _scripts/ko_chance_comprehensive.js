@@ -1,4 +1,4 @@
-function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, isMinimized, isVictoryStar) {
+function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, isMinimized, isVictoryStar, critDamage) {
 	if (isNaN(damage[0])) {
 		return "something broke; please tell cant say or LegoFigure11";
 	}
