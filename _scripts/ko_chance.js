@@ -241,7 +241,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 		} else if (c > 0) {
 			var pct = Math.round(c * 1000) / 10;
 			var chance = pct ? qualifier + pct : "Miniscule";
-			console.log(chance)
+			// console.log(chance);
 			return chance + "% chance to " + i + "HKO" + afterText + " (" + (chance * (Math.pow(moveAccuracy / 100, i) * 100) / 100).toFixed(2) + "% chance to " + i + "HKO after accuracy)";
 		}
 	}
