@@ -1,0 +1,54 @@
+{
+  "patterns": {
+    "P1": {
+      "expression": "(path):(line)"
+    },
+    "P2": {
+      "expression": "(path)\\s+(line)",
+      "path": "(?:\\/[\\w\\.\\-]+)+"
+    }
+  },
+  "commands": [
+    {
+      "namespace": "process-palatte",
+      "action": "run",
+      "command": "start run.bat",
+      "arguments": [],
+      "cwd": "{fileProjectPath}",
+      "inputDialogs": [],
+      "env": {},
+      "keystroke": "ctrl-alt-r",
+      "stream": true,
+      "outputTarget": "panel",
+      "outputBufferSize": 80000,
+      "maxCompleted": 3,
+      "autoShowOutput": true,
+      "autoHideOutput": false,
+      "scrollLockEnabled": false,
+      "singular": false,
+      "promptToSave": true,
+      "saveOption": "none",
+      "patterns": [
+        "default"
+      ],
+      "successOutput": "{stdout}",
+      "errorOutput": "{stdout}\n{stderr}",
+      "fatalOutput": "Failed to execute : {fullCommand}\n{stdout}\n{stderr}",
+      "startMessage": null,
+      "successMessage": "Executed : {fullCommand}",
+      "errorMessage": "Executed : {fullCommand}\nReturned with code {exitStatus}\n{stderr}",
+      "fatalMessage": "Failed to execute : {fullCommand}\n{stdout}\n{stderr}",
+      "menus": [],
+      "startScript": null,
+      "successScript": null,
+      "errorScript": null,
+      "scriptOnStart": false,
+      "scriptOnSuccess": false,
+      "scriptOnError": false,
+      "notifyOnStart": true,
+      "notifyOnSuccess": false,
+      "notifyOnError": false,
+      "input": null
+    }
+  ]
+}
