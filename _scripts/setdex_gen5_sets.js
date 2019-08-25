@@ -297,7 +297,7 @@ var SETDEX_GEN5_SETS = {
 		}
 	},
 	"Conkeldurr": {
-		"Assault Vest (Guts)": {
+		"Offensive (Guts)": {
 			"level": 50,
 			"evs": {
 				"hp": "252",
@@ -314,7 +314,7 @@ var SETDEX_GEN5_SETS = {
 				"Thunder Punch"
 			]
 		},
-		"Assault Vest (Iron Fist)": {
+		"Offensive (Iron Fist)": {
 			"level": 50,
 			"evs": {
 				"hp": "252",
@@ -882,6 +882,25 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
+	"Kingdra": {
+		"Choice Specs": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Modest",
+			"ability": "Swift Swim",
+			"item": "Choice Specs",
+			"moves": [
+				"Draco Meteor",
+				"Hydro Pump",
+				"Dragon Pulse",
+				"Surf"
+			]
+		}
+	},
 	"Landorus": {
 		"Special Life Orb": {
 			"level": 50,
@@ -1137,6 +1156,42 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
+	"Politoed": {
+		"Choice Specs": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sd": "4"
+			},
+			"nature": "Modest",
+			"ability": "Drizzle",
+			"item": "Choice Specs",
+			"moves": [
+				"Hydro Pump",
+				"Ice Beam",
+				"Focus Blast",
+				"Hidden Power Grass"
+			]
+		},
+		"Bulky Rain Setter": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"nature": "Bold",
+			"ability": "Drizzle",
+			"item": "Eject Button",
+			"moves": [
+				"Scald",
+				"Ice Beam",
+				"Focus Blast",
+				"Hidden Power Grass"
+			]
+		}
+	},
 	"Porygon2": {
 		"Physically Defensive": {
 			"level": 50,
@@ -1190,6 +1245,42 @@ var SETDEX_GEN5_SETS = {
 				"Ice Beam",
 				"Tri Attack",
 				"Hidden Power Ground"
+			]
+		}
+	},
+	"Reuniclus": {
+		"Offensive Trick Room": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sd": "4"
+			},
+			"nature": "Quiet",
+			"ability": "Magic Guard",
+			"item": "Life Orb",
+			"moves": [
+				"Psychic",
+				"Psyshock",
+				"Focus Blast",
+				"Shadow Ball"
+			]
+		},
+		"Bulky Calm Mind": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"nature": "Bold",
+			"ability": "Magic Guard",
+			"item": "Kee Berry",
+			"moves": [
+				"Psychic",
+				"Psyshock",
+				"Focus Blast",
+				"Shadow Ball"
 			]
 		}
 	},
@@ -1552,19 +1643,21 @@ var SETDEX_GEN5_SETS = {
 				"sp": "0"
 			},
 			"ivs": {
-				"at": "0"
+				"at": "30",
+				"sa": "30",
+				"sp": "30"
 			},
-			"nature": "Bold",
+			"nature": "Relaxed",
 			"ability": "Pressure",
 			"item": "Rocky Helmet",
 			"moves": [
 				"Scald",
 				"Ice Beam",
-				"Icy Wind",
-				"Shadow Ball"
+				"Extreme Speed",
+				"Hidden Power Fire"
 			]
 		},
-		"Offensive Assault Vest": {
+		"Offensive Water Gem": {
 			"level": 50,
 			"evs": {
 				"hp": "252",
@@ -1579,11 +1672,11 @@ var SETDEX_GEN5_SETS = {
 			},
 			"nature": "Modest",
 			"ability": "Pressure",
-			"item": "Assault Vest",
+			"item": "Water Gem",
 			"moves": [
-				"Scald",
+				"Hydro Pump",
 				"Ice Beam",
-				"Icy Wind",
+				"Scald",
 				"Hidden Power Fire"
 			]
 		}
@@ -1723,6 +1816,44 @@ var SETDEX_GEN5_SETS = {
 				"Thunderbolt",
 				"Focus Blast",
 				"Grass Knot"
+			]
+		}
+	},
+	"Thundurus-T": {
+		"Nasty Plot Electric Gem": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Volt Absorb",
+			"item": "Electric Gem",
+			"moves": [
+				"Thunderbolt",
+				"Hidden Power Ice",
+				"Focus Blast",
+				"Grass Knot"
+			]
+		}
+	},
+	"Volcarona": {
+		"Offensive Bug Gem": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Modest",
+			"ability": "Flame Body",
+			"item": "Bug Gem",
+			"moves": [
+				"Fire Blast",
+				"Bug Buzz",
+				"Giga Drain",
+				"Hidden Power Ice"
 			]
 		}
 	},
