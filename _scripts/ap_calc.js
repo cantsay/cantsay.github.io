@@ -1,7 +1,7 @@
 // input field validation
 var defaultLevel = 50;
 var switchedLevel = 100;
-var konami = new Konami(function() {
+var konami = new Konami(function () {
 	alert("Activated Lv. 1 Mode!\n\nUse the Level Switcher to toggle between Lv 50 and Lv 1.\n(Refresh the page to undo this change).");
 	switchedLevel = 1;
 	$(".onoffswitch-inner").addClass("lv1-mode");
