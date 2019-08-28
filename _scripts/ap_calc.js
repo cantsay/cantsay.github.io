@@ -383,7 +383,7 @@ $(".set-selector, #levelswitch").bind("change click keyup keydown", function () 
 		var itemObj = pokeObj.find(".item");
 		if (pokemonName in setdex && setName in setdex[pokemonName]) {
 			var set = setdex[pokemonName][setName];
-			if (Lv100) pokeObj.find(".level").val(100);
+			if (Lv100) pokeObj.find(".level").val(switchedLevel);
 			else pokeObj.find(".level").val(set.level);
 			pokeObj.find(".hp .evs").val(set.evs && typeof set.evs.hp !== "undefined" ? set.evs.hp : 0);
 			pokeObj.find(".hp .avs").val(set.avs && typeof set.avs.hp !== "undefined" ? set.avs.hp : 0);
@@ -404,7 +404,7 @@ $(".set-selector, #levelswitch").bind("change click keyup keydown", function () 
 				moveObj.change();
 			}
 		} else {
-			if (Lv100) pokeObj.find(".level").val(100);
+			if (Lv100) pokeObj.find(".level").val(switchedLevel);
 			else pokeObj.find(".level").val(50);
 			pokeObj.find(".hp .evs").val(0);
 			pokeObj.find(".hp .avs").val(0);
