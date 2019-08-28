@@ -351,6 +351,10 @@ select.toxic-counter {
   text-align: right;
 }
 
+.lv1-mode:after {
+  content: "1";
+}
+
 .onoffswitch-switch {
   display: block;
   height: 10px;

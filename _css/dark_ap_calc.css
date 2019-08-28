@@ -372,3 +372,7 @@ select.toxic-counter {
 .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
   right: 0px;
 }
+
+.lv1-mode:after {
+  content: "1";
+}

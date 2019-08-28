@@ -1,4 +1,11 @@
 // input field validation
+var defaultLevel = 50;
+var switchedLevel = 100;
+var konami = new Konami(function() {
+	alert("Activated Lv. 1 Mode!\n\nUse the Level Switcher to toggle between Lv 50 and Lv 1.\n(Refresh the page to undo this change).");
+	switchedLevel = 1;
+	$(".onoffswitch-inner").addClass("lv1-mode");
+});
 var bounds = {
 	"level": [0, 100],
 	"base": [1, 255],
@@ -36,8 +43,8 @@ $("#levelswitch").change(function () {
 		$("#p2").find(".level").val(50);
 		$(".level").change();
 	} else {
-		$("#p1").find(".level").val(100);
-		$("#p2").find(".level").val(100);
+		$("#p1").find(".level").val(switchedLevel);
+		$("#p2").find(".level").val(switchedLevel);
 		$(".level").change();
 	}
 });
@@ -565,6 +572,8 @@ function calculate() {
 	var p1 = new Pokemon($("#p1"));
 	var p2 = new Pokemon($("#p2"));
 	var field = new Field();
+	optimizeEVs("#p1", p1);
+	optimizeEVs("#p2", p2);
 	damageResults = calculateAllMoves(p1, p2, field);
 	var result, minDamage, maxDamage, minPercent, maxPercent, percentText;
 	var highestMaxPercent = -1;
@@ -1351,3 +1360,62 @@ $(document).ready(function () {
 	$(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id);
 	$(".set-selector").change();
 });
+
+/******************/
+/*  EV OPTIMIZER  */
+/******************/
+
+function optimizeEVs(side, mon) {
+	/*
+	//log(mon.rawStats)
+	var basehp = ~~$(side).find(".hp .base").val();
+	var baseat = ~~$(side).find(".at .base").val();
+	var basedf = ~~$(side).find(".df .base").val();
+	var basesa = ~~$(side).find(".sa .base").val();
+	var basesd = ~~$(side).find(".sd .base").val();
+	var basesp = ~~$(side).find(".sp .base").val();
+	var ivshp = ~~$(side).find(".hp .ivs").val();
+	var ivsat = ~~$(side).find(".at .ivs").val();
+	var ivsdf = ~~$(side).find(".df .ivs").val();
+	var ivssa = ~~$(side).find(".sa .ivs").val();
+	var ivssd = ~~$(side).find(".sd .ivs").val();
+	var ivssp = ~~$(side).find(".sp .ivs").val();
+	var evshp = ~~$(side).find(".hp .evs").val();
+	var evsat = ~~$(side).find(".at .evs").val();
+	var evsdf = ~~$(side).find(".df .evs").val();
+	var evssa = ~~$(side).find(".sa .evs").val();
+	var evssd = ~~$(side).find(".sd .evs").val();
+	var evssp = ~~$(side).find(".sp .evs").val();
+
+	var nature = NATURES[mon.nature];
+	var level = ~~mon.level;
+
+	var natureVals = ["1", "1", "1", "1", "1"];
+
+	console.log(nature)
+
+	var hp0 = Math.floor((basehp * 2 + ivshp + Math.floor(evshp / 4)) * level / 100) + level + 10;
+	var at0 = Math.floor((Math.floor((baseat * 2 + ivsat + Math.floor(evsat / 4)) * level / 100) + 5) * natureVals[0]);
+	var df0 = Math.floor((Math.floor((basedf * 2 + ivsdf + Math.floor(evsdf / 4)) * level / 100) + 5) * natureVals[1]);
+	var sa0 = Math.floor((Math.floor((basesa * 2 + ivssa + Math.floor(evssa / 4)) * level / 100) + 5) * natureVals[2]);
+	var sd0 = Math.floor((Math.floor((basesd * 2 + ivssd + Math.floor(evssd / 4)) * level / 100) + 5) * natureVals[3]);
+	var sp0 = Math.floor((Math.floor((basesp * 2 + ivssp + Math.floor(evssp / 4)) * level / 100) + 5) * natureVals[4]);
+
+	switch (nature[0]) {
+		case "at":
+		natureVals[0] = 1.1;
+		break;
+
+		case "df":
+		natureVals[1] = 1.1;
+		break;
+	}
+
+	console.log(hp);
+	console.log(at);
+	console.log(df);
+	console.log(sa);
+	console.log(sd);
+	console.log(sp);
+	*/
+}
