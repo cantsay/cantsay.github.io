@@ -1002,7 +1002,7 @@ var SETDEX_GEN6_SETS = {
 			"ability": "Flash Fire",
 			"item": "Leftovers",
 			"moves": [
-				"Magmar Storm",
+				"Magma Storm",
 				"Toxic",
 				"Substitute",
 				"Earth Power"
@@ -1021,7 +1021,7 @@ var SETDEX_GEN6_SETS = {
 			"ability": "Flash Fire",
 			"item": "Leftovers",
 			"moves": [
-				"Magmar Storm",
+				"Magma Storm",
 				"Toxic",
 				"Substitute",
 				"Earth Power"
@@ -2070,7 +2070,7 @@ var SETDEX_GEN6_SETS = {
 			},
 			"nature": "Impish",
 			"ability": "Technician",
-			"item": "Rock Helmet",
+			"item": "Rocky Helmet",
 			"moves": [
 				"Bullet Punch",
 				"U-turn",
@@ -2105,7 +2105,7 @@ var SETDEX_GEN6_SETS = {
 				"sp": "252"
 			},
 			"nature": "Modest",
-			"ability": "Speed Bosst",
+			"ability": "Speed Boost",
 			"item": "Focus Sash",
 			"moves": [
 				"Dark Pulse",

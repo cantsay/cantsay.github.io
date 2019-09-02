@@ -502,7 +502,7 @@ var SETDEX_GEN7_SETS = {
 			},
 			"nature": "Adamant",
 			"ability": "Speed Boost",
-			"item": "Blazekinite",
+			"item": "Blazikenite",
 			"moves": [
 				"Flare Blitz",
 				"High Jump Kick",
@@ -1961,7 +1961,7 @@ var SETDEX_GEN7_SETS = {
 			},
 			"nature": "Jolly",
 			"ability": "Intimidate",
-			"item": "Flynium Z",
+			"item": "Flyinium Z",
 			"moves": [
 				"Bounce",
 				"Waterfall",
@@ -2035,7 +2035,7 @@ var SETDEX_GEN7_SETS = {
 			"ability": "Flash Fire",
 			"item": "Leftovers",
 			"moves": [
-				"Magmar Storm",
+				"Magma Storm",
 				"Toxic",
 				"Substitute",
 				"Earth Power"
@@ -2054,7 +2054,7 @@ var SETDEX_GEN7_SETS = {
 			"ability": "Flash Fire",
 			"item": "Leftovers",
 			"moves": [
-				"Magmar Storm",
+				"Magma Storm",
 				"Toxic",
 				"Substitute",
 				"Earth Power"
@@ -2088,7 +2088,7 @@ var SETDEX_GEN7_SETS = {
 			"ability": "Flash Fire",
 			"item": "Leftovers",
 			"moves": [
-				"Magmar Storm",
+				"Magma Storm",
 				"Earth Power",
 				"Toxic",
 				"Protect"
@@ -2745,8 +2745,8 @@ var SETDEX_GEN7_SETS = {
 			"level": 50,
 			"evs": {
 				"hp": "244",
-				"df": "236",
-				"sp": "38"
+				"df": "228",
+				"sp": "36"
 			},
 			"nature": "Careful",
 			"ability": "Intimidate",
@@ -4654,7 +4654,7 @@ var SETDEX_GEN7_SETS = {
 			},
 			"nature": "Impish",
 			"ability": "Technician",
-			"item": "Rock Helmet",
+			"item": "Rocky Helmet",
 			"moves": [
 				"Bullet Punch",
 				"U-turn",
@@ -4689,7 +4689,7 @@ var SETDEX_GEN7_SETS = {
 				"sp": "252"
 			},
 			"nature": "Adamant",
-			"ability": "Speed Bosst",
+			"ability": "Speed Boost",
 			"item": "Sharpedonite",
 			"moves": [
 				"Waterfall",
@@ -4706,7 +4706,7 @@ var SETDEX_GEN7_SETS = {
 				"sp": "252"
 			},
 			"nature": "Modest",
-			"ability": "Speed Bosst",
+			"ability": "Speed Boost",
 			"item": "Focus Sash",
 			"moves": [
 				"Dark Pulse",
@@ -4848,7 +4848,7 @@ var SETDEX_GEN7_SETS = {
 				"Multi Attack",
 				"Swords Dance",
 				"Flame Charge",
-				"Stone Edge"
+				"Rock Slide"
 			]
 		}
 	},
@@ -5321,7 +5321,7 @@ var SETDEX_GEN7_SETS = {
 			"moves": [
 				"Wood Hammer",
 				"Horn Leech",
-				"Supoerpower",
+				"Superpower",
 				"Rock Tomb"
 			]
 		}
@@ -5723,7 +5723,7 @@ var SETDEX_GEN7_SETS = {
 				"sd": "4"
 			},
 			"nature": "Bold",
-			"ability": "Synchronise",
+			"ability": "Synchronize",
 			"item": "Leftovers",
 			"moves": [
 				"Foul Play",
