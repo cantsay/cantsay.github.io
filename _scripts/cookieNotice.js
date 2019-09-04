@@ -1,8 +1,8 @@
 function checkCookie() {
-	if (readCookie("c") === null) {
+	if (localStorage.getItem('c') === null) {
 		$(".privacyNotice").css("display", "block");
 	}
-	if (readCookie("c") != null) {
+	if (localStorage.getItem('c') != null) {
 		$(".privacyNotice").css("display", "none");
 	}
 }
@@ -12,6 +12,6 @@ $(document).ready(function () {
 });
 
 $("#cookie-dismisser").click(function () {
-	createCookie("c", 1, 3000);
+	localStorage.setItem('c', 'notice dismissed!');
 	checkCookie();
 });

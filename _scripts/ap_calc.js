@@ -1,11 +1,6 @@
 // input field validation
 var defaultLevel = 50;
 var switchedLevel = 100;
-var konami = new Konami(function () {
-	alert("Activated Lv. 1 Mode!\n\nUse the Level Switcher to toggle between Lv 50 and Lv 1.\n(Refresh the page to undo this change).");
-	switchedLevel = 1;
-	$(".onoffswitch-inner").addClass("lv1-mode");
-});
 var bounds = {
 	"level": [0, 100],
 	"base": [1, 255],
@@ -47,6 +42,12 @@ $("#levelswitch").change(function () {
 		$("#p2").find(".level").val(switchedLevel);
 		$(".level").change();
 	}
+});
+
+var konami = new Konami(function () {
+	alert("Activated Lv. 1 Mode!\n\nUse the Level Switcher to toggle between Lv 50 and Lv 1.\n(Refresh the page to undo this change).");
+	switchedLevel = 1;
+	$(".onoffswitch-inner").addClass("lv1-mode");
 });
 
 $(".level").bind("keyup change", function () {
@@ -970,7 +971,7 @@ function getZMoveName(moveName, moveType, item) {
 
 function Field() {
 	var format = $("input:radio[name='format']:checked").val();
-	createCookie("selectedFormat", format.toLowerCase(), 3000);
+	localStorage.setItem("selectedFormat", format.toLowerCase());
 	var isGravity = $("#gravity").prop("checked");
 	var isSR = [$("#srL").prop("checked"), $("#srR").prop("checked")];
 	var isProtect = [$("#protectL").prop("checked"), $("#protectR").prop("checked")];
@@ -1088,7 +1089,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
-		createCookie("selectedGen", 5, 3000);
+		localStorage.setItem("selectedGen", 5);
 		break;
 	case 6:
 		pokedex = POKEDEX_XY;
@@ -1101,7 +1102,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
-		createCookie("selectedGen", 6, 3000);
+		localStorage.setItem("selectedGen", 6);
 		break;
 	case 7:
 		pokedex = POKEDEX_SM;
@@ -1114,7 +1115,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
-		createCookie("selectedGen", 7, 3000);
+		localStorage.setItem("selectedGen", 7);
 		break;
 	case 20:
 		pokedex = POKEDEX_SM;
@@ -1127,7 +1128,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
-		createCookie("selectedGen", 20, 3000);
+		localStorage.setItem("selectedGen", 20);
 		break;
 	case 21:
 		pokedex = POKEDEX_SM;
@@ -1140,7 +1141,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
-		createCookie("selectedGen", 21, 3000);
+		localStorage.setItem("selectedGen", 21);
 		break;
 	case 22:
 		pokedex = POKEDEX_LG;
@@ -1153,7 +1154,7 @@ $(".gen").change(function () {
 		calculateAllMoves = CALCULATE_ALL_MOVES_LG;
 		calcHP = CALC_HP_LG;
 		calcStat = CALC_STAT_LG;
-		createCookie("selectedGen", 22, 3000);
+		localStorage.setItem("selectedGen", 22);
 	}
 	clearField();
 	$(".gen-specific.g" + gen).show();
@@ -1173,8 +1174,8 @@ $(".gen").change(function () {
 });
 
 function clearField() {
-	if (readCookie("selectedFormat") != null) {
-		switch (readCookie("selectedFormat") + "") {
+	if (localStorage.getItem("selectedFormat") != null) {
+		switch (localStorage.getItem("selectedFormat") + "") {
 
 		case "singles":
 			$("#singles").prop("checked", true);
@@ -1283,8 +1284,8 @@ function getSelectOptions(arr, sort, defaultIdx) {
 }
 
 $(document).ready(function () {
-	if (readCookie("selectedGen") != null) {
-		switch (readCookie("selectedGen") + "") {
+	if (localStorage.getItem("selectedGen") != null) {
+		switch (localStorage.getItem("selectedGen") + "") {
 
 		case "5":
 			$("#gen5").prop("checked", true);
