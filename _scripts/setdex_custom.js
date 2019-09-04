@@ -19,14 +19,38 @@ var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 	["Kyogre-Primal", "Kyogre"],
 	["Necrozma-Dusk-Mane", "Necrozma-Dusk Mane"],
 	["Necrozma-Dawn-Wings", "Necrozma-Dawn Wings"]];
-if (readCookie("custom") != null) {
-	var SETDEX_CUSTOM = JSON.parse(readCookie("custom"));
+if (localStorage.getItem("custom") != null) {
+	var SETDEX_CUSTOM = JSON.parse(localStorage.getItem("custom"));
 }
 var deletecustom = function () {
-	SETDEX_CUSTOM = {};
-	eraseCookie("custom");
-	reloadXYScript();
+	if (confirm("Are you sure you want to delete all your custom sets?")) {
+		SETDEX_CUSTOM = {};
+		localStorage.removeItem("custom");
+		reloadXYScript();
+		alert("Custom sets deleted!");
+	}
 };
+
+function migrateOldSets() {
+	if (confirm("This will run a script that will attempt to migrate your old custom sets from cookies to localStorage. It may take some time and will not always work, and there is a small chance it will erase your current custom sets. Would you like to proceed?")) {
+		if (readCookie("custom") != null) {
+			var oldData = JSON.parse(readCookie("custom"));
+			for (var i = 0; i < Object.keys(oldData).length; i++) {
+				var species = (Object.keys(oldData)[i]);
+				if (SETDEX_CUSTOM[species] == null) SETDEX_CUSTOM[species] = {};
+				let setName = (Object.keys(oldData[species]));
+				for (var j = 0; j < setName.length; j++) {
+					SETDEX_CUSTOM[species][setName] = oldData[species][setName];
+				}
+			}
+			localStorage.setItem("custom", JSON.stringify(SETDEX_CUSTOM));
+			eraseCookie("custom");
+			if(!alert("Success! Refreshing the page...")){window.location.reload();}
+		} else {
+			alert("Aborted, no old custom set cookies found.");
+		}
+	}
+}
 
 function createCookie(name, value, days) {
 	if (days) {
@@ -293,10 +317,16 @@ var savecustom = function () {
 			if (SETDEX_CUSTOM[species] == null)
 				SETDEX_CUSTOM[species] = {};
 			SETDEX_CUSTOM[species][spreadName] = customFormat;
-			document.cookie = "custom=" + JSON.stringify(SETDEX_CUSTOM);
+			localStorage.setItem("custom", JSON.stringify(SETDEX_CUSTOM));
 			alert("Set saved: " + species);
 			reloadXYScript();
 		}
 	}
 	alert("Please refresh your page to get your custom sets to show up!");
 };
+
+$("document").ready(function(){
+	if (readCookie("custom") == null) {
+		$("#migrate").css("display", "none");
+	}
+});
