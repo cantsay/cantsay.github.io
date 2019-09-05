@@ -11,9 +11,9 @@ title: cantsaycalc BETA
 	{% seo %}
 	<title>{{ page.title }}</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link type="text/css" rel="stylesheet" href="/_css/select2.css" />
-	<link type="text/css" rel="stylesheet" href="/_css/ap_calc.css" />
-	<link type="text/css" rel="stylesheet" href="/_css/nb_calc.css" />
+	<link id="select2css" type="text/css" rel="stylesheet" href="/_css/select2.css" />
+	<link id="apcalccss" type="text/css" rel="stylesheet" href="/_css/ap_calc.css" />
+	<link id="nbcalccss" type="text/css" rel="stylesheet" href="/_css/nb_calc.css" />
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script type="text/javascript" src="/_scripts/themes.js"></script>
 	<script type="text/javascript" src="/_scripts/konami.js"></script>
@@ -53,18 +53,18 @@ title: cantsaycalc BETA
 	</div>
 	<script>
 		if (document.getElementById("theme") != null && document.getElementById("midimg") != null) {
-			var drop = document.getElementById("theme").value;
+			var drop = $("#theme").val();
 
 			if (drop === "aegislash") {
-				document.getElementById('midimg').src = "../_images/aegi trozei.png";
+				$('#midimg')[0].src = "../_images/aegi trozei.png";
 			} else if (drop === "dark") {
-				document.getElementById('midimg').src = "../_images/shiny aegi trozei.png";
+				$('#midimg')[0].src = "../_images/shiny aegi trozei.png";
 			} else if (drop === "legacy") {
-				document.getElementById('midimg').src = "../_images/shiny aegi trozei.png";
+				$('#midimg')[0].src = "../_images/shiny aegi trozei.png";
 			} else if (drop === "volcarona") {
-				document.getElementById('midimg').src = "../_images/volc.png";
+				$('#midimg')[0].src = "../_images/volc.png";
 			} else if (drop === "lgpe") {
-				document.getElementById('midimg').src = "../_images/pika.jpg";
+				$('#midimg')[0].src = "../_images/pika.jpg";
 			}
 		}
 	</script>
