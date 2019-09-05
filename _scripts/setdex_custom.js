@@ -38,14 +38,14 @@ function migrateOldSets() {
 			for (var i = 0; i < Object.keys(oldData).length; i++) {
 				var species = (Object.keys(oldData)[i]);
 				if (SETDEX_CUSTOM[species] == null) SETDEX_CUSTOM[species] = {};
-				let setName = (Object.keys(oldData[species]));
+				var setName = (Object.keys(oldData[species]));
 				for (var j = 0; j < setName.length; j++) {
 					SETDEX_CUSTOM[species][setName] = oldData[species][setName];
 				}
 			}
 			localStorage.setItem("custom", JSON.stringify(SETDEX_CUSTOM));
 			eraseCookie("custom");
-			if(!alert("Success! Refreshing the page...")){window.location.reload();}
+			if (!alert("Success! Refreshing the page...")) {window.location.reload();}
 		} else {
 			alert("Aborted, no old custom set cookies found.");
 		}
@@ -325,7 +325,7 @@ var savecustom = function () {
 	alert("Please refresh your page to get your custom sets to show up!");
 };
 
-$("document").ready(function(){
+$("document").ready(function () {
 	if (readCookie("custom") == null) {
 		$("#migrate").css("display", "none");
 	}
