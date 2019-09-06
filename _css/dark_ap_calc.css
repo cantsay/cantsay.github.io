@@ -45,6 +45,7 @@ th {
 
 .panel {
   display: inline-block;
+  float: left;
 }
 
 .poke-info {
