@@ -163,6 +163,9 @@ var savecustom = function () {
 		if (species.toLowerCase().includes("vivillon")) {
 			species = "Vivillon";
 		}
+		if (species.toLowerCase().includes("furfrou")) {
+			species = "Furfrou";
+		}
 
 		if (lines[0].indexOf("@") != -1)
 			item = lines[0].substring(lines[0].indexOf("@") + 1).trim(); //item is always after @
