@@ -924,6 +924,25 @@ var SETDEX_GEN7_SETS = {
 			]
 		}
 	},
+	"Cincinno": {
+		"[Level 1] Sweeper": {
+			"level": 1,
+			"evs": {
+				"hp": "76",
+				"df": "196",
+				"sd": "156"
+			},
+			"nature": "Serious",
+			"ability": "Skill Link",
+			"item": "King's Rock",
+			"moves": [
+				"Tail Slap",
+				"Rock Blast",
+				"Bullet Seed",
+				"U-turn"
+			]
+		}
+	},
 	"Clefable": {
 		"Minimize": {
 			"level": 50,
@@ -963,7 +982,7 @@ var SETDEX_GEN7_SETS = {
 				"Ice Shard"
 			]
 		},
-		"cant say's QR Team": {
+		"Iapapa Smash": {
 			"level": 50,
 			"evs": {
 				"hp": "252",
@@ -978,6 +997,22 @@ var SETDEX_GEN7_SETS = {
 				"Icicle Spear",
 				"Rock Blast",
 				"Liquidation"
+			]
+		},
+		"[Level 1] Mixed Sweeper": {
+			"level": 1,
+			"evs": {
+				"df": "36",
+				"sp": "116",
+			},
+			"nature": "Serious",
+			"ability": "Skill Link",
+			"item": "Oran Berry",
+			"moves": [
+				"Icicle Spear",
+				"Rock Blast",
+				"Surf",
+				"Ice Shard"
 			]
 		}
 	},
@@ -1985,6 +2020,44 @@ var SETDEX_GEN7_SETS = {
 				"Dragon Dance",
 				"Earthquake"
 			]
+		},
+		"[Level 1] Mixed DD": {
+			"level": 1,
+			"evs": {
+				"at": "236",
+				"sa": "116",
+				"sd": "36",
+				"sp": "28"
+			},
+			"nature": "Serious",
+			"ability": "Intimidate",
+			"item": "Gyaradosite",
+			"moves": [
+				"Waterfall",
+				"Earthquake",
+				"Flamethrower",
+				"Thunderbolt"
+			]
+		}
+	},
+	"Hawlucha": {
+		"[Level 1] Unburden Sweeper": {
+			"level": 1,
+			"evs": {
+				"hp": "52",
+				"df": "76",
+				"sd": "172",
+				"sp": "132"
+			},
+			"nature": "Serious",
+			"ability": "Unburden",
+			"item": "",
+			"moves": [
+				"Fling",
+				"Acrobatics",
+				"Drain Punch",
+				"High Jump Kick"
+			]
 		}
 	},
 	"Haxorus": {
@@ -2459,6 +2532,23 @@ var SETDEX_GEN7_SETS = {
 				"Double-Edge",
 				"Fire Blast",
 				"Ice Beam"
+			]
+		},
+		"[Level 1] Mixed Wallbreaker": {
+			"level": 1,
+			"evs": {
+				"hp": "236",
+				"at": "76",
+				"sa": "196"
+			},
+			"nature": "Serious",
+			"ability": "Scrappy",
+			"item": "Kangaskhanite",
+			"moves": [
+				"Double-Edge",
+				"Flamethrower",
+				"Thunderbolt",
+				"Fake Out"
 			]
 		}
 	},
@@ -3190,6 +3280,23 @@ var SETDEX_GEN7_SETS = {
 			]
 		}
 	},
+	"Azumarill": {
+		"[Level 1] Belly Drum": {
+			"level": 1,
+			"evs": {
+				"at": "116",
+			},
+			"nature": "Serious",
+			"ability": "Huge Power",
+			"item": "Oran Berry",
+			"moves": [
+				"Aqua Jet",
+				"Play Rough",
+				"Knock Off",
+				"Superpower"
+			]
+		}
+	},
 	"Marowak-Alola": {
 		"Standard": {
 			"level": 50,
@@ -3295,6 +3402,25 @@ var SETDEX_GEN7_SETS = {
 				"Sucker Punch",
 				"Knock Off",
 				"Fire Fang"
+			]
+		}
+	},
+	"Meditite": {
+		"[Level 1] Bulk Up": {
+			"level": 1,
+			"evs": {
+				"hp": "36",
+				"at": "236",
+				"sp": "196"
+			},
+			"nature": "Serious",
+			"ability": "Pure Power",
+			"item": "Eviolite",
+			"moves": [
+				"Drain Punch",
+				"Bullet Punch",
+				"High Jump Kick",
+				"Thunder Punch"
 			]
 		}
 	},
@@ -3427,22 +3553,19 @@ var SETDEX_GEN7_SETS = {
 				"Let\s Snuggle Forever"
 			]
 		},
-		"cant say's QR Team": {
-			"level": 50,
+		"[Level 1]": {
+			"level": 1,
 			"evs": {
-				"at": "252",
-				"sd": "4",
-				"sp": "252",
+				"hp": "236",
+				"df": "36",
+				"sd": "236",
 			},
-			"ivs": {
-				"hp": "29",
-			},
-			"nature": "Adamant",
+			"nature": "Serious",
 			"ability": "Disguise",
-			"item": "Life Orb",
+			"item": "Mimikium Z",
 			"moves": [
 				"Play Rough",
-				"Swords Dance",
+				"Shadow Claw",
 				"Shadow Sneak",
 				"Drain Punch"
 			]
@@ -3758,6 +3881,24 @@ var SETDEX_GEN7_SETS = {
 				"Moonblast",
 				"Freeze-Dry",
 				"Aurora Veil"
+			]
+		}
+	},
+	"Numel": {
+		"[Level 1] Baby Zard X": {
+			"level": 1,
+			"evs": {
+				"hp": "196",
+				"sa": "156"
+			},
+			"nature": "Serious",
+			"ability": "Simple",
+			"item": "Eviolite",
+			"moves": [
+				"Earth Power",
+				"Flamethrower",
+				"Growth",
+				"Flame Charge"
 			]
 		}
 	},
@@ -4362,6 +4503,22 @@ var SETDEX_GEN7_SETS = {
 				"Volt Switch",
 				"Hidden Power Ice"
 			]
+		},
+		"[Level 1] Offensive": {
+			"level": 50,
+			"evs": {
+				"sa": "236",
+				"sd": "220"
+			},
+			"nature": "Serious",
+			"ability": "Levitate",
+			"item": "Waterium Z",
+			"moves": [
+				"Hydro Pump",
+				"Thunderbolt",
+				"Electro Web",
+				"Sucker Punch"
+			]
 		}
 	},
 	"Sableye": {
@@ -4678,6 +4835,29 @@ var SETDEX_GEN7_SETS = {
 				"Bullet Punch",
 				"U-turn"
 			]
+		},
+		"[Level 1] Life Orb": {
+			"level": 1,
+			"evs": {
+				"hp": "116",
+				"df": "40",
+				"sd": "36",
+				"sp": "160"
+			},
+			"ivs": {
+				"at": "30",
+				"sa": "30",
+				"sp": "30",
+			},
+			"nature": "serious",
+			"ability": "Technician",
+			"item": "ife Orb",
+			"moves": [
+				"Bullet Punch",
+				"Bug Bite",
+				"Vacuum Wave",
+				"Hidden Power Fire"
+			]
 		}
 	},
 	"Sharpedo": {
@@ -4738,6 +4918,25 @@ var SETDEX_GEN7_SETS = {
 			]
 		}
 	},
+	"Shinx": {
+		"[Level 1] Choice Scarf": {
+			"level": 1,
+			"evs": {
+				"at": "156",
+				"df": "4",
+				"sd": "4"
+			},
+			"nature": "Serious",
+			"ability": "Intimidate",
+			"item": "Choice Scarf",
+			"moves": [
+				"Thunderbolt",
+				"Volt Switch",
+				"Fire Fang",
+				"Thunder Wave"
+			]
+		}
+	},
 	"Shuckle": {
 		"s t i c c y   w e b s": {
 			"level": 50,
@@ -4754,6 +4953,24 @@ var SETDEX_GEN7_SETS = {
 				"Stealth Rock",
 				"Encore",
 				"Knock Off"
+			]
+		},
+		"[Level 1] Offensive Webs": {
+			"level": 1,
+			"evs": {
+				"hp": "116",
+				"df": "36",
+				"sd": "36",
+				"sp": "236"
+			},
+			"nature": "Careful",
+			"ability": "Sturdy",
+			"item": "Berry Juice",
+			"moves": [
+				"Sticky Web",
+				"Stealth Rock",
+				"Rock Slide",
+				"Rock Blast"
 			]
 		}
 	},
@@ -4927,6 +5144,43 @@ var SETDEX_GEN7_SETS = {
 				"Geomancy",
 				"Coil",
 				"Stored Power"
+			]
+		},
+		"[Level 1} Special Sweeper": {
+			"level": 1,
+			"evs": {
+				"hp": 236,
+				"sa": 116,
+				"sp": 76,
+			},
+			"ivs": {
+				"at": 0,
+			},
+			"nature": "Timid",
+			"ability": "Moody",
+			"item": "Berry Juice",
+			"moves": [
+				"Spore",
+				"Shell Smash",
+				"Boomburst",
+				"Moongeist Beam"
+			]
+		},
+		"[Level 1] Belly Drum": {
+			"level": 1,
+			"evs": {
+				"hp": 236,
+				"at": 116,
+				"sp": 76,
+			},
+			"nature": "Serious",
+			"ability": "Technician",
+			"item": "Berry Juice",
+			"moves": [
+				"Extreme Speed",
+				"Bonemarang",
+				"Shadow Sneak",
+				"Drain Punch"
 			]
 		}
 	},
@@ -5642,6 +5896,63 @@ var SETDEX_GEN7_SETS = {
 			]
 		}
 	},
+	"Togedemaru": {
+		"[Level 1] ParaFlinch": {
+			"level": 1,
+			"evs": {
+				"hp": "176",
+				"df": "172",
+				"sd": "92"
+			},
+			"nature": "Serious",
+			"ability": "Sturdy",
+			"item": "Berry Juice",
+			"moves": [
+				"Nuzzle",
+				"Iron Head",
+				"Zing Zap",
+				"U-turn"
+			]
+		}
+	},
+	"Torkoal": {
+		"[Level 1] Choice Scarf": {
+			"level": 1,
+			"evs": {
+				"hp": "116",
+				"at": "120",
+				"sd": "116",
+				"sp": "116"
+			},
+			"nature": "Serious",
+			"ability": "Drought",
+			"item": "Choice Scarf",
+			"moves": [
+				"Eruption",
+				"Flamethrower",
+				"Solar Beam",
+				"Explosion"
+			]
+		},
+		"[Level 1] Shell Smash": {
+			"level": 1,
+			"evs": {
+				"hp": "116",
+				"at": "120",
+				"sd": "116",
+				"sp": "116"
+			},
+			"nature": "Serious",
+			"ability": "Drought",
+			"item": "Oran Berry",
+			"moves": [
+				"Eruption",
+				"Flamethrower",
+				"Solar Beam",
+				"Earth Power"
+			]
+		}
+	},
 	"Toxapex": {
 		"Stall": {
 			"level": 50,
@@ -5883,6 +6194,28 @@ var SETDEX_GEN7_SETS = {
 				"Leech Seed",
 				"Moonblast",
 				"Cotton Guard"
+			]
+		},
+		"[Level 1] Sun Sweeper": {
+			"level": 1,
+			"evs": {
+				"hp": "196",
+				"sa": "64",
+				"sd": "80",
+				"sp": "148"
+			},
+			"ivs": {
+				"sa": "30",
+				"sd": "30"
+			},
+			"nature": "Serious",
+			"ability": "Chlorophyll",
+			"item": "Life Orb",
+			"moves": [
+				"Moonblast",
+				"Giga Drain",
+				"Hidden Power Ground",
+				"U-turn"
 			]
 		}
 	},
