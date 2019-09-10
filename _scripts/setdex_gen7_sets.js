@@ -3280,7 +3280,7 @@ var SETDEX_GEN7_SETS = {
 			]
 		}
 	},
-	"Azumarill": {
+	"Marill": {
 		"[Level 1] Belly Drum": {
 			"level": 1,
 			"evs": {
@@ -4505,7 +4505,7 @@ var SETDEX_GEN7_SETS = {
 			]
 		},
 		"[Level 1] Offensive": {
-			"level": 50,
+			"level": 1,
 			"evs": {
 				"sa": "236",
 				"sd": "220"
@@ -4851,7 +4851,7 @@ var SETDEX_GEN7_SETS = {
 			},
 			"nature": "serious",
 			"ability": "Technician",
-			"item": "ife Orb",
+			"item": "Life Orb",
 			"moves": [
 				"Bullet Punch",
 				"Bug Bite",
@@ -5130,11 +5130,11 @@ var SETDEX_GEN7_SETS = {
 		"Lead": {
 			"level": 50,
 			"evs": {
-				"hp": 252,
-				"sp": 252,
+				"hp": "252",
+				"sp": "252",
 			},
 			"ivs": {
-				"at": 0,
+				"at": "0",
 			},
 			"nature": "Timid",
 			"ability": "Moody",
@@ -5149,12 +5149,12 @@ var SETDEX_GEN7_SETS = {
 		"[Level 1} Special Sweeper": {
 			"level": 1,
 			"evs": {
-				"hp": 236,
-				"sa": 116,
-				"sp": 76,
+				"hp": "236",
+				"sa": "116",
+				"sp": "76",
 			},
 			"ivs": {
-				"at": 0,
+				"at": "0",
 			},
 			"nature": "Timid",
 			"ability": "Moody",
@@ -5169,9 +5169,9 @@ var SETDEX_GEN7_SETS = {
 		"[Level 1] Belly Drum": {
 			"level": 1,
 			"evs": {
-				"hp": 236,
-				"at": 116,
-				"sp": 76,
+				"hp": "236",
+				"at": "116",
+				"sp": "76",
 			},
 			"nature": "Serious",
 			"ability": "Technician",
