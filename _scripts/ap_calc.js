@@ -646,6 +646,10 @@ function calculate() {
 		}
 		$(resultLocations[0][i].move + " + label").text(p1.moves[i].name.replace("Hidden Power", "HP"));
 		$(resultLocations[0][i].damage).text(minPercent + " - " + maxPercent + "%" + recoveryText + recoilText);
+		if (maxPercent > highestMaxPercent) {
+			highestMaxPercent = maxPercent;
+			bestResult = $(resultLocations[0][i].move);
+		}
 
 		result = damageResults[1][i];
 		var recoveryText = "";
