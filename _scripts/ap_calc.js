@@ -1216,6 +1216,10 @@ function clearField() {
 	$("#helpingHandR").prop("checked", false);
 	$("#friendGuardL").prop("checked", false);
 	$("#friendGuardR").prop("checked", false);
+	$("#clangL").prop("checked", false);
+	$("#clangR").prop("checked", false);
+	$("#evoL").prop("checked", false);
+	$("#evoR").prop("checked", false);
 }
 
 function getSetOptions() {
