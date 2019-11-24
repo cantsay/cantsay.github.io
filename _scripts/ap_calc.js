@@ -31,6 +31,12 @@ function clampIntRange(num, min, max) {
 	return num;
 }
 
+$(".max").bind("keyup change", function () {
+	var poke = $(this).closest(".poke-info");
+	calcHP(poke);
+	calcStats(poke);
+});
+
 // auto-calc stats and current HP on change
 $("#levelswitch").change(function () {
 	if (this.checked) {
@@ -892,6 +898,7 @@ function Pokemon(pokeInfo) {
 		this.HPEVs = ~~pokeInfo.find(".hp .evs").val();
 		this.HPAVs = ~~pokeInfo.find(".hp .avs").val();
 		this.HPIVs = ~~pokeInfo.find(".hp .ivs").val();
+		this.isDynamax = pokeInfo.find(".max").prop("checked");
 		this.rawStats = [];
 		this.boosts = [];
 		this.stats = [];
@@ -927,6 +934,8 @@ function getMoveDetails(moveInfo, item) {
 	var moveName = moveInfo.find("select.move-selector").val();
 	var defaultDetails = moves[moveName];
 	var isZMove = gen >= 7 && moveInfo.find("input.move-z").prop("checked");
+	var isMax = moveInfo.find("move-max").prop("checked");
+	console.log(isMax);
 
 	// If z-move is checked but there isn't a corresponding z-move, use the original move
 	if (isZMove && "zp" in defaultDetails) {
@@ -1121,6 +1130,18 @@ $(".gen").change(function () {
 		calcStat = CALC_STAT_ADV;
 		localStorage.setItem("selectedGen", 7);
 		break;
+	case 8:
+		pokedex = POKEDEX_SS;
+		setdex = SETDEX_GEN8;
+		typeChart = TYPE_CHART_XY;
+		moves = MOVES_SS;
+		items = ITEMS_SS;
+		abilities = ABILITIES_SS;
+		STATS = STATS_GSC;
+		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
+		calcHP = CALC_HP_ADV;
+		calcStat = CALC_STAT_ADV;
+		break;
 	case 20:
 		pokedex = POKEDEX_SM;
 		setdex = SETDEX_FACTORY;
@@ -1308,6 +1329,11 @@ $(document).ready(function () {
 		case "7":
 			$("#gen7").prop("checked", true);
 			$("#gen7").change();
+			break;
+
+		case "8":
+			$("#gen8").prop("checked", true);
+			$("#gen8").change();
 			break;
 
 		case "20":
