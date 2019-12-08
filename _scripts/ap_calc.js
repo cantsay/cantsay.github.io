@@ -916,8 +916,8 @@ function Pokemon(pokeInfo) {
 function getMoveDetails(moveInfo, item) {
 	var moveName = moveInfo.find("select.move-selector").val();
 	var defaultDetails = moves[moveName];
-	var isZMove = gen >= 7 && moveInfo.find("input.move-z").prop("checked");
-	var isMax = moveInfo.find(".move-max").prop("checked");
+	var isZMove = gen >= 7 && gen != 8 && moveInfo.find("input.move-z").prop("checked");
+	var isMax = gen == 8 && moveInfo.find("input.move-max").prop("checked");
 
 	// If z-move is checked but there isn't a corresponding z-move, use the original move
 	if (isZMove && "zp" in defaultDetails) {

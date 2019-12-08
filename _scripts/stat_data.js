@@ -35,6 +35,7 @@ function CALC_HP_ADV(poke) {
 		var ivs = ~~hp.find(".ivs").val();
 		total = Math.floor((base * 2 + ivs + Math.floor(evs / 4)) * level / 100) + level + 10;
 	}
+
 	if (poke.find(".max").prop("checked")) {
 		// THIS VALUE SHOULD CHANGE BASED ON DYNAMAX LEVEL
 		// NEEDS RESEARCH

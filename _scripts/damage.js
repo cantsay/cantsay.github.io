@@ -82,6 +82,7 @@ function getDamageResult(attacker, defender, move, field) {
 	var exceptions_120 = ["Double Hit", "Spike Cannon"];
 	var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature's Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
 		"Super Fang", "Present", "Sput Up", "Psywave", "Mirror Coat", "Metal Burst"];
+
 	if (move.isMax) {
 		var tempMove = move;
 		move = moves[MAXMOVES_LOOKUP[tempMove.type]];
