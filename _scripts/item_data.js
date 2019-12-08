@@ -241,6 +241,10 @@ var ITEMS_SM = ITEMS_XY.concat([
 	"Marshadium Z"
 ]);
 
+var ITEMS_SS = ITEMS_SM.concat([
+
+]);
+
 function getTechnoBlast(item) {
 	switch (item) {
 	case "Burn Drive":

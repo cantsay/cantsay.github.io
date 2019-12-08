@@ -1,6 +1,4 @@
 // input field validation
-var defaultLevel = 50;
-var switchedLevel = 100;
 var bounds = {
 	"level": [0, 100],
 	"base": [1, 255],
@@ -31,23 +29,17 @@ function clampIntRange(num, min, max) {
 	return num;
 }
 
-// auto-calc stats and current HP on change
-$("#levelswitch").change(function () {
-	if (this.checked) {
-		$("#p1").find(".level").val(50);
-		$("#p2").find(".level").val(50);
-		$(".level").change();
-	} else {
-		$("#p1").find(".level").val(switchedLevel);
-		$("#p2").find(".level").val(switchedLevel);
-		$(".level").change();
-	}
+$(".max").bind("keyup change", function () {
+	var poke = $(this).closest(".poke-info");
+	calcHP(poke);
+	calcStats(poke);
 });
 
-var konami = new Konami(function () {
-	alert("Activated Lv. 1 Mode!\n\nUse the Level Switcher to toggle between Lv 50 and Lv 1.\n(Refresh the page to undo this change).");
-	switchedLevel = 1;
-	$(".onoffswitch-inner").addClass("lv1-mode");
+// auto-calc stats and current HP on change
+$("#autolevel-select").change(function () {
+	$("#p1").find(".level").val($("#autolevel-select").val());
+	$("#p2").find(".level").val($("#autolevel-select").val());
+	$(".level").change();
 });
 
 $(".level").bind("keyup change", function () {
@@ -354,7 +346,6 @@ $(".move-selector").change(function () {
 $(".set-selector, #levelswitch").bind("change click keyup keydown", function () {
 	var fullSetName = $(this).val();
 	var pokemonName, setName;
-	var Lv100 = !$("#levelswitch").is(":checked");
 	pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
 	setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
 	var pokemon = pokedex[pokemonName];
@@ -384,8 +375,7 @@ $(".set-selector, #levelswitch").bind("change click keyup keydown", function () 
 		var itemObj = pokeObj.find(".item");
 		if (pokemonName in setdex && setName in setdex[pokemonName]) {
 			var set = setdex[pokemonName][setName];
-			if (Lv100) pokeObj.find(".level").val(switchedLevel);
-			else pokeObj.find(".level").val(set.level);
+			pokeObj.find(".level").val($("#autolevel-select").val());
 			pokeObj.find(".hp .evs").val(set.evs && typeof set.evs.hp !== "undefined" ? set.evs.hp : 0);
 			pokeObj.find(".hp .avs").val(set.avs && typeof set.avs.hp !== "undefined" ? set.avs.hp : 0);
 			pokeObj.find(".hp .ivs").val(set.ivs && typeof set.ivs.hp !== "undefined" ? set.ivs.hp : 31);
@@ -405,8 +395,7 @@ $(".set-selector, #levelswitch").bind("change click keyup keydown", function () 
 				moveObj.change();
 			}
 		} else {
-			if (Lv100) pokeObj.find(".level").val(switchedLevel);
-			else pokeObj.find(".level").val(50);
+			pokeObj.find(".level").val($("#autolevel-select").val());
 			pokeObj.find(".hp .evs").val(0);
 			pokeObj.find(".hp .avs").val(0);
 			pokeObj.find(".hp .ivs").val(31);
@@ -587,7 +576,7 @@ function calculate() {
 		maxPercent = Math.floor(maxDamage * 1000 / p2.maxHP) / 10;
 		result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
 		result.koChanceText = p1.moves[i].bp === 0 ? "nice move" :
-			getKOChanceText(result.damage, p1.moves[i], p2, field.getSide(1), p1.ability === "Bad Dreams", p1, p2.isMinimized, p1.isVictoryStar);
+			getKOChanceText(result.damage, p1.moves[i], p2, field.getSide(1), p1.ability === "Bad Dreams", p1, p2.isMinimized, p1.isVictoryStar, gen);
 		if (p1.moves[i].isMLG && p1.level >= p2.level) {
 			result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>"; //dank memes
 		}
@@ -659,7 +648,7 @@ function calculate() {
 		maxPercent = Math.floor(maxDamage * 1000 / p1.maxHP) / 10;
 		result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
 		result.koChanceText = p2.moves[i].bp === 0 ? "nice move" :
-			getKOChanceText(result.damage, p2.moves[i], p1, field.getSide(0), p2.ability === "Bad Dreams", p2, p1.isMinimized, p2.isVictoryStar);
+			getKOChanceText(result.damage, p2.moves[i], p1, field.getSide(0), p2.ability === "Bad Dreams", p2, p1.isMinimized, p2.isVictoryStar, gen);
 		if (p2.moves[i].isMLG) {
 			result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>";
 		}
@@ -892,6 +881,7 @@ function Pokemon(pokeInfo) {
 		this.HPEVs = ~~pokeInfo.find(".hp .evs").val();
 		this.HPAVs = ~~pokeInfo.find(".hp .avs").val();
 		this.HPIVs = ~~pokeInfo.find(".hp .ivs").val();
+		this.isDynamax = pokeInfo.find(".max").prop("checked");
 		this.rawStats = [];
 		this.boosts = [];
 		this.stats = [];
@@ -927,6 +917,7 @@ function getMoveDetails(moveInfo, item) {
 	var moveName = moveInfo.find("select.move-selector").val();
 	var defaultDetails = moves[moveName];
 	var isZMove = gen >= 7 && moveInfo.find("input.move-z").prop("checked");
+	var isMax = moveInfo.find(".move-max").prop("checked");
 
 	// If z-move is checked but there isn't a corresponding z-move, use the original move
 	if (isZMove && "zp" in defaultDetails) {
@@ -1121,6 +1112,19 @@ $(".gen").change(function () {
 		calcStat = CALC_STAT_ADV;
 		localStorage.setItem("selectedGen", 7);
 		break;
+	case 8:
+		pokedex = POKEDEX_SS;
+		setdex = SETDEX_GEN8;
+		typeChart = TYPE_CHART_XY;
+		moves = MOVES_SS;
+		items = ITEMS_SS;
+		abilities = ABILITIES_SS;
+		STATS = STATS_GSC;
+		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
+		calcHP = CALC_HP_ADV;
+		calcStat = CALC_STAT_ADV;
+		localStorage.setItem("selectedGen", 8);
+		break;
 	case 20:
 		pokedex = POKEDEX_SM;
 		setdex = SETDEX_FACTORY;
@@ -1310,6 +1314,11 @@ $(document).ready(function () {
 			$("#gen7").change();
 			break;
 
+		case "8":
+			$("#gen8").prop("checked", true);
+			$("#gen8").change();
+			break;
+
 		case "20":
 			$("#gen20").prop("checked", true);
 			$("#gen20").change();
@@ -1332,6 +1341,9 @@ $(document).ready(function () {
 	} else {
 		$("#gen7").prop("checked", true);
 		$("#gen7").change();
+	}
+	for (var n = 1; n < 101; n++) {
+		$("#autolevel-select").append($("<option />").val(n).text(n));
 	}
 	$(".terrain-trigger").bind("change keyup", getTerrainEffects);
 	$(".calc-trigger").bind("change keyup", calculate);
@@ -1428,3 +1440,11 @@ function optimizeEVs(side, mon) {
 	console.log(sp);
 	*/
 }
+
+$("#maxL").change(function () {
+	if (this.checked) {
+
+	} else {
+
+	}
+});

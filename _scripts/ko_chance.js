@@ -1,6 +1,6 @@
-function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, isMinimized, isVictoryStar) {
+function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, isMinimized, isVictoryStar, gen) {
 	if (isNaN(damage[0])) {
-		return "something broke; please tell cant say or LegoFigure11";
+		return "something broke; please tell cant say or Lego";
 	}
 	var moveAccuracy = "";
 	var ignoreAccMods = false;
@@ -51,19 +51,20 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	var hasAguav = defender.item === "Aguav Berry";
 	var hasMago = defender.item === "Mago Berry";
 	var gluttony = defender.ability === "Gluttony";
+
 	if ((damage.length !== 256 || !hasSitrus && !hasFigy && !hasIapapa && !hasWiki && !hasAguav && !hasMago) && damage[0] >= defender.curHP) {
 		return "guaranteed OHKO" + " (" + (100 * (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	} else if (damage.length === 256 && hasSitrus && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 4)) {
 		return "guaranteed OHKO" + " (" + (100 * (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
-	} else if (damage.length === 256 && hasFigy && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
+	} else if (damage.length === 256 && hasFigy && damage[0] >= defender.curHP + Math.floor(defender.maxHP / gen === 8 ? 3 : 2)) {
 		return "guaranteed OHKO" + " (" + (100 * (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
-	} else if (damage.length === 256 && hasIapapa && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
+	} else if (damage.length === 256 && hasIapapa && damage[0] >= defender.curHP + Math.floor(defender.maxHP / gen === 8 ? 3 : 2)) {
 		return "guaranteed OHKO" + " (" + (100 * (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
-	} else if (damage.length === 256 && hasWiki && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
+	} else if (damage.length === 256 && hasWiki && damage[0] >= defender.curHP + Math.floor(defender.maxHP / gen === 8 ? 3 : 2)) {
 		return "guaranteed OHKO" + " (" + (100 * (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
-	} else if (damage.length === 256 && hasAguav && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
+	} else if (damage.length === 256 && hasAguav && damage[0] >= defender.curHP + Math.floor(defender.maxHP / gen === 8 ? 3 : 2)) {
 		return "guaranteed OHKO" + " (" + (100 * (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
-	} else if (damage.length === 256 && hasMago && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
+	} else if (damage.length === 256 && hasMago && damage[0] >= defender.curHP + Math.floor(defender.maxHP / gen === 8 ? 3 : 2)) {
 		return "guaranteed OHKO" + " (" + (100 * (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
 	}
 
@@ -192,7 +193,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	}
 
 	var multihit = damage.length === 256 || move.hits > 1;
-	var c = getKOChance(damage, multihit, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony);
+	var c = getKOChance(damage, multihit, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony, gen);
 	var afterText = hazardText.length > 0 ? " after " + serializeText(hazardText) : "";
 	if (c === 1) {
 		return "guaranteed OHKO" + afterText + " (" + (100 * (moveAccuracy / 100)).toFixed(2) + "% after accuracy)";
@@ -235,7 +236,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	afterText = hazardText.length > 0 || eotText.length > 0 ? " after " + serializeText(hazardText.concat(eotText)) : "";
 	var i;
 	for (i = 2; i <= 4; i++) {
-		c = getKOChance(damage, multihit, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony);
+		c = getKOChance(damage, multihit, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony, gen);
 		if (c === 1) {
 			return "guaranteed " + i + "HKO" + afterText + " (" + (Math.pow(moveAccuracy / 100, i) * 100).toFixed(2) + "% chance to " + i + "HKO after accuracy)";
 		} else if (c > 0) {
@@ -257,25 +258,26 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 	return "possibly the worst move ever";
 }
 
-function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony) {
+function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony, gen) {
 	var n = damage.length;
 	var minDamage = damage[0];
 	var maxDamage = damage[n - 1];
+	//var gen = $(".generation-select :checked").val();
 	var i;
 	if (hits === 1) {
 		if ((!multihit || !hasSitrus) && maxDamage < hp) {
 			return 0;
 		} else if (multihit && hasSitrus && maxDamage < hp + Math.floor(maxHP / 4)) {
 			return 0;
-		} else if (multihit && hasFigy && maxDamage < hp + Math.floor(maxHP / 2)) {
+		} else if (multihit && hasFigy && maxDamage < hp + Math.floor(maxHP / gen === 8 ? 3 : 2)) {
 			return 0;
-		} else if (multihit && hasIapapa && maxDamage < hp + Math.floor(maxHP / 2)) {
+		} else if (multihit && hasIapapa && maxDamage < hp + Math.floor(maxHP / gen === 8 ? 3 : 2)) {
 			return 0;
-		} else if (multihit && hasWiki && maxDamage < hp + Math.floor(maxHP / 2)) {
+		} else if (multihit && hasWiki && maxDamage < hp + Math.floor(maxHP / gen === 8 ? 3 : 2)) {
 			return 0;
-		} else if (multihit && hasAguav && maxDamage < hp + Math.floor(maxHP / 2)) {
+		} else if (multihit && hasAguav && maxDamage < hp + Math.floor(maxHP / gen === 8 ? 3 : 2)) {
 			return 0;
-		} else if (multihit && hasMago && maxDamage < hp + Math.floor(maxHP / 2)) {
+		} else if (multihit && hasMago && maxDamage < hp + Math.floor(maxHP / gen === 8 ? 3 : 2)) {
 			return 0;
 		}
 		for (i = 0; i < n; i++) {
@@ -314,24 +316,24 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
 			hp += Math.floor(maxHP / 4);
 			hasSitrus = false;
 		} else if (hp - damage[i] <= maxHP / 4 && hasFigy && !gluttony || hp - damage[i] <= maxHP / 2 && hasFigy && gluttony) {
-			hp += Math.floor(maxHP / 2);
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasFigy = false;
 		} else if (hp - damage[i] <= maxHP / 4 && hasIapapa && !gluttony || hp - damage[i] <= maxHP / 2 && hasIapapa && gluttony) {
-			hp += Math.floor(maxHP / 2);
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasIapapa = false;
 		} else if (hp - damage[i] <= maxHP / 4 && hasWiki && !gluttony || hp - damage[i] <= maxHP / 2 && hasWiki && gluttony) {
-			hp += Math.floor(maxHP / 2);
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasWiki = false;
 		} else if (hp - damage[i] <= maxHP / 4 && hasAguav && !gluttony || hp - damage[i] <= maxHP / 2 && hasAguav && gluttony) {
-			hp += Math.floor(maxHP / 2);
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasAguav = false;
 		} else if (hp - damage[i] <= maxHP / 4 && hasMago && !gluttony || hp - damage[i] <= maxHP / 2 && hasMago && gluttony) {
-			hp += Math.floor(maxHP / 2);
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasMago = false;
 		}
 		var c;
 		if (i === 0 || damage[i] !== damage[i - 1]) {
-			c = getKOChance(damage, multihit, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony);
+			c = getKOChance(damage, multihit, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony, gen);
 		} else {
 			c = lastC;
 		}
@@ -348,25 +350,26 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
 
 function predictTotal(damage, eot, hits, toxicCounter, hp, maxHP, hasSitrus, hasFigy, hasIapapa, hasWiki, hasAguav, hasMago, gluttony) {
 	var total = 0;
+	//var gen = $(".generation-select :checked").val();
 	for (var i = 0; i < hits; i++) {
 		total += damage;
 		if (hp - total <= maxHP / 2 && hasSitrus) {
 			total -= Math.floor(maxHP / 4);
 			hasSitrus = false;
-		} else if (hp - total <= maxHP / 4 && hasFigy && !gluttony || hp - total <= maxHP / 2 && hasFigy && gluttony) {
-			hp += Math.floor(maxHP / 2);
+		} else if (((hp - total <= maxHP / 4) && hasFigy && !gluttony) || ((hp - total <= maxHP / 2) && hasFigy && gluttony)) {
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasFigy = false;
-		} else if (hp - total <= maxHP / 4 && hasIapapa && !gluttony || hp - total <= maxHP / 2 && hasIapapa && gluttony) {
-			hp += Math.floor(maxHP / 2);
+		} else if (((hp - total <= maxHP / 4) && hasIapapa && !gluttony) || ((hp - total <= maxHP / 2) && hasIapapa && gluttony)) {
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasIapapa = false;
-		} else if (hp - total <= maxHP / 4 && hasWiki && !gluttony || hp - total <= maxHP / 2 && hasWiki && gluttony) {
-			hp += Math.floor(maxHP / 2);
+		} else if (((hp - total <= maxHP / 4) && hasWiki && !gluttony) || ((hp - total <= maxHP / 2) && hasWiki && gluttony)) {
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasWiki = false;
-		} else if (hp - total <= maxHP / 4 && hasAguav && !gluttony || hp - total <= maxHP / 2 && hasAguav && gluttony) {
-			hp += Math.floor(maxHP / 2);
+		} else if (((hp - total <= maxHP / 4) && hasAguav && !gluttony) || ((hp - total <= maxHP / 2) && hasAguav && gluttony)) {
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasAguav = false;
-		} else if (hp - total <= maxHP / 4 && hasMago && !gluttony || hp - total <= maxHP / 2 && hasMago && gluttony) {
-			hp += Math.floor(maxHP / 2);
+		} else if (((hp - total <= maxHP / 4) && hasMago && !gluttony) || ((hp - total <= maxHP / 2) && hasMago && gluttony)) {
+			hp += Math.floor(maxHP / gen === 8 ? 3 : 2);
 			hasMago = false;
 		}
 		if (i < hits - 1) {

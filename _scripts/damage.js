@@ -71,6 +71,44 @@ function getDamageResult(attacker, defender, move, field) {
 	if (field.isProtect) {
 	  isQuarteredByProtect = true;
 	}
+	// SHOUTOUTS TT
+	var exceptions_100_fight = ["Low Kick", "Reversal", "Final Gambit"];
+	var exceptions_80_fight = ["Double Kick", "Triple Kick"];
+	var exceptions_75_fight = ["Counter", "Seismic Toss"];
+	var exceptions_140 = ["Crush Grip", "Wring Out", "Magnitude", "Double Iron Bash"];
+	var exceptions_130 = ["Pin Missile", "Power Trip", "Punishment", "Dragon Darts", "Dual Chop", "Electro Ball", "Heat Crash",
+		"Bullet Seed", "Grass Knot", "Bonemerang", "Bone Rush", "Fissure", "Icicle Spear", "Sheer Cold", "Weather Ball", "Tail Slap", "Guillotine", "Horn Drill",
+		"Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam"];
+	var exceptions_120 = ["Double Hit", "Spike Cannon"];
+	var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature's Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
+		"Super Fang", "Present", "Sput Up", "Psywave", "Mirror Coat", "Metal Burst"];
+	if (move.isMax) {
+		var tempMove = move;
+		move = moves[MAXMOVES_LOOKUP[tempMove.type]];
+		if (move.type == "Fighting" || move.type == "Poison") {
+			if (tempMove.bp >= 150 || exceptions_100_fight.includes(move.name)) move.bp = 100;
+			else if (tempMove.bp >= 110) move.bp = 95;
+			else if (tempMove.bp >= 75) move.bp = 90;
+			else if (tempMove.bp >= 65) move.bp = 85;
+			else if (tempMove.bp >= 55 || exceptions_80_fight.includes(move.name)) move.bp = 80;
+			else if (tempMove.bp >= 45 || exceptions_75_fight.includes(move.name)) move.bp = 75;
+			else move.bp = 70;
+		} else {
+			if (tempMove.bp >= 150) move.bp = 150;
+			else if (tempMove.bp >= 110 || exceptions_140.includes(move.name)) move.bp = 140;
+			else if (tempMove.bp >= 75 || exceptions_130.includes(move.name)) move.bp = 130;
+			else if (tempMove.bp >= 65 || exceptions_120.includes(move.name)) move.bp = 120;
+			else if (tempMove.bp >= 55 || exceptions_100.includes(move.name)) move.bp = 110;
+			else if (tempMove.bp >= 45) move.bp = 100;
+			else move.bp = 90;
+		}
+		moveDescName = MAXMOVES_LOOKUP[move.type] + " (" + move.bp + " BP)";
+		move.category = tempMove.category;
+		move.isMax = true;
+		if (attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
+			attacker.item = "";
+		}
+	}
 	var description = {
 		"attackerName": attacker.name,
 		"moveName": moveDescName,
@@ -135,6 +173,12 @@ function getDamageResult(attacker, defender, move, field) {
 
 	case "Revelation Dance":
 		move.type = attacker.type1;
+		break;
+
+	case "Aura Wheel":
+		if (attacker.name.includes("Morpeko-Hangry")) {
+			move.type = "Dark";
+		}
 		break;
 	}
 
@@ -613,7 +657,7 @@ function getDamageResult(attacker, defender, move, field) {
 		} else {
 			stabMod = 0x1800;
 		}
-	} else if (attacker.ability === "Protean") {
+	} else if (attacker.ability === "Protean" || attacker.ability == "Libero") {
 		stabMod = 0x1800;
 		description.attackerAbility = attacker.ability;
 	}
@@ -627,12 +671,23 @@ function getDamageResult(attacker, defender, move, field) {
 		finalMods.push(field.format !== "Singles" ? 0xA8F : 0x800);
 		description.isLightScreen = true;
 	}
+	if ((move.name === "Dynamax Cannon" || move.name === "Behemoth Blade" || move.name === "Behemoth Bash") && defender.isDynamax) {
+		finalMods.push(0x2000);
+	}
 	if ((defAbility === "Multiscale" || defAbility == "Shadow Shield") && defender.curHP === defender.maxHP) {
 		finalMods.push(0x800);
 		description.defenderAbility = defAbility;
 	}
 	if (attacker.ability === "Tinted Lens" && typeEffectiveness < 1) {
 		finalMods.push(0x2000);
+		description.attackerAbility = attacker.ability;
+	}
+	if (defAbility === "Punk Rock" && move.isSound) {
+		finalMods.push(0x800);
+		description.defenderAbility = defAbility;
+	}
+	if (attacker.ability == "Punk Rock" && move.isSound) {
+		finalMods.push(0x14CC);
 		description.attackerAbility = attacker.ability;
 	}
 	if (field.isFriendGuard) {
