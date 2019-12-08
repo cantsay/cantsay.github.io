@@ -57,7 +57,7 @@ function parseDamageRolls(input) {
 		return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 	}
 
-	//If you've made it this far, you should be good
+	// If you've made it this far, you should be good
 	var damageRolls = [];
 	for (var i in rollsString) {
 		damageRolls[i] = parseInt(rollsString[i]);

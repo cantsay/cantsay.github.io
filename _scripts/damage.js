@@ -100,11 +100,14 @@ function getDamageResult(attacker, defender, move, field) {
 			else if (tempMove.bp >= 65 || exceptions_120.includes(move.name)) move.bp = 120;
 			else if (tempMove.bp >= 55 || exceptions_100.includes(move.name)) move.bp = 110;
 			else if (tempMove.bp >= 45) move.bp = 100;
-			else tempMove.bp = 90;
+			else move.bp = 90;
 		}
 		moveDescName = MAXMOVES_LOOKUP[move.type] + " (" + move.bp + " BP)";
 		move.category = tempMove.category;
 		move.isMax = true;
+		if (attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
+			attacker.item = "";
+		}
 	}
 	var description = {
 		"attackerName": attacker.name,
@@ -654,7 +657,7 @@ function getDamageResult(attacker, defender, move, field) {
 		} else {
 			stabMod = 0x1800;
 		}
-	} else if (attacker.ability === "Protean") {
+	} else if (attacker.ability === "Protean" || attacker.ability == "Libero") {
 		stabMod = 0x1800;
 		description.attackerAbility = attacker.ability;
 	}
@@ -677,6 +680,14 @@ function getDamageResult(attacker, defender, move, field) {
 	}
 	if (attacker.ability === "Tinted Lens" && typeEffectiveness < 1) {
 		finalMods.push(0x2000);
+		description.attackerAbility = attacker.ability;
+	}
+	if (defAbility === "Punk Rock" && move.isSound) {
+		finalMods.push(0x800);
+		description.defenderAbility = defAbility;
+	}
+	if (attacker.ability == "Punk Rock" && move.isSound) {
+		finalMods.push(0x14CC);
 		description.attackerAbility = attacker.ability;
 	}
 	if (field.isFriendGuard) {
