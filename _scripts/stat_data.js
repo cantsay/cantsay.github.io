@@ -37,9 +37,8 @@ function CALC_HP_ADV(poke) {
 	}
 
 	if (poke.find(".max").prop("checked")) {
-		// THIS VALUE SHOULD CHANGE BASED ON DYNAMAX LEVEL
-		// NEEDS RESEARCH
-		total *= 2; // placeholder
+		var dmaxLevel = poke.find(".max-level").val();
+		total = Math.floor(total * (1.5 + (dmaxLevel * 0.05)));
 	}
 	hp.find(".total").text(total);
 	poke.find(".max-hp").text(total);

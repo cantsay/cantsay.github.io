@@ -35,6 +35,12 @@ $(".max").bind("keyup change", function () {
 	calcStats(poke);
 });
 
+$(".max-level").bind("keyup change", function () {
+	var poke = $(this).closest(".poke-info");
+	calcHP(poke);
+	calcStats(poke);
+});
+
 // auto-calc stats and current HP on change
 $("#autolevel-select").change(function () {
 	$("#p1").find(".level").val($("#autolevel-select").val());
