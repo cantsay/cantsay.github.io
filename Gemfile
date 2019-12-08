@@ -10,7 +10,3 @@ gem 'email_reply_parser'
 gem 'commonmarker'
 gem 'sanitize'
 gem 'RedCloth'
-
-group :test do
-  gem 'headhunter'
-end
