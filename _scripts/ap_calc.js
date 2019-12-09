@@ -942,6 +942,7 @@ function getMoveDetails(moveInfo, item) {
 			type: moveInfo.find(".move-type").val(),
 			category: moveInfo.find(".move-cat").val(),
 			isCrit: moveInfo.find(".move-crit").prop("checked"),
+			isMax: isMax,
 			hits: defaultDetails.isMultiHit ? ~~moveInfo.find(".move-hits").val() : defaultDetails.isTwoHit ? 2 : 1,
 			usedTimes: defaultDetails.dropsStats ? ~~moveInfo.find(".stat-drops").val() : 1
 		});
@@ -1449,8 +1450,24 @@ function optimizeEVs(side, mon) {
 
 $("#maxL").change(function () {
 	if (this.checked) {
-
+		for (var i = 0; i < 4; i++) {
+			$("#maxL" + (i + 1)).prop("checked", true);
+		}
 	} else {
+		for (var i = 0; i < 4; i++) {
+			$("#maxL" + (i + 1)).prop("checked", false);
+		}
+	}
+});
 
+$("#maxR").change(function () {
+	if (this.checked) {
+		for (var i = 0; i < 4; i++) {
+			$("#maxR" + (i + 1)).prop("checked", true);
+		}
+	} else {
+		for (var i = 0; i < 4; i++) {
+			$("#maxR" + (i + 1)).prop("checked", false);
+		}
 	}
 });
