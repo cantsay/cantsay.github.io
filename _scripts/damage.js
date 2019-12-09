@@ -293,7 +293,6 @@ function getDamageResult(attacker, defender, move, field) {
 	case "Grass Knot":
 		var w = defender.weight;
 		basePower = w >= 200 ? 120 : w >= 100 ? 100 : w >= 50 ? 80 : w >= 25 ? 60 : w >= 10 ? 40 : 20;
-		if (defender.isDynamax) basePower = 0;
 		description.moveBP = basePower;
 		break;
 	case "Hex":
@@ -416,12 +415,12 @@ function getDamageResult(attacker, defender, move, field) {
 		description.attackerItem = attacker.item;
 	}
 
-	if (move.name === "Facade" && ["Burned", "Paralyzed", "Poisoned", "Badly Poisoned"].indexOf(attacker.status) !== -1 ||
+	if (move.name === "Facade" && ["Burned", "Paralyzed", "Poisoned", "Badly Poisoned"].includes(attacker.status) ||
             move.name === "Brine" && defender.curHP <= defender.maxHP / 2 ||
             move.name === "Venoshock" && (defender.status === "Poisoned" || defender.status === "Badly Poisoned")) {
 		bpMods.push(0x2000);
 		description.moveBP = move.bp * 2;
-	} else if ((move.name === "Solar Beam" || move.name == "SolarBeam") && ["Rain", "Sand", "Hail", "Heavy Rain"].indexOf(field.weather) !== -1) {
+	} else if ((move.name === "Solar Beam" || move.name == "SolarBeam") && ["Rain", "Sand", "Hail", "Heavy Rain"].inclues(field.weather)) {
 		bpMods.push(0x800);
 		description.moveBP = move.bp / 2;
 		description.weather = field.weather;
@@ -756,7 +755,8 @@ function getDamageResult(attacker, defender, move, field) {
 		if (applyBurn) {
 			damage[i] = Math.floor(damage[i] / 2);
 		}
-		damage[i] = Math.max(1, pokeRound(damage[i] * finalMod / 0x1000));
+		damage[i] = Math.max(1, pokeRound(damage[i] * finalMod / 0x1000) % 65536);
+		if (["Grass Knot", "Low Kick", "Heat Crash", "Heavy Slam"].includes(move.name) && defender.isDynamax) damage[i] = 0;
 		if (attacker.ability === "Parental Bond" && move.hits === 1 && (field.format === "Singles" || !move.isSpread)) {
 			for (j = 0; j < 16; j++) {
 				pbDamage[16 * i + j] = damage[i] + childDamage[j];
