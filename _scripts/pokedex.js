@@ -14278,7 +14278,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 		"w": 950,
 	},
 
-	"Aegislash": {"bs": {"df": 140, "sd": 140}},
+	"Aegislash-Shield": {"bs": {"df": 140, "sd": 140}},
 	"Aegislash-Both": {"bs": {"at": 140, "df": 140, "sa": 140, "sd": 140}},
 	"Aegislash-Blade": {"bs": {"at": 140, "sa": 140}},
 
