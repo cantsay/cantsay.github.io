@@ -81,7 +81,7 @@ function getDamageResult(attacker, defender, move, field) {
 		"Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam"];
 	var exceptions_120 = ["Double Hit", "Spike Cannon"];
 	var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature's Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
-		"Super Fang", "Present", "Sput Up", "Psywave", "Mirror Coat", "Metal Burst"];
+		"Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst"];
 
 	if (move.isMax) {
 		var tempMove = move;
@@ -123,7 +123,7 @@ function getDamageResult(attacker, defender, move, field) {
 	if (["Mold Breaker", "Teravolt", "Turboblaze"].indexOf(attacker.ability) !== -1 && defAbility !== "Shadow Shield") {
 		defAbility = "";
 		description.attackerAbility = attacker.ability;
-	} else if ((move.name === "Moongeist Beam" || move.name === "Sunsteel Strike") && defAbility !== "Shadow Shield")
+	} else if (!(["Moongeist Beam", "Sunsteel Strike", "Searing Sunraze Smash", "Menacing Moonraze Maelstrom", "Light That Burns the Sky"].includes(move.name)) && defAbility !== "Shadow Shield")
 		defAbility = ""; //works as a mold breaker
 
 	var isCritical = move.isCrit && ["Battle Armor", "Shell Armor"].indexOf(defAbility) === -1;
@@ -293,6 +293,7 @@ function getDamageResult(attacker, defender, move, field) {
 	case "Grass Knot":
 		var w = defender.weight;
 		basePower = w >= 200 ? 120 : w >= 100 ? 100 : w >= 50 ? 80 : w >= 25 ? 60 : w >= 10 ? 40 : 20;
+		if (defender.isDynamax) basePower = 0;
 		description.moveBP = basePower;
 		break;
 	case "Hex":
