@@ -495,8 +495,7 @@ function getDamageResult(attacker, defender, move, field) {
 	if (move.usesHighestAttackStat) {
 		move.category = attackSource.stats[AT] >= attackSource.stats[SA] ? "Physical" : "Special";
 	}
-	var attackStat = move.category === "Physical" ? AT : SA;
-	if (move.name === "Body Press") attackStat = DF;
+	var attackStat = move.name === "Body Press" ? DF : move.category === "Physical" ? AT : SA;
 	description.attackEVs = attacker.evs[attackStat] +
             (NATURES[attacker.nature][0] === attackStat ? "+" : NATURES[attacker.nature][1] === attackStat ? "-" : "") + " " +
             toSmogonStat(attackStat);
