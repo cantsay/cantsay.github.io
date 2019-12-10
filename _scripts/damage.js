@@ -420,7 +420,7 @@ function getDamageResult(attacker, defender, move, field) {
             move.name === "Venoshock" && (defender.status === "Poisoned" || defender.status === "Badly Poisoned")) {
 		bpMods.push(0x2000);
 		description.moveBP = move.bp * 2;
-	} else if ((move.name === "Solar Beam" || move.name == "SolarBeam") && ["Rain", "Sand", "Hail", "Heavy Rain"].inclues(field.weather)) {
+	} else if ((move.name === "Solar Beam" || move.name == "SolarBeam") && ["Rain", "Sand", "Hail", "Heavy Rain"].includes(field.weather)) {
 		bpMods.push(0x800);
 		description.moveBP = move.bp / 2;
 		description.weather = field.weather;

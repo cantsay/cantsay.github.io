@@ -12955,6 +12955,53 @@ var POKEDEX_LG = $.extend(true, {}, POKEDEX_INTERMEDIATE, {
 	},
 });
 
+// Remove Megas for SwSh
+delete POKEDEX_SM["Venusaur"].formes;
+delete POKEDEX_SM["Charizard"].formes;
+delete POKEDEX_SM["Blastoise"].formes;
+delete POKEDEX_SM["Beedrill"].formes;
+delete POKEDEX_SM["Pidgeot"].formes;
+delete POKEDEX_SM["Alakazam"].formes;
+delete POKEDEX_SM["Slowbro"].formes;
+delete POKEDEX_SM["Gengar"].formes;
+delete POKEDEX_SM["Kangaskhan"].formes;
+delete POKEDEX_SM["Pinsir"].formes;
+delete POKEDEX_SM["Gyarados"].formes;
+delete POKEDEX_SM["Aerodactyl"].formes;
+delete POKEDEX_SM["Mewtwo"].formes;
+delete POKEDEX_SM["Ampharos"].formes;
+delete POKEDEX_SM["Steelix"].formes;
+delete POKEDEX_SM["Scizor"].formes;
+delete POKEDEX_SM["Heracross"].formes;
+delete POKEDEX_SM["Houndoom"].formes;
+delete POKEDEX_SM["Tyranitar"].formes;
+delete POKEDEX_SM["Sceptile"].formes;
+delete POKEDEX_SM["Blaziken"].formes;
+delete POKEDEX_SM["Swampert"].formes;
+delete POKEDEX_SM["Gardevoir"].formes;
+delete POKEDEX_SM["Sableye"].formes;
+delete POKEDEX_SM["Mawile"].formes;
+delete POKEDEX_SM["Aggron"].formes;
+delete POKEDEX_SM["Medicham"].formes;
+delete POKEDEX_SM["Manectric"].formes;
+delete POKEDEX_SM["Sharpedo"].formes;
+delete POKEDEX_SM["Camerupt"].formes;
+delete POKEDEX_SM["Altaria"].formes;
+delete POKEDEX_SM["Banette"].formes;
+delete POKEDEX_SM["Absol"].formes;
+delete POKEDEX_SM["Glalie"].formes;
+delete POKEDEX_SM["Salamence"].formes;
+delete POKEDEX_SM["Metagross"].formes;
+delete POKEDEX_SM["Latias"].formes;
+delete POKEDEX_SM["Latios"].formes;
+delete POKEDEX_SM["Rayquaza"].formes;
+delete POKEDEX_SM["Lopunny"].formes;
+delete POKEDEX_SM["Garchomp"].formes;
+delete POKEDEX_SM["Lucario"].formes;
+delete POKEDEX_SM["Abomasnow"].formes;
+delete POKEDEX_SM["Gallade"].formes;
+delete POKEDEX_SM["Audino"].formes;
+
 var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 	"Meltan": {
 		"t1": "Steel",
@@ -14281,50 +14328,4 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 	"Aegislash-Shield": {"bs": {"df": 140, "sd": 140}},
 	"Aegislash-Both": {"bs": {"at": 140, "df": 140, "sa": 140, "sd": 140}},
 	"Aegislash-Blade": {"bs": {"at": 140, "sa": 140}},
-
-	"Venusaur": {"formes": ["Venusaur"]},
-	"Charizard": {"formes": ["Charizard"]},
-	"Blastoise": {"formes": ["Blastoise"]},
-	"Beedrill": {"formes": ["Beedrill"]},
-	"Pidgeot": {"formes": ["Pidgeot"]},
-	"Alakazam": {"formes": ["Alakazam"]},
-	"Slowbro": {"formes": ["Slowbro"]},
-	"Gengar": {"formes": ["Gengar"]},
-	"Kangaskhan": {"formes": ["Kangaskhan"]},
-	"Pinsir": {"formes": ["Pinsir"]},
-	"Gyarados": {"formes": ["Gyarados"]},
-	"Aerodactyl": {"formes": ["Aerodactyl"]},
-	"Mewtwo": {"formes": ["Mewtwo"]},
-	"Ampharos": {"formes": ["Ampharos"]},
-	"Steelix": {"formes": ["Steelix"]},
-	"Scizor": {"formes": ["Scizor"]},
-	"Heracross": {"formes": ["Heracross"]},
-	"Houndoom": {"formes": ["Houndoom"]},
-	"Tyranitar": {"formes": ["Tyranitar"]},
-	"Sceptile": {"formes": ["Sceptile"]},
-	"Blaziken": {"formes": ["Blaziken"]},
-	"Swampert": {"formes": ["Swampert"]},
-	"Gardevoir": {"t2": "Fairy", "formes": ["Gardevoir"]},
-	"Sableye": {"formes": ["Sableye"]},
-	"Mawile": {"formes": ["Mawile"]},
-	"Aggron": {"formes": ["Aggron"]},
-	"Medicham": {"formes": ["Medicham"]},
-	"Manectric": {"formes": ["Manectric"]},
-	"Sharpedo": {"formes": ["Sharpedo"]},
-	"Camerupt": {"formes": ["Camerupt"]},
-	"Altaria": {"formes": ["Altaria"]},
-	"Banette": {"formes": ["Banette"]},
-	"Absol": {"formes": ["Absol"]},
-	"Glalie": {"formes": ["Glalie"]},
-	"Salamence": {"formes": ["Salamence"]},
-	"Metagross": {"formes": ["Metagross"]},
-	"Latias": {"formes": ["Latias"]},
-	"Latios": {"formes": ["Latios"]},
-	"Rayquaza": {"formes": ["Rayquaza"]},
-	"Lopunny": {"formes": ["Lopunny"]},
-	"Garchomp": {"formes": ["Garchomp"]},
-	"Lucario": {"formes": ["Lucario"]},
-	"Abomasnow": {"formes": ["Abomasnow"]},
-	"Gallade": {"formes": ["Gallade"]},
-	"Audino": {"formes": ["Audino"]},
 });
