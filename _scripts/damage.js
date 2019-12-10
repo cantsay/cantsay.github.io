@@ -17,6 +17,8 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
 	p2.stats[SP] = getFinalSpeed(p2, field.getWeather());
 	checkIntimidate(p1, p2);
 	checkIntimidate(p2, p1);
+	checkZacianZamazaenta(p1);
+	checkZacianZamazaenta(p2);
 	checkDownload(p1, p2);
 	checkDownload(p2, p1);
 	p1.stats[AT] = getModifiedStat(p1.rawStats[AT], p1.boosts[AT]);
@@ -1448,6 +1450,15 @@ function checkSeeds(pokemon, field) {
 		pokemon.boosts[DF] = Math.min(6, pokemon.boosts[DF] + 1);
 	}
 }
+
+function checkZacianZamazaenta(pokemon) {
+	if (pokemon.ability === "Intrepid Sword") {
+		pokemon.boosts[AT] = Math.min(6, pokemon.boosts[AT] + 1);
+	} else if (pokemon.item === "Dauntless Shield") {
+		pokemon.boosts[DF] = Math.min(6, pokemon.boosts[DF] + 1);
+	}
+}
+
 function checkIntimidate(source, target) {
 	if (source.ability === "Intimidate") {
 		if (target.ability === "Contrary" || target.ability === "Defiant") {
