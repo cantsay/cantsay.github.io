@@ -3519,21 +3519,21 @@ var SETDEX_GEN8_SETS = {
 		}
 	},
 	"Mimikyu": {
-		"Physical Attacker": {
+		"Sweeper": {
 			"level": 50,
 			"evs": {
 				"hp": "4",
 				"at": "252",
 				"sp": "252"
 			},
-			"nature": "Adamant",
+			"nature": "Jolly",
 			"ability": "Disguise",
-			"item": "Mimikium Z",
+			"item": "Life Orb",
 			"moves": [
 				"Play Rough",
 				"Shadow Claw",
 				"Shadow Sneak",
-				"Let\'s Snuggle Forever"
+				"Wood Hammer"
 			]
 		},
 		"Curse": {
@@ -3545,29 +3545,12 @@ var SETDEX_GEN8_SETS = {
 			},
 			"nature": "Adamant",
 			"ability": "Disguise",
-			"item": "Mimikium Z",
+			"item": "Life Orb",
 			"moves": [
 				"Play Rough",
 				"Shadow Claw",
 				"Shadow Sneak",
-				"Let\s Snuggle Forever"
-			]
-		},
-		"[Level 1]": {
-			"level": 1,
-			"evs": {
-				"hp": "236",
-				"df": "36",
-				"sd": "236",
-			},
-			"nature": "Serious",
-			"ability": "Disguise",
-			"item": "Mimikium Z",
-			"moves": [
-				"Play Rough",
-				"Shadow Claw",
-				"Shadow Sneak",
-				"Drain Punch"
+				"Wood Hammer"
 			]
 		}
 	},
