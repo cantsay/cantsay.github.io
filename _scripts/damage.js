@@ -548,6 +548,9 @@ function getDamageResult(attacker, defender, move, field) {
         (attacker.ability === "Huge Power" || attacker.ability === "Pure Power") && move.category === "Physical") {
 		atMods.push(0x2000);
 		description.attackerAbility = attacker.ability;
+	} else if (attacker.ability === "Gorilla Tactics" && move.category === "Physical" && !attacker.isDynamax) {
+		atMods.push(0x1800);
+		description.attackerAbility = attacker.ability;
 	}
 
 	if (attacker.item === "Thick Club" && (attacker.name === "Cubone" || attacker.name === "Marowak" || attacker.name === "Marowak-Alola") && move.category === "Physical" ||
