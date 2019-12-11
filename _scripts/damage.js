@@ -113,8 +113,6 @@ function getDamageResult(attacker, defender, move, field) {
 		move.acc = 101;
 		move.hits = 1;
 		move.isMultiHit = false;
-		console.log(move)
-		console.log(tempMove)
 		if (attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
 			attacker.item = "";
 		}

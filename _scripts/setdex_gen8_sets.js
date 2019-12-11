@@ -5898,6 +5898,36 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	  "Togekiss": {
+	    "WP Dynamaxer": {
+	      "level": "50",
+	      "evs": {
+	        "hp": 4,
+	        "at": 0,
+	        "df": 0,
+	        "sa": 252,
+	        "sd": 0,
+	        "sp": 252
+	      },
+	      "ivs": {
+	        "hp": 31,
+	        "at": 0,
+	        "df": 31,
+	        "sa": 31,
+	        "sd": 31,
+	        "sp": 31
+	      },
+	      "nature": "Timid",
+	      "ability": "Serene Grace",
+	      "item": "Weakness Policy",
+	      "moves": [
+	        "Air Slash",
+	        "Flamethrower",
+	        "Dazzling Gleam",
+	        "Ancient Power"
+	      ]
+	    }
+	  },
 	"Torkoal": {
 		"[Level 1] Choice Scarf": {
 			"level": 1,
