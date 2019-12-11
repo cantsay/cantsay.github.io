@@ -631,16 +631,17 @@ function getDamageResult(attacker, defender, move, field) {
 		baseDamage = pokeRound(baseDamage * 0x800 / 0x1000);
 		description.weather = field.weather;
 	}
+	var terrainMultiplier = ["8"].includes(gen) ? 0x14CD : 0x1800;
 	if (field.isGravity || attacker.type1 !== "Flying" && attacker.type2 !== "Flying" &&
                 attacker.item !== "Air Balloon" && attacker.ability !== "Levitate") {
 		if (field.terrain === "Electric" && move.type === "Electric") {
-			baseDamage = pokeRound(baseDamage * 0x1800 / 0x1000);
+			baseDamage = pokeRound(baseDamage * terrainMultiplier / 0x1000);
 			description.terrain = field.terrain;
 		} else if (field.terrain === "Grassy" && move.type == "Grass") {
-			baseDamage = pokeRound(baseDamage * 0x1800 / 0x1000);
+			baseDamage = pokeRound(baseDamage * terrainMultiplier / 0x1000);
 			description.terrain = field.terrain;
 		} else if (field.terrain === "Psychic" && move.type == "Psychic") {
-			baseDamage = pokeRound(baseDamage * 0x1800 / 0x1000);
+			baseDamage = pokeRound(baseDamage * terrainMultiplier / 0x1000);
 			description.terrain = field.terrain;
 		}
 	}
