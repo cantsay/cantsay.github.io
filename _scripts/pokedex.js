@@ -13050,8 +13050,6 @@ delete POKEDEX_SM["Magnemite"];
 delete POKEDEX_SM["Magneton"];
 delete POKEDEX_SM["Mankey"];
 delete POKEDEX_SM["Marowak"];
-delete POKEDEX_SM["Meowth"];
-delete POKEDEX_SM["Mew"];
 delete POKEDEX_SM["Mewtwo"];
 delete POKEDEX_SM["Moltres"];
 delete POKEDEX_SM["Mr. Mime"];

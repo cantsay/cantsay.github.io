@@ -586,7 +586,7 @@ function getDamageResult(attacker, defender, move, field) {
             toSmogonStat(defenseStat);
 	if (defender.boosts[defenseStat] === 0 || isCritical && defender.boosts[defenseStat] > 0 || move.ignoresDefenseBoosts) {
 		defense = defender.rawStats[defenseStat];
-	} else if (attacker.ability === "Unaware") {
+	} else if (attacker.ability === "Unaware" || move.name === "Darkest Lariat") {
 		defense = defender.rawStats[defenseStat];
 		description.attackerAbility = attacker.ability;
 	} else {
