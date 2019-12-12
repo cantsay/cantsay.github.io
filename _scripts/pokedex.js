@@ -14791,6 +14791,20 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 		"w": 215,
 		"ab": "Strong Jaw",
 	},
+	"Dracozolt": {
+		"t1": "Electric",
+		"t2": "Dragon",
+		"bs": {
+			"hp": 90,
+			"at": 100,
+			"df": 90,
+			"sa": 80,
+			"sd": 70,
+			"sp": 75
+		},
+		"w": 190,
+		"ab": "Hustle",
+	},
 	"Arctovish": {
 		"t1": "Water",
 		"t2": "Ice",
