@@ -2012,7 +2012,7 @@ var SETDEX_GEN8_SETS = {
 			"moves": [
 				"Overheat",
 				"Solar Beam",
-				"Explosion"
+				"Explosion",
 				"Lava Plume"
 			]
 		}
