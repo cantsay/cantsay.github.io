@@ -86,33 +86,7 @@ function getDamageResult(attacker, defender, move, field) {
 		"Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst"];
 
 	if (move.isMax) {
-		var tempMove = move;
-		move = moves[MAXMOVES_LOOKUP[tempMove.type]];
-		if (move.type == "Fighting" || move.type == "Poison") {
-			if (tempMove.bp >= 150 || exceptions_100_fight.includes(tempMove.name)) move.bp = 100;
-			else if (tempMove.bp >= 110) move.bp = 95;
-			else if (tempMove.bp >= 75) move.bp = 90;
-			else if (tempMove.bp >= 65) move.bp = 85;
-			else if (tempMove.bp >= 55 || exceptions_80_fight.includes(tempMove.name)) move.bp = 80;
-			else if (tempMove.bp >= 45 || exceptions_75_fight.includes(tempMove.name)) move.bp = 75;
-			else move.bp = 70;
-		} else {
-			if (tempMove.bp >= 150) move.bp = 150;
-			else if (tempMove.bp >= 110 || exceptions_140.includes(tempMove.name)) move.bp = 140;
-			else if (tempMove.bp >= 75 || exceptions_130.includes(tempMove.name)) move.bp = 130;
-			else if (tempMove.bp >= 65 || exceptions_120.includes(tempMove.name)) move.bp = 120;
-			else if (tempMove.bp >= 55 || exceptions_100.includes(tempMove.name)) move.bp = 110;
-			else if (tempMove.bp >= 45) move.bp = 100;
-			else move.bp = 90;
-		}
-		moveDescName = MAXMOVES_LOOKUP[move.type] + " (" + move.bp + " BP)";
-		move.name = moveDescName;
-		move.isCrit = tempMove.isCrit;
-		move.category = tempMove.category;
-		move.isMax = true;
-		move.acc = 101;
-		move.hits = 1;
-		move.isMultiHit = false;
+		moveDescName = move.name + " (" + move.bp + " BP)";
 		if (attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
 			attacker.item = "";
 		}

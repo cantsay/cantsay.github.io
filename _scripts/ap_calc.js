@@ -339,7 +339,7 @@ $(".move-selector").change(function () {
 	moveGroupObj.children(".move-type").val(move.type);
 	moveGroupObj.children(".move-cat").val(move.category);
 	moveGroupObj.children(".move-crit").prop("checked", move.alwaysCrit === true);
-	if (move.isMultiHit) {
+	if (move.isMultiHit && !move.isMax) {
 		moveGroupObj.children(".move-hits").show();
 		moveGroupObj.children(".move-hits").val($(this).closest(".poke-info").find(".ability").val() === "Skill Link" ? 5 : 3);
 	} else {
@@ -924,6 +924,51 @@ function getMoveDetails(moveInfo, item) {
 	var defaultDetails = moves[moveName];
 	var isZMove = gen >= 7 && gen != 8 && moveInfo.find("input.move-z").prop("checked");
 	var isMax = gen == 8 && moveInfo.find("input.move-max").prop("checked");
+
+	if (isMax) {
+		var exceptions_100_fight = ["Low Kick", "Reversal", "Final Gambit"];
+		var exceptions_80_fight = ["Double Kick", "Triple Kick"];
+		var exceptions_75_fight = ["Counter", "Seismic Toss"];
+		var exceptions_140 = ["Crush Grip", "Wring Out", "Magnitude", "Double Iron Bash"];
+		var exceptions_130 = ["Pin Missile", "Power Trip", "Punishment", "Dragon Darts", "Dual Chop", "Electro Ball", "Heat Crash",
+			"Bullet Seed", "Grass Knot", "Bonemerang", "Bone Rush", "Fissure", "Icicle Spear", "Sheer Cold", "Weather Ball", "Tail Slap", "Guillotine", "Horn Drill",
+			"Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam"];
+		var exceptions_120 = ["Double Hit", "Spike Cannon"];
+		var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature's Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
+			"Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst"];
+
+		var tempBP = 1;
+
+		if (moves[maxMoveName] == "Fighting" || moves[maxMoveName] == "Poison") {
+			if (defaultDetails.bp >= 150 || exceptions_100_fight.includes(defaultDetails.name)) tempBP = 100;
+			else if (defaultDetails.bp >= 110) tempBP = 95;
+			else if (defaultDetails.bp >= 75) tempBP = 90;
+			else if (defaultDetails.bp >= 65) tempBP = 85;
+			else if (defaultDetails.bp >= 55 || exceptions_80_fight.includes(defaultDetails.name)) tempBP = 80;
+			else if (defaultDetails.bp >= 45 || exceptions_75_fight.includes(defaultDetails.name)) tempBP = 75;
+			else tempBP = 70;
+		} else {
+			if (defaultDetails.bp >= 150) tempBP = 150;
+			else if (defaultDetails.bp >= 110 || exceptions_140.includes(defaultDetails.name)) tempBP = 140;
+			else if (defaultDetails.bp >= 75 || exceptions_130.includes(defaultDetails.name)) tempBP = 130;
+			else if (defaultDetails.bp >= 65 || exceptions_120.includes(defaultDetails.name)) tempBP = 120;
+			else if (defaultDetails.bp >= 55 || exceptions_100.includes(defaultDetails.name)) tempBP = 110;
+			else if (defaultDetails.bp >= 45) tempBP = 100;
+			else tempBP = 90;
+		}
+
+		var maxMoveName = MAXMOVES_LOOKUP[defaultDetails.type];
+		return $.extend({}, moves[maxMoveName], {
+			name: maxMoveName,
+			moveDescName: +" (" + tempBP + "BP)",
+			bp: tempBP,
+			type: defaultDetails.type,
+			category: defaultDetails.category,
+			isCrit: moveInfo.find(".move-crit").prop("checked"),
+			hits: 1,
+			isMax: true
+		});
+	}
 
 	// If z-move is checked but there isn't a corresponding z-move, use the original move
 	if (isZMove && "zp" in defaultDetails) {
