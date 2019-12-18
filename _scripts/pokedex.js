@@ -14665,6 +14665,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 			"sp": 50
 		},
 		"w": 89,
+		"formes": ["Eiscue", "Eiscue-Noice"]
 	},
 	"Eiscue-Noice": {
 		"t1": "Ice",
@@ -14677,6 +14678,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 			"sp": 130
 		},
 		"w": 89,
+		"isAlternateForme": true
 	},
 	"Indeedee-M": {
 		"t1": "Psychic",
