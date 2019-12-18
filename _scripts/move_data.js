@@ -4056,7 +4056,14 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		type: "Normal",
 		category: "Physical",
 		makesContact: true,
-	}
+	},
+	"Heat Crash": {
+		bp: 1,
+		acc: 100,
+		type: "Fire",
+		category: "Physical",
+		makesContact: true
+	},
 	"Dynamax Cannon": {
 		bp: 100,
 		type: "Dragon",
