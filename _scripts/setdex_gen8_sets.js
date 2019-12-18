@@ -767,8 +767,8 @@ var SETDEX_GEN8_SETS = {
 			"item": "Leftovers",
 			"moves": [
 				"Stored Power",
-		    "Psyshock",
-		    "Dazzling Gleam",
+				"Psyshock",
+				"Dazzling Gleam",
 				"Hidden Power Fire"
 			]
 		}
@@ -2271,7 +2271,7 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
-	  "Togekiss": {
+	"Togekiss": {
 		"Offensive": {
 			"level": 50,
 			"evs": {
