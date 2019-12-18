@@ -4050,6 +4050,13 @@ var MOVES_LG = $.extend(true, {}, MOVES_SM, {
 });
 
 var MOVES_SS = $.extend(true, {}, MOVES_SM, {
+	"Mega Kick": {
+		bp: 120,
+		acc: 75,
+		type: "Normal",
+		category: "Physical",
+		makesContact: true,
+	}
 	"Dynamax Cannon": {
 		bp: 100,
 		type: "Dragon",
