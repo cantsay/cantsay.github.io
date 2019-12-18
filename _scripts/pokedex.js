@@ -14299,7 +14299,6 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 	"Aegislash-Blade": {"bs": {"at": 140, "sa": 140}},
 });
 
-
 // Remove Megas for SwSh
 delete POKEDEX_SS["Venusaur"].formes;
 delete POKEDEX_SS["Charizard"].formes;
