@@ -320,6 +320,25 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Cinderace": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Blaze",
+			"item": "Focus Sash",
+			"moves": [
+				"Pyro Ball",
+				"High Jump Kick",
+				"Sucker Punch",
+				"Zen Headbutt"
+			]
+		}
+	},
 	"Clefable": {
 		"Bulky": {
 			"level": 50,
@@ -413,6 +432,114 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Corsola-Galar": {
+		"Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"nature": "Bold",
+			"ability": "Cursed Body",
+			"item": "Eviolite",
+			"moves": [
+				"Night Shade",
+				"Hex",
+				"Scald",
+				"Giga Drain"
+			]
+		}
+	},
+	"Corviknight": {
+		"Iron Defence": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"nature": "Impish",
+			"ability": "Mirror Armor",
+			"item": "Rocky Helmet",
+			"moves": [
+				"Brave Bird",
+				"Body Press",
+				"Iron Head",
+				"U-turn"
+			]
+		},
+		"Pressure Stall": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "4",
+				"sd": "252",
+			},
+			"nature": "Careful",
+			"ability": "Pressure",
+			"item": "",
+			"moves": [
+				"Drill Peck",
+				"Body Press",
+				"Iron Head",
+				"U-turn"
+			]
+		}
+	},
+	"Darmanitan-Galar": {
+		"Scarf": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Gorilla Tactics",
+			"item": "Choice Scarf",
+			"moves": [
+				"Icicle Crash",
+				"Flare Blitz",
+				"Earthquake",
+				"U-turn"
+			]
+		},
+		"Band": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Gorilla Tactics",
+			"item": "Choice Band",
+			"moves": [
+				"Icicle Crash",
+				"Flare Blitz",
+				"Earthquake",
+				"U-turn"
+			]
+		},
+		"Zen Mode": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Zen Mode",
+			"item": "Salac Berry",
+			"moves": [
+				"Ice Punch",
+				"Fire Punch",
+				"Earthquake",
+				"Brick Break"
+			]
+		}
+	},
 	"Ditto": {
 		"did they not use Imposter..?": {
 			"level": 50,
@@ -433,6 +560,152 @@ var SETDEX_GEN8_SETS = {
 				"",
 				"",
 				""
+			]
+		}
+	},
+	"Dracovish": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Adamant",
+			"ability": "Strong Jaw",
+			"item": "Choice Scarf",
+			"moves": [
+				"Fisheous Rend (Doubled)",
+				"Crunch",
+				"Psychic Fangs",
+				"Fisheous Rend"
+			]
+		}
+	},
+	"Dracozolt": {
+		"AV Volt Absorb": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Adamant",
+			"ability": "Volt Absorb",
+			"item": "Assault Vest",
+			"moves": [
+				"Bolt Beak (Doubled)",
+				"Fire Fang",
+				"Earthquake",
+				"Bolt Beak"
+			]
+		},
+		"Hustle": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Adamant",
+			"ability": "Hustle",
+			"item": "Choice Scarf",
+			"moves": [
+				"Bolt Beak (Doubled)",
+				"Fire Fang",
+				"Earthquake",
+				"Bolt Beak"
+			]
+		}
+	},
+	"Dragapult": {
+		"Special": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"sa": "252",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Clear Body",
+			"item": "Choice Scarf",
+			"moves": [
+				"Draco Meteor",
+				"Shadow Ball",
+				"Fire Blast",
+				"Thunderbolt"
+			]
+		},
+		"Physical": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"sa": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Clear Body",
+			"item": "Weakness Policy",
+			"moves": [
+				"Dragon Darts",
+				"Phantom Force",
+				"Steel Wing",
+				"U-turn"
+			]
+		}
+	},
+	"Duraludon": {
+		"Assault Vest": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sd": "4"
+			},
+			"nature": "Modest",
+			"ability": "Light Metal",
+			"item": "Assault Vest",
+			"moves": [
+				"Draco Meteor",
+				"Flash Cannon",
+				"Thunderbolt",
+				"Rock Tomb"
+			]
+		},
+		"Screens Lead": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sd": "4"
+			},
+			"nature": "Timid",
+			"ability": "Light Metal",
+			"item": "Focus Sash",
+			"moves": [
+				"Draco Meteor",
+				"Steel Beam",
+				"Thunderbolt",
+				"Rock Tomb"
+			]
+		}
+	},
+	"Durant": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Hustle",
+			"item": "Life Orb",
+			"moves": [
+				"Iron Head",
+				"Superpower",
+				"Thunder Fang",
+				"Stone Edge"
 			]
 		}
 	},
@@ -703,6 +976,25 @@ var SETDEX_GEN8_SETS = {
 				"Liquidation",
 				"Aqua Jet",
 				"Poison Jab"
+			]
+		}
+	},
+	"Grimmsnarl": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Prankster",
+			"item": "Sitrus Berry",
+			"moves": [
+				"Spirit Break",
+				"Darkest Lariat",
+				"Drain Punch",
+				"Fire Punch"
 			]
 		}
 	},
