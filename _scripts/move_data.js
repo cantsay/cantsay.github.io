@@ -4128,6 +4128,16 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		type: "Electric",
 		category: "Physical",
 	},
+	"Aura Wheel (Electric)": {
+		bp: 110,
+		type: "Electric",
+		category: "Physical",
+	},
+	"Aura Wheel (Dark)": {
+		bp: 110,
+		type: "Dark",
+		category: "Physical",
+	},
 	"Breaking Swipe": {
 		bp: 60,
 		type: "Dragon",
