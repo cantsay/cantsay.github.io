@@ -1406,7 +1406,7 @@ var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
 		category: "Physical",
 		makesContact: true,
 		dropsStats: 1,
-		acc: 90
+		acc: 100
 	},
 	"Tail Glow": {
 		bp: 0,
