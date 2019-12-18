@@ -1457,6 +1457,8 @@ function checkIntimidate(source, target) {
 			// no effect
 		} else if (target.ability === "Simple") {
 			target.boosts[AT] = Math.max(-6, target.boosts[AT] - 2);
+		} else if (target.ability === "Mirror Armor" || target.ability === "Magic Bounce") {
+			source.boosts[AT] = Math.min(6, source.boosts[AT] - 1);
 		} else {
 			target.boosts[AT] = Math.max(-6, target.boosts[AT] - 1);
 		}
