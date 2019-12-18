@@ -73,17 +73,6 @@ function getDamageResult(attacker, defender, move, field) {
 	if (field.isProtect) {
 	  isQuarteredByProtect = true;
 	}
-	// SHOUTOUTS TT
-	var exceptions_100_fight = ["Low Kick", "Reversal", "Final Gambit"];
-	var exceptions_80_fight = ["Double Kick", "Triple Kick"];
-	var exceptions_75_fight = ["Counter", "Seismic Toss"];
-	var exceptions_140 = ["Crush Grip", "Wring Out", "Magnitude", "Double Iron Bash"];
-	var exceptions_130 = ["Pin Missile", "Power Trip", "Punishment", "Dragon Darts", "Dual Chop", "Electro Ball", "Heat Crash",
-		"Bullet Seed", "Grass Knot", "Bonemerang", "Bone Rush", "Fissure", "Icicle Spear", "Sheer Cold", "Weather Ball", "Tail Slap", "Guillotine", "Horn Drill",
-		"Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam"];
-	var exceptions_120 = ["Double Hit", "Spike Cannon"];
-	var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature's Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
-		"Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst"];
 
 	if (move.isMax) {
 		moveDescName = move.name + " (" + move.bp + " BP)";
