@@ -640,7 +640,7 @@ var SETDEX_GEN8_SETS = {
 			"level": 50,
 			"evs": {
 				"hp": "4",
-				"sa": "252",
+				"at": "252",
 				"sp": "252"
 			},
 			"nature": "Jolly",
