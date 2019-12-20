@@ -939,7 +939,9 @@ function getMoveDetails(moveInfo, item) {
 
 		var tempBP = 1;
 
-		if (moves[maxMoveName] == "Fighting" || moves[maxMoveName] == "Poison") {
+		var maxMoveName = MAXMOVES_LOOKUP[defaultDetails.type];
+
+		if (moves[maxMoveName].type == "Fighting" || moves[maxMoveName].type == "Poison") {
 			if (defaultDetails.bp >= 150 || exceptions_100_fight.includes(defaultDetails.name)) tempBP = 100;
 			else if (defaultDetails.bp >= 110) tempBP = 95;
 			else if (defaultDetails.bp >= 75) tempBP = 90;
@@ -957,10 +959,9 @@ function getMoveDetails(moveInfo, item) {
 			else tempBP = 90;
 		}
 
-		var maxMoveName = MAXMOVES_LOOKUP[defaultDetails.type];
 		return $.extend({}, moves[maxMoveName], {
 			name: maxMoveName,
-			moveDescName: +" (" + tempBP + "BP)",
+			moveDescName: maxMoveName +" (" + tempBP + "BP)",
 			bp: tempBP,
 			type: defaultDetails.type,
 			category: defaultDetails.category,
