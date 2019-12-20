@@ -1433,7 +1433,7 @@ function checkSeeds(pokemon, field) {
 function checkZacianZamazaenta(pokemon) {
 	if (pokemon.ability === "Intrepid Sword") {
 		pokemon.boosts[AT] = Math.min(6, pokemon.boosts[AT] + 1);
-	} else if (pokemon.item === "Dauntless Shield") {
+	} else if (pokemon.ability === "Dauntless Shield") {
 		pokemon.boosts[DF] = Math.min(6, pokemon.boosts[DF] + 1);
 	}
 }

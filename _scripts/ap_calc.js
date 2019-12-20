@@ -961,7 +961,7 @@ function getMoveDetails(moveInfo, item) {
 
 		return $.extend({}, moves[maxMoveName], {
 			name: maxMoveName,
-			moveDescName: maxMoveName +" (" + tempBP + "BP)",
+			moveDescName: maxMoveName + " (" + tempBP + "BP)",
 			bp: tempBP,
 			type: defaultDetails.type,
 			category: defaultDetails.category,
