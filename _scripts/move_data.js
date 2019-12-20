@@ -4050,6 +4050,16 @@ var MOVES_LG = $.extend(true, {}, MOVES_SM, {
 });
 
 var MOVES_SS = $.extend(true, {}, MOVES_SM, {
+	"Double Iron Bash": {
+		bp: 60,
+		type: "Steel",
+		category: "Physical",
+		isTwoHit: true,
+		makesContact: true,
+		isPunch: true,
+		hasSecondaryEffect: true,
+		acc: 100
+	},
 	"Mega Kick": {
 		bp: 120,
 		acc: 75,
@@ -4156,6 +4166,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		bp: 60,
 		type: "Dragon",
 		category: "Physical",
+		isSpread: true,
 	},
 	"Branch Poke": {
 		bp: 40,
@@ -4208,58 +4219,76 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		category: "Special",
 	},
 	"Max Strike": {
-		type: "Normal"
+		type: "Normal",
+		acc: 101
 	},
 	"Max Flare": {
-		type: "Fire"
+		type: "Fire",
+		acc: 101
 	},
 	"Max Hailstorm": {
-		type: "Ice"
+		type: "Ice",
+		acc: 101
 	},
 	"Max Geyser": {
-		type: "Water"
+		type: "Water",
+		acc: 101
 	},
 	"Max Lightning": {
-		type: "Electric"
+		type: "Electric",
+		acc: 101
 	},
 	"Max Knuckle": {
-		type: "Fighting"
+		type: "Fighting",
+		acc: 101
 	},
 	"Max Overgrowth": {
-		type: "Grass"
+		type: "Grass",
+		acc: 101
 	},
 	"Max Mindstorm": {
-		type: "Psychic"
+		type: "Psychic",
+		acc: 101
 	},
 	"Max Flutterby": {
-		type: "Bug"
+		type: "Bug",
+		acc: 101
 	},
 	"Max Ooze": {
-		type: "Poison"
+		type: "Poison",
+		acc: 101
 	},
 	"Max Airstream": {
-		type: "Flying"
+		type: "Flying",
+		acc: 101
 	},
 	"Max Wyrmwind": {
-		type: "Dragon"
+		type: "Dragon",
+		acc: 101
 	},
 	"Max Rockfall": {
-		type: "Rock"
+		type: "Rock",
+		acc: 101
 	},
 	"Max Quake": {
-		type: "Ground"
+		type: "Ground",
+		acc: 101
 	},
 	"Max Steelspike": {
-		type: "Steel"
+		type: "Steel",
+		acc: 101
 	},
 	"Max Starfall": {
-		type: "Fairy"
+		type: "Fairy",
+		acc: 101
 	},
 	"Max Phantasm": {
-		type: "Ghost"
+		type: "Ghost",
+		acc: 101
 	},
 	"Max Darkness": {
-		type: "Dark"
+		type: "Dark",
+		acc: 101
 	},
 });
 
