@@ -190,8 +190,7 @@ var POKEDEX_RBY = {
 			"sp": 100,
 			"sl": 85
 		},
-		"w": 90.5,
-		"ab": "Blaze"
+		"w": 90.5
 	},
 	"Charmander": {
 		"t1": "Fire",
@@ -14102,8 +14101,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 			"sd": 69,
 			"sp": 30
 		},
-		"w": 650,
-		"ab": "Sheer Force",
+		"w": 650
 	},
 	"Arctozolt": {
 		"t1": "Electric",
@@ -14144,8 +14142,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 			"sd": 70,
 			"sp": 75
 		},
-		"w": 190,
-		"ab": "Hustle",
+		"w": 190
 	},
 	"Arctovish": {
 		"t1": "Water",
