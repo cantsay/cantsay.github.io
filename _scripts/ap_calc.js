@@ -942,19 +942,19 @@ function getMoveDetails(moveInfo, item) {
 		var maxMoveName = MAXMOVES_LOOKUP[defaultDetails.type];
 
 		if (moves[maxMoveName].type == "Fighting" || moves[maxMoveName].type == "Poison") {
-			if (defaultDetails.bp >= 150 || exceptions_100_fight.includes(defaultDetails.name)) tempBP = 100;
+			if (defaultDetails.bp >= 150 || exceptions_100_fight.includes(moveName)) tempBP = 100;
 			else if (defaultDetails.bp >= 110) tempBP = 95;
 			else if (defaultDetails.bp >= 75) tempBP = 90;
 			else if (defaultDetails.bp >= 65) tempBP = 85;
-			else if (defaultDetails.bp >= 55 || exceptions_80_fight.includes(defaultDetails.name)) tempBP = 80;
-			else if (defaultDetails.bp >= 45 || exceptions_75_fight.includes(defaultDetails.name)) tempBP = 75;
+			else if (defaultDetails.bp >= 55 || exceptions_80_fight.includes(moveName)) tempBP = 80;
+			else if (defaultDetails.bp >= 45 || exceptions_75_fight.includes(moveName)) tempBP = 75;
 			else tempBP = 70;
 		} else {
 			if (defaultDetails.bp >= 150) tempBP = 150;
-			else if (defaultDetails.bp >= 110 || exceptions_140.includes(defaultDetails.name)) tempBP = 140;
-			else if (defaultDetails.bp >= 75 || exceptions_130.includes(defaultDetails.name)) tempBP = 130;
-			else if (defaultDetails.bp >= 65 || exceptions_120.includes(defaultDetails.name)) tempBP = 120;
-			else if (defaultDetails.bp >= 55 || exceptions_100.includes(defaultDetails.name)) tempBP = 110;
+			else if (defaultDetails.bp >= 110 || exceptions_140.includes(moveName)) tempBP = 140;
+			else if (defaultDetails.bp >= 75 || exceptions_130.includes(moveName)) tempBP = 130;
+			else if (defaultDetails.bp >= 65 || exceptions_120.includes(moveName)) tempBP = 120;
+			else if (defaultDetails.bp >= 55 || exceptions_100.includes(moveName)) tempBP = 110;
 			else if (defaultDetails.bp >= 45) tempBP = 100;
 			else tempBP = 90;
 		}
