@@ -1364,6 +1364,24 @@ var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
 		category: "Special",
 		acc: 30
 	},
+	"Fissure": {
+		bp: 1,
+		type: "Ground",
+		category: "Physical",
+		acc: 30
+	},
+	"Horn Drill": {
+		bp: 1,
+		type: "Normal",
+		category: "Physical",
+		acc: 30
+	},
+	"Guillotine": {
+		bp: 1,
+		type: "Normal",
+		category: "Physical",
+		acc: 30
+	},
 	"Shock Wave": {
 		bp: 60,
 		type: "Electric",
@@ -3725,6 +3743,18 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
 	},
 	"Shadow Punch": {zp: 120},
 	"Sheer Cold": {
+		zp: 180,
+		isMLG: true
+	},
+	"Fissure": {
+		zp: 180,
+		isMLG: true
+	},
+	"Horn Drill": {
+		zp: 180,
+		isMLG: true
+	},
+	"Guillotine": {
 		zp: 180,
 		isMLG: true
 	},
