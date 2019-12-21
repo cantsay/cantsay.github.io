@@ -4320,6 +4320,9 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		type: "Dark",
 		acc: 101
 	},
+	"Multi-Attack": {
+		bp: 120,
+	}
 });
 
 var MAXMOVES_LOOKUP = {
