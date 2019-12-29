@@ -934,7 +934,7 @@ function getMoveDetails(moveInfo, item) {
 			"Bullet Seed", "Grass Knot", "Bonemerang", "Bone Rush", "Fissure", "Icicle Spear", "Sheer Cold", "Weather Ball", "Tail Slap", "Guillotine", "Horn Drill",
 			"Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam", "Bolt Beak (Doubled)", "Fishious Rend (Doubled)"];
 		var exceptions_120 = ["Double Hit", "Spike Cannon"];
-		var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature's Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
+		var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature\'s Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
 			"Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst"];
 
 		var tempBP = 1;
@@ -954,7 +954,7 @@ function getMoveDetails(moveInfo, item) {
 			else if (defaultDetails.bp >= 110 || exceptions_140.includes(moveName)) tempBP = 140;
 			else if (defaultDetails.bp >= 75 || exceptions_130.includes(moveName)) tempBP = 130;
 			else if (defaultDetails.bp >= 65 || exceptions_120.includes(moveName)) tempBP = 120;
-			else if (defaultDetails.bp >= 55 || exceptions_100.includes(moveName)) tempBP = 110;
+			else if (defaultDetails.bp >= 55 || exceptions_100.includes(moveName)) tempBP = 100;
 			else if (defaultDetails.bp >= 45) tempBP = 100;
 			else tempBP = 90;
 		}

@@ -286,7 +286,7 @@ var MOVES_RBY = {
 		type: "Flying"
 	},
 	"Night Shade": {
-		bp: 100,
+		bp: 1,
 		type: "Ghost",
 		category: "Special",
 		acc: 100
