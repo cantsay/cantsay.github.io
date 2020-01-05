@@ -1275,6 +1275,8 @@ function clearField() {
 	$("#friendGuardR").prop("checked", false);
 	$("#clangL").prop("checked", false);
 	$("#clangR").prop("checked", false);
+	$("#wpL").prop("checked", false);
+	$("#wpR").prop("checked", false);
 	$("#evoL").prop("checked", false);
 	$("#evoR").prop("checked", false);
 }
