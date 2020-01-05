@@ -346,6 +346,9 @@ $(".move-selector").change(function () {
 		moveGroupObj.children(".move-hits").hide();
 	}
 	moveGroupObj.children(".move-z").prop("checked", false);
+	if (!($(this).closest("poke-info").find(".max").prop("checked"))) {
+		moveGroupObj.children(".move-z").prop(".move-max", false);
+	}
 });
 
 // auto-update set details on select
@@ -376,6 +379,8 @@ $(".set-selector, #levelswitch").bind("change click keyup keydown", function () 
 		pokeObj.find(".percent-hp").val(100);
 		pokeObj.find(".status").val("Healthy");
 		$(".status").change();
+		pokeObj.find(".max").prop("checked", false);
+		pokeObj.find(".max").change();
 		var moveObj;
 		var abilityObj = pokeObj.find(".ability");
 		var itemObj = pokeObj.find(".item");
