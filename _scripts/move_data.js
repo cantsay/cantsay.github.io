@@ -4207,6 +4207,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		bp: 80,
 		type: "Electric",
 		category: "Special",
+		isSound: true
 	},
 	"Apple Acid": {
 		bp: 80,
