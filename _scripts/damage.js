@@ -1493,7 +1493,7 @@ function checkEvo(p1, p2) {
 		p2.boosts[SD] = Math.min(6, p2.boosts[SD] + 1);
 		p2.boosts[SP] = Math.min(6, p2.boosts[SP] + 1);
 	}
-	
+
 	if ($("#wpL").prop("checked")) {
 		p1.boosts[AT] = Math.min(6, p1.boosts[AT] + 2);
 		p1.boosts[SA] = Math.min(6, p1.boosts[SA] + 2);
