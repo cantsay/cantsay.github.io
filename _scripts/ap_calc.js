@@ -1043,6 +1043,7 @@ function Field() {
 	var isSeeded = [$("#leechSeedL").prop("checked"), $("#leechSeedR").prop("checked")];
 	var isForesight = [$("#foresightL").prop("checked"), $("#foresightR").prop("checked")];
 	var isHelpingHand = [$("#helpingHandR").prop("checked"), $("#helpingHandL").prop("checked")]; // affects attacks against opposite side
+	var isPowerSpot = [$("#powerSpotR").prop("checked"), $("#powerSpotL").prop("checked")]; // affects attacks against opposite side
 	var isFriendGuard = [$("#friendGuardL").prop("checked"), $("#friendGuardR").prop("checked")];
 	var isBattery = [$("#batteryR").prop("checked"), $("#batteryL").prop("checked")];
 	var isMinimized = [$("#minimL").prop("checked"), $("#minimR").prop("checked")];
@@ -1055,11 +1056,11 @@ function Field() {
 		weather = "";
 	};
 	this.getSide = function (i) {
-		return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isSeeded[i], isForesight[i], isHelpingHand[i], isMinimized[i], isVictoryStar[i], isFriendGuard[i], isBattery[i], isProtect[i]);
+		return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isSeeded[i], isForesight[i], isHelpingHand[i], isMinimized[i], isVictoryStar[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i]);
 	};
 }
 
-function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isSeeded, isForesight, isHelpingHand, isMinimized, isVictoryStar, isFriendGuard, isBattery, isProtect) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isSeeded, isForesight, isHelpingHand, isMinimized, isVictoryStar, isFriendGuard, isBattery, isProtect, isPowerSpot) {
 	this.format = format;
 	this.terrain = terrain;
 	this.weather = weather;
@@ -1076,6 +1077,7 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
 	this.isFriendGuard = isFriendGuard;
 	this.isBattery = isBattery;
 	this.isProtect = isProtect;
+	this.isPowerSpot = isPowerSpot;
 }
 
 var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
@@ -1276,6 +1278,8 @@ function clearField() {
 	$("#foresightR").prop("checked", false);
 	$("#helpingHandL").prop("checked", false);
 	$("#helpingHandR").prop("checked", false);
+	$("#powerSpotL").prop("checked", false);
+	$("#powerSpotR").prop("checked", false);
 	$("#friendGuardL").prop("checked", false);
 	$("#friendGuardR").prop("checked", false);
 	$("#clangL").prop("checked", false);

@@ -350,6 +350,11 @@ function getDamageResult(attacker, defender, move, field) {
 		description.isBattery = true;
 	}
 
+	if (field.isPowerSpot) {
+		bpMods.push(0x14CD);
+		description.isPowerSpot = true;
+	}
+
 	if (field.isMinimized && (["Astonish", "Body Slam", "Dragon Rush", "Extrasensory", "FLying Press", "Heat Crash", "Heavy Slam", "Malicious Moonsault", "Needle Arm", "Phantom Force", "Shadow Force", "Steamroller", "Stomp"].includes(move.name))) {
 		bpMods.push(0x2000);
 		description.isMinimized = true;
@@ -1191,6 +1196,9 @@ function buildDescription(description) {
 	if (description.isHelpingHand) {
 		output += "Helping Hand ";
 	}
+	if (description.isPowerSpot) {
+		output += "Power Spot ";
+	}
 	if (description.isBattery) {
 		output += "Battery ";
 	}
@@ -1268,6 +1276,9 @@ function buildLGDescription(description) {
 	output += description.attackerName + " ";
 	if (description.isHelpingHand) {
 		output += "Helping Hand ";
+	}
+	if (description.isPowerSpot) {
+		output += "Power Spot ";
 	}
 	if (description.isBattery) {
 		output += "Battery ";
