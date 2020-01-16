@@ -75,6 +75,14 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 		hazards += Math.floor(effectiveness * defender.maxHP / 8);
 		hazardText.push("Stealth Rock");
 	}
+	if (field.isBusted8) {
+		hazards += Math.floor(defender.maxHP / 8);
+		hazardText.push("1/8th Disguise damage");
+	}
+	if (field.isBusted16) {
+		hazards += Math.floor(defender.maxHP / 16);
+		hazardText.push("1/16th Disguise damage");
+	}
 	if ([defender.type1, defender.type2].indexOf("Flying") === -1 &&
             ["Magic Guard", "Levitate"].indexOf(defender.ability) === -1 && ["Air Balloon", "Heavy-Duty Boots"].indexOf(defender.item) === -1) {
 		if (field.spikes === 1) {
@@ -242,7 +250,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams, attacker, i
 		} else if (c > 0) {
 			var pct = Math.round(c * 1000) / 10;
 			var chance = pct ? qualifier + pct : "Miniscule";
-			// console.log(chance);
+
 			return chance + "% chance to " + i + "HKO" + afterText + " (" + (chance * (Math.pow(moveAccuracy / 100, i) * 100) / 100).toFixed(2) + "% chance to " + i + "HKO after accuracy)";
 		}
 	}

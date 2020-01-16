@@ -1048,6 +1048,8 @@ function Field() {
 	var isBattery = [$("#batteryR").prop("checked"), $("#batteryL").prop("checked")];
 	var isMinimized = [$("#minimL").prop("checked"), $("#minimR").prop("checked")];
 	var isVictoryStar = [$("#vicStarL").prop("checked"), $("#vicStarR").prop("checked")];
+	var isBusted8 = [$("#busted8L").prop("checked"), $("#busted8R").prop("checked")];
+	var isBusted16 = [$("#busted16L").prop("checked"), $("#busted16R").prop("checked")];
 
 	this.getWeather = function () {
 		return weather;
@@ -1056,11 +1058,11 @@ function Field() {
 		weather = "";
 	};
 	this.getSide = function (i) {
-		return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isSeeded[i], isForesight[i], isHelpingHand[i], isMinimized[i], isVictoryStar[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i]);
+		return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isSeeded[i], isForesight[i], isHelpingHand[i], isMinimized[i], isVictoryStar[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i], isBusted8[i], isBusted16[i]);
 	};
 }
 
-function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isSeeded, isForesight, isHelpingHand, isMinimized, isVictoryStar, isFriendGuard, isBattery, isProtect, isPowerSpot) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isSeeded, isForesight, isHelpingHand, isMinimized, isVictoryStar, isFriendGuard, isBattery, isProtect, isPowerSpot, isBusted8, isBusted16) {
 	this.format = format;
 	this.terrain = terrain;
 	this.weather = weather;
@@ -1078,6 +1080,8 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
 	this.isBattery = isBattery;
 	this.isProtect = isProtect;
 	this.isPowerSpot = isPowerSpot;
+	this.isBusted8 = isBusted8;
+	this.isBusted16 = isBusted16;
 }
 
 var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
