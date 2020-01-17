@@ -959,7 +959,7 @@ function getMoveDetails(moveInfo, item) {
 			else if (defaultDetails.bp >= 110 || exceptions_140.includes(moveName)) tempBP = 140;
 			else if (defaultDetails.bp >= 75 || exceptions_130.includes(moveName)) tempBP = 130;
 			else if (defaultDetails.bp >= 65 || exceptions_120.includes(moveName)) tempBP = 120;
-			else if (defaultDetails.bp >= 55 || exceptions_100.includes(moveName)) tempBP = 100;
+			else if (defaultDetails.bp >= 55 || exceptions_100.includes(moveName)) tempBP = 110;
 			else if (defaultDetails.bp >= 45) tempBP = 100;
 			else tempBP = 90;
 		}
