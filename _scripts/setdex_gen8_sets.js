@@ -619,7 +619,7 @@ var SETDEX_GEN8_SETS = {
 		}
 	},
 	"Dragapult": {
-		"Special": {
+		"Special Scarf": {
 			"level": 50,
 			"evs": {
 				"hp": "4",
@@ -629,6 +629,23 @@ var SETDEX_GEN8_SETS = {
 			"nature": "Timid",
 			"ability": "Clear Body",
 			"item": "Choice Scarf",
+			"moves": [
+				"Draco Meteor",
+				"Shadow Ball",
+				"Fire Blast",
+				"Thunderbolt"
+			]
+		},
+		"Choice Specs": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"sa": "252",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Clear Body",
+			"item": "Choice Specs",
 			"moves": [
 				"Draco Meteor",
 				"Shadow Ball",
