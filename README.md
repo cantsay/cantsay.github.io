@@ -18,7 +18,7 @@ IVs: # Stat
 - Move Name
 ```
 
-The calculator also adds manual auras and aura breaks, as well as a completely new list of USUM BSS sets.  
+The calculator also adds manual auras and aura breaks, as well as a completely new list of SwSh BSS sets.  
 
 ## Contributing:
 The site is powered by Jekyll, with linting by nodejs' eslint.
