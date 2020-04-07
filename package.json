@@ -16,12 +16,12 @@
     "eslint-import-resolver-webpack": "^0.8.3",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-html": "^4.0.1",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-promise": "^3.6.0"
   },
   "dependencies": {
     "js-yaml": "^3.13.1",
-    "npm": "^6.0.0"
+    "npm": "^6.14.4"
   }
 }
