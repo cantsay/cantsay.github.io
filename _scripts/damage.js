@@ -663,7 +663,7 @@ function getDamageResult(attacker, defender, move, field) {
 		finalMods.push(0x2000);
 		description.attackerAbility = attacker.ability;
 	}
-	if ((defAbility === "Punk Rock" && move.isSound) || (defAbility === "Ice Scales" && move.category === "Special") {
+	if ((defAbility === "Punk Rock" && move.isSound) || (defAbility === "Ice Scales" && move.category === "Special")) {
 		finalMods.push(0x800);
 		description.defenderAbility = defAbility;
 	}
