@@ -698,8 +698,7 @@ var POKEDEX_RBY = {
 			"sp": 81,
 			"sl": 100
 		},
-		"w": 235.0,
-		"ab": "Intimidate"
+		"w": 235.0
 	},
 	"Haunter": {
 		"t1": "Ghost",
