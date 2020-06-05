@@ -398,7 +398,7 @@ $(".set-selector, #levelswitch").bind("change click keyup keydown", function () 
 				pokeObj.find("." + STATS[i] + " .dvs").val(set.dvs && typeof set.dvs[STATS[i]] !== "undefined" ? set.dvs[STATS[i]] : 15);
 			}
 			setSelectValueIfValid(pokeObj.find(".nature"), set.nature, "Hardy");
-			setSelectValueIfValid(abilityObj, pokemon.ab ? pokemon.ab : set.ability, "");
+			setSelectValueIfValid(abilityObj, set.ability ? set.ability : pokemon.ab, "");
 			setSelectValueIfValid(itemObj, set.item, "");
 			for (i = 0; i < 4; i++) {
 				moveObj = pokeObj.find(".move" + (i + 1) + " select.move-selector");
