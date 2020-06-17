@@ -14289,6 +14289,47 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 		},
 		"w": 950,
 	},
+	"Kubfu": {
+		"t1": "Fighting",
+		"bs": {
+			"hp": 60,
+			"at": 90,
+			"df": 60,
+			"sa": 53,
+			"sd": 50,
+			"sp": 72
+		},
+		"w": 12,
+		"ab": "Inner Focus",
+	},
+	"Urshifu-Single-Strike": {
+		"t1": "Fighting",
+		"t2": "Dark",
+		"bs": {
+			"hp": 100,
+			"at": 130,
+			"df": 100,
+			"sa": 63,
+			"sd": 60,
+			"sp": 97
+		},
+		"w": 105,
+		"ab": "Unseen Fist",
+	},
+	"Urshifu-Rapid-Strike": {
+		"t1": "Fighting",
+		"t2": "Water",
+		"bs": {
+			"hp": 100,
+			"at": 130,
+			"df": 100,
+			"sa": 63,
+			"sd": 60,
+			"sp": 97
+		},
+		"w": 105,
+		"ab": "Unseen Fist",
+	},
 
 	"Aegislash-Shield": {"bs": {"df": 140, "sd": 140}},
 	"Aegislash-Both": {"bs": {"at": 140, "df": 140, "sa": 140, "sd": 140}},
