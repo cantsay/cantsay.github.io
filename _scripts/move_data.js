@@ -4324,6 +4324,110 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 	},
 	"Multi-Attack": {
 		bp: 120,
+	},
+	"Terrain Pulse": {
+		bp: 50,
+		type: "Normal",
+		category: "Special",
+		acc: 100,
+	},
+	"Burning Jealousy": {
+		bp: 70,
+		type: "Fire",
+		category: "Special",
+		acc: 100,
+	},
+	"Flip Turn": {
+		bp: 60,
+		type: "Water",
+		category: "Physical",
+		acc: 100,
+	},
+	"Rising Voltage": {
+		bp: 70,
+		type: "Electric",
+		category: "Special",
+		acc: 100,
+	},
+	"Grassy Glide": {
+		bp: 70,
+		type: "Grass",
+		category: "Physical",
+		acc: 100
+	},
+	"Triple Axel": {
+		bp: 20,
+		type: "Ice",
+		category: "Physical",
+		acc: 90,
+	},
+	"Scorching Sands": {
+		bp: 70,
+		type: "Ground",
+		category: "Special",
+		acc: 100
+	},
+	"Dual Wingbeat": {
+		bp: 40,
+		type: "Flying",
+		category: "Physical",
+		acc: 90,
+		isTwoHit: true
+	},
+	"Expanding Force": {
+		bp: 80,
+		type: "Psychic",
+		category: "Special",
+		acc: 100,
+	},
+	"Skitter Smack": {
+		bp: 70,
+		type: "Bug",
+		category: "Physical",
+		acc: 100
+	},
+	"Meteor Beam": {
+		bp: 120,
+		type: "Rock",
+		category: "Special",
+		acc: 90,
+	},
+	"Poltergeist": {
+		bp: 110,
+		type: "Ghost",
+		category: "Physical",
+		acc: 90
+	},
+	"Scale Shot": {
+		bp: 25,
+		type: "Dragon",
+		category: "Physical",
+		acc: 90,
+		isMultiHit: true,
+	},
+	"Last Out": {
+		bp: 75,
+		type: "Dark",
+		category: "Physical",
+		acc: 100
+	},
+	"Last Out (Doubled)": {
+		bp: 150,
+		type: "Dark",
+		category: "Physical",
+		acc: 100
+	},
+	"Steel Roller": {
+		bp: 130,
+		type: "Steel",
+		category: "Physical",
+		acc: 100
+	},
+	"Misty Explosion": {
+		bp: 100,
+		type: "Fairy",
+		category: "Special",
+		acc: 100
 	}
 });
 
