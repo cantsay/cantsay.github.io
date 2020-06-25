@@ -109,6 +109,10 @@ function getDamageResult(attacker, defender, move, field) {
 		description.weather = field.weather;
 		description.moveType = move.type;
 		break;
+		
+	case "Terrain Pulse":
+		move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : move.type = field.terrain === "Psychic" ? "Psychic" : "Normal";
+		break;
 
 	case "Judgment":
 		if (attacker.item.indexOf("Plate") !== -1) {
@@ -291,6 +295,10 @@ function getDamageResult(attacker, defender, move, field) {
 		break;
 	case "Weather Ball":
 		basePower = field.weather !== "" ? 100 : 50;
+		description.moveBP = basePower;
+		break;
+	case "Terrain Pulse":
+		basePower = field.terrain !== "" ? 100 : 50;
 		description.moveBP = basePower;
 		break;
 	case "Fling":
