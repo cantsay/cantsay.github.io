@@ -946,8 +946,6 @@ function getMoveDetails(moveInfo, item) {
 
 		var maxMoveName = MAXMOVES_LOOKUP[defaultDetails.type];
 		
-		console.log(moveName);
-
 		if (moves[maxMoveName].type == "Fighting" || moves[maxMoveName].type == "Poison") {
 			if (defaultDetails.bp >= 110) tempBP = 95;
 			else if (defaultDetails.bp >= 75) tempBP = 90;
