@@ -87,6 +87,7 @@ var MOVES_RBY = {
 	"Dig": {
 		bp: 100,
 		type: "Ground",
+		category: "Physical",
 		makesContact: true,
 		acc: 100
 	},
