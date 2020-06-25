@@ -934,7 +934,7 @@ function getMoveDetails(moveInfo, item) {
 		var exceptions_100_fight = ["Low Kick", "Reversal", "Final Gambit"];
 		var exceptions_80_fight = ["Double Kick", "Triple Kick"];
 		var exceptions_75_fight = ["Counter", "Seismic Toss"];
-		var exceptions_140 = ["Crush Grip", "Wring Out", "Magnitude", "Double Iron Bash"];
+		var exceptions_140 = ["Crush Grip", "Wring Out", "Magnitude", "Double Iron Bash", "Rising Voltage"];
 		var exceptions_130 = ["Bolt Beak (Doubled)", "Fishious Rend (Doubled)", "Pin Missile", "Power Trip", "Punishment", "Dragon Darts", "Dual Chop", "Electro Ball", "Heat Crash",
 			"Bullet Seed", "Grass Knot", "Bonemerang", "Bone Rush", "Fissure", "Icicle Spear", "Sheer Cold", "Weather Ball", "Tail Slap", "Guillotine", "Horn Drill",
 			"Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam", "Bolt Beak (Doubled)", "Fishious Rend (Doubled)"];
@@ -945,22 +945,24 @@ function getMoveDetails(moveInfo, item) {
 		var tempBP = 1;
 
 		var maxMoveName = MAXMOVES_LOOKUP[defaultDetails.type];
+		
+		console.log(moveName);
 
 		if (moves[maxMoveName].type == "Fighting" || moves[maxMoveName].type == "Poison") {
-			if (defaultDetails.bp >= 150 || exceptions_100_fight.includes(moveName)) tempBP = 100;
-			else if (defaultDetails.bp >= 110) tempBP = 95;
+			if (defaultDetails.bp >= 110) tempBP = 95;
 			else if (defaultDetails.bp >= 75) tempBP = 90;
 			else if (defaultDetails.bp >= 65) tempBP = 85;
 			else if (defaultDetails.bp >= 55 || exceptions_80_fight.includes(moveName)) tempBP = 80;
 			else if (defaultDetails.bp >= 45 || exceptions_75_fight.includes(moveName)) tempBP = 75;
+			else if (defaultDetails.bp >= 150 || exceptions_100_fight.includes(moveName)) tempBP = 100;
 			else tempBP = 70;
 		} else {
-			if (defaultDetails.bp >= 150) tempBP = 150;
-			else if (defaultDetails.bp >= 110 || exceptions_140.includes(moveName)) tempBP = 140;
+			if (defaultDetails.bp >= 110 || exceptions_140.includes(moveName)) tempBP = 140;
 			else if (defaultDetails.bp >= 75 || exceptions_130.includes(moveName)) tempBP = 130;
 			else if (defaultDetails.bp >= 65 || exceptions_120.includes(moveName)) tempBP = 120;
 			else if (defaultDetails.bp >= 55 || exceptions_100.includes(moveName)) tempBP = 110;
 			else if (defaultDetails.bp >= 45) tempBP = 100;
+			else if (defaultDetails.bp >= 150) tempBP = 150;
 			else tempBP = 90;
 		}
 
