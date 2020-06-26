@@ -14384,7 +14384,6 @@ delete POKEDEX_SS["Gallade"].formes;
 delete POKEDEX_SS["Audino"].formes;
 
 // Remove Non-Galarian mons
-delete POKEDEX_SS["Alakazam"];
 delete POKEDEX_SS["Arbok"];
 delete POKEDEX_SS["Beedrill"];
 delete POKEDEX_SS["Bellsprout"];
@@ -14446,7 +14445,6 @@ delete POKEDEX_SS["Furret"];
 delete POKEDEX_SS["Girafarig"];
 delete POKEDEX_SS["Gligar"];
 delete POKEDEX_SS["Granbull"];
-delete POKEDEX_SS["Heracross"];
 delete POKEDEX_SS["Hoppip"];
 delete POKEDEX_SS["Houndoom"];
 delete POKEDEX_SS["Houndour"];
