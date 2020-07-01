@@ -109,7 +109,7 @@ function getDamageResult(attacker, defender, move, field) {
 		description.weather = field.weather;
 		description.moveType = move.type;
 		break;
-		
+
 	case "Terrain Pulse":
 		move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : move.type = field.terrain === "Psychic" ? "Psychic" : "Normal";
 		break;
