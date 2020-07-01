@@ -13163,6 +13163,31 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
 		},
 		"w": 20.5,
 	},
+	"Slowpoke-Galar": {
+		"t1": "Psychic",
+		"bs": {
+			"hp": 90,
+			"at": 65,
+			"df": 65,
+			"sa": 40,
+			"sd": 40,
+			"sp": 15
+		},
+		"w": 36,
+	},
+	"Slowbro-Galar": {
+		"t1": "Poison",
+		"t2": "Psychic",
+		"bs": {
+			"hp": 95,
+			"at": 100,
+			"df": 95,
+			"sa": 100,
+			"sd": 70,
+			"sp": 30
+		},
+		"w": 70.5,
+	},
 	"Grookey": {
 		"t1": "Grass",
 		"bs": {
