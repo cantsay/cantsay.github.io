@@ -191,6 +191,65 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Azumarill": {
+		"Belly Drum": {
+			"level": 50,
+			"evs": {
+				"hp": "228",
+				"at": "252",
+				"df": "12",
+				"sd": "12",
+				"sp": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Huge Power",
+			"item": "Sitrus Berry",
+			"moves": [
+				"Aqua Jet",
+				"Play Rough",
+				"Waterfall",
+				"Superpower"
+			]
+		},
+		"Assault Vest": {
+			"level": 50,
+			"evs": {
+				"hp": "228",
+				"at": "252",
+				"df": "12",
+				"sd": "12",
+				"sp": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Huge Power",
+			"item": "Assault Vest",
+			"moves": [
+				"Aqua Jet",
+				"Play Rough",
+				"Waterfall",
+				"Knock Off"
+			]
+		},
+		"Choice Band": {
+			"level": 50,
+			"evs": {
+				"hp": "228",
+				"at": "252",
+				"df": "12",
+				"sd": "12",
+				"sp": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Huge Power",
+			"item": "Choice Band",
+			"moves": [
+				"Aqua Jet",
+				"Play Rough",
+				"Waterfall",
+				"Superpower"
+			]
+		}
+	},
 	"Bewear": {
 		"Assault Vest": {
 			"level": 50,
@@ -205,7 +264,7 @@ var SETDEX_GEN8_SETS = {
 			"moves": [
 				"Close Combat",
 				"Double-Edge",
-				"Iorn Head",
+				"Iron Head",
 				"Darkest Lariat"
 			]
 		}
@@ -321,7 +380,24 @@ var SETDEX_GEN8_SETS = {
 		}
 	},
 	"Cinderace": {
-		"Standard": {
+		"Libero": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "LIbero",
+			"item": "Life Orb",
+			"moves": [
+				"Pyro Ball",
+				"High Jump Kick",
+				"Sucker Punch",
+				"Bounce"
+			]
+		},
+		"Blaze": {
 			"level": 50,
 			"evs": {
 				"hp": "4",
@@ -540,6 +616,42 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Diggersby": {
+		"Focus Sash": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
+			},
+			"nature": "Adamant",
+			"ability": "Huge Power",
+			"item": "Focus Sash",
+			"moves": [
+				"Earthquake",
+				"Quick Attack",
+				"Bounce",
+				"Thunder Punch"
+			]
+		},
+		"Normal Gem Dynamaxer": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
+			},
+			"nature": "Adamant",
+			"ability": "Huge Power",
+			"item": "Normal Gem",
+			"moves": [
+				"Giga Impact",
+				"Earthquake",
+				"Bounce",
+				"Wild Charge"
+			]
+		}
+	},
 	"Ditto": {
 		"did they not use Imposter..?": {
 			"level": 50,
@@ -609,7 +721,7 @@ var SETDEX_GEN8_SETS = {
 			},
 			"nature": "Adamant",
 			"ability": "Hustle",
-			"item": "Choice Scarf",
+			"item": "Life Orb",
 			"moves": [
 				"Bolt Beak (Doubled)",
 				"Fire Fang",
@@ -1025,7 +1137,7 @@ var SETDEX_GEN8_SETS = {
 			},
 			"nature": "Jolly",
 			"ability": "Moxie",
-			"item": "Wacan Berry",
+			"item": "Life Orb",
 			"moves": [
 				"Waterfall",
 				"Bounce",
@@ -1047,7 +1159,7 @@ var SETDEX_GEN8_SETS = {
 				"Waterfall",
 				"Ice Fang",
 				"Earthquake",
-				"Aqua Tail"
+				"Power Whip"
 			]
 		}
 	},
@@ -1140,6 +1252,23 @@ var SETDEX_GEN8_SETS = {
 				"Stealth Rock",
 				"Earthquake"
 			]
+		},
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Sand Stream",
+			"item": "Expert Belt",
+			"moves": [
+				"Earthquake",
+				"Iron Head",
+				"Superpower",
+				"Fire Fang"
+			]
 		}
 	},
 	"Hydreigon": {
@@ -1196,7 +1325,7 @@ var SETDEX_GEN8_SETS = {
 		}
 	},
 	"Incineroar": {
-		"Trick Room Sweeper": {
+		"Offensive": {
 			"level": 50,
 			"evs": {
 				"hp": "252",
@@ -1206,14 +1335,14 @@ var SETDEX_GEN8_SETS = {
 			"ivs": {
 				"sp": "0"
 			},
-			"nature": "Brave",
-			"ability": "Blaze",
+			"nature": "Adamant",
+			"ability": "Intimidate",
 			"item": "Incinium Z",
 			"moves": [
 				"Flare Blitz",
 				"Darkest Lariat",
-				"Cross Chop",
-				"Earthquake"
+				"Close Combat",
+				"Acrobatics"
 			]
 		}
 	},
@@ -1233,6 +1362,25 @@ var SETDEX_GEN8_SETS = {
 				"Ice Beam",
 				"Hex",
 				"Giga Drain"
+			]
+		}
+	},
+	"Kingdra": {
+		"Rain Sweeper": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Modest",
+			"ability": "Swift Swim",
+			"item": "Life Orb",
+			"moves": [
+				"Hydro Pump",
+				"Draco Meteor",
+				"Ice Beam",
+				"Surf"
 			]
 		}
 	},
@@ -1413,6 +1561,42 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Magnezone": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sd": "4"
+			},
+			"nature": "Modest",
+			"ability": "Analytic",
+			"item": "Choice Specs",
+			"moves": [
+				"Thunderbolt",
+				"Flash Cannon",
+				"Volt Switch",
+				"Tri Attack"
+			]
+		},
+		"Trapper": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4",
+			},
+			"nature": "Bold",
+			"ability": "Magnet Pull",
+			"item": "",
+			"moves": [
+				"Thunderbolt",
+				"Body Press",
+				"Flash Cannon",
+				"Volt Switch"
+			]
+		}
+	},
 	"Mamoswine": {
 		"Sash": {
 			"level": 50,
@@ -1516,6 +1700,25 @@ var SETDEX_GEN8_SETS = {
 				"Roost",
 				"Taunt",
 				"Toxic"
+			]
+		}
+	},
+	"Marowak-Alola": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Lightningrod",
+			"item": "Thick Club",
+			"moves": [
+				"Flare Blitz",
+				"Poltergeist",
+				"Bonemerang",
+				"Thunder Punch"
 			]
 		}
 	},
@@ -1626,7 +1829,7 @@ var SETDEX_GEN8_SETS = {
 			"item": "Life Orb",
 			"moves": [
 				"Play Rough",
-				"Shadow Claw",
+				"Phantom Force",
 				"Shadow Sneak",
 				"Drain Punch"
 			]
@@ -1831,8 +2034,61 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Porygon2": {
+		"PhysDef": {
+			"level": 50,
+			"evs": {
+				"hp": "244",
+				"df": "252",
+				"sd": "12"
+			},
+			"nature": "Relaxed",
+			"ability": "Download",
+			"item": "Eviolite",
+			"moves": [
+				"Ice Beam",
+				"Thunderbolt",
+				"Foul Play",
+				"Tri Attack"
+			]
+		},
+		"SpDef": {
+			"level": 50,
+			"evs": {
+				"hp": "244",
+				"df": "12",
+				"sd": "252"
+			},
+			"nature": "Sassy",
+			"ability": "Download",
+			"item": "Eviolite",
+			"moves": [
+				"Ice Beam",
+				"Thunderbolt",
+				"Foul Play",
+				"Tri Attack"
+			]
+		},
+		"Offensive TR": {
+			"level": 50,
+			"evs": {
+				"hp": "244",
+				"df": "12",
+				"sa": "252"
+			},
+			"nature": "Quiet",
+			"ability": "Download",
+			"item": "Eviolite",
+			"moves": [
+				"Ice Beam",
+				"Thunderbolt",
+				"Foul Play",
+				"Tri Attack"
+			]
+		}
+	},
 	"Primarina": {
-		"Oceanic Operetta": {
+		"Assault Vest": {
 			"level": 50,
 			"evs": {
 				"hp": "252",
@@ -1841,12 +2097,12 @@ var SETDEX_GEN8_SETS = {
 			},
 			"nature": "Modest",
 			"ability": "Torrent",
-			"item": "Primarium Z",
+			"item": "Assault Vest",
 			"moves": [
 				"Sparkling Aria",
 				"Moonblast",
-				"Ice Beam",
-				"Hidden Power Fire"
+				"Energy Ball",
+				"Aqua Jet"
 			]
 		},
 		"Choice Specs": {
@@ -1862,8 +2118,8 @@ var SETDEX_GEN8_SETS = {
 			"moves": [
 				"Sparkling Aria",
 				"Moonblast",
-				"Ice Beam",
-				"Hidden Power Fire"
+				"Energy Ball",
+				"Ice Beam"
 			]
 		}
 	},
@@ -1946,6 +2202,42 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Rillaboom": {
+		"Choice Band": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
+			},
+			"nature": "Adamant",
+			"ability": "Grassy Surge",
+			"item": "Choice Band",
+			"moves": [
+				"Grassy Glide",
+				"Knock Off",
+				"Superpower",
+				"U-turn"
+			]
+		},
+		"Assault Vest": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Grassy Surge",
+			"item": "Assault Vest",
+			"moves": [
+				"Grassy Glide",
+				"Knock Off",
+				"Drain Punch",
+				"U-turn"
+			]
+		}
+	},
 	"Roserade": {
 		"Offensive AV": {
 			"level": 50,
@@ -1962,6 +2254,28 @@ var SETDEX_GEN8_SETS = {
 				"Giga Drain",
 				"Dazzling Gleam",
 				"Shadow Ball"
+			]
+		}
+	},
+	"Rotom-C": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "196",
+				"sa": "60"
+			},
+			"ivs": {
+				"at": "0"
+			},
+			"nature": "Modest",
+			"ability": "Levitate",
+			"item": "Sitrus Berry",
+			"moves": [
+				"Thunderbolt",
+				"Leaf Storm",
+				"Dark Pulse",
+				"Volt Switch"
 			]
 		}
 	},
@@ -2138,6 +2452,25 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Scizor": {
+		"Choice Band": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Technician",
+			"item": "Choice Band",
+			"moves": [
+				"Bullet Punch",
+				"U-turn",
+				"Dual Wingbeat",
+				"Superpower"
+			]
+		}
+	},
 	"Shuckle": {
 		"s t i c c y   w e b s": {
 			"level": 50,
@@ -2214,7 +2547,84 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Skarmory": {
+		"Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sp": "4",
+				"df": "252"
+			},
+			"nature": "Impish",
+			"ability": "Sturdy",
+			"item": "Leftovers",
+			"moves": [
+				"Brave Bird",
+				"Iron Head",
+				"Body Press",
+				"Icy Wind"
+			]
+		}
+	},
+	"Slowbro": {
+		"PhysDef": {
+			"level": 50,
+			"evs": {
+				"hp": 252,
+				"df": 252,
+				"sd": 4,
+			},
+			"ivs": {
+				"at": 0,
+			},
+			"nature": "Bold",
+			"ability": "Regenerator",
+			"item": "Rocky Helmet",
+			"moves": [
+				"Scald",
+				"Psychic",
+				"Flamethrower",
+				"Ice Beam"
+			]
+		}
+	},
+	"Slowbro-Galar": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"hp": 252,
+				"sa": 252,
+				"sd": 4,
+			},
+			"nature": "Modest",
+			"ability": "Quick Draw",
+			"item": "Quick Claw",
+			"moves": [
+				"Shell Side Arm",
+				"Psychic",
+				"Flamethrower",
+				"Ice Beam"
+			]
+		}
+	},
 	"Snorlax": {
+		"Assault Vest": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"nature": "Impish",
+			"ability": "Thick Fat",
+			"item": "Assault Vest",
+			"moves": [
+				"Body Slam",
+				"Earthquake",
+				"Heat Crash",
+				"Heavy Slam"
+			]
+		},
 		"Offensive Booster": {
 			"level": 50,
 			"evs": {
@@ -2240,12 +2650,12 @@ var SETDEX_GEN8_SETS = {
 				"sd": "4"
 			},
 			"nature": "Impish",
-			"ability": "Gluttony",
-			"item": "Figy Berry",
+			"ability": "Thick Fat",
+			"item": "Leftovers",
 			"moves": [
-				"Return",
+				"Body Slam",
 				"Earthquake",
-				"Fire Punch",
+				"Heat Crash",
 				"Heavy Slam"
 			]
 		}
@@ -2303,7 +2713,7 @@ var SETDEX_GEN8_SETS = {
 				"Dazzling Gleam",
 				"Air Slash",
 				"Flamethrower",
-				"Nasty Plot"
+				"Ancient Power"
 			]
 		}
 	},
@@ -2342,6 +2752,44 @@ var SETDEX_GEN8_SETS = {
 				"Sludge Bomb",
 				"Infestation",
 				"Mud Shot"
+			]
+		}
+	},
+	"Toxtricity": {
+		"Assault Vest": {
+			"level": 50,
+			"evs": {
+				"hp": "180",
+				"df": "4",
+				"sa": "172",
+				"sd": "4",
+				"sp": "148"
+			},
+			"nature": "Modest",
+			"ability": "Punk Rock",
+			"item": "Assault Vest",
+			"moves": [
+				"Overdrive",
+				"Boomburst",
+				"Nuzzle",
+				"Hex"
+			]
+		},
+		"Shift Gear": {
+			"level": 50,
+			"evs": {
+				"at": "4",
+				"sa": "252",
+				"sp": "252"
+			},
+			"nature": "Hasty",
+			"ability": "Punk Rock",
+			"item": "Throat Spray",
+			"moves": [
+				"Overdrive",
+				"Boomburst",
+				"Drain Punch",
+				"Fire Punch"
 			]
 		}
 	},
@@ -2417,6 +2865,61 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Urshifu-Rapid-Strike": {
+		"Life Orb": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Unseen Fist",
+			"item": "Life Orb",
+			"moves": [
+				"Surging Strikes",
+				"Close Combat",
+				"Thunder Punch",
+				"Aerial Ace"
+			]
+		},
+		"Assault Vest": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Unseen Fist",
+			"item": "Assault Vest",
+			"moves": [
+				"Surging Strikes",
+				"Close Combat",
+				"Thunder Punch",
+				"Aerial Ace"
+			]
+		}
+	},
+	"Urshifu-Single-Strike": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Unseen Fist",
+			"item": "Focus Sash",
+			"moves": [
+				"Wicked Blow",
+				"Close Combat",
+				"Sucker Punch",
+				"Aerial Ace"
+			]
+		}
+	},
 	"Venusaur": {
 		"Offensive Mega": {
 			"level": 50,
@@ -2486,6 +2989,25 @@ var SETDEX_GEN8_SETS = {
 				"Guillotine",
 				"Bug Buzz",
 				"Thunderbolt"
+			]
+		}
+	},
+	"Volcarona": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"sa": "252",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Swarm",
+			"item": "Lum Berry",
+			"moves": [
+				"Bug Buzz",
+				"Fire Blast",
+				"Hurricane",
+				"Giga Drain"
 			]
 		}
 	},
