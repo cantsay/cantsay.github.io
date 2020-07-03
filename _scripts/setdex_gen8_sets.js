@@ -388,7 +388,7 @@ var SETDEX_GEN8_SETS = {
 				"sp": "252"
 			},
 			"nature": "Jolly",
-			"ability": "LIbero",
+			"ability": "Libero",
 			"item": "Life Orb",
 			"moves": [
 				"Pyro Ball",
