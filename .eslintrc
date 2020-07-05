@@ -140,7 +140,7 @@
 		"one-var": "off",
 		"operator-assignment": "off",
 		"operator-linebreak": ["error", "after"],
-		"quote-props": "off",
+		"quote-props": ["error", "as-needed"],
 		"quotes": ["error", "double", { "avoidEscape": true }],
 		"require-jsdoc": "off",
 		"semi-spacing": ["error", {"before": false, "after": true}],

@@ -1,10 +1,10 @@
 // input field validation
 var bounds = {
-	"level": [0, 100],
-	"base": [1, 255],
-	"evs": [0, 252],
-	"ivs": [0, 31],
-	"dvs": [0, 15],
+	level: [0, 100],
+	base: [1, 255],
+	evs: [0, 252],
+	ivs: [0, 31],
+	dvs: [0, 15],
 	"move-bp": [0, 999],
 	"current-happiness": [0, 255]
 };
@@ -241,8 +241,8 @@ function autosetWeather(ability, i) {
 
 	var primalWeather = ["Harsh Sun", "Heavy Rain"];
 	var autoWeatherAbilities = {
-		"Drought": "Sun",
-		"Drizzle": "Rain",
+		Drought: "Sun",
+		Drizzle: "Rain",
 		"Sand Stream": "Sand",
 		"Snow Warning": "Hail",
 		"Desolate Land": "Harsh Sun",
@@ -562,12 +562,12 @@ function isGrounded(pokeInfo) {
 var resultLocations = [[], []];
 for (var i = 0; i < 4; i++) {
 	resultLocations[0].push({
-		"move": "#resultMoveL" + (i + 1),
-		"damage": "#resultDamageL" + (i + 1)
+		move: "#resultMoveL" + (i + 1),
+		damage: "#resultDamageL" + (i + 1)
 	});
 	resultLocations[1].push({
-		"move": "#resultMoveR" + (i + 1),
-		"damage": "#resultDamageR" + (i + 1)
+		move: "#resultMoveR" + (i + 1),
+		damage: "#resultDamageR" + (i + 1)
 	});
 }
 

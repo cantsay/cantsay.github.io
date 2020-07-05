@@ -1,10 +1,10 @@
 var SETDEX_LG_SETS = {
 	"Eevee-Starter": {
 		"OU Cleric": {
-			"level": 50,
-			"nature": "Jolly",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Jolly",
+			item: "",
+			moves: [
 				"Sparkly Swirl",
 				"Sizzly Slide",
 				"Sappy Seed",
@@ -12,10 +12,10 @@ var SETDEX_LG_SETS = {
 			]
 		},
 		"OU Screens Supporter": {
-			"level": 50,
-			"nature": "Jolly",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Jolly",
+			item: "",
+			moves: [
 				"Sparkly Swirl",
 				"Baddy Bad",
 				"Sappy Seed",
@@ -23,16 +23,16 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	  "Mew": {
+	  Mew: {
 		"OU Stallbreaker": {
-			"level": 50,
-			"ivs": {
-				"at": 0,
+			level: 50,
+			ivs: {
+				at: 0,
 			},
-			"nature": "Timid",
-			"ability": "Synchronize",
-			"item": "",
-			"moves": [
+			nature: "Timid",
+			ability: "Synchronize",
+			item: "",
+			moves: [
 				"Taunt",
 				"Will-O-Wisp",
 				"Psychic",
@@ -40,10 +40,10 @@ var SETDEX_LG_SETS = {
 			]
 		},
 		"OU Phazer": {
-			"level": 50,
-			"nature": "Impish",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Impish",
+			item: "",
+			moves: [
 				"Dragon Tail",
 				"Bulk Up",
 				"Roost",
@@ -51,13 +51,13 @@ var SETDEX_LG_SETS = {
 			]
 		},
 		"OU Set Up Sweeper": {
-			"level": 50,
-			"ivs": {
-				"at": 0,
+			level: 50,
+			ivs: {
+				at: 0,
 			},
-			"nature": "Timid",
-			"item": "",
-			"moves": [
+			nature: "Timid",
+			item: "",
+			moves: [
 				"Nasty Plot",
 				"Psychic",
 				"Flamethrower",
@@ -65,9 +65,9 @@ var SETDEX_LG_SETS = {
 			]
 		},
 		"OU Chansey Lure": {
-			"level": "50",
-			"nature": "Quiet",
-			"moves": [
+			level: "50",
+			nature: "Quiet",
+			moves: [
 				"Psychic",
 				"Brick Break",
 				"Flamethrower",
@@ -75,12 +75,12 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Aerodactyl": {
+	Aerodactyl: {
 		"OU Mega Rocks Setter": {
-			"level": 50,
-			"nature": "Jolly",
-			"item": "Aerodactylite",
-			"moves": [
+			level: 50,
+			nature: "Jolly",
+			item: "Aerodactylite",
+			moves: [
 				"Stealth Rock",
 				"Rock Slide",
 				"Earthquake",
@@ -88,15 +88,15 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Alakazam": {
+	Alakazam: {
 		"OU Mega Set Up Sweeper": {
-			"level": 50,
-			"ivs": {
-				"at": 0,
+			level: 50,
+			ivs: {
+				at: 0,
 			},
-			"nature": "Timid",
-			"item": "Alakazite",
-			"moves": [
+			nature: "Timid",
+			item: "Alakazite",
+			moves: [
 				"Dazzling Gleam",
 				"Shadow Ball",
 				"Calm Mind",
@@ -104,13 +104,13 @@ var SETDEX_LG_SETS = {
 			]
 		},
 		"OU Mega Revenge Killer": {
-			"level": 50,
-			"ivs": {
-				"at": 0,
+			level: 50,
+			ivs: {
+				at: 0,
 			},
-			"nature": "Timid",
-			"item": "Alakazite",
-			"moves": [
+			nature: "Timid",
+			item: "Alakazite",
+			moves: [
 				"Psychic",
 				"Shadow Ball",
 				"Taunt",
@@ -118,12 +118,12 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Melmetal": {
+	Melmetal: {
 		"OU Tank": {
-			"level": 50,
-			"nature": "Adamant",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Adamant",
+			item: "",
+			moves: [
 				"Double Iron Bash",
 				"Earthquake",
 				"Rock Slide",
@@ -133,10 +133,10 @@ var SETDEX_LG_SETS = {
 	},
 	"Muk-Alola": {
 		"OU Tank": {
-			"level": 50,
-			"nature": "Adamant",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Adamant",
+			item: "",
+			moves: [
 				"Crunch",
 				"Screech",
 				"Fire Punch",
@@ -144,13 +144,13 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Zapdos": {
+	Zapdos: {
 		"OU Pivot": {
-			"level": 50,
-			"nature": "Timid",
-			"ability": "Pressure",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Timid",
+			ability: "Pressure",
+			item: "",
+			moves: [
 				"Thunderbolt",
 				"Roost",
 				"Toxic",
@@ -158,11 +158,11 @@ var SETDEX_LG_SETS = {
 			]
 		},
 		"OU Sweeper": {
-			"level": 50,
-			"nature": "Naive",
-			"ability": "Pressure",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Naive",
+			ability: "Pressure",
+			item: "",
+			moves: [
 				"Thunderbolt",
 				"Drill Peck",
 				"Agility",
@@ -170,11 +170,11 @@ var SETDEX_LG_SETS = {
 			]
 		},
 		"OU Sub Toxic": {
-			"level": 50,
-			"nature": "Timid",
-			"ability": "Pressure",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Timid",
+			ability: "Pressure",
+			item: "",
+			moves: [
 				"Substitute",
 				"Roost",
 				"Toxic",
@@ -182,12 +182,12 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Gyarados": {
+	Gyarados: {
 		"OU Mega Tank": {
-			"level": 50,
-			"nature": "Careful",
-			"item": "Gyaradosite",
-			"moves": [
+			level: 50,
+			nature: "Careful",
+			item: "Gyaradosite",
+			moves: [
 				"Crunch",
 				"Earthquake",
 				"Taunt",
@@ -195,10 +195,10 @@ var SETDEX_LG_SETS = {
 			]
 		},
 		"OU Mega Attacker": {
-			"level": 50,
-			"nature": "Jolly",
-			"item": "Gyaradosite",
-			"moves": [
+			level: 50,
+			nature: "Jolly",
+			item: "Gyaradosite",
+			moves: [
 				"Crunch",
 				"Earthquake",
 				"Waterfall",
@@ -206,12 +206,12 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Nidoqueen": {
+	Nidoqueen: {
 		"OU Rocks Setter": {
-			"level": 50,
-			"nature": "Sassy",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Sassy",
+			item: "",
+			moves: [
 				"Sludge Bomb",
 				"Ice Beam",
 				"Earthquake",
@@ -219,12 +219,12 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Rhydon": {
+	Rhydon: {
 		"OU Rocks Setter": {
-			"level": 50,
-			"nature": "Adamant",
-			"item": "",
-			"moves": [
+			level: 50,
+			nature: "Adamant",
+			item: "",
+			moves: [
 				"Stealth Rock",
 				"Rock Slide",
 				"Earthquake",
@@ -232,15 +232,15 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Starmie": {
+	Starmie: {
 		"OU Special Attacker": {
-			"level": 50,
-			"ivs": {
-				"at": 0,
+			level: 50,
+			ivs: {
+				at: 0,
 			},
-			"nature": "Timid",
-			"item": "",
-			"moves": [
+			nature: "Timid",
+			item: "",
+			moves: [
 				"Hydro Pump",
 				"Psychic",
 				"Ice Beam",
@@ -248,15 +248,15 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Venomoth": {
+	Venomoth: {
 		"OU Set Up Sweeper": {
-			"level": 50,
-			"ivs": {
-				"at": 0,
+			level: 50,
+			ivs: {
+				at: 0,
 			},
-			"nature": "Timid",
-			"item": "",
-			"moves": [
+			nature: "Timid",
+			item: "",
+			moves: [
 				"Bug Buzz",
 				"Quiver Dance",
 				"Sleep Powder",
@@ -264,12 +264,12 @@ var SETDEX_LG_SETS = {
 			]
 		}
 	},
-	"Venusaur": {
+	Venusaur: {
 		"OU Mega Tank": {
-			"level": 50,
-			"nature": "Calm",
-			"item": "Venusaurite",
-			"moves": [
+			level: 50,
+			nature: "Calm",
+			item: "Venusaurite",
+			moves: [
 				"Leech Seed",
 				"Mega Drain",
 				"Sludge Bomb",
@@ -277,10 +277,10 @@ var SETDEX_LG_SETS = {
 			]
 		},
 		"OU Mega Mixed Attacker": {
-			"level": 50,
-			"nature": "Naive",
-			"item": "Venusaurite",
-			"moves": [
+			level: 50,
+			nature: "Naive",
+			item: "Venusaurite",
+			moves: [
 				"Mega Drain",
 				"Sludge Bomb",
 				"Earthquake",
