@@ -916,10 +916,10 @@ function Pokemon(pokeInfo) {
 		this.status = pokeInfo.find(".status").val();
 		this.toxicCounter = this.status === "Badly Poisoned" ? ~~pokeInfo.find(".toxic-counter").val() : 0;
 		this.moves = [
-			getMoveDetails(pokeInfo.find(".move1"), this.item),
-			getMoveDetails(pokeInfo.find(".move2"), this.item),
-			getMoveDetails(pokeInfo.find(".move3"), this.item),
-			getMoveDetails(pokeInfo.find(".move4"), this.item)
+			getMoveDetails(pokeInfo.find(".move1"), this.item, this.name),
+			getMoveDetails(pokeInfo.find(".move2"), this.item, this.name),
+			getMoveDetails(pokeInfo.find(".move3"), this.item, this.name),
+			getMoveDetails(pokeInfo.find(".move4"), this.item, this.name)
 		];
 		this.weight = +pokeInfo.find(".weight").val();
 	}
@@ -928,7 +928,7 @@ function Pokemon(pokeInfo) {
 	};
 }
 
-function getMoveDetails(moveInfo, item) {
+function getMoveDetails(moveInfo, item, species) {
 	var moveName = moveInfo.find("select.move-selector").val();
 	var defaultDetails = moves[moveName];
 	var isZMove = gen >= 7 && gen != 8 && moveInfo.find("input.move-z").prop("checked");
@@ -966,6 +966,17 @@ function getMoveDetails(moveInfo, item) {
 			else if (defaultDetails.bp >= 45) tempBP = 100;
 			else if (defaultDetails.bp >= 150) tempBP = 150;
 			else tempBP = 90;
+		}
+
+		if (species === "Cinderace-Gmax" && defaultDetails.type === "Fire") {
+			tempBP = 160;
+			maxMoveName = "G-Max Fireball";
+		} else if (species === "Inteleon-Gmax" && defaultDetails.type === "Water") {
+			tempBP = 160;
+			maxMoveName = "G-Max Hydrosnipe";
+		} else if (species === "Rillaboom-Gmax" && defaultDetails.type === "Grass") {
+			tempBP = 160;
+			maxMoveName = "G-Max Drum Solo";
 		}
 
 		return $.extend({}, moves[maxMoveName], {
