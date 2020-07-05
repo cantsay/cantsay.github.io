@@ -447,13 +447,16 @@ function showFormes(formeObj, setName, pokemonName, pokemon) {
 
 	if (setName !== "Blank Set") {
 		var set = setdex[pokemonName][setName];
+
+		if (set.isGmax) defaultForme = 1;
+
 		if (set.item) {
 		// Repurpose the previous filtering code to provide the "different default" logic
 			if (set.item.includes("ite") && !(set.item.includes("ite Y")) ||
-            pokemonName === "Groudon" && set.item.includes("Red Orb") ||
-            pokemonName === "Kyogre" && set.item.includes("Blue Orb") ||
-            pokemonName === "Meloetta" && set.moves.includes("Relic Song") ||
-            pokemonName === "Rayquaza" && set.moves.includes("Dragon Ascent") ||
+        pokemonName === "Groudon" && set.item.includes("Red Orb") ||
+        pokemonName === "Kyogre" && set.item.includes("Blue Orb") ||
+        pokemonName === "Meloetta" && set.moves.includes("Relic Song") ||
+        pokemonName === "Rayquaza" && set.moves.includes("Dragon Ascent") ||
         pokemonName === "Necrozma-Dusk Mane" && set.item.includes("Ultranecrozium Z") ||
         pokemonName === "Necrozma-Dawn Wings" && set.item.includes("Ultranecrozium Z")) {
 				defaultForme = 1;
@@ -807,6 +810,7 @@ function Pokemon(pokeInfo) {
 		this.avs = [];
 
 		var set = setdex[this.name][setName];
+		this.isGmax = setName.includes("-Gmax") || pokemon.isGmax || set.isGmax;
 		this.level = set.level;
 		if (gen !== 22) {
 			this.HPEVs = set.evs && typeof set.evs.hp !== "undefined" ? set.evs.hp : 0;

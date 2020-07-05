@@ -127,6 +127,7 @@ var savecustom = function () {
 		var IVs = [31, 31, 31, 31, 31, 31];
 		var nature = "Serious";
 		var moves = [];
+		var isGmax = false;
 
 		/*    Pokemon Showdown Export Format
 		0    Nickname (Species) @ Item
@@ -165,6 +166,11 @@ var savecustom = function () {
 		}
 		if (species.toLowerCase().includes("furfrou")) {
 			species = "Furfrou";
+		}
+
+		if (species.includes("-Gmax")) {
+			species = species.substring(0, species.length - 5);
+			isGmax = true;
 		}
 
 		if (lines[0].indexOf("@") != -1)
@@ -313,6 +319,7 @@ var savecustom = function () {
 			"ability": ability,
 			"item": item,
 			"moves": moves,
+			"isGmax": isGmax,
 		};
 		if (rejectSet === true) {
 			alert("Set not saved: " + species);
