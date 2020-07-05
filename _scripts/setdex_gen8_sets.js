@@ -395,7 +395,8 @@ var SETDEX_GEN8_SETS = {
 				"High Jump Kick",
 				"Sucker Punch",
 				"Bounce"
-			]
+			],
+			"isGmax": true
 		},
 		"Blaze": {
 			"level": 50,
@@ -412,7 +413,8 @@ var SETDEX_GEN8_SETS = {
 				"High Jump Kick",
 				"Sucker Punch",
 				"Zen Headbutt"
-			]
+			],
+			isGmax: true
 		}
 	},
 	"Clefable": {
@@ -2218,7 +2220,8 @@ var SETDEX_GEN8_SETS = {
 				"Knock Off",
 				"Superpower",
 				"U-turn"
-			]
+			],
+			isGmax: true
 		},
 		"Assault Vest": {
 			"level": 50,
@@ -2235,7 +2238,8 @@ var SETDEX_GEN8_SETS = {
 				"Knock Off",
 				"Drain Punch",
 				"U-turn"
-			]
+			],
+			isGmax: true
 		}
 	},
 	"Roserade": {
