@@ -81,13 +81,13 @@ function getDamageResult(attacker, defender, move, field) {
 		}
 	}
 	var description = {
-		attackerName: attacker.name,
-		moveName: moveDescName,
-		defenderName: defender.name,
-		isDynamax: defender.isDynamax
+		"attackerName": attacker.name,
+		"moveName": moveDescName,
+		"defenderName": defender.name,
+		"isDynamax": defender.isDynamax
 	};
 	if (move.bp === 0) {
-		return {damage: [0], description: buildDescription(description)};
+		return {"damage": [0], "description": buildDescription(description)};
 	}
 
 	var defAbility = defender.ability;
@@ -190,7 +190,7 @@ function getDamageResult(attacker, defender, move, field) {
 	}
 
 	if (typeEffectiveness === 0) {
-		return {damage: [0], description: buildDescription(description)};
+		return {"damage": [0], "description": buildDescription(description)};
 	}
 	if (defAbility === "Wonder Guard" && typeEffectiveness <= 1 ||
             move.type === "Grass" && defAbility === "Sap Sipper" ||
@@ -201,11 +201,11 @@ function getDamageResult(attacker, defender, move, field) {
             move.isBullet && defAbility === "Bulletproof" ||
             move.isSound && defAbility === "Soundproof") {
 		description.defenderAbility = defAbility;
-		return {damage: [0], description: buildDescription(description)};
+		return {"damage": [0], "description": buildDescription(description)};
 	}
 	if (move.type === "Ground" && move.name !== "Thousand Arrows" && !field.isGravity && defender.item === "Air Balloon") {
 		description.defenderItem = defender.item;
-		return {damage: [0], description: buildDescription(description)};
+		return {"damage": [0], "description": buildDescription(description)};
 	}
 	if (defender.item === "Ring Target" && typeEffectiveness === 0) {
 		if (typeChart[move.type][defender.type1] === 0) {
@@ -215,16 +215,16 @@ function getDamageResult(attacker, defender, move, field) {
 		}
 	}
 	if (field.weather === "Harsh Sun" && move.type === "Water" || field.weather === "Heavy Rain" && move.type === "Fire") {
-		return {damage: [0], description: buildDescription(description)};
+		return {"damage": [0], "description": buildDescription(description)};
 	}
 	if (move.name === "Sky Drop" &&
         ([defender.type1, defender.type2].indexOf("Flying") !== -1 ||
             defender.weight >= 200.0 || field.isGravity)) {
-		return {damage: [0], description: buildDescription(description)};
+		return {"damage": [0], "description": buildDescription(description)};
 	}
 	if (move.name === "Synchronoise" &&
             [defender.type1, defender.type2].indexOf(attacker.type1) === -1 && [defender.type1, defender.type2].indexOf(attacker.type2) === -1) {
-		return {damage: [0], description: buildDescription(description)};
+		return {"damage": [0], "description": buildDescription(description)};
 	}
 
 	description.HPEVs = defender.HPEVs + " HP";
@@ -234,7 +234,7 @@ function getDamageResult(attacker, defender, move, field) {
 		if (attacker.ability === "Parental Bond") {
 			lv *= 2;
 		}
-		return {damage: [lv], description: buildDescription(description)};
+		return {"damage": [lv], "description": buildDescription(description)};
 	}
 
 	if (move.hits > 1) {
@@ -757,24 +757,24 @@ function getDamageResult(attacker, defender, move, field) {
 	// Return a bit more info if this is a Parental Bond usage.
 	if (pbDamage.length) {
 		return {
-			damage: pbDamage.sort(numericSort),
-			parentDamage: damage,
-			childDamage: childDamage,
-			description: buildDescription(description)
+			"damage": pbDamage.sort(numericSort),
+			"parentDamage": damage,
+			"childDamage": childDamage,
+			"description": buildDescription(description)
 		};
 	}
-	return {damage: pbDamage.length ? pbDamage.sort(numericSort) : damage, description: buildDescription(description)};
+	return {"damage": pbDamage.length ? pbDamage.sort(numericSort) : damage, "description": buildDescription(description)};
 }
 
 function getLGDamageResult(attacker, defender, move, field) {
 	var moveDescName = move.name;
 	var description = {
-		attackerName: attacker.name,
-		moveName: moveDescName,
-		defenderName: defender.name
+		"attackerName": attacker.name,
+		"moveName": moveDescName,
+		"defenderName": defender.name
 	};
 	if (move.bp === 0) {
-		return {damage: [0], description: buildLGDescription(description)};
+		return {"damage": [0], "description": buildLGDescription(description)};
 	}
 
 	var defAbility = "";
@@ -785,17 +785,17 @@ function getLGDamageResult(attacker, defender, move, field) {
 	var typeEffectiveness = typeEffect1 * typeEffect2;
 
 	if (typeEffectiveness === 0) {
-		return {damage: [0], description: buildLGDescription(description)};
+		return {"damage": [0], "description": buildLGDescription(description)};
 	}
 
 	if (move.name === "Sky Drop" &&
         ([defender.type1, defender.type2].indexOf("Flying") !== -1 ||
             defender.weight >= 200.0 || field.isGravity)) {
-		return {damage: [0], description: buildLGDescription(description)};
+		return {"damage": [0], "description": buildLGDescription(description)};
 	}
 	if (move.name === "Synchronoise" &&
             [defender.type1, defender.type2].indexOf(attacker.type1) === -1 && [defender.type1, defender.type2].indexOf(attacker.type2) === -1) {
-		return {damage: [0], description: buildLGDescription(description)};
+		return {"damage": [0], "description": buildLGDescription(description)};
 	}
 
 	description.HPAVs = defender.HPAVs + " HP";
@@ -805,7 +805,7 @@ function getLGDamageResult(attacker, defender, move, field) {
 		if (attacker.ability === "Parental Bond") {
 			lv *= 2;
 		}
-		return {damage: [lv], description: buildLGDescription(description)};
+		return {"damage": [lv], "description": buildLGDescription(description)};
 	}
 
 	if (move.hits > 1) {
@@ -1173,13 +1173,13 @@ function getLGDamageResult(attacker, defender, move, field) {
 	// Return a bit more info if this is a Parental Bond usage.
 	if (pbDamage.length) {
 		return {
-			damage: pbDamage.sort(numericSort),
-			parentDamage: damage,
-			childDamage: childDamage,
-			description: buildLGDescription(description)
+			"damage": pbDamage.sort(numericSort),
+			"parentDamage": damage,
+			"childDamage": childDamage,
+			"description": buildLGDescription(description)
 		};
 	}
-	return {damage: pbDamage.length ? pbDamage.sort(numericSort) : damage, description: buildLGDescription(description)};
+	return {"damage": pbDamage.length ? pbDamage.sort(numericSort) : damage, "description": buildLGDescription(description)};
 }
 
 function numericSort(a, b) {

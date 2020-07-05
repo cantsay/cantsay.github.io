@@ -1,22 +1,22 @@
 var SETDEX_GEN5_SETS = {
-	Abomasnow: {
+	"Abomasnow": {
 		"Focus Sash": {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "8",
-				sa: "248",
-				sp: "248"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "8",
+				"sa": "248",
+				"sp": "248"
 			},
-			ivs: {
-				at: "30",
-				sa: "30",
-				sp: "30"
+			"ivs": {
+				"at": "30",
+				"sa": "30",
+				"sp": "30"
 			},
-			nature: "Mild",
-			ability: "Snow Warning",
-			item: "Focus Sash",
-			moves: [
+			"nature": "Mild",
+			"ability": "Snow Warning",
+			"item": "Focus Sash",
+			"moves": [
 				"Blizzard",
 				"Energy Ball",
 				"Hidden Power Fire",
@@ -24,22 +24,22 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Alakazam: {
+	"Alakazam": {
 		"Focus Sash": {
-			level: 50,
-			evs: {
-				hp: "4",
-				sa: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"sa": "252",
+				"sp": "252"
 			},
-			ivs: {
-				at: "0",
-				df: "30"
+			"ivs": {
+				"at": "0",
+				"df": "30"
 			},
-			nature: "Timid",
-			ability: "Magic Guard",
-			item: "Alakazite",
-			moves: [
+			"nature": "Timid",
+			"ability": "Magic Guard",
+			"item": "Alakazite",
+			"moves": [
 				"Psychic",
 				"Focus Blast",
 				"Shadow Ball",
@@ -47,20 +47,20 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Articuno: {
+	"Articuno": {
 		"Theorymon's Sheer Cold Fisher": {
-			level: 50,
-			evs: {
-				hp: "220",
-				df: "4",
-				sa: "4",
-				sd: "252",
-				sp: "28"
+			"level": 50,
+			"evs": {
+				"hp": "220",
+				"df": "4",
+				"sa": "4",
+				"sd": "252",
+				"sp": "28"
 			},
-			nature: "Calm",
-			ability: "Pressure",
-			item: "Leftovers",
-			moves: [
+			"nature": "Calm",
+			"ability": "Pressure",
+			"item": "Leftovers",
+			"moves": [
 				"Sheer Cold",
 				"Substitute",
 				"Roost",
@@ -68,18 +68,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Assault Vest": {
-			level: 50,
-			evs: {
-				hp: "108",
-				df: "4",
-				sa: "252",
-				sd: "4",
-				sp: "140"
+			"level": 50,
+			"evs": {
+				"hp": "108",
+				"df": "4",
+				"sa": "252",
+				"sd": "4",
+				"sp": "140"
 			},
-			nature: "Modest",
-			ability: "Pressure",
-			item: "Assault Vest",
-			moves: [
+			"nature": "Modest",
+			"ability": "Pressure",
+			"item": "Assault Vest",
+			"moves": [
 				"Sheer Cold",
 				"Freeze-Dry",
 				"Hurricane",
@@ -87,20 +87,20 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Azumarill: {
+	"Azumarill": {
 		"Choice Band": {
-			level: 50,
-			evs: {
-				hp: "228",
-				at: "252",
-				df: "12",
-				sd: "12",
-				sp: "4"
+			"level": 50,
+			"evs": {
+				"hp": "228",
+				"at": "252",
+				"df": "12",
+				"sd": "12",
+				"sp": "4"
 			},
-			nature: "Adamant",
-			ability: "Huge Power",
-			item: "Choice Band",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Huge Power",
+			"item": "Choice Band",
+			"moves": [
 				"Aqua Jet",
 				"Play Rough",
 				"Waterfall",
@@ -108,22 +108,22 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Blaziken: {
+	"Blaziken": {
 		"Mixed Attacker": {
-			level: 50,
-			evs: {
-				at: "52",
-				sa: "244",
-				sp: "212"
+			"level": 50,
+			"evs": {
+				"at": "52",
+				"sa": "244",
+				"sp": "212"
 			},
-			ivs: {
-				hp: "30",
-				df: "30"
+			"ivs": {
+				"hp": "30",
+				"df": "30"
 			},
-			nature: "Naive",
-			ability: "Speed Boost",
-			item: "Life Orb",
-			moves: [
+			"nature": "Naive",
+			"ability": "Speed Boost",
+			"item": "Life Orb",
+			"moves": [
 				"Overheat",
 				"Hidden Power Ice",
 				"Superpower",
@@ -131,16 +131,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Baton Pass": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "4",
+				"sp": "252"
 			},
-			nature: "Impish",
-			ability: "Speed Boost",
-			item: "",
-			moves: [
+			"nature": "Impish",
+			"ability": "Speed Boost",
+			"item": "",
+			"moves": [
 				"Protect",
 				"Swords Dance",
 				"Baton Pass",
@@ -148,18 +148,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Breloom: {
+	"Breloom": {
 		"Offensive Spore": {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Technician",
-			item: "Focus Sash",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Technician",
+			"item": "Focus Sash",
+			"moves": [
 				"Spore",
 				"Mach Punch",
 				"Bullet Seed",
@@ -167,16 +167,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Tacticat Teammate": {
-			level: 50,
-			evs: {
-				hp: "252",
-				at: "4",
-				df: "252"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "4",
+				"df": "252"
 			},
-			nature: "Impish",
-			ability: "Poison Heal",
-			item: "Toxic Orb",
-			moves: [
+			"nature": "Impish",
+			"ability": "Poison Heal",
+			"item": "Toxic Orb",
+			"moves": [
 				"Spore",
 				"Focus Punch",
 				"Substitute",
@@ -184,35 +184,35 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Chansey: {
-		Standard: {
-			level: 50,
-			evs: {
-				hp: "44",
-				df: "252",
-				sd: "212"
+	"Chansey": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"hp": "44",
+				"df": "252",
+				"sd": "212"
 			},
-			nature: "Bold",
-			ability: "Natural Cure",
-			item: "Eviolite",
-			moves: [
+			"nature": "Bold",
+			"ability": "Natural Cure",
+			"item": "Eviolite",
+			"moves": [
 				"Seismic Toss",
 				"Ice Beam",
 				"Thunderbolt",
 				"Flamethrower"
 			]
 		},
-		Minimize: {
-			level: 50,
-			evs: {
-				df: "252",
-				sd: "4",
-				sp: "252"
+		"Minimize": {
+			"level": 50,
+			"evs": {
+				"df": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "",
-			item: "Eviolite",
-			moves: [
+			"nature": "Timid",
+			"ability": "",
+			"item": "Eviolite",
+			"moves": [
 				"Seismic Toss",
 				"Ice Beam",
 				"Thunderbolt",
@@ -220,18 +220,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Charizard: {
+	"Charizard": {
 		"Belly Drum + Flame Charge": {
-			level: 50,
-			evs: {
-				at: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Jolly",
-			ability: "Blaze",
-			item: "Sitrus Berry",
-			moves: [
+			"nature": "Jolly",
+			"ability": "Blaze",
+			"item": "Sitrus Berry",
+			"moves": [
 				"Flame Charge",
 				"Thunder Punch",
 				"Aerial Ace",
@@ -239,16 +239,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Specs Solar Power": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Modest",
-			ability: "Solar Power",
-			item: "Choice Specs",
-			moves: [
+			"nature": "Modest",
+			"ability": "Solar Power",
+			"item": "Choice Specs",
+			"moves": [
 				"Overheat",
 				"Solar Beam",
 				"Focus Blast",
@@ -256,18 +256,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Clefable: {
-		Minimize: {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "252",
-				sd: "4"
+	"Clefable": {
+		"Minimize": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
 			},
-			nature: "Bold",
-			ability: "Unaware",
-			item: "Kee Berry",
-			moves: [
+			"nature": "Bold",
+			"ability": "Unaware",
+			"item": "Kee Berry",
+			"moves": [
 				"Stored Power",
 				"Ice Beam",
 				"Fire Blast",
@@ -275,20 +275,20 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Cloyster: {
+	"Cloyster": {
 		"Shell Smash": {
-			level: 50,
-			evs: {
-				hp: "108",
-				at: "252",
-				df: "4",
-				sd: "4",
-				sp: "140"
+			"level": 50,
+			"evs": {
+				"hp": "108",
+				"at": "252",
+				"df": "4",
+				"sd": "4",
+				"sp": "140"
 			},
-			nature: "Adamant",
-			ability: "Skill Link",
-			item: "King's Rock",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Skill Link",
+			"item": "King's Rock",
+			"moves": [
 				"Shell Smash",
 				"Icicle Spear",
 				"Rock Blast",
@@ -296,18 +296,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Conkeldurr: {
+	"Conkeldurr": {
 		"Offensive (Guts)": {
-			level: 50,
-			evs: {
-				hp: "252",
-				at: "252",
-				df: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
 			},
-			nature: "Adamant",
-			ability: "Guts",
-			item: "Assault Vest",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Guts",
+			"item": "Assault Vest",
+			"moves": [
 				"Drain Punch",
 				"Mach Punch",
 				"Ice Punch",
@@ -315,16 +315,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Offensive (Iron Fist)": {
-			level: 50,
-			evs: {
-				hp: "252",
-				at: "252",
-				df: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
 			},
-			nature: "Adamant",
-			ability: "Iron Fist",
-			item: "Assault Vest",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Iron Fist",
+			"item": "Assault Vest",
+			"moves": [
 				"Drain Punch",
 				"Mach Punch",
 				"Ice Punch",
@@ -332,18 +332,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Cresselia: {
+	"Cresselia": {
 		"Standard Defensive Cres": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "252",
-				sd: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
 			},
-			nature: "Bold",
-			ability: "Levitate",
-			item: "Leftovers",
-			moves: [
+			"nature": "Bold",
+			"ability": "Levitate",
+			"item": "Leftovers",
+			"moves": [
 				"Ice Beam",
 				"Psychic",
 				"Moonblast",
@@ -351,18 +351,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Dragonite: {
+	"Dragonite": {
 		"Dragon Dance": {
-			level: 50,
-			evs: {
-				at: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Multiscale",
-			item: "Lum Berry",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Multiscale",
+			"item": "Lum Berry",
+			"moves": [
 				"Outrage",
 				"Extreme Speed",
 				"Earthquake",
@@ -370,16 +370,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Band": {
-			level: 50,
-			evs: {
-				at: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Multiscale",
-			item: "Choice Band",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Multiscale",
+			"item": "Choice Band",
+			"moves": [
 				"Outrage",
 				"Extreme Speed",
 				"Earthquake",
@@ -387,20 +387,20 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Entei: {
+	"Entei": {
 		"Assault Vest": {
-			level: 50,
-			evs: {
-				hp: "132",
-				at: "252",
-				df: "52",
-				sd: "52",
-				sp: "20"
+			"level": 50,
+			"evs": {
+				"hp": "132",
+				"at": "252",
+				"df": "52",
+				"sd": "52",
+				"sp": "20"
 			},
-			nature: "Adamant",
-			ability: "Pressure",
-			item: "Assault Vest",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Pressure",
+			"item": "Assault Vest",
+			"moves": [
 				"Flare Blitz",
 				"Stone Edge",
 				"Bulldoze",
@@ -408,16 +408,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Band": {
-			level: 50,
-			evs: {
-				at: "252",
-				df: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Pressure",
-			item: "Choice Band",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Pressure",
+			"item": "Choice Band",
+			"moves": [
 				"Flare Blitz",
 				"Stone Edge",
 				"Bulldoze",
@@ -425,17 +425,17 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Pressure Stall": {
-			level: 50,
-			evs: {
-				hp: "20",
-				at: "232",
-				df: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "20",
+				"at": "232",
+				"df": "4",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "Pressure",
-			item: "Leftovers",
-			moves: [
+			"nature": "Timid",
+			"ability": "Pressure",
+			"item": "Leftovers",
+			"moves": [
 				"Protect",
 				"Substitute",
 				"Toxic",
@@ -443,18 +443,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Excadrill: {
+	"Excadrill": {
 		"Choice Scarf": {
-			level: 50,
-			evs: {
-				at: "252",
-				hp: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"hp": "4",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Mold Breaker",
-			item: "Choice Scarf",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Mold Breaker",
+			"item": "Choice Scarf",
+			"moves": [
 				"Earthquake",
 				"Iron Head",
 				"Rock Slide",
@@ -462,16 +462,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Sand Sweeper": {
-			level: 50,
-			evs: {
-				at: "252",
-				df: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Sand Rush",
-			item: "Life Orb",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Sand Rush",
+			"item": "Life Orb",
+			"moves": [
 				"Earthquake",
 				"Iron Head",
 				"Rock Slide",
@@ -479,16 +479,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Versatile Attacker": {
-			level: 50,
-			evs: {
-				at: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Jolly",
-			ability: "Mold Breaker",
-			item: "Assault Vest",
-			moves: [
+			"nature": "Jolly",
+			"ability": "Mold Breaker",
+			"item": "Assault Vest",
+			"moves": [
 				"Earthquake",
 				"Iron Head",
 				"Rock Tomb",
@@ -496,21 +496,21 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Ferrothorn: {
+	"Ferrothorn": {
 		"Wall-Nut (physdef)": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "252",
-				sd: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
 			},
-			ivs: {
-				sp: "0"
+			"ivs": {
+				"sp": "0"
 			},
-			nature: "Relaxed",
-			ability: "Iron Barbs",
-			item: "Leftovers",
-			moves: [
+			"nature": "Relaxed",
+			"ability": "Iron Barbs",
+			"item": "Leftovers",
+			"moves": [
 				"Power Whip",
 				"Gyro Ball",
 				"Knock Off",
@@ -518,19 +518,19 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Cashew (spedef)": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "4",
-				sd: "252"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "4",
+				"sd": "252"
 			},
-			ivs: {
-				sp: "0"
+			"ivs": {
+				"sp": "0"
 			},
-			nature: "Sassy",
-			ability: "Iron Barbs",
-			item: "Leftovers",
-			moves: [
+			"nature": "Sassy",
+			"ability": "Iron Barbs",
+			"item": "Leftovers",
+			"moves": [
 				"Power Whip",
 				"Gyro Ball",
 				"Knock Off",
@@ -538,19 +538,19 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Band": {
-			level: 50,
-			evs: {
-				hp: "252",
-				at: "252",
-				df: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
 			},
-			ivs: {
-				sp: "0"
+			"ivs": {
+				"sp": "0"
 			},
-			nature: "Brave",
-			ability: "Iron Barbs",
-			item: "Leftovers",
-			moves: [
+			"nature": "Brave",
+			"ability": "Iron Barbs",
+			"item": "Leftovers",
+			"moves": [
 				"Power Whip",
 				"Gyro Ball",
 				"Knock Off",
@@ -558,18 +558,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Garchomp: {
-		Lurechomp: {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+	"Garchomp": {
+		"Lurechomp": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Jolly",
-			ability: "Rough Skin",
-			item: "",
-			moves: [
+			"nature": "Jolly",
+			"ability": "Rough Skin",
+			"item": "",
+			"moves": [
 				"Earthquake",
 				"Outrage",
 				"Rock Tomb",
@@ -577,16 +577,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Scarf": {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Jolly",
-			ability: "Rough Skin",
-			item: "Choice Scarf",
-			moves: [
+			"nature": "Jolly",
+			"ability": "Rough Skin",
+			"item": "Choice Scarf",
+			"moves": [
 				"Outrage",
 				"Earthquake",
 				"Stone Edge",
@@ -594,16 +594,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Band": {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Jolly",
-			ability: "Rough Skin",
-			item: "Choice Band",
-			moves: [
+			"nature": "Jolly",
+			"ability": "Rough Skin",
+			"item": "Choice Band",
+			"moves": [
 				"Outrage",
 				"Earthquake",
 				"Poison Jab",
@@ -611,16 +611,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Versatile Attacker": {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Naive",
-			ability: "Rough Skin",
-			item: "Life Orb",
-			moves: [
+			"nature": "Naive",
+			"ability": "Rough Skin",
+			"item": "Life Orb",
+			"moves": [
 				"Earthquake",
 				"Outrage",
 				"Draco Meteor",
@@ -628,35 +628,35 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Gengar: {
+	"Gengar": {
 		"Focus Sash": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "Levitate",
-			item: "Focus Sash",
-			moves: [
+			"nature": "Timid",
+			"ability": "Levitate",
+			"item": "Focus Sash",
+			"moves": [
 				"Shadow Ball",
 				"Sludge Bomb",
 				"Focus Blast",
 				"Icy Wind"
 			]
 		},
-		SubDisable: {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+		"SubDisable": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "Levitate",
-			item: "Black Sludge",
-			moves: [
+			"nature": "Timid",
+			"ability": "Levitate",
+			"item": "Black Sludge",
+			"moves": [
 				"Substitute",
 				"Disable",
 				"Shadow Ball",
@@ -664,18 +664,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 	},
-	Glalie: {
-		Moody: {
-			level: 50,
-			evs: {
-				hp: "172",
-				sd: "84",
-				sp: "252"
+	"Glalie": {
+		"Moody": {
+			"level": 50,
+			"evs": {
+				"hp": "172",
+				"sd": "84",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "Moody",
-			item: "Leftovers",
-			moves: [
+			"nature": "Timid",
+			"ability": "Moody",
+			"item": "Leftovers",
+			"moves": [
 				"Ice Beam",
 				"Earthquake",
 				"Sheer Cold",
@@ -683,18 +683,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Gliscor: {
+	"Gliscor": {
 		"Poison Healer": {
-			level: 50,
-			evs: {
-				hp: "228",
-				df: "68",
-				sp: "212"
+			"level": 50,
+			"evs": {
+				"hp": "228",
+				"df": "68",
+				"sp": "212"
 			},
-			nature: "Impish",
-			ability: "Poison Heal",
-			item: "Toxic Orb",
-			moves: [
+			"nature": "Impish",
+			"ability": "Poison Heal",
+			"item": "Toxic Orb",
+			"moves": [
 				"Protect",
 				"Substitute",
 				"Earthquake",
@@ -702,18 +702,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Gyarados: {
-		Defensive: {
-			level: 50,
-			evs: {
-				hp: "220",
-				df: "244",
-				sp: "44"
+	"Gyarados": {
+		"Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "220",
+				"df": "244",
+				"sp": "44"
 			},
-			nature: "Impish",
-			ability: "Intimidate",
-			item: "Rocky Helmet",
-			moves: [
+			"nature": "Impish",
+			"ability": "Intimidate",
+			"item": "Rocky Helmet",
+			"moves": [
 				"Waterfall",
 				"Ice Fang",
 				"Earthquake",
@@ -721,16 +721,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Dragon Dance": {
-			level: 50,
-			evs: {
-				at: "252",
-				df: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Intimidate",
-			item: "Lum Berry",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Intimidate",
+			"item": "Lum Berry",
+			"moves": [
 				"Dragon Dance",
 				"Waterfall",
 				"Earthquake",
@@ -738,18 +738,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Heatran: {
+	"Heatran": {
 		"Fast Stall": {
-			level: 50,
-			evs: {
-				hp: "212",
-				sd: "44",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "212",
+				"sd": "44",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "Flash Fire",
-			item: "Leftovers",
-			moves: [
+			"nature": "Timid",
+			"ability": "Flash Fire",
+			"item": "Leftovers",
+			"moves": [
 				"Magmar Storm",
 				"Toxic",
 				"Substitute",
@@ -757,18 +757,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Bulky Stall": {
-			level: 50,
-			evs: {
-				hp: "212",
-				df: "4",
-				sa: "44",
-				sd: "156",
-				sp: "92"
+			"level": 50,
+			"evs": {
+				"hp": "212",
+				"df": "4",
+				"sa": "44",
+				"sd": "156",
+				"sp": "92"
 			},
-			nature: "Calm",
-			ability: "Flash Fire",
-			item: "Leftovers",
-			moves: [
+			"nature": "Calm",
+			"ability": "Flash Fire",
+			"item": "Leftovers",
+			"moves": [
 				"Magmar Storm",
 				"Toxic",
 				"Substitute",
@@ -776,16 +776,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Specs": {
-			level: 50,
-			evs: {
-				hp: "252",
-				sa: "252",
-				sp: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sp": "4"
 			},
-			nature: "Modest",
-			ability: "Flash Fire",
-			item: "Choice Specs",
-			moves: [
+			"nature": "Modest",
+			"ability": "Flash Fire",
+			"item": "Choice Specs",
+			"moves": [
 				"Overheat",
 				"Flash Cannon",
 				"Earth Power",
@@ -793,18 +793,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Hippowdon: {
+	"Hippowdon": {
 		"Rocky Helmet Wall": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "252",
-				sd: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
 			},
-			nature: "Relaxed",
-			ability: "Sand Stream",
-			item: "Rocky Helmet",
-			moves: [
+			"nature": "Relaxed",
+			"ability": "Sand Stream",
+			"item": "Rocky Helmet",
+			"moves": [
 				"Slack Off",
 				"Yawn",
 				"Stealth Rock",
@@ -812,16 +812,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Specially Defensive": {
-			level: 50,
-			evs: {
-				hp: "252",
-				sd: "252",
-				df: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sd": "252",
+				"df": "4"
 			},
-			nature: "Sassy",
-			ability: "Sand Stream",
-			item: "Sitrus Berry",
-			moves: [
+			"nature": "Sassy",
+			"ability": "Sand Stream",
+			"item": "Sitrus Berry",
+			"moves": [
 				"Slack Off",
 				"Yawn",
 				"Stealth Rock",
@@ -829,18 +829,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Hydreigon: {
+	"Hydreigon": {
 		"Choice Specs": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Modest",
-			ability: "Levitate",
-			item: "Choice Specs",
-			moves: [
+			"nature": "Modest",
+			"ability": "Levitate",
+			"item": "Choice Specs",
+			"moves": [
 				"Draco Meteor",
 				"Dark Pulse",
 				"Fire Blast",
@@ -848,16 +848,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Scarf": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "Levitate",
-			item: "Choice Scarf",
-			moves: [
+			"nature": "Timid",
+			"ability": "Levitate",
+			"item": "Choice Scarf",
+			"moves": [
 				"Draco Meteor",
 				"Dark Pulse",
 				"Fire Blast",
@@ -865,16 +865,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Life Orb": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Modest",
-			ability: "Levitate",
-			item: "Life Orb",
-			moves: [
+			"nature": "Modest",
+			"ability": "Levitate",
+			"item": "Life Orb",
+			"moves": [
 				"Draco Meteor",
 				"Dark Pulse",
 				"Fire Blast",
@@ -882,18 +882,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Kingdra: {
+	"Kingdra": {
 		"Choice Specs": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Modest",
-			ability: "Swift Swim",
-			item: "Choice Specs",
-			moves: [
+			"nature": "Modest",
+			"ability": "Swift Swim",
+			"item": "Choice Specs",
+			"moves": [
 				"Draco Meteor",
 				"Hydro Pump",
 				"Dragon Pulse",
@@ -901,22 +901,22 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Landorus: {
+	"Landorus": {
 		"Special Life Orb": {
-			level: 50,
-			evs: {
-				hp: "4",
-				sa: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"sa": "252",
+				"sp": "252"
 			},
-			ivs: {
-				at: "0",
-				df: "30"
+			"ivs": {
+				"at": "0",
+				"df": "30"
 			},
-			nature: "Timid",
-			ability: "Sheer Force",
-			item: "Life Orb",
-			moves: [
+			"nature": "Timid",
+			"ability": "Sheer Force",
+			"item": "Life Orb",
+			"moves": [
 				"Earth Power",
 				"Sludge Wave",
 				"Hidden Power Ice",
@@ -924,16 +924,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Physical Sand Force": {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Jolly",
-			ability: "Sand Force",
-			item: "Life Orb",
-			moves: [
+			"nature": "Jolly",
+			"ability": "Sand Force",
+			"item": "Life Orb",
+			"moves": [
 				"Earthquake",
 				"Stone Edge",
 				"Superpower",
@@ -942,34 +942,34 @@ var SETDEX_GEN5_SETS = {
 		}
 	},
 	"Landorus-T": {
-		Scarf: {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+		"Scarf": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Intimidate",
-			item: "Choice Scarf",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Intimidate",
+			"item": "Choice Scarf",
+			"moves": [
 				"Earthquake",
 				"U-Turn",
 				"Rock Slide",
 				"Superpower"
 			]
 		},
-		Defensive: {
-			level: 50,
-			evs: {
-				hp: "252",
-				at: "4",
-				df: "252"
+		"Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "4",
+				"df": "252"
 			},
-			nature: "Impish",
-			ability: "Intimidate",
-			item: "Rocky Helmet",
-			moves: [
+			"nature": "Impish",
+			"ability": "Intimidate",
+			"item": "Rocky Helmet",
+			"moves": [
 				"Earthquake",
 				"Rock Tomb",
 				"U-Turn",
@@ -977,18 +977,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Lapras: {
+	"Lapras": {
 		"infinitymkds' Assault Vest": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "4",
-				sa: "252"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "4",
+				"sa": "252"
 			},
-			nature: "Quiet",
-			ability: "Water Absorb",
-			item: "Assault Vest",
-			moves: [
+			"nature": "Quiet",
+			"ability": "Water Absorb",
+			"item": "Assault Vest",
+			"moves": [
 				"Sheer Cold",
 				"Freeze-Dry",
 				"Surf",
@@ -996,21 +996,21 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Latios: {
+	"Latios": {
 		"Dragon Gem": {
-			level: 50,
-			evs: {
-				df: "4",
-				sa: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"df": "4",
+				"sa": "252",
+				"sp": "252"
 			},
-			ivs: {
-				at: "0"
+			"ivs": {
+				"at": "0"
 			},
-			nature: "Timid",
-			ability: "Levitate",
-			item: "Dragon Gem",
-			moves: [
+			"nature": "Timid",
+			"ability": "Levitate",
+			"item": "Dragon Gem",
+			"moves": [
 				"Draco Meteor",
 				"Psyshock",
 				"Surf",
@@ -1018,21 +1018,21 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Liepard: {
-		Tacticat: {
-			level: 50,
-			evs: {
-				hp: "44",
-				df: "212",
-				sp: "252"
+	"Liepard": {
+		"Tacticat": {
+			"level": 50,
+			"evs": {
+				"hp": "44",
+				"df": "212",
+				"sp": "252"
 			},
-			ivs: {
-				at: "0"
+			"ivs": {
+				"at": "0"
 			},
-			nature: "Timid",
-			ability: "Prankster",
-			item: "Leftovers",
-			moves: [
+			"nature": "Timid",
+			"ability": "Prankster",
+			"item": "Leftovers",
+			"moves": [
 				"Assist",
 				"Substitute",
 				"Swagger",
@@ -1040,18 +1040,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Mamoswine: {
-		Sash: {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+	"Mamoswine": {
+		"Sash": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Jolly",
-			ability: "Thick Fat",
-			item: "Focus Sash",
-			moves: [
+			"nature": "Jolly",
+			"ability": "Thick Fat",
+			"item": "Focus Sash",
+			"moves": [
 				"Earthquake",
 				"Icicle Spear",
 				"Ice Shard",
@@ -1059,16 +1059,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Assault Vest": {
-			level: 50,
-			evs: {
-				hp: "44",
-				at: "212",
-				sd: "252"
+			"level": 50,
+			"evs": {
+				"hp": "44",
+				"at": "212",
+				"sd": "252"
 			},
-			nature: "Adamant",
-			ability: "Thick Fat",
-			item: "Assault Vest",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Thick Fat",
+			"item": "Assault Vest",
+			"moves": [
 				"Earthquake",
 				"Icicle Spear",
 				"Ice Shard",
@@ -1076,16 +1076,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Physically Defensive": {
-			level: 50,
-			evs: {
-				hp: "252",
-				at: "4",
-				df: "252"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "4",
+				"df": "252"
 			},
-			nature: "Impish",
-			ability: "Thick Fat",
-			item: "Rocky Helmet",
-			moves: [
+			"nature": "Impish",
+			"ability": "Thick Fat",
+			"item": "Rocky Helmet",
+			"moves": [
 				"Earthquake",
 				"Icicle Spear",
 				"Ice Shard",
@@ -1093,18 +1093,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Metagross: {
+	"Metagross": {
 		"Choice Band": {
-			level: 50,
-			evs: {
-				hp: "252",
-				at: "252",
-				df: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
 			},
-			nature: "Adamant",
-			ability: "Clear Body",
-			item: "Choice Band",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Clear Body",
+			"item": "Choice Band",
+			"moves": [
 				"Zen Headbutt",
 				"Bullet Punch",
 				"Ice Punch",
@@ -1112,22 +1112,22 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Raikou: {
+	"Raikou": {
 		"Choice Specs": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "12",
-				sp: "244"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "12",
+				"sp": "244"
 			},
-			ivs: {
-				at: "0",
-				df: "30"
+			"ivs": {
+				"at": "0",
+				"df": "30"
 			},
-			nature: "Timid",
-			ability: "Pressure",
-			item: "Choice Specs",
-			moves: [
+			"nature": "Timid",
+			"ability": "Pressure",
+			"item": "Choice Specs",
+			"moves": [
 				"Thunderbolt",
 				"Hidden Power Ice",
 				"Volt Switch",
@@ -1135,20 +1135,20 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Substitute + Calm Mind": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "12",
-				sp: "244"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "12",
+				"sp": "244"
 			},
-			ivs: {
-				at: "0",
-				df: "30"
+			"ivs": {
+				"at": "0",
+				"df": "30"
 			},
-			nature: "Timid",
-			ability: "Pressure",
-			item: "Leftovers",
-			moves: [
+			"nature": "Timid",
+			"ability": "Pressure",
+			"item": "Leftovers",
+			"moves": [
 				"Thunderbolt",
 				"Hidden Power Ice",
 				"Substitute",
@@ -1156,18 +1156,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Politoed: {
+	"Politoed": {
 		"Choice Specs": {
-			level: 50,
-			evs: {
-				hp: "252",
-				sa: "252",
-				sd: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sd": "4"
 			},
-			nature: "Modest",
-			ability: "Drizzle",
-			item: "Choice Specs",
-			moves: [
+			"nature": "Modest",
+			"ability": "Drizzle",
+			"item": "Choice Specs",
+			"moves": [
 				"Hydro Pump",
 				"Ice Beam",
 				"Focus Blast",
@@ -1175,16 +1175,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Bulky Rain Setter": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "252",
-				sd: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
 			},
-			nature: "Bold",
-			ability: "Drizzle",
-			item: "Eject Button",
-			moves: [
+			"nature": "Bold",
+			"ability": "Drizzle",
+			"item": "Eject Button",
+			"moves": [
 				"Scald",
 				"Ice Beam",
 				"Focus Blast",
@@ -1192,35 +1192,35 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Porygon2: {
+	"Porygon2": {
 		"Physically Defensive": {
-			level: 50,
-			evs: {
-				hp: "244",
-				sd: "12",
-				df: "252"
+			"level": 50,
+			"evs": {
+				"hp": "244",
+				"sd": "12",
+				"df": "252"
 			},
-			nature: "Bold",
-			ability: "Trace",
-			item: "Eviolite",
-			moves: [
+			"nature": "Bold",
+			"ability": "Trace",
+			"item": "Eviolite",
+			"moves": [
 				"Ice Beam",
 				"Foul Play",
 				"Discharge",
 				"Shadow Ball"
 			]
 		},
-		Offensive: {
-			level: 50,
-			evs: {
-				hp: "244",
-				df: "12",
-				sa: "252"
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"hp": "244",
+				"df": "12",
+				"sa": "252"
 			},
-			nature: "Modest",
-			ability: "Download",
-			item: "Eviolite",
-			moves: [
+			"nature": "Modest",
+			"ability": "Download",
+			"item": "Eviolite",
+			"moves": [
 				"Ice Beam",
 				"Shadow Ball",
 				"Tri Attack",
@@ -1228,19 +1228,19 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Trick Room": {
-			level: 50,
-			evs: {
-				hp: "244",
-				df: "12",
-				sa: "252"
+			"level": 50,
+			"evs": {
+				"hp": "244",
+				"df": "12",
+				"sa": "252"
 			},
-			ivs: {
-				sp: "0"
+			"ivs": {
+				"sp": "0"
 			},
-			nature: "Quiet",
-			ability: "Download",
-			item: "Eviolite",
-			moves: [
+			"nature": "Quiet",
+			"ability": "Download",
+			"item": "Eviolite",
+			"moves": [
 				"Shadow Ball",
 				"Ice Beam",
 				"Tri Attack",
@@ -1248,18 +1248,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Reuniclus: {
+	"Reuniclus": {
 		"Offensive Trick Room": {
-			level: 50,
-			evs: {
-				hp: "252",
-				sa: "252",
-				sd: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sd": "4"
 			},
-			nature: "Quiet",
-			ability: "Magic Guard",
-			item: "Life Orb",
-			moves: [
+			"nature": "Quiet",
+			"ability": "Magic Guard",
+			"item": "Life Orb",
+			"moves": [
 				"Psychic",
 				"Psyshock",
 				"Focus Blast",
@@ -1267,16 +1267,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Bulky Calm Mind": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "252",
-				sd: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
 			},
-			nature: "Bold",
-			ability: "Magic Guard",
-			item: "Kee Berry",
-			moves: [
+			"nature": "Bold",
+			"ability": "Magic Guard",
+			"item": "Kee Berry",
+			"moves": [
 				"Psychic",
 				"Psyshock",
 				"Focus Blast",
@@ -1284,18 +1284,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Rhyperior: {
+	"Rhyperior": {
 		"Assault Vest": {
-			level: 50,
-			evs: {
-				at: "252",
-				df: "4",
-				sd: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sd": "252"
 			},
-			nature: "Adamant",
-			ability: "Solid Rock",
-			item: "Assault Vest",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Solid Rock",
+			"item": "Assault Vest",
+			"moves": [
 				"Earthquake",
 				"Rock Blast",
 				"Ice Punch",
@@ -1303,23 +1303,23 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Roserade: {
-		Offensive: {
-			level: 50,
-			evs: {
-				hp: "12",
-				sa: "248",
-				sp: "248"
+	"Roserade": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"hp": "12",
+				"sa": "248",
+				"sp": "248"
 			},
-			ivs: {
-				at: "0",
-				sa: "30",
-				sp: "30"
+			"ivs": {
+				"at": "0",
+				"sa": "30",
+				"sp": "30"
 			},
-			nature: "Modest",
-			ability: "Technician",
-			item: "Life Orb",
-			moves: [
+			"nature": "Modest",
+			"ability": "Technician",
+			"item": "Life Orb",
+			"moves": [
 				"Sludge Bomb",
 				"Magical Leaf",
 				"Hidden Power Fire",
@@ -1328,21 +1328,21 @@ var SETDEX_GEN5_SETS = {
 		}
 	},
 	"Rotom-H": {
-		Tank: {
-			level: 50,
-			evs: {
-				hp: "252",
-				sd: "252",
-				sp: "4"
+		"Tank": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sd": "252",
+				"sp": "4"
 			},
-			ivs: {
-				at: "0",
-				df: "30",
+			"ivs": {
+				"at": "0",
+				"df": "30",
 			},
-			nature: "Calm",
-			ability: "Levitate",
-			item: "Sitrus Berry",
-			moves: [
+			"nature": "Calm",
+			"ability": "Levitate",
+			"item": "Sitrus Berry",
+			"moves": [
 				"Volt Switch",
 				"Overheat",
 				"Thunderbolt",
@@ -1350,20 +1350,20 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Specs": {
-			level: 50,
-			evs: {
-				hp: "252",
-				sa: "252",
-				sp: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sp": "4"
 			},
-			ivs: {
-				at: "0",
-				df: "30",
+			"ivs": {
+				"at": "0",
+				"df": "30",
 			},
-			nature: "Modest",
-			ability: "Levitate",
-			item: "Choice Specs",
-			moves: [
+			"nature": "Modest",
+			"ability": "Levitate",
+			"item": "Choice Specs",
+			"moves": [
 				"Overheat",
 				"Volt Switch",
 				"Hidden Power Ice",
@@ -1371,38 +1371,38 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Scarf": {
-			level: 50,
-			evs: {
-				hp: "76",
-				df: "24",
-				sa: "188",
-				sp: "220"
+			"level": 50,
+			"evs": {
+				"hp": "76",
+				"df": "24",
+				"sa": "188",
+				"sp": "220"
 			},
-			ivs: {
-				at: "0",
-				df: "30",
+			"ivs": {
+				"at": "0",
+				"df": "30",
 			},
-			nature: "Timid",
-			ability: "Levitate",
-			item: "Choice Scarf",
-			moves: [
+			"nature": "Timid",
+			"ability": "Levitate",
+			"item": "Choice Scarf",
+			"moves": [
 				"Volt Switch",
 				"Overheat",
 				"Hidden Power Ice",
 				"Thunderbolt"
 			]
 		},
-		Substitute: {
-			level: 50,
-			evs: {
-				hp: "156",
-				sd: "220",
-				sp: "132"
+		"Substitute": {
+			"level": 50,
+			"evs": {
+				"hp": "156",
+				"sd": "220",
+				"sp": "132"
 			},
-			nature: "Calm",
-			ability: "Levitate",
-			item: "Leftovers",
-			moves: [
+			"nature": "Calm",
+			"ability": "Levitate",
+			"item": "Leftovers",
+			"moves": [
 				"Substitute",
 				"Overheat",
 				"Will-O-Wisp",
@@ -1412,16 +1412,16 @@ var SETDEX_GEN5_SETS = {
 	},
 	"Rotom-W": {
 		"Choice Specs": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "4",
-				sa: "252"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "4",
+				"sa": "252"
 			},
-			nature: "Modest",
-			ability: "Levitate",
-			item: "Choice Specs",
-			moves: [
+			"nature": "Modest",
+			"ability": "Levitate",
+			"item": "Choice Specs",
+			"moves": [
 				"Hydro Pump",
 				"Thunderbolt",
 				"Volt Switch",
@@ -1429,16 +1429,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Physically Defensive": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "252",
-				sa: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sa": "4"
 			},
-			nature: "Bold",
-			ability: "Levitate",
-			item: "Sitrus Berry",
-			moves: [
+			"nature": "Bold",
+			"ability": "Levitate",
+			"item": "Sitrus Berry",
+			"moves": [
 				"Hydro Pump",
 				"Thunderbolt",
 				"Volt Switch",
@@ -1446,16 +1446,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Scarf": {
-			level: 50,
-			evs: {
-				hp: "4",
-				sa: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"sa": "252",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "Levitate",
-			item: "Choice Scarf",
-			moves: [
+			"nature": "Timid",
+			"ability": "Levitate",
+			"item": "Choice Scarf",
+			"moves": [
 				"Hydro Pump",
 				"Thunderbolt",
 				"Volt Switch",
@@ -1463,18 +1463,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Salamence: {
+	"Salamence": {
 		"Dragon Dance": {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Intimidate",
-			item: "Lum Berry",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Intimidate",
+			"item": "Lum Berry",
+			"moves": [
 				"Outrage",
 				"Earthquake",
 				"Aerial Ace",
@@ -1482,16 +1482,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Choice Band": {
-			level: 50,
-			evs: {
-				hp: "4",
-				at: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
 			},
-			nature: "Adamant",
-			ability: "Intimidate",
-			item: "Choice Band",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Intimidate",
+			"item": "Choice Band",
+			"moves": [
 				"Outrage",
 				"Earthquake",
 				"Aerial Ace",
@@ -1499,18 +1499,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Serperior: {
+	"Serperior": {
 		"Solid Snake": {
-			level: 50,
-			evs: {
-				hp: "116",
-				df: "220",
-				sp: "172"
+			"level": 50,
+			"evs": {
+				"hp": "116",
+				"df": "220",
+				"sp": "172"
 			},
-			nature: "Timid",
-			ability: "Contrary",
-			item: "Rocky Helmet",
-			moves: [
+			"nature": "Timid",
+			"ability": "Contrary",
+			"item": "Rocky Helmet",
+			"moves": [
 				"Leaf Storm",
 				"Reflect",
 				"Synthesis",
@@ -1518,21 +1518,21 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"All-Out Attacker": {
-			level: 50,
-			evs: {
-				sa: "248",
-				sd: "12",
-				sp: "248"
+			"level": 50,
+			"evs": {
+				"sa": "248",
+				"sd": "12",
+				"sp": "248"
 			},
-			ivs: {
-				at: "0",
-				sa: "30",
-				sp: "30"
+			"ivs": {
+				"at": "0",
+				"sa": "30",
+				"sp": "30"
 			},
-			nature: "Timid",
-			ability: "",
-			item: "Life Orb",
-			moves: [
+			"nature": "Timid",
+			"ability": "",
+			"item": "Life Orb",
+			"moves": [
 				"Leaf Storm",
 				"Dragon Pulse",
 				"Hidden Power Fire",
@@ -1540,18 +1540,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Scizor: {
+	"Scizor": {
 		"Choice Band": {
-			level: 50,
-			evs: {
-				hp: "252",
-				sp: "4",
-				at: "252"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sp": "4",
+				"at": "252"
 			},
-			nature: "Adamant",
-			ability: "Technician",
-			item: "Choice Band",
-			moves: [
+			"nature": "Adamant",
+			"ability": "Technician",
+			"item": "Choice Band",
+			"moves": [
 				"Bullet Punch",
 				"U-turn",
 				"Superpower",
@@ -1559,16 +1559,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Physically Defensive": {
-			level: 50,
-			evs: {
-				hp: "252",
-				at: "4",
-				df: "252"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "4",
+				"df": "252"
 			},
-			nature: "Impish",
-			ability: "Technician",
-			item: "Rock Helmet",
-			moves: [
+			"nature": "Impish",
+			"ability": "Technician",
+			"item": "Rock Helmet",
+			"moves": [
 				"Bullet Punch",
 				"U-turn",
 				"Roost",
@@ -1576,16 +1576,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Specially Defensive": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "52",
-				sd: "204"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "52",
+				"sd": "204"
 			},
-			nature: "Careful",
-			ability: "Technician",
-			item: "Leftovers",
-			moves: [
+			"nature": "Careful",
+			"ability": "Technician",
+			"item": "Leftovers",
+			"moves": [
 				"Iron Defense",
 				"Roost",
 				"Bullet Punch",
@@ -1593,18 +1593,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Sharpedo: {
+	"Sharpedo": {
 		"Sashed Special Attacker": {
-			level: 50,
-			evs: {
-				hp: "4",
-				sa: "252",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"sa": "252",
+				"sp": "252"
 			},
-			nature: "Modest",
-			ability: "Speed Bosst",
-			item: "Focus Sash",
-			moves: [
+			"nature": "Modest",
+			"ability": "Speed Bosst",
+			"item": "Focus Sash",
+			"moves": [
 				"Dark Pulse",
 				"Ice Beam",
 				"Hydro Pump",
@@ -1612,18 +1612,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Skarmory: {
-		Defensive: {
-			level: 50,
-			evs: {
-				hp: "252",
-				sp: "4",
-				df: "252"
+	"Skarmory": {
+		"Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sp": "4",
+				"df": "252"
 			},
-			nature: "Impish",
-			ability: "Sturdy",
-			item: "Leftovers",
-			moves: [
+			"nature": "Impish",
+			"ability": "Sturdy",
+			"item": "Leftovers",
+			"moves": [
 				"Roost",
 				"Stealth Rock",
 				"Drill Peck",
@@ -1631,26 +1631,26 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Suicune: {
+	"Suicune": {
 		"Fully Defensive": {
-			level: 50,
-			evs: {
-				hp: "252",
-				at: "0",
-				df: "252",
-				sa: "0",
-				sd: "4",
-				sp: "0"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "0",
+				"df": "252",
+				"sa": "0",
+				"sd": "4",
+				"sp": "0"
 			},
-			ivs: {
-				at: "30",
-				sa: "30",
-				sp: "30"
+			"ivs": {
+				"at": "30",
+				"sa": "30",
+				"sp": "30"
 			},
-			nature: "Relaxed",
-			ability: "Pressure",
-			item: "Rocky Helmet",
-			moves: [
+			"nature": "Relaxed",
+			"ability": "Pressure",
+			"item": "Rocky Helmet",
+			"moves": [
 				"Scald",
 				"Ice Beam",
 				"Extreme Speed",
@@ -1658,22 +1658,22 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Offensive Water Gem": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "4",
-				sa: "248",
-				sd: "4"
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "4",
+				"sa": "248",
+				"sd": "4"
 			},
-			ivs: {
-				at: "0",
-				sa: "30",
-				sp: "30"
+			"ivs": {
+				"at": "0",
+				"sa": "30",
+				"sp": "30"
 			},
-			nature: "Modest",
-			ability: "Pressure",
-			item: "Water Gem",
-			moves: [
+			"nature": "Modest",
+			"ability": "Pressure",
+			"item": "Water Gem",
+			"moves": [
 				"Hydro Pump",
 				"Ice Beam",
 				"Scald",
@@ -1681,18 +1681,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Terrakion: {
+	"Terrakion": {
 		"Physical Attacker": {
-			level: 50,
-			evs: {
-				at: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Jolly",
-			ability: "Pressure",
-			item: "Focus Sash",
-			moves: [
+			"nature": "Jolly",
+			"ability": "Pressure",
+			"item": "Focus Sash",
+			"moves": [
 				"Close Combat",
 				"Stone Edge",
 				"X Scissor",
@@ -1700,44 +1700,44 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Thundurus: {
-		Attacker: {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+	"Thundurus": {
+		"Attacker": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			ivs: {
-				at: "0",
-				df: "30"
+			"ivs": {
+				"at": "0",
+				"df": "30"
 			},
-			nature: "Timid",
-			ability: "Prankster",
-			item: "Life Orb",
-			moves: [
+			"nature": "Timid",
+			"ability": "Prankster",
+			"item": "Life Orb",
+			"moves": [
 				"Thunder Wave",
 				"Thunderbolt",
 				"Hidden Power Ice",
 				"Focus Blast"
 			]
 		},
-		Tank: {
-			level: 50,
-			evs: {
-				hp: "244",
-				df: "168",
-				sa: "68",
-				sp: "28"
+		"Tank": {
+			"level": 50,
+			"evs": {
+				"hp": "244",
+				"df": "168",
+				"sa": "68",
+				"sp": "28"
 			},
-			ivs: {
-				at: "0",
-				df: "30"
+			"ivs": {
+				"at": "0",
+				"df": "30"
 			},
-			nature: "Bold",
-			ability: "Prankster",
-			item: "Sitrus Berry",
-			moves: [
+			"nature": "Bold",
+			"ability": "Prankster",
+			"item": "Sitrus Berry",
+			"moves": [
 				"Thunderwave",
 				"Thunderbolt",
 				"Hidden Power Ice",
@@ -1745,39 +1745,39 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Nasty Plot": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			ivs: {
-				at: "0",
-				df: "30"
+			"ivs": {
+				"at": "0",
+				"df": "30"
 			},
-			nature: "Timid",
-			ability: "Prankster",
-			item: "Sitrus Berry",
-			moves: [
+			"nature": "Timid",
+			"ability": "Prankster",
+			"item": "Sitrus Berry",
+			"moves": [
 				"Nasty Plot",
 				"Thunderbolt",
 				"Hidden Power Ice",
 				"Grass Knot"
 			]
 		},
-		SwagPlay: {
-			level: 50,
-			evs: {
-				hp: "180",
-				df: "44",
-				sa: "4",
-				sd: "252",
-				sp: "28"
+		"SwagPlay": {
+			"level": 50,
+			"evs": {
+				"hp": "180",
+				"df": "44",
+				"sa": "4",
+				"sd": "252",
+				"sp": "28"
 			},
-			nature: "Calm",
-			ability: "Prankster",
-			item: "Leftovers",
-			moves: [
+			"nature": "Calm",
+			"ability": "Prankster",
+			"item": "Leftovers",
+			"moves": [
 				"Swagger",
 				"Thunder Wave",
 				"Substitute",
@@ -1785,16 +1785,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Max Special Defense": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "4",
-				sd: "252",
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "4",
+				"sd": "252",
 			},
-			nature: "Calm",
-			ability: "Prankster",
-			item: "Sitrus Berry",
-			moves: [
+			"nature": "Calm",
+			"ability": "Prankster",
+			"item": "Sitrus Berry",
+			"moves": [
 				"Hidden Power Ice",
 				"Thunderbolt",
 				"Focus Blast",
@@ -1802,16 +1802,16 @@ var SETDEX_GEN5_SETS = {
 			]
 		},
 		"Max Defense": {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "252",
-				sd: "4",
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4",
 			},
-			nature: "Bold",
-			ability: "Prankster",
-			item: "Sitrus Berry",
-			moves: [
+			"nature": "Bold",
+			"ability": "Prankster",
+			"item": "Sitrus Berry",
+			"moves": [
 				"Hidden Power Ice",
 				"Thunderbolt",
 				"Focus Blast",
@@ -1821,16 +1821,16 @@ var SETDEX_GEN5_SETS = {
 	},
 	"Thundurus-T": {
 		"Nasty Plot Electric Gem": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "Volt Absorb",
-			item: "Electric Gem",
-			moves: [
+			"nature": "Timid",
+			"ability": "Volt Absorb",
+			"item": "Electric Gem",
+			"moves": [
 				"Thunderbolt",
 				"Hidden Power Ice",
 				"Focus Blast",
@@ -1838,18 +1838,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Volcarona: {
+	"Volcarona": {
 		"Offensive Bug Gem": {
-			level: 50,
-			evs: {
-				sa: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Modest",
-			ability: "Flame Body",
-			item: "Bug Gem",
-			moves: [
+			"nature": "Modest",
+			"ability": "Flame Body",
+			"item": "Bug Gem",
+			"moves": [
 				"Fire Blast",
 				"Bug Buzz",
 				"Giga Drain",
@@ -1857,18 +1857,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Weavile: {
+	"Weavile": {
 		"Physical Attacker": {
-			level: 50,
-			evs: {
-				at: "252",
-				sd: "4",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
 			},
-			nature: "Jolly",
-			ability: "Pressure",
-			item: "Life Orb",
-			moves: [
+			"nature": "Jolly",
+			"ability": "Pressure",
+			"item": "Life Orb",
+			"moves": [
 				"Ice Shard",
 				"Knock Off",
 				"Low Kick",
@@ -1876,18 +1876,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Whimsicott: {
+	"Whimsicott": {
 		"Cotton Stall": {
-			level: 50,
-			evs: {
-				hp: "204",
-				sd: "52",
-				sp: "252"
+			"level": 50,
+			"evs": {
+				"hp": "204",
+				"sd": "52",
+				"sp": "252"
 			},
-			nature: "Timid",
-			ability: "Prankster",
-			item: "Leftovers",
-			moves: [
+			"nature": "Timid",
+			"ability": "Prankster",
+			"item": "Leftovers",
+			"moves": [
 				"Encore",
 				"Leech Seed",
 				"Moonblast",
@@ -1895,18 +1895,18 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Wobbuffet: {
+	"Wobbuffet": {
 		"\\(>_<)7": {
-			level: 50,
-			evs: {
-				df: "252",
-				sd: "252",
-				sp: "4"
+			"level": 50,
+			"evs": {
+				"df": "252",
+				"sd": "252",
+				"sp": "4"
 			},
-			nature: "Bold",
-			ability: "Shadow Tag",
-			item: "Sitrus Berry",
-			moves: [
+			"nature": "Bold",
+			"ability": "Shadow Tag",
+			"item": "Sitrus Berry",
+			"moves": [
 				"Encore",
 				"Counter",
 				"Mirror Coat",
@@ -1914,21 +1914,21 @@ var SETDEX_GEN5_SETS = {
 			]
 		}
 	},
-	Zapdos: {
-		Defensive: {
-			level: 50,
-			evs: {
-				hp: "252",
-				df: "252",
-				sa: "4"
+	"Zapdos": {
+		"Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sa": "4"
 			},
-			ivs: {
-				sp: "30"
+			"ivs": {
+				"sp": "30"
 			},
-			nature: "Bold",
-			ability: "Pressure",
-			item: "Leftovers",
-			moves: [
+			"nature": "Bold",
+			"ability": "Pressure",
+			"item": "Leftovers",
+			"moves": [
 				"Roost",
 				"Discharge",
 				"Heat Wave",

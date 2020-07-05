@@ -290,36 +290,36 @@ var savecustom = function () {
 		if (dispErrMsg === true) alert("Please ensure that Power-up Punch is in the 4th moveslot, otherwise you may experience some errors in calcs!");
 
 		customFormat = {
-			level: level,
-			evs: {
-				hp: EVs[0],
-				at: EVs[1],
-				df: EVs[2],
-				sa: EVs[3],
-				sd: EVs[4],
-				sp: EVs[5],
+			"level": level,
+			"evs": {
+				"hp": EVs[0],
+				"at": EVs[1],
+				"df": EVs[2],
+				"sa": EVs[3],
+				"sd": EVs[4],
+				"sp": EVs[5],
 			},
-			avs: {
-				hp: AVs[0],
-				at: AVs[1],
-				df: AVs[2],
-				sa: AVs[3],
-				sd: AVs[4],
-				sp: AVs[5],
+			"avs": {
+				"hp": AVs[0],
+				"at": AVs[1],
+				"df": AVs[2],
+				"sa": AVs[3],
+				"sd": AVs[4],
+				"sp": AVs[5],
 			},
-			ivs: {
-				hp: IVs[0],
-				at: IVs[1],
-				df: IVs[2],
-				sa: IVs[3],
-				sd: IVs[4],
-				sp: IVs[5],
+			"ivs": {
+				"hp": IVs[0],
+				"at": IVs[1],
+				"df": IVs[2],
+				"sa": IVs[3],
+				"sd": IVs[4],
+				"sp": IVs[5],
 			},
-			nature: nature,
-			ability: ability,
-			item: item,
-			moves: moves,
-			isGmax: isGmax,
+			"nature": nature,
+			"ability": ability,
+			"item": item,
+			"moves": moves,
+			"isGmax": isGmax,
 		};
 		if (rejectSet === true) {
 			alert("Set not saved: " + species);

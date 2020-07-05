@@ -1,10 +1,10 @@
 // input field validation
 var bounds = {
-	level: [0, 100],
-	base: [1, 255],
-	evs: [0, 252],
-	ivs: [0, 31],
-	dvs: [0, 15],
+	"level": [0, 100],
+	"base": [1, 255],
+	"evs": [0, 252],
+	"ivs": [0, 31],
+	"dvs": [0, 15],
 	"move-bp": [0, 999],
 	"current-happiness": [0, 255]
 };
@@ -241,8 +241,8 @@ function autosetWeather(ability, i) {
 
 	var primalWeather = ["Harsh Sun", "Heavy Rain"];
 	var autoWeatherAbilities = {
-		Drought: "Sun",
-		Drizzle: "Rain",
+		"Drought": "Sun",
+		"Drizzle": "Rain",
 		"Sand Stream": "Sand",
 		"Snow Warning": "Hail",
 		"Desolate Land": "Harsh Sun",
@@ -562,12 +562,12 @@ function isGrounded(pokeInfo) {
 var resultLocations = [[], []];
 for (var i = 0; i < 4; i++) {
 	resultLocations[0].push({
-		move: "#resultMoveL" + (i + 1),
-		damage: "#resultDamageL" + (i + 1)
+		"move": "#resultMoveL" + (i + 1),
+		"damage": "#resultDamageL" + (i + 1)
 	});
 	resultLocations[1].push({
-		move: "#resultMoveR" + (i + 1),
-		damage: "#resultDamageR" + (i + 1)
+		"move": "#resultMoveR" + (i + 1),
+		"damage": "#resultDamageR" + (i + 1)
 	});
 }
 
@@ -765,14 +765,14 @@ var stickyMoves = (function () {
 	});
 
 	return {
-		clearStickyMove: function () {
+		"clearStickyMove": function () {
 			lastClicked = null;
 			$(".locked-move").removeClass("locked-move");
 		},
-		setSelectedMove: function (slot) {
+		"setSelectedMove": function (slot) {
 			lastClicked = slot;
 		},
-		getSelectedSide: function () {
+		"getSelectedSide": function () {
 			if (lastClicked) {
 				if (lastClicked.includes("resultMoveL")) {
 					return "p1";
@@ -869,14 +869,14 @@ function Pokemon(pokeInfo) {
 			var moveName = set.moves[i];
 			var defaultDetails = moves[moveName] || moves["(No Move)"];
 			this.moves.push($.extend({}, defaultDetails, {
-				name: defaultDetails.bp === 0 ? "(No Move)" : moveName,
-				bp: defaultDetails.bp,
-				type: defaultDetails.type,
-				category: defaultDetails.category,
-				isCrit: !!defaultDetails.alwaysCrit,
-				acc: defaultDetails.acc,
-				hits: defaultDetails.isMultiHit ? this.ability === "Skill Link" || this.item === "Grip Claw" ? 5 : 3 : defaultDetails.isTwoHit ? 2 : 1,
-				usedTimes: 1
+				"name": defaultDetails.bp === 0 ? "(No Move)" : moveName,
+				"bp": defaultDetails.bp,
+				"type": defaultDetails.type,
+				"category": defaultDetails.category,
+				"isCrit": !!defaultDetails.alwaysCrit,
+				"acc": defaultDetails.acc,
+				"hits": defaultDetails.isMultiHit ? this.ability === "Skill Link" || this.item === "Grip Claw" ? 5 : 3 : defaultDetails.isTwoHit ? 2 : 1,
+				"usedTimes": 1
 			}));
 		}
 		this.weight = pokemon.weight;
@@ -980,14 +980,14 @@ function getMoveDetails(moveInfo, item, species) {
 		}
 
 		return $.extend({}, moves[maxMoveName], {
-			name: maxMoveName,
-			moveDescName: maxMoveName + " (" + tempBP + "BP)",
-			bp: tempBP,
-			type: defaultDetails.type,
-			category: defaultDetails.category,
-			isCrit: moveInfo.find(".move-crit").prop("checked"),
-			hits: 1,
-			isMax: true
+			"name": maxMoveName,
+			"moveDescName": maxMoveName + " (" + tempBP + "BP)",
+			"bp": tempBP,
+			"type": defaultDetails.type,
+			"category": defaultDetails.category,
+			"isCrit": moveInfo.find(".move-crit").prop("checked"),
+			"hits": 1,
+			"isMax": true
 		});
 	}
 
@@ -995,22 +995,22 @@ function getMoveDetails(moveInfo, item, species) {
 	if (isZMove && "zp" in defaultDetails) {
 		var zMoveName = getZMoveName(moveName, defaultDetails.type, item);
 		return $.extend({}, moves[zMoveName], {
-			name: zMoveName,
-			bp: moves[zMoveName].bp === 1 ? defaultDetails.zp : moves[zMoveName].bp,
-			category: defaultDetails.category,
-			isCrit: moveInfo.find(".move-crit").prop("checked"),
-			hits: 1
+			"name": zMoveName,
+			"bp": moves[zMoveName].bp === 1 ? defaultDetails.zp : moves[zMoveName].bp,
+			"category": defaultDetails.category,
+			"isCrit": moveInfo.find(".move-crit").prop("checked"),
+			"hits": 1
 		});
 	} else {
 		return $.extend({}, defaultDetails, {
-			name: moveName,
-			bp: ~~moveInfo.find(".move-bp").val(),
-			type: moveInfo.find(".move-type").val(),
-			category: moveInfo.find(".move-cat").val(),
-			isCrit: moveInfo.find(".move-crit").prop("checked"),
-			isMax: isMax,
-			hits: defaultDetails.isMultiHit ? ~~moveInfo.find(".move-hits").val() : defaultDetails.isTwoHit ? 2 : 1,
-			usedTimes: defaultDetails.dropsStats ? ~~moveInfo.find(".stat-drops").val() : 1
+			"name": moveName,
+			"bp": ~~moveInfo.find(".move-bp").val(),
+			"type": moveInfo.find(".move-type").val(),
+			"category": moveInfo.find(".move-cat").val(),
+			"isCrit": moveInfo.find(".move-crit").prop("checked"),
+			"isMax": isMax,
+			"hits": defaultDetails.isMultiHit ? ~~moveInfo.find(".move-hits").val() : defaultDetails.isTwoHit ? 2 : 1,
+			"usedTimes": defaultDetails.dropsStats ? ~~moveInfo.find(".stat-drops").val() : 1
 		});
 	}
 }
@@ -1334,26 +1334,26 @@ function getSetOptions() {
 	for (var i = 0; i < pokeNames.length; i++) {
 		var pokeName = pokeNames[i];
 		setOptions.push({
-			pokemon: pokeName,
-			text: pokeName
+			"pokemon": pokeName,
+			"text": pokeName
 		});
 		if (pokeName in setdex) {
 			var setNames = Object.keys(setdex[pokeName]);
 			for (var j = 0; j < setNames.length; j++) {
 				var setName = setNames[j];
 				setOptions.push({
-					pokemon: pokeName,
-					set: setName,
-					text: pokeName + " (" + setName + ")",
-					id: pokeName + " (" + setName + ")"
+					"pokemon": pokeName,
+					"set": setName,
+					"text": pokeName + " (" + setName + ")",
+					"id": pokeName + " (" + setName + ")"
 				});
 			}
 		}
 		setOptions.push({
-			pokemon: pokeName,
-			set: "Blank Set",
-			text: pokeName + " (Blank Set)",
-			id: pokeName + " (Blank Set)"
+			"pokemon": pokeName,
+			"set": "Blank Set",
+			"text": pokeName + " (Blank Set)",
+			"id": pokeName + " (Blank Set)"
 		});
 	}
 	return setOptions;
@@ -1431,10 +1431,10 @@ $(document).ready(function () {
 	$(".terrain-trigger").bind("change keyup", getTerrainEffects);
 	$(".calc-trigger").bind("change keyup", calculate);
 	$(".set-selector").select2({
-		formatResult: function (object) {
+		"formatResult": function (object) {
 			return object.set ? "&nbsp;&nbsp;&nbsp;" + object.set : "<b>" + object.text + "</b>";
 		},
-		query: function (query) {
+		"query": function (query) {
 			var setOptions = getSetOptions();
 			var pageSize = 30;
 			var results = [];
@@ -1445,18 +1445,18 @@ $(document).ready(function () {
 				}
 			}
 			query.callback({
-				results: results.slice((query.page - 1) * pageSize, query.page * pageSize),
-				more: results.length >= query.page * pageSize
+				"results": results.slice((query.page - 1) * pageSize, query.page * pageSize),
+				"more": results.length >= query.page * pageSize
 			});
 		},
-		initSelection: function (element, callback) {
+		"initSelection": function (element, callback) {
 			var data = getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3];
 			callback(data);
 		}
 	});
 	$(".move-selector").select2({
-		dropdownAutoWidth: true,
-		matcher: function (term, text) {
+		"dropdownAutoWidth": true,
+		"matcher": function (term, text) {
 			// 2nd condition is for Hidden Power
 			return text.toUpperCase().indexOf(term.toUpperCase()) === 0 || text.toUpperCase().includes(" " + term.toUpperCase());
 		}
