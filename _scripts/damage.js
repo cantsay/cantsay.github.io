@@ -237,6 +237,10 @@ function getDamageResult(attacker, defender, move, field) {
 		return {"damage": [lv], "description": buildDescription(description)};
 	}
 
+	if (move.name === "Surging Strikes") {
+		move.hits = 3;
+	}
+
 	if (move.hits > 1) {
 		description.hits = move.hits;
 	}

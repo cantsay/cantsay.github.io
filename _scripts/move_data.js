@@ -4429,6 +4429,20 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		"type": "Fairy",
 		"category": "Special",
 		"acc": 100
+	},
+	"Surging Strikes": {
+		"bp": 25,
+		"type": "Water",
+		"category": "Physical",
+		"acc": 100,
+		"alwaysCrit": true
+	},
+	"Wicked Blow": {
+		"bp": 80,
+		"type": "Dark",
+		"category": "Physical",
+		"acc": 100,
+		"alwaysCrit": true
 	}
 });
 
