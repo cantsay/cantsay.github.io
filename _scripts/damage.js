@@ -338,7 +338,8 @@ function getDamageResult(attacker, defender, move, field) {
 		description.moveBP = basePower;
 		break;
 	case "Rising Voltage":
-		basePower = move.bp * (field.terrain === "Electric" ? 2 : 1);
+		basePower = move.bp * (field.terrain === "Electric" && (field.isGravity || (defender.type1 !== "Flying" && defender.type2 !== "Flying" &&
+                defender.item !== "Air Balloon" && defender.ability !== "Levitate")) ? 2 : 1);
 		description.moveBP = basePower;
 		break;
 	case "Expanding Force":
