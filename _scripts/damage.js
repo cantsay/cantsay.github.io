@@ -333,6 +333,19 @@ function getDamageResult(attacker, defender, move, field) {
 		basePower = (attacker.name === "Ash-Greninja" && attacker.ability === "Battle Bond") ? 20 : 15;
 		description.moveBP = basePower;
 		break;
+	case "Misty Explosion":
+		basePower = move.bp * (field.terrain === "Misty" ? 1.5 : 1);
+		description.moveBP = basePower;
+		break;
+	case "Rising Voltage":
+		basePower = move.bp * (field.terrain === "Electric" ? 2 : 1);
+		description.moveBP = basePower;
+		break;
+	case "Expanding Force":
+		basePower = move.bp * (field.terrain === "Psychic" ? 1.5 : 1);
+		move.isSpread = (field.terrain === "Psychic");
+		description.moveBP = basePower;
+		break;
 	default:
 		basePower = move.bp;
 	}
