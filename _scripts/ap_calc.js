@@ -874,6 +874,7 @@ function Pokemon(pokeInfo) {
 				"type": defaultDetails.type,
 				"category": defaultDetails.category,
 				"isCrit": !!defaultDetails.alwaysCrit,
+				"alwaysCrit": defaultDetails.alwaysCrit,
 				"acc": defaultDetails.acc,
 				"hits": defaultDetails.isMultiHit ? this.ability === "Skill Link" || this.item === "Grip Claw" ? 5 : 3 : defaultDetails.isTwoHit ? 2 : 1,
 				"usedTimes": 1
@@ -985,7 +986,7 @@ function getMoveDetails(moveInfo, item, species) {
 			"bp": tempBP,
 			"type": defaultDetails.type,
 			"category": defaultDetails.category,
-			"isCrit": moveInfo.find(".move-crit").prop("checked"),
+			"isCrit": defaultDetails.alwaysCrit ? false : moveInfo.find(".move-crit").prop("checked"),
 			"hits": 1,
 			"isMax": true
 		});
@@ -1071,6 +1072,9 @@ function Field() {
 	};
 	this.clearWeather = function () {
 		weather = "";
+	};
+	this.getTerrain = function () {
+		return terrain;
 	};
 	this.getSide = function (i) {
 		return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isSeeded[i], isForesight[i], isHelpingHand[i], isMinimized[i], isVictoryStar[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i], isBusted8[i], isBusted16[i]);
@@ -1218,12 +1222,12 @@ $(".gen").change(function () {
 		localStorage.setItem("selectedGen", 20);
 		break;
 	case 21:
-		pokedex = POKEDEX_SM;
-		setdex = SETDEX_GEN7;
+		pokedex = POKEDEX_SS;
+		setdex = SETDEX_GEN8;
 		typeChart = TYPE_CHART_INVERSE;
-		moves = MOVES_SM;
-		items = ITEMS_SM;
-		abilities = ABILITIES_SM;
+		moves = MOVES_SS;
+		items = ITEMS_SS;
+		abilities = ABILITIES_SS;
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
