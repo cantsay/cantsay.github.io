@@ -936,13 +936,16 @@ function getMoveDetails(moveInfo, item, species) {
 	var isMax = gen == 8 && moveInfo.find("input.move-max").prop("checked");
 
 	if (isMax) {
+
+		var doubledMoves = ["Bolt Beak (Doubled)", "Fishious Rend (Doubled)", "Lash Out (Doubled)"];
+
 		var exceptions_100_fight = ["Low Kick", "Reversal", "Final Gambit"];
 		var exceptions_80_fight = ["Double Kick", "Triple Kick"];
 		var exceptions_75_fight = ["Counter", "Seismic Toss"];
 		var exceptions_140 = ["Triple Axel", "Crush Grip", "Wring Out", "Magnitude", "Double Iron Bash", "Rising Voltage"];
 		var exceptions_130 = ["Scale Shot", "Dual Wingbeat", "Terrain Pulse", "Bolt Beak (Doubled)", "Fishious Rend (Doubled)", "Pin Missile", "Power Trip", "Punishment", "Dragon Darts", "Dual Chop", "Electro Ball", "Heat Crash",
 			"Bullet Seed", "Grass Knot", "Bonemerang", "Bone Rush", "Fissure", "Icicle Spear", "Sheer Cold", "Weather Ball", "Tail Slap", "Guillotine", "Horn Drill",
-			"Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam", "Surging Strikes"];
+			"Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam", "Surging Strikes", "Lash Out (Doubled)"];
 		var exceptions_120 = ["Double Hit", "Spike Cannon"];
 		var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature\'s Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
 			"Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst"];
@@ -960,8 +963,8 @@ function getMoveDetails(moveInfo, item, species) {
 			else if (defaultDetails.bp >= 45 || exceptions_75_fight.includes(moveName)) tempBP = 75;
 			else tempBP = 70;
 		} else {
-			if (defaultDetails.bp >= 150 && !["Bolt Beak (Doubled)", "Fishious Rend (Doubled)"].includes(moveName)) tempBP = 150;
-			else if ((defaultDetails.bp >= 110 || exceptions_140.includes(moveName)) && !["Bolt Beak (Doubled)", "Fishious Rend (Doubled)"].includes(moveName)) tempBP = 140;
+			if (defaultDetails.bp >= 150 && !doubledMoves.includes(moveName)) tempBP = 150;
+			else if ((defaultDetails.bp >= 110 || exceptions_140.includes(moveName)) && !doubledMoves.includes(moveName)) tempBP = 140;
 			else if (defaultDetails.bp >= 75 || exceptions_130.includes(moveName)) tempBP = 130;
 			else if (defaultDetails.bp >= 65 || exceptions_120.includes(moveName)) tempBP = 120;
 			else if (defaultDetails.bp >= 55 || exceptions_100.includes(moveName)) tempBP = 110;

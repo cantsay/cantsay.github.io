@@ -4443,6 +4443,20 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		"category": "Physical",
 		"acc": 100,
 		"alwaysCrit": true
+	},
+	"Lash Out": {
+		"bp": 75,
+		"type": "Dark",
+		"category": "Physical",
+		"acc": 100,
+		"makesContact": true,
+	},
+	"Lash Out (Doubled)": {
+		"bp": 150,
+		"type": "Dark",
+		"category": "Physical",
+		"acc": 100,
+		"makesContact": true,
 	}
 });
 
