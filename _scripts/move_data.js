@@ -4152,6 +4152,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		"bp": 80,
 		"type": "Fighting",
 		"category": "Physical",
+		"makesContact": true,
 	},
 	"Drum Beating": {
 		"bp": 80,
