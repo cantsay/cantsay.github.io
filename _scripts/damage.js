@@ -311,6 +311,7 @@ function getDamageResult(attacker, defender, move, field) {
 		description.attackerItem = attacker.item;
 		break;
 	case "Eruption":
+	case "Dragon Energy":
 	case "Water Spout":
 		basePower = Math.max(1, Math.floor(150 * attacker.curHP / attacker.maxHP));
 		description.moveBP = basePower;
@@ -396,6 +397,16 @@ function getDamageResult(attacker, defender, move, field) {
 
 	if (attacker.ability === "Sheer Force" && move.hasSecondaryEffect) {
 		bpMods.push(0x14CD);
+		description.attackerAbility = attacker.ability;
+	}
+
+	if (attacker.ability === "Transistor" && move.type === "Electric") {
+		bpMods.push(0x1800);
+		description.attackerAbility = attacker.ability;
+	}
+
+	if (attacker.ability === "Dragon's Maw" && move.type === "Dragon") {
+		bpMods.push(0x1800);
 		description.attackerAbility = attacker.ability;
 	}
 

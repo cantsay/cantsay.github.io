@@ -138,11 +138,37 @@ var ABILITIES_SM = ABILITIES_XY.concat([
 ABILITIES_XY.splice(ABILITIES_XY.indexOf("Lightningrod"), 1, "Lightning Rod");
 
 var ABILITIES_SS = ABILITIES_SM.concat([
+	"As One",
+	"Ball Fetch",
+	"Chilling Neigh",
+	"Cotton Down",
+	"Curious Medicine",
 	"Dauntless Shield",
+	"Dragon's Maw",
 	"Gorilla Tactics",
+	"Grim Neigh",
+	"Gulp Missile",
+	"Hunger Switch",
+	"Ice Face",
 	"Libero",
 	"Ice Scales",
 	"Intrepid Sword",
+	"Mimicry",
+	"Mirror Armor",
+	"Neutralizing Gas",
+	"Pastel Veil",
+	"Perish Body",
 	"Power Spot",
-	"Punk Rock"
+	"Propeller Tail",
+	"Punk Rock",
+	"Quick Draw",
+	"Ripen",
+	"Sand Spit",
+	"Screen Cleaner",
+	"Stalwart",
+	"Steam Engine",
+	"Steely Spirit",
+	"Transistor",
+	"Unseen Fist",
+	"Wandering Spirit"
 ]);
