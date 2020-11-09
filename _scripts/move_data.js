@@ -4495,13 +4495,15 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
 		"bp": 130,
 		"type": "Ice",
 		"category": "Physical",
-		"acc": 100
+		"acc": 100,
+		"isSpread": true
 	},
 	"Astral Barrage": {
 		"bp": 120,
 		"type": "Ghost",
 		"category": "Special",
-		"acc": 100
+		"acc": 100,
+		"isSpread": true
 	},
 	"Thunder Cage": {
 		"bp": 80,
