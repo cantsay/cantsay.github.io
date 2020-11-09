@@ -53,31 +53,31 @@ $(".level").bind("keyup change", function () {
 	calcHP(poke);
 	calcStats(poke);
 });
-$(".nature").bind("keyup keydown click change", function () {
+$(".nature").bind("keyup click change", function () {
 	calcStats($(this).closest(".poke-info"));
 });
-$(".hp .base, .hp .evs, .hp .ivs, .hp .avs, .current-happiness").bind("keyup keydown click change", function () {
+$(".hp .base, .hp .evs, .hp .ivs, .hp .avs, .current-happiness").bind("keyup click change", function () {
 	calcHP($(this).closest(".poke-info"));
 });
-$(".at .base, .at .evs, .at .ivs, .at .avs, .current-happiness").bind("keyup keydown click change", function () {
+$(".at .base, .at .evs, .at .ivs, .at .avs, .current-happiness").bind("keyup click change", function () {
 	calcStat($(this).closest(".poke-info"), "at");
 });
-$(".df .base, .df .evs, .df .ivs, .df .avs, .current-happiness").bind("keyup keydown click change", function () {
+$(".df .base, .df .evs, .df .ivs, .df .avs, .current-happiness").bind("keyup click change", function () {
 	calcStat($(this).closest(".poke-info"), "df");
 });
-$(".sa .base, .sa .evs, .sa .ivs, .sa .avs, .current-happiness").bind("keyup keydown click change", function () {
+$(".sa .base, .sa .evs, .sa .ivs, .sa .avs, .current-happiness").bind("keyup click change", function () {
 	calcStat($(this).closest(".poke-info"), "sa");
 });
-$(".sd .base, .sd .evs, .sd .ivs, .sd .avs, .current-happiness").bind("keyup keydown click change", function () {
+$(".sd .base, .sd .evs, .sd .ivs, .sd .avs, .current-happiness").bind("keyup click change", function () {
 	calcStat($(this).closest(".poke-info"), "sd");
 });
-$(".sp .base, .sp .evs, .sp .ivs, .sp .avs, .current-happiness").bind("keyup keydown click change", function () {
+$(".sp .base, .sp .evs, .sp .ivs, .sp .avs, .current-happiness").bind("keyup click change", function () {
 	calcStat($(this).closest(".poke-info"), "sp");
 });
-$(".evs").bind("keyup keydown click change", function () {
+$(".evs").bind("keyup click change", function () {
 	calcEvTotal($(this).closest(".poke-info"));
 });
-$(".avs, .current-happiness").bind("keyup keydown click change", function () {
+$(".avs, .current-happiness").bind("keyup click change", function () {
 	calcAvTotal($(this).closest(".poke-info"));
 });
 $(".sl .base").keyup(function () {
@@ -234,7 +234,7 @@ function autoSetTerrain() {
 
 function autosetWeather(ability, i) {
 	var currentWeather = $("input:radio[name='weather']:checked").val();
-	if (!(lastAutoWeather.includes(currentWeather)) || currentWeather === "") {
+	if (lastAutoWeather.indexOf(currentWeather) === -1 || currentWeather === "") {
 		lastManualWeather = currentWeather;
 		lastAutoWeather[1 - i] = "";
 	}
@@ -254,13 +254,13 @@ function autosetWeather(ability, i) {
 	if (ability in autoWeatherAbilities) {
 		lastAutoWeather[i] = autoWeatherAbilities[ability];
 		if (currentWeather === "Strong Winds") {
-			if (!(lastAutoWeather.includes("Strong Winds"))) {
+			if (lastAutoWeather !== "Strong Winds") {
 				newWeather = lastAutoWeather[i];
 			}
-		} else if (primalWeather.includes(currentWeather)) {
-			if (lastAutoWeather[i] === "Strong Winds" || primalWeather.includes(lastAutoWeather[i])) {
+		} else if (primalWeather.indexOf(currentWeather) !== -1) {
+			if (lastAutoWeather[i] === "Strong Winds" || primalWeather.indexOf(lastAutoWeather[i]) !== -1) {
 				newWeather = lastAutoWeather[i];
-			} else if (primalWeather.includes(lastAutoWeather[1 - i])) {
+			} else if (primalWeather.indexOf(lastAutoWeather[1 - i]) !== -1) {
 				newWeather = lastAutoWeather[1 - i];
 			} else {
 				newWeather = lastAutoWeather[i];
@@ -273,14 +273,14 @@ function autosetWeather(ability, i) {
 		newWeather = lastAutoWeather[1 - i] !== "" ? lastAutoWeather[1 - i] : lastManualWeather;
 	}
 
-	if (newWeather === "Strong Winds" || primalWeather.includes(newWeather)) {
+	if (newWeather === "Strong Winds" || primalWeather.indexOf(newWeather) !== -1) {
 		//$("input:radio[name='weather']").prop("disabled", true);
 		//edited out by squirrelboy1225 for doubles!
 		$("input:radio[name='weather'][value='" + newWeather + "']").prop("disabled", false);
 	} else if (typeof newWeather != "undefined") {
 		for (var k = 0; k < $("input:radio[name='weather']").length; k++) {
 			var val = $("input:radio[name='weather']")[k].value;
-			if (!(primalWeather.includes(val)) && val !== "Strong Winds") {
+			if (primalWeather.indexOf(val) === -1 && val !== "Strong Winds") {
 				$("input:radio[name='weather']")[k].disabled = false;
 			} else {
 				//$("input:radio[name='weather']")[k].disabled = true;
@@ -352,7 +352,7 @@ $(".move-selector").change(function () {
 });
 
 // auto-update set details on select
-$(".set-selector, #levelswitch").bind("change click keyup keydown", function () {
+$(".set-selector, #levelswitch").bind("change click keyup", function () {
 	var fullSetName = $(this).val();
 	var pokemonName, setName;
 	pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
@@ -452,15 +452,15 @@ function showFormes(formeObj, setName, pokemonName, pokemon) {
 
 		if (set.item) {
 		// Repurpose the previous filtering code to provide the "different default" logic
-			if (set.item.includes("ite") && !(set.item.includes("ite Y")) ||
-        pokemonName === "Groudon" && set.item.includes("Red Orb") ||
-        pokemonName === "Kyogre" && set.item.includes("Blue Orb") ||
-        pokemonName === "Meloetta" && set.moves.includes("Relic Song") ||
-        pokemonName === "Rayquaza" && set.moves.includes("Dragon Ascent") ||
-        pokemonName === "Necrozma-Dusk Mane" && set.item.includes("Ultranecrozium Z") ||
-        pokemonName === "Necrozma-Dawn Wings" && set.item.includes("Ultranecrozium Z")) {
+			if (set.item.indexOf("ite") !== -1 && set.item.indexOf("ite Y") === -1 ||
+        pokemonName === "Groudon" && set.item === ("Red Orb") ||
+        pokemonName === "Kyogre" && set.item === ("Blue Orb") ||
+        pokemonName === "Meloetta" && set.moves.indexOf("Relic Song") !== -1 ||
+        pokemonName === "Rayquaza" && set.moves.indexOf("Dragon Ascent") !== -1 ||
+        pokemonName === "Necrozma-Dusk Mane" && set.item === ("Ultranecrozium Z") ||
+        pokemonName === "Necrozma-Dawn Wings" && set.item === ("Ultranecrozium Z")) {
 				defaultForme = 1;
-			} else if (set.item.includes("ite Y")) {
+			} else if (set.item.indexOf("ite Y") !== -1) {
 				defaultForme = 2;
 			}
 		}
@@ -494,9 +494,9 @@ $(".forme").change(function () {
 		baseStat.keyup();
 	}
 
-	if (abilities.includes(altForme.ab)) {
+	if (abilities.indexOf(altForme.ab) !== -1) {
 		container.find(".ability").val(altForme.ab);
-	} else if (setName !== "Blank Set" && abilities.includes(setdex[pokemonName][setName].ability)) {
+	} else if (setName !== "Blank Set" && abilities.indexOf(setdex[pokemonName][setName].ability) !== -1) {
 		container.find(".ability").val(setdex[pokemonName][setName].ability);
 	} else {
 		container.find(".ability").val("");
@@ -774,9 +774,9 @@ var stickyMoves = (function () {
 		},
 		"getSelectedSide": function () {
 			if (lastClicked) {
-				if (lastClicked.includes("resultMoveL")) {
+				if (lastClicked.indexOf("resultMoveL") !== -1) {
 					return "p1";
-				} else if (lastClicked.includes("resultMoveR")) {
+				} else if (lastClicked.indexOf("resultMoveR") !== -1) {
 					return "p2";
 				}
 			}
@@ -810,7 +810,7 @@ function Pokemon(pokeInfo) {
 		this.avs = [];
 
 		var set = setdex[this.name][setName];
-		this.isGmax = setName.includes("-Gmax") || pokemon.isGmax || set.isGmax;
+		this.isGmax = setName.indexOf("-Gmax") !== -1 || pokemon.isGmax || set.isGmax;
 		this.level = set.level;
 		if (gen !== 22) {
 			this.HPEVs = set.evs && typeof set.evs.hp !== "undefined" ? set.evs.hp : 0;
@@ -861,7 +861,7 @@ function Pokemon(pokeInfo) {
 		}
 		this.ability = set.ability && typeof set.ability !== "undefined" ? set.ability :
 			pokemon.ab && typeof pokemon.ab !== "undefined" ? pokemon.ab : "";
-		this.item = set.item && typeof set.item !== "undefined" && (set.item === "Eviolite" || !(set.item.includes("ite"))) ? set.item : "";
+		this.item = set.item && typeof set.item !== "undefined" && (set.item === "Eviolite" || set.item.indexOf("ite") === -1) ? set.item : "";
 		this.status = "Healthy";
 		this.toxicCounter = 0;
 		this.moves = [];
@@ -883,7 +883,7 @@ function Pokemon(pokeInfo) {
 		this.weight = pokemon.weight;
 	} else {
 		var setName = pokeInfo.find("input.set-selector").val();
-		if (!(setName.includes("("))) {
+		if (setName.indexOf("(") === -1) {
 			this.name = setName;
 		} else {
 			var pokemonName = setName.substring(0, setName.indexOf(" ("));
@@ -955,19 +955,19 @@ function getMoveDetails(moveInfo, item, species) {
 		var maxMoveName = MAXMOVES_LOOKUP[defaultDetails.type];
 
 		if (moves[maxMoveName].type == "Fighting" || moves[maxMoveName].type == "Poison") {
-			if (defaultDetails.bp >= 150 || exceptions_100_fight.includes(moveName)) tempBP = 100;
+			if (defaultDetails.bp >= 150 || exceptions_100_fight.indexOf(moveName) !== -1) tempBP = 100;
 			else if (defaultDetails.bp >= 110) tempBP = 95;
 			else if (defaultDetails.bp >= 75) tempBP = 90;
 			else if (defaultDetails.bp >= 65) tempBP = 85;
-			else if (defaultDetails.bp >= 55 || exceptions_80_fight.includes(moveName)) tempBP = 80;
-			else if (defaultDetails.bp >= 45 || exceptions_75_fight.includes(moveName)) tempBP = 75;
+			else if (defaultDetails.bp >= 55 || exceptions_80_fight.indexOf(moveName) !== -1) tempBP = 80;
+			else if (defaultDetails.bp >= 45 || exceptions_75_fight.indexOf(moveName) !== -1) tempBP = 75;
 			else tempBP = 70;
 		} else {
-			if (defaultDetails.bp >= 150 && !doubledMoves.includes(moveName)) tempBP = 150;
-			else if ((defaultDetails.bp >= 110 || exceptions_140.includes(moveName)) && !doubledMoves.includes(moveName)) tempBP = 140;
-			else if (defaultDetails.bp >= 75 || exceptions_130.includes(moveName)) tempBP = 130;
-			else if (defaultDetails.bp >= 65 || exceptions_120.includes(moveName)) tempBP = 120;
-			else if (defaultDetails.bp >= 55 || exceptions_100.includes(moveName)) tempBP = 110;
+			if (defaultDetails.bp >= 150 && doubledMoves.indexOf(moveName) === -1) tempBP = 150;
+			else if ((defaultDetails.bp >= 110 || exceptions_140.indexOf(moveName) !== -1) && doubledMoves.indexOf(moveName) === -1) tempBP = 140;
+			else if (defaultDetails.bp >= 75 || exceptions_130.indexOf(moveName) !== -1) tempBP = 130;
+			else if (defaultDetails.bp >= 65 || exceptions_120.indexOf(moveName) !== -1) tempBP = 120;
+			else if (defaultDetails.bp >= 55 || exceptions_100.indexOf(moveName) !== -1) tempBP = 110;
 			else if (defaultDetails.bp >= 45) tempBP = 100;
 			else tempBP = 90;
 		}
@@ -1020,7 +1020,7 @@ function getMoveDetails(moveInfo, item, species) {
 }
 
 function getZMoveName(moveName, moveType, item) {
-	return moveName.includes("Hidden Power") ? "Breakneck Blitz" : // Hidden Power will become Breakneck Blitz
+	return moveName.indexOf("Hidden Power") !== -1 ? "Breakneck Blitz" : // Hidden Power will become Breakneck Blitz
 		moveName === "Clanging Scales" && item === "Kommonium Z" ? "Clangorous Soulblaze" :
 			moveName === "Darkest Lariat" && item === "Incinium Z" ? "Malicious Moonsault" :
 				moveName === "Giga Impact" && item === "Snorlium Z" ? "Pulverizing Pancake" :
@@ -1327,8 +1327,8 @@ function getSetOptions() {
 	}
 	pokeNames.sort();
 	index = pokeNames.length;
-	while (index--) { //forcing alolan forms to show first
-		if (pokeNames[index].includes("-Alola")) {
+	while (index--) { // forcing alolan forms to show first
+		if (pokeNames[index].indexOf("-Alola") !== -1) {
 			var temp = pokeNames[index];
 			pokeNames.splice(index, 1); //deleting alolan entry
 			var regularForm = temp.substring(0, temp.indexOf("-Alola"));
@@ -1447,7 +1447,7 @@ $(document).ready(function () {
 			var results = [];
 			for (var i = 0; i < setOptions.length; i++) {
 				var pokeName = setOptions[i].pokemon.toUpperCase();
-				if (!query.term || pokeName.indexOf(query.term.toUpperCase()) === 0 || pokeName.includes("" + query.term.toUpperCase())) {
+				if (!query.term || pokeName.indexOf(query.term.toUpperCase()) === 0 || pokeName.indexOf("" + query.term.toUpperCase()) !== -1) {
 					results.push(setOptions[i]);
 				}
 			}
@@ -1465,7 +1465,7 @@ $(document).ready(function () {
 		"dropdownAutoWidth": true,
 		"matcher": function (term, text) {
 			// 2nd condition is for Hidden Power
-			return text.toUpperCase().indexOf(term.toUpperCase()) === 0 || text.toUpperCase().includes(" " + term.toUpperCase());
+			return text.toUpperCase().indexOf(term.toUpperCase()) === 0 || text.toUpperCase().indexOf(" " + term.toUpperCase() !== -1);
 		}
 	});
 	$(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id);
