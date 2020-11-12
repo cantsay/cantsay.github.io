@@ -1128,7 +1128,7 @@ $(".gen").change(function () {
 		setdex = SETDEX_GEN5;
 		typeChart = TYPE_CHART_GSC;
 		moves = movesForGen(5);
-		items = ITEMS_BW;
+		items = itemsForGen(5);
 		abilities = abilitiesForGen(5);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
@@ -1141,7 +1141,7 @@ $(".gen").change(function () {
 		setdex = SETDEX_GEN6;
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(6);
-		items = ITEMS_XY;
+		items = itemsForGen(6);
 		abilities = abilitiesForGen(6);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
@@ -1154,7 +1154,7 @@ $(".gen").change(function () {
 		setdex = SETDEX_GEN7;
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(7);
-		items = ITEMS_SM;
+		items = itemsForGen(7);
 		abilities = abilitiesForGen(7);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
@@ -1167,7 +1167,7 @@ $(".gen").change(function () {
 		setdex = SETDEX_GEN8;
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(8);
-		items = ITEMS_SS;
+		items = itemsForGen(8);
 		abilities = abilitiesForGen(8);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
@@ -1180,7 +1180,7 @@ $(".gen").change(function () {
 		setdex = SETDEX_FACTORY;
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(7);
-		items = ITEMS_SM;
+		items = itemsForGen(7);
 		abilities = abilitiesForGen(7);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
@@ -1193,7 +1193,7 @@ $(".gen").change(function () {
 		setdex = SETDEX_GEN8;
 		typeChart = TYPE_CHART_INVERSE;
 		moves = movesForGen(8);
-		items = ITEMS_SS;
+		items = itemsForGen(8);
 		abilities = abilitiesForGen(8);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
@@ -1206,7 +1206,7 @@ $(".gen").change(function () {
 		setdex = SETDEX_LG;
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(8, true);
-		items = ITEMS_SM;
+		items = itemsForGen(8);
 		abilities = {};
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_LG;
@@ -1529,4 +1529,15 @@ function abilitiesForGen(gen) {
 		abilities.push(a.name);
 	}
 	return abilities.sort();
+}
+
+function itemsForGen(gen) {
+	var items = [];
+	var dex = Dex.forGen(gen);
+	for (var id in dex.data.Items) {
+		var i = dex.getItem(id);
+		if (!i.exists || i.isNonstandard) continue;
+		items.push(i.name);
+	}
+	return items.sort();
 }
