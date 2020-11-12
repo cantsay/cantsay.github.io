@@ -1129,7 +1129,7 @@ $(".gen").change(function () {
 		typeChart = TYPE_CHART_GSC;
 		moves = movesForGen(5);
 		items = ITEMS_BW;
-		abilities = ABILITIES_BW;
+		abilities = abilitiesForGen(5);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
@@ -1142,7 +1142,7 @@ $(".gen").change(function () {
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(6);
 		items = ITEMS_XY;
-		abilities = ABILITIES_XY;
+		abilities = abilitiesForGen(6);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
@@ -1155,7 +1155,7 @@ $(".gen").change(function () {
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(7);
 		items = ITEMS_SM;
-		abilities = ABILITIES_SM;
+		abilities = abilitiesForGen(7);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
@@ -1168,7 +1168,7 @@ $(".gen").change(function () {
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(8);
 		items = ITEMS_SS;
-		abilities = ABILITIES_SS;
+		abilities = abilitiesForGen(8);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
@@ -1181,7 +1181,7 @@ $(".gen").change(function () {
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(7);
 		items = ITEMS_SM;
-		abilities = ABILITIES_SM;
+		abilities = abilitiesForGen(7);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
@@ -1194,7 +1194,7 @@ $(".gen").change(function () {
 		typeChart = TYPE_CHART_INVERSE;
 		moves = movesForGen(8);
 		items = ITEMS_SS;
-		abilities = ABILITIES_SS;
+		abilities = abilitiesForGen(8);
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_BW;
 		calcHP = CALC_HP_ADV;
@@ -1207,7 +1207,7 @@ $(".gen").change(function () {
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(8, true);
 		items = ITEMS_SM;
-		abilities = [];
+		abilities = {};
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_LG;
 		calcHP = CALC_HP_LG;
@@ -1515,4 +1515,18 @@ function movesForGen(gen, lgpe) {
 		});
 	}
 	return moves;
+}
+
+function abilitiesForGen(gen) {
+	var abilities = [
+		"(None)",
+		"Flash Fire (Activated)"
+	];
+	var dex = Dex.forGen(gen);
+	for (var id in dex.data.Abilities) {
+		var a = dex.getAbility(id);
+		if (!a.exists || a.isNonstandard) continue;
+		abilities.push(a.name);
+	}
+	return abilities.sort();
 }
