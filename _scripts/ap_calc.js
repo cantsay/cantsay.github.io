@@ -1495,7 +1495,6 @@ function movesForGen(gen, lgpe) {
 		if (!m.exists || (m.isNonstandard && !lgpe)) continue;
 		moves[id] = m;
 	}
-	console.log(moves);
 	if (lgpe) {
 		moves["absorb"].basePower = 40;
 		moves["megadrain"].basePower = 75;
