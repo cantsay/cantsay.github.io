@@ -333,13 +333,13 @@ $(".status").bind("keyup change", function () {
 // auto-update move details on select
 $(".move-selector").change(function () {
 	var moveName = $(this).val();
-	var move = moves[moveName] || moves["(No Move)"];
+	var move = moves[moveName] || moves["(nomove)"];
 	var moveGroupObj = $(this).parent();
-	moveGroupObj.children(".move-bp").val(move.bp);
+	moveGroupObj.children(".move-bp").val(move.basePower);
 	moveGroupObj.children(".move-type").val(move.type);
 	moveGroupObj.children(".move-cat").val(move.category);
 	moveGroupObj.children(".move-crit").prop("checked", move.alwaysCrit === true);
-	if (move.isMultiHit && !move.isMax) {
+	if (move.multihit && !move.isMax) {
 		moveGroupObj.children(".move-hits").show();
 		moveGroupObj.children(".move-hits").val($(this).closest(".poke-info").find(".ability").val() === "Skill Link" ? 5 : 3);
 	} else {
@@ -402,7 +402,7 @@ $(".set-selector, #levelswitch").bind("change click keyup", function () {
 			setSelectValueIfValid(itemObj, set.item, "");
 			for (i = 0; i < 4; i++) {
 				moveObj = pokeObj.find(".move" + (i + 1) + " select.move-selector");
-				setSelectValueIfValid(moveObj, set.moves[i], "(No Move)");
+				setSelectValueIfValid(moveObj, set.moves[i].toLowerCase().replace(/[^a-z0-9]/g, ""), "(nomove)");
 				moveObj.change();
 			}
 		} else {
@@ -422,7 +422,7 @@ $(".set-selector, #levelswitch").bind("change click keyup", function () {
 			itemObj.val("");
 			for (i = 0; i < 4; i++) {
 				moveObj = pokeObj.find(".move" + (i + 1) + " select.move-selector");
-				moveObj.val("(No Move)");
+				moveObj.val("(nomove)");
 				moveObj.change();
 			}
 		}
@@ -576,8 +576,6 @@ function calculate() {
 	var p1 = new Pokemon($("#p1"));
 	var p2 = new Pokemon($("#p2"));
 	var field = new Field();
-	optimizeEVs("#p1", p1);
-	optimizeEVs("#p2", p2);
 	damageResults = calculateAllMoves(p1, p2, field);
 	var result, minDamage, maxDamage, minPercent, maxPercent, percentText;
 	var highestMaxPercent = -1;
@@ -589,7 +587,7 @@ function calculate() {
 		minPercent = Math.floor(minDamage * 1000 / p2.maxHP) / 10;
 		maxPercent = Math.floor(maxDamage * 1000 / p2.maxHP) / 10;
 		result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
-		result.koChanceText = p1.moves[i].bp === 0 ? "nice move" :
+		result.koChanceText = p1.moves[i].basePower === 0 ? "nice move" :
 			getKOChanceText(result.damage, p1.moves[i], p2, field.getSide(1), p1.ability === "Bad Dreams", p1, p2.isMinimized, p1.isVictoryStar, gen);
 		if (p1.moves[i].isMLG && p1.level >= p2.level) {
 			result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>"; //dank memes
@@ -661,7 +659,7 @@ function calculate() {
 		minPercent = Math.floor(minDamage * 1000 / p1.maxHP) / 10;
 		maxPercent = Math.floor(maxDamage * 1000 / p1.maxHP) / 10;
 		result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
-		result.koChanceText = p2.moves[i].bp === 0 ? "nice move" :
+		result.koChanceText = p2.moves[i].basePower === 0 ? "nice move" :
 			getKOChanceText(result.damage, p2.moves[i], p1, field.getSide(0), p2.ability === "Bad Dreams", p2, p1.isMinimized, p2.isVictoryStar, gen);
 		if (p2.moves[i].isMLG) {
 			result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>";
@@ -867,16 +865,17 @@ function Pokemon(pokeInfo) {
 		this.moves = [];
 		for (var i = 0; i < 4; i++) {
 			var moveName = set.moves[i];
-			var defaultDetails = moves[moveName] || moves["(No Move)"];
+			var defaultDetails = moves[moveName] || moves["(nomove)"];
 			this.moves.push($.extend({}, defaultDetails, {
-				"name": defaultDetails.bp === 0 ? "(No Move)" : moveName,
-				"bp": defaultDetails.bp,
+				"name": defaultDetails.basePower === 0 ? "(No Move)" : moveName,
+				"basePower": defaultDetails.basePower,
 				"type": defaultDetails.type,
 				"category": defaultDetails.category,
 				"isCrit": !!defaultDetails.alwaysCrit,
 				"alwaysCrit": defaultDetails.alwaysCrit,
-				"acc": defaultDetails.acc,
-				"hits": defaultDetails.isMultiHit ? this.ability === "Skill Link" || this.item === "Grip Claw" ? 5 : 3 : defaultDetails.isTwoHit ? 2 : 1,
+				"acc": defaultDetails.accuracy,
+				"multihit": defaultDetails.multihit,
+				"hits": defaultDetails.multihit ? this.ability === "Skill Link" || this.item === "Grip Claw" ? 5 : 3 : defaultDetails.isTwoHit ? 2 : 1,
 				"usedTimes": 1
 			}));
 		}
@@ -934,7 +933,6 @@ function getMoveDetails(moveInfo, item, species) {
 	var defaultDetails = moves[moveName];
 	var isZMove = gen >= 7 && gen != 8 && moveInfo.find("input.move-z").prop("checked");
 	var isMax = gen == 8 && moveInfo.find("input.move-max").prop("checked");
-
 	if (isMax) {
 
 		var doubledMoves = ["Bolt Beak (Doubled)", "Fishious Rend (Doubled)", "Lash Out (Doubled)"];
@@ -950,27 +948,21 @@ function getMoveDetails(moveInfo, item, species) {
 		var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature\'s Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
 			"Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst"];
 
-		var tempBP = 1;
+		var tempBP = -1;
 
-		var maxMoveName = MAXMOVES_LOOKUP[defaultDetails.type];
+		var MAXMOVES_LOOKUP = {
+			"Normal": "Max Strike", "Fire": "Max Flare", "Water": "Max Geyser",
+			"Electric": "Max Lightning", "Grass": "Max Overgrowth", "Ghost": "Max Phantasm",
+			"Dark": "Max Darkness", "Psychic": "Max Mindstorm", "Fighting": "Max Knuckle",
+			"Steel": "Max Steelspike", "Ice": "Max Hailstorm", "Ground": "Max Quake",
+			"Rock": "Max Rockfall", "Bug": "Max Flutterby", "Fairy": "Max Starfall",
+			"Flying": "Max Airstream", "Dragon": "Max Wyrmwind", "Poison": "Max Ooze"
+		};
 
-		if (moves[maxMoveName].type == "Fighting" || moves[maxMoveName].type == "Poison") {
-			if (defaultDetails.bp >= 150 || exceptions_100_fight.indexOf(moveName) !== -1) tempBP = 100;
-			else if (defaultDetails.bp >= 110) tempBP = 95;
-			else if (defaultDetails.bp >= 75) tempBP = 90;
-			else if (defaultDetails.bp >= 65) tempBP = 85;
-			else if (defaultDetails.bp >= 55 || exceptions_80_fight.indexOf(moveName) !== -1) tempBP = 80;
-			else if (defaultDetails.bp >= 45 || exceptions_75_fight.indexOf(moveName) !== -1) tempBP = 75;
-			else tempBP = 70;
-		} else {
-			if (defaultDetails.bp >= 150 && doubledMoves.indexOf(moveName) === -1) tempBP = 150;
-			else if ((defaultDetails.bp >= 110 || exceptions_140.indexOf(moveName) !== -1) && doubledMoves.indexOf(moveName) === -1) tempBP = 140;
-			else if (defaultDetails.bp >= 75 || exceptions_130.indexOf(moveName) !== -1) tempBP = 130;
-			else if (defaultDetails.bp >= 65 || exceptions_120.indexOf(moveName) !== -1) tempBP = 120;
-			else if (defaultDetails.bp >= 55 || exceptions_100.indexOf(moveName) !== -1) tempBP = 110;
-			else if (defaultDetails.bp >= 45) tempBP = 100;
-			else tempBP = 90;
-		}
+		var type = defaultDetails.type;
+
+		var maxMoveName = MAXMOVES_LOOKUP[type];
+		maxMove = moves[maxMoveName.toLowerCase().replace(" ", "")];
 
 		if (species === "Cinderace-Gmax" && defaultDetails.type === "Fire") {
 			tempBP = 160;
@@ -983,10 +975,10 @@ function getMoveDetails(moveInfo, item, species) {
 			maxMoveName = "G-Max Drum Solo";
 		}
 
-		return $.extend({}, moves[maxMoveName], {
+		return $.extend({}, maxMove, {
 			"name": maxMoveName,
 			"moveDescName": maxMoveName + " (" + tempBP + "BP)",
-			"bp": tempBP,
+			"basePower": tempBP === -1 ? defaultDetails.maxMove.basePower : tempBP,
 			"type": defaultDetails.type,
 			"category": defaultDetails.category,
 			"isCrit": defaultDetails.alwaysCrit ? false : moveInfo.find(".move-crit").prop("checked"),
@@ -996,30 +988,50 @@ function getMoveDetails(moveInfo, item, species) {
 	}
 
 	// If z-move is checked but there isn't a corresponding z-move, use the original move
-	if (isZMove && "zp" in defaultDetails) {
+	if (isZMove && "zMove" in defaultDetails) {
 		var zMoveName = getZMoveName(moveName, defaultDetails.type, item);
-		return $.extend({}, moves[zMoveName], {
+		return $.extend({}, defaultDetails, {
 			"name": zMoveName,
-			"bp": moves[zMoveName].bp === 1 ? defaultDetails.zp : moves[zMoveName].bp,
+			"basePower": defaultDetails.zMove.basePower,
 			"category": defaultDetails.category,
 			"isCrit": moveInfo.find(".move-crit").prop("checked"),
 			"hits": 1
 		});
 	} else {
 		return $.extend({}, defaultDetails, {
-			"name": moveName,
-			"bp": ~~moveInfo.find(".move-bp").val(),
+			"name": defaultDetails.name,
+			"basePower": ~~moveInfo.find(".move-bp").val(),
 			"type": moveInfo.find(".move-type").val(),
 			"category": moveInfo.find(".move-cat").val(),
 			"isCrit": moveInfo.find(".move-crit").prop("checked"),
 			"isMax": isMax,
-			"hits": defaultDetails.isMultiHit ? ~~moveInfo.find(".move-hits").val() : defaultDetails.isTwoHit ? 2 : 1,
+			"hits": defaultDetails.multihit ? ~~moveInfo.find(".move-hits").val() : defaultDetails.isTwoHit ? 2 : 1,
 			"usedTimes": defaultDetails.dropsStats ? ~~moveInfo.find(".stat-drops").val() : 1
 		});
 	}
 }
 
 function getZMoveName(moveName, moveType, item) {
+	var ZMOVES_TYPING = {
+		"Bug": "Savage Spin-Out",
+		"Dark": "Black Hole Eclipse",
+		"Dragon": "Devastating Drake",
+		"Electric": "Gigavolt Havoc",
+		"Fairy": "Twinkle Tackle",
+		"Fighting": "All-Out Pummeling",
+		"Fire": "Inferno Overdrive",
+		"Flying": "Supersonic Skystrike",
+		"Ghost": "Never-Ending Nightmare",
+		"Grass": "Bloom Doom",
+		"Ground": "Tectonic Rage",
+		"Ice": "Subzero Slammer",
+		"Normal": "Breakneck Blitz",
+		"Poison": "Acid Downpour",
+		"Psychic": "Shattered Psyche",
+		"Rock": "Continental Crush",
+		"Steel": "Corkscrew Crash",
+		"Water": "Hydro Vortex"
+	};
 	return moveName.indexOf("Hidden Power") !== -1 ? "Breakneck Blitz" : // Hidden Power will become Breakneck Blitz
 		moveName === "Clanging Scales" && item === "Kommonium Z" ? "Clangorous Soulblaze" :
 			moveName === "Darkest Lariat" && item === "Incinium Z" ? "Malicious Moonsault" :
@@ -1111,59 +1123,11 @@ var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAl
 $(".gen").change(function () {
 	gen = ~~$(this).val();
 	switch (gen) {
-	case 1:
-		pokedex = POKEDEX_RBY;
-		setdex = SETDEX_RBY;
-		typeChart = TYPE_CHART_RBY;
-		moves = MOVES_RBY;
-		items = [];
-		abilities = [];
-		STATS = STATS_RBY;
-		calculateAllMoves = CALCULATE_ALL_MOVES_RBY;
-		calcHP = CALC_HP_RBY;
-		calcStat = CALC_STAT_RBY;
-		break;
-	case 2:
-		pokedex = POKEDEX_GSC;
-		setdex = SETDEX_GSC;
-		typeChart = TYPE_CHART_GSC;
-		moves = MOVES_GSC;
-		items = ITEMS_GSC;
-		abilities = [];
-		STATS = STATS_GSC;
-		calculateAllMoves = CALCULATE_ALL_MOVES_GSC;
-		calcHP = CALC_HP_RBY;
-		calcStat = CALC_STAT_RBY;
-		break;
-	case 3:
-		pokedex = POKEDEX_ADV;
-		setdex = SETDEX_ADV;
-		typeChart = TYPE_CHART_GSC;
-		moves = MOVES_ADV;
-		items = ITEMS_ADV;
-		abilities = ABILITIES_ADV;
-		STATS = STATS_GSC;
-		calculateAllMoves = CALCULATE_ALL_MOVES_ADV;
-		calcHP = CALC_HP_ADV;
-		calcStat = CALC_STAT_ADV;
-		break;
-	case 4:
-		pokedex = POKEDEX_DPP;
-		setdex = SETDEX_DPP;
-		typeChart = TYPE_CHART_GSC;
-		moves = MOVES_DPP;
-		items = ITEMS_DPP;
-		abilities = ABILITIES_DPP;
-		STATS = STATS_GSC;
-		calculateAllMoves = CALCULATE_ALL_MOVES_DPP;
-		calcHP = CALC_HP_ADV;
-		calcStat = CALC_STAT_ADV;
-		break;
 	case 5:
 		pokedex = POKEDEX_BW;
 		setdex = SETDEX_GEN5;
 		typeChart = TYPE_CHART_GSC;
-		moves = MOVES_BW;
+		moves = movesForGen(5);
 		items = ITEMS_BW;
 		abilities = ABILITIES_BW;
 		STATS = STATS_GSC;
@@ -1176,7 +1140,7 @@ $(".gen").change(function () {
 		pokedex = POKEDEX_XY;
 		setdex = SETDEX_GEN6;
 		typeChart = TYPE_CHART_XY;
-		moves = MOVES_XY;
+		moves = movesForGen(6);
 		items = ITEMS_XY;
 		abilities = ABILITIES_XY;
 		STATS = STATS_GSC;
@@ -1189,7 +1153,7 @@ $(".gen").change(function () {
 		pokedex = POKEDEX_SM;
 		setdex = SETDEX_GEN7;
 		typeChart = TYPE_CHART_XY;
-		moves = MOVES_SM;
+		moves = movesForGen(7);
 		items = ITEMS_SM;
 		abilities = ABILITIES_SM;
 		STATS = STATS_GSC;
@@ -1202,7 +1166,7 @@ $(".gen").change(function () {
 		pokedex = POKEDEX_SS;
 		setdex = SETDEX_GEN8;
 		typeChart = TYPE_CHART_XY;
-		moves = MOVES_SS;
+		moves = movesForGen(8);
 		items = ITEMS_SS;
 		abilities = ABILITIES_SS;
 		STATS = STATS_GSC;
@@ -1215,7 +1179,7 @@ $(".gen").change(function () {
 		pokedex = POKEDEX_SM;
 		setdex = SETDEX_FACTORY;
 		typeChart = TYPE_CHART_XY;
-		moves = MOVES_SM;
+		moves = movesForGen(7);
 		items = ITEMS_SM;
 		abilities = ABILITIES_SM;
 		STATS = STATS_GSC;
@@ -1228,7 +1192,7 @@ $(".gen").change(function () {
 		pokedex = POKEDEX_SS;
 		setdex = SETDEX_GEN8;
 		typeChart = TYPE_CHART_INVERSE;
-		moves = MOVES_SS;
+		moves = movesForGen(8);
 		items = ITEMS_SS;
 		abilities = ABILITIES_SS;
 		STATS = STATS_GSC;
@@ -1241,7 +1205,7 @@ $(".gen").change(function () {
 		pokedex = POKEDEX_LG;
 		setdex = SETDEX_LG;
 		typeChart = TYPE_CHART_XY;
-		moves = MOVES_LG;
+		moves = movesForGen(8, true);
 		items = ITEMS_SM;
 		abilities = [];
 		STATS = STATS_GSC;
@@ -1250,13 +1214,21 @@ $(".gen").change(function () {
 		calcStat = CALC_STAT_LG;
 		localStorage.setItem("selectedGen", 22);
 	}
+	moves["(nomove)"] = {
+		"name": "(No Move)",
+		"basePower": 0,
+		"type": "Normal",
+		"category": "Status",
+		"accuracy": 100,
+		"flags": {},
+	};
 	clearField();
 	$(".gen-specific.g" + gen).show();
 	$(".gen-specific").not(".g" + gen).hide();
 	var typeOptions = getSelectOptions(Object.keys(typeChart));
 	$("select.type1, select.move-type").find("option").remove().end().append(typeOptions);
 	$("select.type2").find("option").remove().end().append("<option value=\"\">(none)</option>" + typeOptions);
-	var moveOptions = getSelectOptions(Object.keys(moves), true);
+	var moveOptions = getMoveSelectOptions(Object.keys(moves), true);
 	$("select.move-selector").find("option").remove().end().append(moveOptions);
 	var abilityOptions = getSelectOptions(abilities, true);
 	$("select.ability").find("option").remove().end().append("<option value=\"\">(other)</option>" + abilityOptions);
@@ -1385,6 +1357,25 @@ function getSelectOptions(arr, sort, defaultIdx) {
 	return r;
 }
 
+function getMoveSelectOptions(arr, sort, defaultIdx) {
+	if (sort) {
+		arr.sort();
+	}
+	var r = "";
+	// Zero is of course falsy too, but this is mostly to coerce undefined.
+	if (!defaultIdx) {
+		defaultIdx = 0;
+	}
+	for (var i = 0; i < arr.length; i++) {
+		if (i === defaultIdx) {
+			r += '<option value="' + arr[i] + '" selected="selected">' + moves[arr[i]].name + "</option>";
+		} else {
+			r += '<option value="' + arr[i] + '">' + moves[arr[i]].name + "</option>";
+		}
+	}
+	return r;
+}
+
 $(document).ready(function () {
 	if (localStorage.getItem("selectedGen") != null) {
 		switch (localStorage.getItem("selectedGen") + "") {
@@ -1472,65 +1463,6 @@ $(document).ready(function () {
 	$(".set-selector").change();
 });
 
-/******************/
-/*  EV OPTIMIZER  */
-/******************/
-
-function optimizeEVs(side, mon) {
-	/*
-	//log(mon.rawStats)
-	var basehp = ~~$(side).find(".hp .base").val();
-	var baseat = ~~$(side).find(".at .base").val();
-	var basedf = ~~$(side).find(".df .base").val();
-	var basesa = ~~$(side).find(".sa .base").val();
-	var basesd = ~~$(side).find(".sd .base").val();
-	var basesp = ~~$(side).find(".sp .base").val();
-	var ivshp = ~~$(side).find(".hp .ivs").val();
-	var ivsat = ~~$(side).find(".at .ivs").val();
-	var ivsdf = ~~$(side).find(".df .ivs").val();
-	var ivssa = ~~$(side).find(".sa .ivs").val();
-	var ivssd = ~~$(side).find(".sd .ivs").val();
-	var ivssp = ~~$(side).find(".sp .ivs").val();
-	var evshp = ~~$(side).find(".hp .evs").val();
-	var evsat = ~~$(side).find(".at .evs").val();
-	var evsdf = ~~$(side).find(".df .evs").val();
-	var evssa = ~~$(side).find(".sa .evs").val();
-	var evssd = ~~$(side).find(".sd .evs").val();
-	var evssp = ~~$(side).find(".sp .evs").val();
-
-	var nature = NATURES[mon.nature];
-	var level = ~~mon.level;
-
-	var natureVals = ["1", "1", "1", "1", "1"];
-
-	console.log(nature)
-
-	var hp0 = Math.floor((basehp * 2 + ivshp + Math.floor(evshp / 4)) * level / 100) + level + 10;
-	var at0 = Math.floor((Math.floor((baseat * 2 + ivsat + Math.floor(evsat / 4)) * level / 100) + 5) * natureVals[0]);
-	var df0 = Math.floor((Math.floor((basedf * 2 + ivsdf + Math.floor(evsdf / 4)) * level / 100) + 5) * natureVals[1]);
-	var sa0 = Math.floor((Math.floor((basesa * 2 + ivssa + Math.floor(evssa / 4)) * level / 100) + 5) * natureVals[2]);
-	var sd0 = Math.floor((Math.floor((basesd * 2 + ivssd + Math.floor(evssd / 4)) * level / 100) + 5) * natureVals[3]);
-	var sp0 = Math.floor((Math.floor((basesp * 2 + ivssp + Math.floor(evssp / 4)) * level / 100) + 5) * natureVals[4]);
-
-	switch (nature[0]) {
-		case "at":
-		natureVals[0] = 1.1;
-		break;
-
-		case "df":
-		natureVals[1] = 1.1;
-		break;
-	}
-
-	console.log(hp);
-	console.log(at);
-	console.log(df);
-	console.log(sa);
-	console.log(sd);
-	console.log(sp);
-	*/
-}
-
 $("#maxL").change(function () {
 	if (this.checked) {
 		for (var i = 0; i < 4; i++) {
@@ -1554,3 +1486,34 @@ $("#maxR").change(function () {
 		}
 	}
 });
+
+function movesForGen(gen, lgpe) {
+	var moves = {};
+	var dex = Dex.forGen(gen);
+	for (var id in dex.data.Moves) {
+		var m = dex.getMove(id);
+		if (!m.exists || (m.isNonstandard && !lgpe)) continue;
+		moves[id] = m;
+	}
+	console.log(moves);
+	if (lgpe) {
+		moves["absorb"].basePower = 40;
+		moves["megadrain"].basePower = 75;
+		moves["solarbeam"].basePower = 200;
+		moves["skyattack"].basePower = 200;
+	} else if (gen === 8) {
+		moves["boltbeakdoubled"] = $.extend({}, moves["boltbeak"], {
+			"name": "Bolt Beak (Doubled)",
+			"basePower": 85 * 2,
+		});
+		moves["fishiousrenddoubled"] = $.extend({}, moves["fishiousrend"], {
+			"name": "Fishious Rend (Doubled)",
+			"basePower": 85 * 2,
+		});
+		moves["lashoutdoubled"] = $.extend({}, moves["lashout"], {
+			"name": "Lash Out (Doubled)",
+			"basePower": 75 * 2,
+		});
+	}
+	return moves;
+}
