@@ -801,7 +801,7 @@ function getLGDamageResult(attacker, defender, move, field) {
 		"moveName": moveDescName,
 		"defenderName": defender.name
 	};
-	if (move.basePower === 0) {
+	if (move.basePower === 0 && !["Physical", "Special"].includes(move.category)) {
 		return {"damage": [0], "description": buildLGDescription(description)};
 	}
 

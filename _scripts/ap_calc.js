@@ -1205,8 +1205,8 @@ $(".gen").change(function () {
 		pokedex = POKEDEX_LG;
 		setdex = SETDEX_LG;
 		typeChart = TYPE_CHART_XY;
-		moves = movesForGen(8, true);
-		items = itemsForGen(8);
+		moves = movesForGen(7, true);
+		items = itemsForGen(7);
 		abilities = [];
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_LG;
@@ -1519,7 +1519,11 @@ function movesForGen(gen, lgpe) {
 	var dex = Dex.forGen(gen);
 	for (var id in dex.data.Moves) {
 		var m = dex.getMove(id);
-		if (!m.exists || (m.isNonstandard && !lgpe)) continue;
+		if (lgpe) {
+			if (!m.exists || (m.isNonstandard && m.isNonstandard !== "LGPE")) continue;
+		} else {
+			if (!m.exists || m.isNonstandard) continue;
+		}
 		moves[id] = m;
 	}
 	if (lgpe) {
