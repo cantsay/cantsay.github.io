@@ -1215,12 +1215,39 @@ $(".gen").change(function () {
 		localStorage.setItem("selectedGen", 22);
 	}
 	moves["(nomove)"] = {
-		"name": "(No Move)",
-		"basePower": 0,
-		"type": "Normal",
-		"category": "Status",
 		"accuracy": 100,
+		"basePower": 0,
+		"category": "Status",
+		"critRatio": 1,
+		"desc": "No additional effect.",
+		"duration": undefined,
+		"effectType": "Move",
+		"exists": true,
 		"flags": {},
+		"fullname": "move: (No Move)",
+		"gen": 1,
+		"id": "(nomove)",
+		"ignoreAbility": false,
+		"ignoreImmunity": false,
+		"isMax": false,
+		"isNonstandard": null,
+		"isZ": false,
+		"kind": "Move",
+		"maxMove": {"basePower": 0},
+		"name": "(No Move)",
+		"nonGhostTarget": undefined,
+		"num": -1,
+		"pp": 10,
+		"pressureTarget": undefined,
+		"priority": 0,
+		"secondaries": null,
+		"secondary": null,
+		"selfSwitch": undefined,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "Normal",
+		"volatileStatus": undefined,
+		"zMove": {"basePower": 0}
 	};
 	clearField();
 	$(".gen-specific.g" + gen).show();
