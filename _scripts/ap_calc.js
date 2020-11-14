@@ -1207,7 +1207,7 @@ $(".gen").change(function () {
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(8, true);
 		items = itemsForGen(8);
-		abilities = {};
+		abilities = [];
 		STATS = STATS_GSC;
 		calculateAllMoves = CALCULATE_ALL_MOVES_LG;
 		calcHP = CALC_HP_LG;
