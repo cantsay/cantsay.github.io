@@ -961,24 +961,26 @@ function getMoveDetails(moveInfo, item, species) {
 
 		var type = defaultDetails.type;
 
-		var maxMoveName = MAXMOVES_LOOKUP[type];
+		var maxMoveName = defaultDetails.category === "Status" ? "Max Guard" : MAXMOVES_LOOKUP[type];
 		maxMove = moves[maxMoveName.toLowerCase().replace(" ", "")];
 
-		if (species === "Cinderace-Gmax" && defaultDetails.type === "Fire") {
-			tempBP = 160;
-			maxMoveName = "G-Max Fireball";
-		} else if (species === "Inteleon-Gmax" && defaultDetails.type === "Water") {
-			tempBP = 160;
-			maxMoveName = "G-Max Hydrosnipe";
-		} else if (species === "Rillaboom-Gmax" && defaultDetails.type === "Grass") {
-			tempBP = 160;
-			maxMoveName = "G-Max Drum Solo";
+		if (maxMoveName !== "Max Guard") {
+			if (species === "Cinderace-Gmax" && defaultDetails.type === "Fire") {
+				tempBP = 160;
+				maxMoveName = "G-Max Fireball";
+			} else if (species === "Inteleon-Gmax" && defaultDetails.type === "Water") {
+				tempBP = 160;
+				maxMoveName = "G-Max Hydrosnipe";
+			} else if (species === "Rillaboom-Gmax" && defaultDetails.type === "Grass") {
+				tempBP = 160;
+				maxMoveName = "G-Max Drum Solo";
+			}
 		}
 
 		return $.extend({}, maxMove, {
 			"name": maxMoveName,
 			"moveDescName": maxMoveName + " (" + tempBP + "BP)",
-			"basePower": tempBP === -1 ? defaultDetails.maxMove.basePower : tempBP,
+			"basePower": maxMoveName === "Max Guard" ? 0 : tempBP === -1 ? defaultDetails.maxMove.basePower : tempBP,
 			"type": defaultDetails.type,
 			"category": defaultDetails.category,
 			"isCrit": defaultDetails.alwaysCrit ? false : moveInfo.find(".move-crit").prop("checked"),
