@@ -324,6 +324,59 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Celesteela": {
+		"Leech Seed": {
+			"level": 50,
+			"evs": {
+				"hp": "244",
+				"df": "12",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Beast Boost",
+			"item": "Leftovers",
+			"moves": [
+				"Air Slash",
+				"Flash Cannon",
+				"Giga Drain",
+				"Flamethrower"
+			]
+		},
+		"Weakness Policy": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sp": "4"
+			},
+			"nature": "Modest",
+			"ability": "Beast Boost",
+			"item": "Weakness Policy",
+			"moves": [
+				"Air Slash",
+				"Flash Cannon",
+				"Flamethrower",
+				"Giga Drain"
+			]
+		},
+		"Meteor Beam": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sa": "252",
+				"sp": "4"
+			},
+			"nature": "Modest",
+			"ability": "Beast Boost",
+			"item": "Power Herb",
+			"moves": [
+				"Air Slash",
+				"Flash Cannon",
+				"Flamethrower",
+				"Meteor Beam"
+			]
+		}
+	},
 	"Charizard": {
 		"Solar Power": {
 			"level": 50,
@@ -678,7 +731,7 @@ var SETDEX_GEN8_SETS = {
 		}
 	},
 	"Dracovish": {
-		"Standard": {
+		"Choice Scarf": {
 			"level": 50,
 			"evs": {
 				"hp": "4",
@@ -690,8 +743,42 @@ var SETDEX_GEN8_SETS = {
 			"item": "Choice Scarf",
 			"moves": [
 				"Fisheous Rend (Doubled)",
-				"Crunch",
+				"Outrage",
 				"Psychic Fangs",
+				"Fisheous Rend"
+			]
+		},
+		"Choice Band": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Strong Jaw",
+			"item": "Choice Band",
+			"moves": [
+				"Fisheous Rend (Doubled)",
+				"Outrage",
+				"Psychic Fangs",
+				"Fisheous Rend"
+			]
+		},
+		"Sand Rush": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Sand Rush",
+			"item": "Life Orb",
+			"moves": [
+				"Fisheous Rend (Doubled)",
+				"Outrage",
+				"Rock Blast",
 				"Fisheous Rend"
 			]
 		}
@@ -704,14 +791,14 @@ var SETDEX_GEN8_SETS = {
 				"at": "252",
 				"sp": "252"
 			},
-			"nature": "Adamant",
+			"nature": "Jolly",
 			"ability": "Volt Absorb",
 			"item": "Assault Vest",
 			"moves": [
 				"Bolt Beak (Doubled)",
-				"Fire Fang",
+				"Outrage",
 				"Earthquake",
-				"Bolt Beak"
+				"Flamethrower"
 			]
 		},
 		"Hustle": {
@@ -726,9 +813,79 @@ var SETDEX_GEN8_SETS = {
 			"item": "Life Orb",
 			"moves": [
 				"Bolt Beak (Doubled)",
+				"Outrage",
 				"Fire Fang",
-				"Earthquake",
-				"Bolt Beak"
+				"Aerial Ace"
+			]
+		},
+		"Sand Rush": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sa": "4",
+				"sp": "252"
+			},
+			"nature": "Naive",
+			"ability": "Sand Rush",
+			"item": "Power Herb",
+			"moves": [
+				"Bolt Beak (Doubled)",
+				"Outrage",
+				"Meteor Beam",
+				"Fire Blast"
+			]
+		}
+	},
+	"Dragonite": {
+		"Multiscale DD": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Multiscale",
+			"item": "Weakness Policy",
+			"moves": [
+				"Outrage",
+				"Dual Wingbeat",
+				"Fire Punch",
+				"Earthquake"
+			]
+		},
+		"Inner Focus DD": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Inner Focus",
+			"item": "Life Orb",
+			"moves": [
+				"Outrage",
+				"Dual Wingbeat",
+				"Fire Punch",
+				"Earthquake"
+			]
+		},
+		"Special": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Multiscale",
+			"item": "Expert Belt",
+			"moves": [
+				"Hurricane",
+				"Fire Blast",
+				"Ice Beam",
+				"Thunderbolt"
 			]
 		}
 	},
@@ -1422,6 +1579,42 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Landorus-T": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"hp": "4",
+				"at": "252",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Intimidate",
+			"item": "Sharp Beak",
+			"moves": [
+				"Earthquake",
+				"Fly",
+				"Rock Tomb",
+				"Superpower"
+			]
+		},
+		"Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"nature": "Impish",
+			"ability": "Intimidate",
+			"item": "Sitrus Berry",
+			"moves": [
+				"Earthquake",
+				"Fly",
+				"Rock Tomb",
+				"U-turn"
+			]
+		}
+	},
 	"Lanturn": {
 		"Specs": {
 			"level": 50,
@@ -1854,6 +2047,61 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Moltres": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Flame Body",
+			"item": "Life Orb",
+			"moves": [
+				"Burn Up",
+				"Hurricane",
+				"Solar Beam",
+				"Scorching Sands"
+			]
+		},
+		"Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"nature": "Bold Nature",
+			"ability": "Flame Body",
+			"item": "Kee Berry",
+			"moves": [
+				"Mystical Fire",
+				"Scorching Sands",
+				"Roost",
+				"Will-O-Wisp"
+			]
+		}
+	},
+	"Moltres-Galar": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Berserk",
+			"item": "Weakness Policy",
+			"moves": [
+				"Fiery Wrath",
+				"Hurricane",
+				"Sucker Punch",
+				"Ancient Power"
+			]
+		}
+	},
 	"Mudsdale": {
 		"Assault Vest": {
 			"level": 50,
@@ -1962,6 +2210,42 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Nihilego": {
+		"Speed Booster": {
+			"level": 50,
+			"evs": {
+				"df": "84",
+				"sa": "172",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Beast Boost",
+			"item": "Power Herb",
+			"moves": [
+				"Meteor Beam",
+				"Sludge Wave",
+				"Grass Knot",
+				"Psyshock"
+			]
+		},
+		"SpA Booster": {
+			"level": 50,
+			"evs": {
+				"df": "4",
+				"sa": "252",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Beast Boost",
+			"item": "Power Herb",
+			"moves": [
+				"Meteor Beam",
+				"Sludge Wave",
+				"Grass Knot",
+				"Psyshock"
+			]
+		}
+	},
 	"Ninetales-Alola": {
 		"Offensive Veil Setter": {
 			"level": 50,
@@ -1997,6 +2281,25 @@ var SETDEX_GEN8_SETS = {
 				"Ice Beam",
 				"Hydro Pump",
 				"U-turn"
+			]
+		}
+	},
+	"Pheromosa": {
+		"Focus Sash": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly Nature",
+			"ability": "Beast Boost",
+			"item": "Focus Sash",
+			"moves": [
+				"Close Combat",
+				"U-turn",
+				"Drill Run",
+				"Poison Jab"
 			]
 		}
 	},
@@ -2185,6 +2488,42 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Regieleki": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Transistor",
+			"item": "Focus Sash",
+			"moves": [
+				"Thunderbolt",
+				"Rising Voltage",
+				"Hyper Beam",
+				"Round"
+			]
+		},
+		"Bulky Screens": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Transistor",
+			"item": "Light Clay",
+			"moves": [
+				"Thunderbolt",
+				"Volt Switch",
+				"Hyper Beam",
+				"Explosion"
+			]
+		}
+	},
 	"Rhyperior": {
 		"Assault Vest": {
 			"level": 50,
@@ -2238,6 +2577,24 @@ var SETDEX_GEN8_SETS = {
 				"Knock Off",
 				"Drain Punch",
 				"U-turn"
+			],
+			"isGmax": true
+		},
+		"Grassy Seed SD": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Grassy Surge",
+			"item": "",
+			"moves": [
+				"Grassy Glide",
+				"Acrobatics",
+				"Drain Punch",
+				"Knock Off"
 			],
 			"isGmax": true
 		}
@@ -2683,6 +3040,42 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Tapu Fini": {
+		"Bulky": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"nature": "Bold",
+			"ability": "Misty Surge",
+			"item": "Sitrus Berry",
+			"moves": [
+				"Scald",
+				"Moonblast",
+				"Ice Beam",
+				"Draining Kiss"
+			]
+		},
+		"Scarf": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Misty Surge",
+			"item": "Choice Scarf",
+			"moves": [
+				"Hydro Pump",
+				"Moonblast",
+				"Ice Beam",
+				"Trick"
+			]
+		}
+	},
 	"Togedemaru": {
 		"Support": {
 			"level": 50,
@@ -2870,43 +3263,26 @@ var SETDEX_GEN8_SETS = {
 		}
 	},
 	"Urshifu-Rapid-Strike": {
-		"Life Orb": {
+		"Standard": {
 			"level": 50,
 			"evs": {
+				"hp": "4",
 				"at": "252",
-				"df": "4",
 				"sp": "252"
 			},
 			"nature": "Jolly",
 			"ability": "Unseen Fist",
-			"item": "Life Orb",
+			"item": "Focus Sash",
 			"moves": [
 				"Surging Strikes",
 				"Close Combat",
 				"Thunder Punch",
-				"Aerial Ace"
-			]
-		},
-		"Assault Vest": {
-			"level": 50,
-			"evs": {
-				"at": "252",
-				"df": "4",
-				"sp": "252"
-			},
-			"nature": "Jolly",
-			"ability": "Unseen Fist",
-			"item": "Assault Vest",
-			"moves": [
-				"Surging Strikes",
-				"Close Combat",
-				"Thunder Punch",
-				"Aerial Ace"
+				"Aqua Jet"
 			]
 		}
 	},
 	"Urshifu-Single-Strike": {
-		"Offensive": {
+		"Focus Sash": {
 			"level": 50,
 			"evs": {
 				"at": "252",
@@ -2920,7 +3296,24 @@ var SETDEX_GEN8_SETS = {
 				"Wicked Blow",
 				"Close Combat",
 				"Sucker Punch",
-				"Aerial Ace"
+				"Poison Jab"
+			]
+		},
+		"Choice Band": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"df": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Unseen Fist",
+			"item": "Choice Band",
+			"moves": [
+				"Wicked Blow",
+				"Close Combat",
+				"Sucker Punch",
+				"Poison Jab"
 			]
 		}
 	},
@@ -3069,6 +3462,42 @@ var SETDEX_GEN8_SETS = {
 				"Counter",
 				"Mirror Coat",
 				"Destiny Bond"
+			]
+		}
+	},
+	"Zapdos": {
+		"Offensive": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Static",
+			"item": "Sharp Beak",
+			"moves": [
+				"Thunderbolt",
+				"Hurricane",
+				"Heat Wave",
+				"Steel Wing"
+			]
+		},
+		"Specially Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"sd": "252",
+				"sp": "4"
+			},
+			"nature": "Calm",
+			"ability": "Pressure",
+			"item": "Leftovers",
+			"moves": [
+				"Discharge",
+				"Hurricane",
+				"Heat Wave",
+				"Volt Switch"
 			]
 		}
 	}
