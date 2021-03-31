@@ -288,6 +288,42 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Blaziken": {
+		"Physical": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Speed Boost",
+			"item": "Life Orb",
+			"moves": [
+				"Flare Blitz",
+				"Close Combat",
+				"Thunder Punch",
+				"Earthquake"
+			]
+		},
+		"Special": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Intimidate",
+			"item": "Life Orb",
+			"moves": [
+				"Fire Blast",
+				"Solar Beam",
+				"Scorching Sands",
+				"Baton Pass"
+			]
+		}
+	},
 	"Bronzong": {
 		"Sash Trick Room": {
 			"level": 50,
@@ -615,6 +651,28 @@ var SETDEX_GEN8_SETS = {
 				"Body Press",
 				"Iron Head",
 				"U-turn"
+			]
+		}
+	},
+	"Cresselia": {
+		"Defensive": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"ivs": {
+				"at": "0"
+			},
+			"nature": "Bold",
+			"ability": "Levitate",
+			"item": "Eviolite",
+			"moves": [
+				"Stored Power",
+				"Moonblast",
+				"Ice Beam",
+				"Psyshock"
 			]
 		}
 	},
@@ -1088,7 +1146,7 @@ var SETDEX_GEN8_SETS = {
 			},
 			"nature": "Adamant",
 			"ability": "Sand Rush",
-			"item": "Weakness Policy",
+			"item": "Life Orb",
 			"moves": [
 				"Earthquake",
 				"Iron Head",
@@ -1176,6 +1234,25 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Garchomp": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Rough Skin",
+			"item": "Focus Sash",
+			"moves": [
+				"Scale Shot",
+				"Earthquake",
+				"Fire Fang",
+				"Iron Head"
+			]
+		}
+	},
 	"Gengar": {
 		"Focus Sash": {
 			"level": 50,
@@ -1228,6 +1305,25 @@ var SETDEX_GEN8_SETS = {
 				"Frost Breath",
 				"Sheer Cold",
 				"Earthquake"
+			]
+		}
+	},
+	"Glastier": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"sd": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Chilling Neigh",
+			"item": "Assault Vest",
+			"moves": [
+				"Icicle Spear",
+				"High Horsepower",
+				"Close Combat",
+				"Heavy Slam"
 			]
 		}
 	},
@@ -1521,6 +1617,25 @@ var SETDEX_GEN8_SETS = {
 				"Ice Beam",
 				"Hex",
 				"Giga Drain"
+			]
+		}
+	},
+	"Kartana": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Beast Boost",
+			"item": "Life Orb",
+			"moves": [
+				"Leaf Blade",
+				"Smart Strike",
+				"Sacred Sword",
+				"Aerial Ace"
 			]
 		}
 	},
@@ -1953,28 +2068,81 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
-	"Mewtwo": {
-		"Standard X": {
+	"Metagross": {
+		"Agility Policy": {
 			"level": 50,
 			"evs": {
 				"at": "252",
-				"sd": "4",
-				"sp": "252",
+				"df": "4",
+				"sp": "252"
 			},
 			"nature": "Jolly",
-			"ability": "Pressure",
-			"item": "Mewtwonite X",
+			"ability": "Clear Body",
+			"item": "Weakness Policy",
 			"moves": [
-				"Drain Punch",
-				"Zen Headbutt",
+				"Meteor Mash",
+				"Earthquake",
 				"Ice Punch",
+				"Thunder Punch"
+			]
+		},
+		"Lead": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"at": "252",
+				"df": "4"
+			},
+			"nature": "Adamant",
+			"ability": "Clear Body",
+			"item": "Lagging Tail",
+			"moves": [
+				"Trick",
+				"Stealth Rock",
+				"Bullet Punch",
 				"Self-Destruct"
 			]
 		},
-		"Standard Y": {
+		"Special Surprise": {
+			"level": 50,
+			"evs": {
+				"df": "4",
+				"sa": "252",
+				"sp": "252"
+			},
+			"nature": "Modest Nature",
+			"ability": "Clear Body",
+			"item": "Power Herb",
+			"moves": [
+				"Steel Beam",
+				"Expanding Force",
+				"Meteor Beam",
+				"Sludge Bomb"
+			]
+		}
+	},
+	"Mewtwo": {
+		"Nasty Plot": {
 			"level": 50,
 			"evs": {
 				"sa": "252",
+				"sd": "4",
+				"sp": "252",
+			},
+			"nature": "Timid",
+			"ability": "Unnerve",
+			"item": "Life Orb",
+			"moves": [
+				"Psystrike",
+				"Fire Blast",
+				"Hurricane",
+				"Aura Sphere"
+			]
+		},
+		"Calm Mind": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
 				"sd": "4",
 				"sp": "252",
 			},
@@ -1982,13 +2150,13 @@ var SETDEX_GEN8_SETS = {
 				"at": "0",
 			},
 			"nature": "Timid",
-			"ability": "Pressure",
-			"item": "Mewtwonite Y",
+			"ability": "Unnerve",
+			"item": "Rocky Helmet",
 			"moves": [
 				"Psystrike",
-				"Ice Beam",
-				"Flamethrower",
-				"Focus Blast"
+				"Calm Mind",
+				"Recover",
+				"Will-O-Wisp"
 			]
 		}
 	},
@@ -2121,8 +2289,30 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Naganadel": {
+		"Standard": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"ivs": {
+				"at": "0"
+			},
+			"nature": "Timid",
+			"ability": "Beast Boost",
+			"item": "Life Orb",
+			"moves": [
+				"Sludge Wave",
+				"Draco Meteor",
+				"Fire Blast",
+				"Air Slash"
+			]
+		}
+	},
 	"Necrozma-Dusk Mane": {
-		"ULTRA Swords Dance": {
+		"DD WP": {
 			"level": 50,
 			"evs": {
 				"hp": "4",
@@ -2131,20 +2321,20 @@ var SETDEX_GEN8_SETS = {
 			},
 			"nature": "Jolly",
 			"ability": "Prism Armor",
-			"item": "Ultranecrozium Z",
+			"item": "Weakness Policy",
 			"moves": [
 				"Photon Geyser",
-				"Outrage",
+				"Sunsteel Strike",
 				"Earthquake",
-				"Light That Burns the Sky"
+				"Dragon Dance"
 			]
 		},
-		"REGULAR Double Dance": {
+		"TR WP": {
 			"level": 50,
 			"evs": {
-				"hp": "4",
+				"hp": "252",
 				"at": "252",
-				"sp": "252"
+				"sp": "4"
 			},
 			"nature": "Adamant",
 			"ability": "Prism Armor",
@@ -2153,29 +2343,12 @@ var SETDEX_GEN8_SETS = {
 				"Photon Geyser",
 				"Sunsteel Strike",
 				"Earthquake",
-				"Rock Tomb"
-			]
-		},
-		"cant say's QR Team": {
-			"level": 50,
-			"evs": {
-				"at": 252,
-				"sa": 4,
-				"sp": 252,
-			},
-			"nature": "Naive",
-			"ability": "Prism Armor",
-			"item": "Ultranecrozium Z",
-			"moves": [
-				"Photon Geyser",
-				"Swords Dance",
-				"Brick Break",
-				"Dragon Pulse"
+				"Trick Room"
 			]
 		}
 	},
 	"Necrozma-Dawn Wings": {
-		"ULTRA Calm Mind": {
+		"Not Relevant": {
 			"level": 50,
 			"evs": {
 				"hp": "4",
@@ -2184,29 +2357,12 @@ var SETDEX_GEN8_SETS = {
 			},
 			"nature": "Timid",
 			"ability": "Prism Armor",
-			"item": "Ultranecrozium Z",
+			"item": "Weakness Policy",
 			"moves": [
 				"Photon Geyser",
-				"Earth Power",
+				"Moongeist Beam",
 				"Heat Wave",
-				"Light That Burns the Sky"
-			]
-		},
-		"REGULAR Calm Mind": {
-			"level": 50,
-			"evs": {
-				"hp": "252",
-				"sa": "252",
-				"sd": "4"
-			},
-			"nature": "Modest",
-			"ability": "Prism Armor",
-			"item": "Leftovers",
-			"moves": [
-				"Photon Geyser",
-				"Earth Power",
-				"Heat Wave",
-				"Stored Power"
+				"Autotomize"
 			]
 		}
 	},
@@ -2794,6 +2950,42 @@ var SETDEX_GEN8_SETS = {
 			]
 		}
 	},
+	"Salamence": {
+		"Physical": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"ability": "Moxie",
+			"item": "Lum Berry",
+			"moves": [
+				"Dual Wingbeat",
+				"Outrage",
+				"Earthquake",
+				"Dragon Dance"
+			]
+		},
+		"Special": {
+			"level": 50,
+			"evs": {
+				"sa": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Timid",
+			"ability": "Intimidate",
+			"item": "Life Orb",
+			"moves": [
+				"Hurricane",
+				"Draco Meteor",
+				"Fire Blast",
+				"Hydro Pump"
+			]
+		}
+	},
 	"Salazzle": {
 		"Sashed Attacker": {
 			"level": 50,
@@ -3018,6 +3210,28 @@ var SETDEX_GEN8_SETS = {
 				"Earthquake",
 				"Heat Crash",
 				"Heavy Slam"
+			]
+		}
+	},
+	"Swampert": {
+		"Disruptor": {
+			"level": 50,
+			"evs": {
+				"hp": "252",
+				"df": "252",
+				"sd": "4"
+			},
+			"ivs": {
+				"sp": "0"
+			},
+			"nature": "Relaxed",
+			"ability": "Damp",
+			"item": "Sitrus Berry",
+			"moves": [
+				"Flip Turn",
+				"Earthquake",
+				"Ice Beam",
+				"Counter"
 			]
 		}
 	},
