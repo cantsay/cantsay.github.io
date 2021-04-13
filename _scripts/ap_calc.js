@@ -1520,7 +1520,7 @@ function movesForGen(gen, lgpe) {
 	var moves = {};
 	var dex = Dex.forGen(gen);
 	for (var id in dex.data.Moves) {
-		var m = dex.getMove(id);
+		var m = dex.moves.get(id);
 		if (lgpe) {
 			if (!m.exists || (m.isNonstandard && m.isNonstandard !== "LGPE")) continue;
 		} else {
@@ -1557,7 +1557,7 @@ function abilitiesForGen(gen) {
 	];
 	var dex = Dex.forGen(gen);
 	for (var id in dex.data.Abilities) {
-		var a = dex.getAbility(id);
+		var a = dex.abilities.get(id);
 		if (!a.exists || a.isNonstandard) continue;
 		abilities.push(a.name);
 	}
@@ -1568,7 +1568,7 @@ function itemsForGen(gen) {
 	var items = [];
 	var dex = Dex.forGen(gen);
 	for (var id in dex.data.Items) {
-		var i = dex.getItem(id);
+		var i = dex.items.get(id);
 		if (!i.exists || i.isNonstandard) continue;
 		items.push(i.name);
 	}
