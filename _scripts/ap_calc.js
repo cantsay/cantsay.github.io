@@ -458,7 +458,9 @@ function showFormes(formeObj, setName, pokemonName, pokemon) {
         pokemonName === "Meloetta" && set.moves.indexOf("Relic Song") !== -1 ||
         pokemonName === "Rayquaza" && set.moves.indexOf("Dragon Ascent") !== -1 ||
         pokemonName === "Necrozma-Dusk Mane" && set.item === ("Ultranecrozium Z") ||
-        pokemonName === "Necrozma-Dawn Wings" && set.item === ("Ultranecrozium Z")) {
+        pokemonName === "Necrozma-Dawn Wings" && set.item === ("Ultranecrozium Z") ||
+				pokemonName === "Zacian" && set.item === "Rusted Sword" ||
+				pokemonName === "Zamazenta" && set.item === "Rusted Shield") {
 				defaultForme = 1;
 			} else if (set.item.indexOf("ite Y") !== -1) {
 				defaultForme = 2;

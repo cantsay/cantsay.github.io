@@ -3714,5 +3714,24 @@ var SETDEX_GEN8_SETS = {
 				"Volt Switch"
 			]
 		}
+	},
+	"Zacian": {
+		"Haha Sword Doggo go brrrr": {
+			"level": 50,
+			"evs": {
+				"at": "252",
+				"sd": "4",
+				"sp": "252"
+			},
+			"nature": "Jolly",
+			"item": "Rusted Sword",
+			"ability": "Intrepid Sword",
+			"moves": [
+				"Behemoth Blade",
+				"Play Rough",
+				"Close Combat",
+				"Wild Charge"
+			]
+		}
 	}
 };
