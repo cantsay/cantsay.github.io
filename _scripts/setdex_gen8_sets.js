@@ -3689,7 +3689,7 @@ var SETDEX_GEN8_SETS = {
 			},
 			"nature": "Timid",
 			"ability": "Static",
-			"item": "Sharp Beak",
+			"item": "Life Orb",
 			"moves": [
 				"Thunderbolt",
 				"Hurricane",
