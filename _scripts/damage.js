@@ -678,7 +678,7 @@ function getDamageResult(attacker, defender, move, field) {
 		stabMod = 0x1800;
 		description.attackerAbility = attacker.ability;
 	}
-	var applyBurn = attacker.status === "Burned" && move.category === "Physical" && attacker.ability !== "Guts" && !move.ignoresBurn;
+	var applyBurn = attacker.status === "Burned" && move.category === "Physical" && attacker.ability !== "Guts" && (move.name === "Facade" && gen === 5);
 	description.isBurned = applyBurn;
 	var finalMods = [];
 	if (field.isReflect && move.category === "Physical" && !isCritical) {
