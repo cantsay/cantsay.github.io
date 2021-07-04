@@ -338,7 +338,7 @@ $(".move-selector").change(function () {
 	moveGroupObj.children(".move-bp").val(move.basePower);
 	moveGroupObj.children(".move-type").val(move.type);
 	moveGroupObj.children(".move-cat").val(move.category);
-	moveGroupObj.children(".move-crit").prop("checked", move.alwaysCrit === true);
+	moveGroupObj.children(".move-crit").prop("checked", move.willCrit === true);
 	if (move.multihit && !move.isMax) {
 		moveGroupObj.children(".move-hits").show();
 		moveGroupObj.children(".move-hits").val($(this).closest(".poke-info").find(".ability").val() === "Skill Link" ? 5 : 3);
@@ -873,8 +873,8 @@ function Pokemon(pokeInfo) {
 				"basePower": defaultDetails.basePower,
 				"type": defaultDetails.type,
 				"category": defaultDetails.category,
-				"isCrit": !!defaultDetails.alwaysCrit,
-				"alwaysCrit": defaultDetails.alwaysCrit,
+				"isCrit": !!defaultDetails.willCrit,
+				"willCrit": defaultDetails.willCrit,
 				"acc": defaultDetails.accuracy,
 				"multihit": defaultDetails.multihit,
 				"hits": defaultDetails.multihit ? this.ability === "Skill Link" || this.item === "Grip Claw" ? 5 : 3 : defaultDetails.isTwoHit ? 2 : 1,
@@ -985,7 +985,7 @@ function getMoveDetails(moveInfo, item, species) {
 			"basePower": maxMoveName === "Max Guard" ? 0 : tempBP === -1 ? defaultDetails.maxMove.basePower : tempBP,
 			"type": defaultDetails.type,
 			"category": defaultDetails.category,
-			"isCrit": defaultDetails.alwaysCrit ? false : moveInfo.find(".move-crit").prop("checked"),
+			"isCrit": defaultDetails.willCrit ? false : moveInfo.find(".move-crit").prop("checked"),
 			"hits": 1,
 			"isMax": true
 		});
