@@ -15125,7 +15125,6 @@ delete POKEDEX_SS["Ampharos"];
 delete POKEDEX_SS["Ariados"];
 delete POKEDEX_SS["Bayleef"];
 delete POKEDEX_SS["Chikorita"];
-delete POKEDEX_SS["Corsola"];
 delete POKEDEX_SS["Croconaw"];
 delete POKEDEX_SS["Cyndaquil"];
 delete POKEDEX_SS["Donphan"];
