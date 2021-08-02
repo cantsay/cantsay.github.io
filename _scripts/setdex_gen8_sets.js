@@ -3778,7 +3778,6 @@ var SETDEX_GEN8_SETS = {
       ]
     }
   },
-	{
   "Calyrex-Shadow": {
     "LO": {
       "level": "50",
