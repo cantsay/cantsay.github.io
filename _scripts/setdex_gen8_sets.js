@@ -3733,5 +3733,94 @@ var SETDEX_GEN8_SETS = {
 				"Wild Charge"
 			]
 		}
-	}
+	},
+  "Eternatus": {
+    "HO": {
+      "level": "50",
+      "evs": {
+        "sa": 252,
+        "sd": 4,
+        "sp": 252
+      },
+      "ivs": {
+        "at": 0
+      },
+      "nature": "Modest",
+      "ability": "Pressure",
+      "item": "Choice Scarf",
+      "moves": [
+        "Dynamax Cannon",
+        "Sludge Wave",
+        "Flamethrower",
+        "Shadow Ball"
+      ]
+    }
+  },
+  "Xerneas": {
+    "Fat Geomancy": {
+      "level": "50",
+      "evs": {
+        "hp": 252,
+        "sa": 252,
+        "sd": 4,
+      },
+      "ivs": {
+        "at": 0
+      },
+      "nature": "Modest",
+      "ability": "Fairy Aura",
+      "item": "Power Herb",
+      "moves": [
+        "Geomancy",
+        "Moonblast",
+        "Thunderbolt",
+        "Draining Kiss"
+      ]
+    }
+  },
+	{
+  "Calyrex-Shadow": {
+    "LO": {
+      "level": "50",
+      "evs": {
+        "sa": 252,
+        "sd": 4,
+        "sp": 252
+      },
+      "ivs": {
+        "at": 0
+      },
+      "nature": "Timid",
+      "ability": "As One (Spectrier)",
+      "item": "Life Orb",
+      "moves": [
+        "Astral Barrage",
+        "Psyshock",
+        "Giga Drain",
+        "Draining Kiss"
+      ]
+    }
+  },
+  "Kyogre": {
+    "Scarf": {
+      "level": "50",
+      "evs": {
+        "sa": 252,
+        "sd": 4,
+        "sp": 252
+      },
+      "ivs": {
+        "at": 0,
+      },
+      "nature": "Timid",
+      "ability": "Drizzle",
+      "item": "Choice Scarf",
+      "moves": [
+        "Water Spout",
+        "Thunder",
+        "Ice Beam",
+        "Scald"
+      ]
+    }
+  }
 };
