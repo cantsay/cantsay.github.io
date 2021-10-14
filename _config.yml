@@ -10,10 +10,4 @@ repository: cantsay/cantsay.github.io
 
 description:
   Pokemon Damage Calculator for Gen 5, 6, 7, and 8 BSS and competitive LGPE, preloaded with viable sets for all formats.
-  
 
-plugins:
-  - jekyll-redirect-from
-
-whitelist:
-  - jekyll-redirect-from
