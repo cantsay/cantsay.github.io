@@ -145,7 +145,7 @@ var SETDEX_LCDOUBLES_SETS = {
       ]
     }
   },
-  "Shellos-East": {
+  "Shellos": {
     "Tank": {
       "level": "5",
       "evs": {
@@ -233,7 +233,36 @@ var SETDEX_LCDOUBLES_SETS = {
         "Sucker Punch",
         "Feint"
       ]
-    }
+    },
+
+      "bulky attacker": {
+        "level": "5",
+        "evs": {
+          "hp": 52,
+          "at": 108,
+          "df": 116,
+          "sa": 108,
+          "sd": 116,
+          "sp": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "at": 31,
+          "df": 31,
+          "sa": 31,
+          "sd": 31,
+          "sp": 31
+        },
+        "nature": "Brave",
+        "ability": "Dry Skin",
+        "item": "Eviolite",
+        "moves": [
+          "Fake Out",
+          "Knock Off",
+          "Sludge Bomb",
+          "Feint"
+        ]
+      }
   },
   "Oddish": {
     "Sun sweeper": {
@@ -383,7 +412,63 @@ var SETDEX_LCDOUBLES_SETS = {
         "Freeze-Dry",
         "Protect"
       ]
-    }
+    },
+      "choice scarf": {
+        "level": "5",
+        "evs": {
+          "hp": 60,
+          "at": 0,
+          "df": 0,
+          "sa": 220,
+          "sd": 0,
+          "sp": 228
+        },
+        "ivs": {
+          "hp": 31,
+          "at": 0,
+          "df": 31,
+          "sa": 31,
+          "sd": 31,
+          "sp": 31
+        },
+        "nature": "Timid",
+        "ability": "Snow Warning",
+        "item": "Choice Scarf",
+        "moves": [
+          "Blizzard",
+          "Earth Power",
+          "Freeze-Dry",
+          "Aurora Veil"
+        ]
+      },
+      "tr abuser": {
+        "level": "5",
+        "evs": {
+          "hp": 140,
+          "at": 0,
+          "df": 36,
+          "sa": 220,
+          "sd": 92,
+          "sp": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "at": 0,
+          "df": 31,
+          "sa": 31,
+          "sd": 31,
+          "sp": 0
+        },
+        "nature": "Quiet",
+        "ability": "Snow Warning",
+        "item": "Eviolite",
+        "moves": [
+          "Blizzard",
+          "Earth Power",
+          "Freeze-Dry",
+          "Aurora Veil"
+        ]
+      }
   },
   "Morelull": {
     "Tr abuser": {
@@ -503,18 +588,16 @@ var SETDEX_LCDOUBLES_SETS = {
         "Will-O-Wisp",
         "Morning Sun"
       ]
-    }
-  },
-  "Frillish": {
-    "Tr setter": {
+    },
+    "fast support": {
       "level": "5",
       "evs": {
         "hp": 0,
         "at": 0,
-        "df": 196,
-        "sa": 236,
-        "sd": 76,
-        "sp": 0
+        "df": 236,
+        "sa": 36,
+        "sd": 36,
+        "sp": 196
       },
       "ivs": {
         "hp": 31,
@@ -522,18 +605,47 @@ var SETDEX_LCDOUBLES_SETS = {
         "df": 31,
         "sa": 31,
         "sd": 31,
-        "sp": 0
+        "sp": 31
       },
-      "nature": "Quiet",
-      "ability": "Water Absorb",
+      "nature": "Timid",
+      "ability": "Intimidate",
       "item": "Eviolite",
       "moves": [
-        "Trick Room",
-        "Water Spout",
-        "Strength Sap",
-        "Will-O-Wisp"
+        "Will-O-Wisp",
+        "Snarl",
+        "Morning Sun",
+        "Protect"
       ]
-    }
+    },
+
+      "fast attacker": {
+        "level": "5",
+        "evs": {
+          "hp": 0,
+          "at": 196,
+          "df": 76,
+          "sa": 0,
+          "sd": 36,
+          "sp": 196
+        },
+        "ivs": {
+          "hp": 31,
+          "at": 31,
+          "df": 31,
+          "sa": 31,
+          "sd": 31,
+          "sp": 31
+        },
+        "nature": "Jolly",
+        "ability": "Intimidate",
+        "item": "Eviolite",
+        "moves": [
+          "Flare Blitz",
+          "Play Rough",
+          "Morning Sun",
+          "Protect"
+        ]
+      }
   },
   "Skrelp": {
     "Tr abuser": {
@@ -1585,156 +1697,6 @@ var SETDEX_LCDOUBLES_SETS = {
       ]
     }
   },
-  "Croagunk": {
-    "bulky attacker": {
-      "level": "5",
-      "evs": {
-        "hp": 52,
-        "at": 108,
-        "df": 116,
-        "sa": 108,
-        "sd": 116,
-        "sp": 0
-      },
-      "ivs": {
-        "hp": 31,
-        "at": 31,
-        "df": 31,
-        "sa": 31,
-        "sd": 31,
-        "sp": 31
-      },
-      "nature": "Brave",
-      "ability": "Dry Skin",
-      "item": "Eviolite",
-      "moves": [
-        "Fake Out",
-        "Knock Off",
-        "Sludge Bomb",
-        "Feint"
-      ]
-    }
-  },
-  "Amaura": {
-    "choice scarf": {
-      "level": "5",
-      "evs": {
-        "hp": 60,
-        "at": 0,
-        "df": 0,
-        "sa": 220,
-        "sd": 0,
-        "sp": 228
-      },
-      "ivs": {
-        "hp": 31,
-        "at": 0,
-        "df": 31,
-        "sa": 31,
-        "sd": 31,
-        "sp": 31
-      },
-      "nature": "Timid",
-      "ability": "Snow Warning",
-      "item": "Choice Scarf",
-      "moves": [
-        "Blizzard",
-        "Earth Power",
-        "Freeze-Dry",
-        "Aurora Veil"
-      ]
-    }
-  },
-  "Duskull": {
-    "tr setter": {
-      "level": "5",
-      "evs": {
-        "hp": 196,
-        "at": 0,
-        "df": 116,
-        "sa": 0,
-        "sd": 196,
-        "sp": 0
-      },
-      "ivs": {
-        "hp": 31,
-        "at": 0,
-        "df": 31,
-        "sa": 31,
-        "sd": 31,
-        "sp": 31
-      },
-      "nature": "Bold",
-      "ability": "Levitate",
-      "item": "Eviolite",
-      "moves": [
-        "Will-O-Wisp",
-        "Hex",
-        "Helping Hand",
-        "Trick Room"
-      ]
-    }
-  },
-  "Growlithe": {
-    "fast support": {
-      "level": "5",
-      "evs": {
-        "hp": 0,
-        "at": 0,
-        "df": 236,
-        "sa": 36,
-        "sd": 36,
-        "sp": 196
-      },
-      "ivs": {
-        "hp": 31,
-        "at": 0,
-        "df": 31,
-        "sa": 31,
-        "sd": 31,
-        "sp": 31
-      },
-      "nature": "Timid",
-      "ability": "Intimidate",
-      "item": "Eviolite",
-      "moves": [
-        "Will-O-Wisp",
-        "Snarl",
-        "Morning Sun",
-        "Protect"
-      ]
-    }
-  },
-  "Frillish": {
-    "tank": {
-      "level": "5",
-      "evs": {
-        "hp": 76,
-        "at": 0,
-        "df": 196,
-        "sa": 0,
-        "sd": 76,
-        "sp": 116
-      },
-      "ivs": {
-        "hp": 31,
-        "at": 0,
-        "df": 31,
-        "sa": 31,
-        "sd": 31,
-        "sp": 31
-      },
-      "nature": "Timid",
-      "ability": "Water Absorb",
-      "item": "Eviolite",
-      "moves": [
-        "Scald",
-        "Protect",
-        "Will-O-Wisp",
-        "Strength Sap"
-      ]
-    }
-  },
   "Salandit": {
     "nasty plot sweeper": {
       "level": "5",
@@ -2425,36 +2387,6 @@ var SETDEX_LCDOUBLES_SETS = {
       ]
     }
   },
-  "Amaura": {
-    "tr abuser": {
-      "level": "5",
-      "evs": {
-        "hp": 140,
-        "at": 0,
-        "df": 36,
-        "sa": 220,
-        "sd": 92,
-        "sp": 0
-      },
-      "ivs": {
-        "hp": 31,
-        "at": 0,
-        "df": 31,
-        "sa": 31,
-        "sd": 31,
-        "sp": 0
-      },
-      "nature": "Quiet",
-      "ability": "Snow Warning",
-      "item": "Eviolite",
-      "moves": [
-        "Blizzard",
-        "Earth Power",
-        "Freeze-Dry",
-        "Aurora Veil"
-      ]
-    }
-  },
   "Koffing": {
     "SET NAME": {
       "level": "5",
@@ -2481,36 +2413,6 @@ var SETDEX_LCDOUBLES_SETS = {
         "Sludge Bomb",
         "Thunderbolt",
         "Fire Blast",
-        "Protect"
-      ]
-    }
-  },
-  "Growlithe": {
-    "fast attacker": {
-      "level": "5",
-      "evs": {
-        "hp": 0,
-        "at": 196,
-        "df": 76,
-        "sa": 0,
-        "sd": 36,
-        "sp": 196
-      },
-      "ivs": {
-        "hp": 31,
-        "at": 31,
-        "df": 31,
-        "sa": 31,
-        "sd": 31,
-        "sp": 31
-      },
-      "nature": "Jolly",
-      "ability": "Intimidate",
-      "item": "Eviolite",
-      "moves": [
-        "Flare Blitz",
-        "Play Rough",
-        "Morning Sun",
         "Protect"
       ]
     }
@@ -2542,6 +2444,62 @@ var SETDEX_LCDOUBLES_SETS = {
         "Psychic",
         "Energy Ball",
         "Hydro Pump"
+      ]
+    },
+    "tank": {
+      "level": "5",
+      "evs": {
+        "hp": 76,
+        "at": 0,
+        "df": 196,
+        "sa": 0,
+        "sd": 76,
+        "sp": 116
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Water Absorb",
+      "item": "Eviolite",
+      "moves": [
+        "Scald",
+        "Protect",
+        "Will-O-Wisp",
+        "Strength Sap"
+      ]
+    },
+    "Tr setter": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 196,
+        "sa": 236,
+        "sd": 76,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "Water Absorb",
+      "item": "Eviolite",
+      "moves": [
+        "Trick Room",
+        "Water Spout",
+        "Strength Sap",
+        "Will-O-Wisp"
       ]
     }
   },
