@@ -17,6 +17,11 @@ title: cantsaycalc BETA
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script type="text/javascript" src="/_scripts/themes.js"></script>
 	<base target="_blank">
+	{% assign is_local = "true" %}
+	{% if site.url contains ".github.io" %}
+	{% assign is_local = "false" %}
+	{% endif %}
+	{% if is_local == "false" %}
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115954423-1"></script>
 	<script>
@@ -38,6 +43,7 @@ title: cantsaycalc BETA
 			enable_page_level_ads: true
 		});
 	</script>
+	{% endif %}
 
 </head>
 
