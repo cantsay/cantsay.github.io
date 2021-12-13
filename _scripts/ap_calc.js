@@ -1204,7 +1204,7 @@ $(".gen").change(function () {
 			}
 		}
 		pokedex = n;
-		
+
 		setdex = SETDEX_LCDOUBLES;
 		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(8);
@@ -1216,6 +1216,8 @@ $(".gen").change(function () {
 		calcStat = CALC_STAT_ADV;
 		localStorage.setItem("selectedGen", 21);
 		$("#doubles").prop("checked", true);
+		$("#autolevel-select").val(5);
+		$("#autolevel-select").change();
 		$("#doubles").change();
 		break;
 	case 22:
@@ -1470,6 +1472,10 @@ $(document).ready(function () {
 	}
 	for (var n = 1; n < 101; n++) {
 		$("#autolevel-select").append($("<option />").val(n).text(n));
+	}
+	if ($("#gen21").prop("checked")) {
+		$("#autolevel-select").val(5);
+		$("#autolevel-select").change();
 	}
 	$(".terrain-trigger").bind("change keyup", getTerrainEffects);
 	$(".calc-trigger").bind("change keyup", calculate);
