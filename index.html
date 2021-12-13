@@ -6,7 +6,7 @@ title: cantsaycalc BETA
 	<div>
 		<span class="title-text">Battle Spot Singles Damage Calculator - Sword and Shield Edition</span>
 		<span class="generation-select" title="Select the format.">
-			<!-- Gen 5: GBU, Gen 6: ORAS, Gen 7: USUM, Gen 8: SwSh, Gen 20: Gen 7 BSS Factory, Gen 21: Inverse, Gen 22: LGPE -->
+			<!-- Gen 5: GBU, Gen 6: ORAS, Gen 7: USUM, Gen 8: SwSh, Gen 20: Gen 7 BSS Factory, Gen 21: LC Dubs, Gen 22: LGPE -->
 			<input class="gen btn-input" type="radio" name="gen" value="5" id="gen5" /><label class="btn btn-small btn-left" for="gen5">GBU</label>
 
 			<input class="gen btn-input" type="radio" name="gen" value="6" id="gen6" /><label class="btn btn-small btn-mid" for="gen6">&Omega;R&alpha;S</label>
@@ -15,7 +15,7 @@ title: cantsaycalc BETA
 
 			<input class="gen btn-input" type="radio" name="gen" value="8" id="gen8" checked="checked" /><label class=" btn btn-small btn-mid" for="gen8">SwSh</label>
 
-			<input class="gen btn-input" type="radio" name="gen" value="21" id="gen21" /><label class="btn btn-small btn-mid" for="gen21">Inverse</label>
+			<input class="gen btn-input" type="radio" name="gen" value="21" id="gen21" /><label class="btn btn-small btn-mid" for="gen21">LCDubs</label>
 
 			<input class="gen btn-input" type="radio" name="gen" value="20" id="gen20" /><label class="btn btn-small btn-mid" for="gen20">G7BSSF</label>
 
@@ -26,19 +26,12 @@ title: cantsaycalc BETA
 	</div>
 	<hr />
 	<p>BSS calc by <a href="https://twitter.com/jakecantsay">@jakecantsay</a> &amp; <a href="https://www.smogon.com/forums/members/188833/">Lego</a></p>
-	<p>Gen 8 is still very much under development, so there will be a few bugs! Please be patient while we find time to fix these, and let us know of anything that isn't working properly <a href="https://www.smogon.com/forums/threads/3597699/">here</a>.</p>
+	<p>Gen 8 is still very much under development, so there will be a few bugs! Please be patient while we find time to fix these, and let us know of anything that isn't working properly <a
+			href="https://www.smogon.com/forums/threads/3597699/">here</a>.</p>
 	<p>Navigate to Alolan Formes by typing the full name such as <b>Marowak-Alola.</b></p>
 	<p>Something missing? Suggest sets to be permanently added to the calculator <a href="https://www.smogon.com/forums/threads/3597699/">here</a>!</p>
 
-	<!-- <div class="banner"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 	<!-- Damage Calc Header -->
-	<!-- <ins class="adsbygoogle"
-			  style="display:inline-block;width:728px;height:90px"
-			  data-ad-client="ca-pub-3144273328815394"
-			  data-ad-slot="2267027703"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script></div> -->
 	<div class="move-result-group" title="Select a move to show detailed results.">
 		<div class="move-result-subgroup">
 			<div class="result-move-header"><span id="resultHeaderL">Pokemon 1's Moves (select one to show detailed results)</span></div>
@@ -255,10 +248,12 @@ title: cantsaycalc BETA
 						<td></td>
 						<td class='ev-total'>&nbsp;</td>
 						<td><span class="info-group">
-								<button class="gen-specific g22 hide minAvL calc-trigger btn" id="minAvL" style="padding:0px; width: 4em; margin-left: 0.1em;" onclick="$('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').val(0); $('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').change()" />Min</button>
+								<button class="gen-specific g22 hide minAvL calc-trigger btn" id="minAvL" style="padding:0px; width: 4em; margin-left: 0.1em;"
+									onclick="$('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').val(0); $('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').change()" />Min</button>
 							</span></td>
 						<td><span class="info-group">
-								<button class="gen-specific g22 hide maxAvL calc-trigger btn" id="maxAvL" style="padding:0px; width: 4em; margin-left: 0.1em;" onclick="$('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').val(200); $('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').change()" />Max</button>
+								<button class="gen-specific g22 hide maxAvL calc-trigger btn" id="maxAvL" style="padding:0px; width: 4em; margin-left: 0.1em;"
+									onclick="$('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').val(200); $('#p1 .hp .avs, #p1 .at .avs, #p1 .df .avs, #p1 .sa .avs, #p1 .sd .avs, #p1 .sp .avs').change()" />Max</button>
 							</span></td>
 						<td></td>
 					</tr>
@@ -913,10 +908,12 @@ title: cantsaycalc BETA
 							<td></td>
 							<td class='ev-total'>&nbsp;</td>
 							<td><span class="info-group">
-									<button class="gen-specific g22 hide minAvR calc-trigger btn" id="minAvR" style="padding:0px; width: 4em; margin-left: 0.1em;" onclick="$('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').val(0); $('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').change()" />Min</button>
+									<button class="gen-specific g22 hide minAvR calc-trigger btn" id="minAvR" style="padding:0px; width: 4em; margin-left: 0.1em;"
+										onclick="$('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').val(0); $('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').change()" />Min</button>
 								</span></td>
 							<td><span class="info-group">
-									<button class="gen-specific g22 hide maxAvR calc-trigger btn" id="maxAvR" style="padding:0px; width: 4em; margin-left: 0.1em;" onclick="$('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').val(200); $('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').change()" />Max</button>
+									<button class="gen-specific g22 hide maxAvR calc-trigger btn" id="maxAvR" style="padding:0px; width: 4em; margin-left: 0.1em;"
+										onclick="$('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').val(200); $('#p2 .hp .avs, #p2 .at .avs, #p2 .df .avs, #p2 .sa .avs, #p2 .sd .avs, #p2 .sp .avs').change()" />Max</button>
 								</span></td>
 							<td></td>
 						</tr>
@@ -1149,12 +1146,14 @@ title: cantsaycalc BETA
 	<script type="text/javascript" src="../_scripts/setdex_gen6_sets.js"></script>
 	<script type="text/javascript" src="../_scripts/setdex_gen7_sets.js"></script>
 	<script type="text/javascript" src="../_scripts/setdex_gen8_sets.js"></script>
+	<script type="text/javascript" src="../_scripts/setdex_lcdoubles_sets.js"></script>
 	<script type="text/javascript" src="../_scripts/setdex_LG_sets.js"></script>
 	<script type="text/javascript" src="../_scripts/setdex_factory_sets.js"></script>
 	<script type="text/javascript" src="../_scripts/setdex_gen5.js"></script>
 	<script type="text/javascript" src="../_scripts/setdex_gen6.js" id="XYScript"></script>
 	<script type="text/javascript" src="../_scripts/setdex_gen7.js" id="SMScript"></script>
 	<script type="text/javascript" src="../_scripts/setdex_gen8.js" id="SSScript"></script>
+	<script type="text/javascript" src="../_scripts/setdex_lcdoubles.js" id="LCScript"></script>
 	<script type="text/javascript" src="../_scripts/setdex_LG.js" id="LGScript"></script>
 	<script type="text/javascript" src="../_scripts/setdex_factory.js" id="BSSFScript"></script>
 	<script type="text/javascript" src="../_scripts/stat_data.js"></script>
