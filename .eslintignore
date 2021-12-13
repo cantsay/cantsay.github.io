@@ -1,7 +1,0 @@
-select2
-node_modules
-*.min.js
-*.sublime-workspace
-/_site
-bundle
-konami.js
