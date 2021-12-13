@@ -1194,8 +1194,19 @@ $(".gen").change(function () {
 		break;
 	case 21:
 		pokedex = POKEDEX_SS;
-		setdex = SETDEX_GEN8;
-		typeChart = TYPE_CHART_INVERSE;
+		// Very hacky way of restricting dex to LC stuff only
+		var dex = Dex.forGen(8);
+		var k = Object.keys(pokedex);
+		var n = {};
+		for (var i = 0; i < k.length; i++) {
+			if (dex.species.get(k[i]).tier === "LC") {
+				n[k[i]] = pokedex[k[i]];
+			}
+		}
+		pokedex = n;
+		
+		setdex = SETDEX_LCDOUBLES;
+		typeChart = TYPE_CHART_XY;
 		moves = movesForGen(8);
 		items = itemsForGen(8);
 		abilities = abilitiesForGen(8);
@@ -1204,6 +1215,8 @@ $(".gen").change(function () {
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
 		localStorage.setItem("selectedGen", 21);
+		$("#doubles").prop("checked", true);
+		$("#doubles").change();
 		break;
 	case 22:
 		pokedex = POKEDEX_LG;
@@ -1439,6 +1452,7 @@ $(document).ready(function () {
 		case "21":
 			$("#gen21").prop("checked", true);
 			$("#gen21").change();
+			$("#doubles").prop("checked", true);
 			break;
 
 		case "22":
