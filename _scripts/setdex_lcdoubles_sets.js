@@ -2218,7 +2218,7 @@ var SETDEX_LCDOUBLES_SETS = {
     }
   },
   "Pawniard": {
-    "All-out-Attacker": {
+    "Bulky Attacker": {
       "level": "5",
       "evs": {
         "hp": 0,
@@ -2246,7 +2246,7 @@ var SETDEX_LCDOUBLES_SETS = {
         "Protect"
       ]
     },
-    "Bulky Attacker": {
+    "Berry Juice Semi-Tank": {
       "level": "5",
       "evs": {
         "hp": 0,
