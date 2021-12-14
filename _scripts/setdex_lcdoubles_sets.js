@@ -1259,6 +1259,35 @@ var SETDEX_LCDOUBLES_SETS = {
         "Tailwind",
         "Protect"
       ]
+    },
+
+    "DwB archen": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 180,
+        "df": 0,
+        "sa": 0,
+        "sd": 76,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Defeatist",
+      "item": "Eviolite",
+      "moves": [
+        "Dual Wingbeat",
+        "Rock Slide",
+        "Tailwind",
+        "Protect"
+      ]
     }
   },
   "Magnemite": {
