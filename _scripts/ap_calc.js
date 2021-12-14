@@ -1200,7 +1200,7 @@ $(".gen").change(function () {
 		var n = {};
 		for (var i = 0; i < k.length; i++) {
 			var mon = dex.species.get(k[i]);
-			if ((mon.tier === "LC" && mon.id !== "ponyta") || ["rufflet", "gothita", "vullaby", "gastly", "drifloon", "woobat"].includes(mon.id)) {
+			if ((mon.tier === "LC" && mon.id !== "ponyta") || ["rufflet", "gothita", "vullaby", "gastly", "drifloon", "woobat", "scraggy", "zigzagoon"].includes(mon.id)) {
 				n[k[i]] = pokedex[k[i]];
 			}
 		}
