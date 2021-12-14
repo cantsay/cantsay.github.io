@@ -1199,7 +1199,8 @@ $(".gen").change(function () {
 		var k = Object.keys(pokedex);
 		var n = {};
 		for (var i = 0; i < k.length; i++) {
-			if (dex.species.get(k[i]).tier === "LC") {
+			var mon = dex.species.get(k[i]);
+			if ((mon.tier === "LC" && mon.id !== "ponyta") || ["rufflet", "gothita", "vullaby", "gastly", "drifloon", "woobat"].includes(mon.id)) {
 				n[k[i]] = pokedex[k[i]];
 			}
 		}
