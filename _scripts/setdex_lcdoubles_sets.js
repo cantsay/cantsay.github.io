@@ -856,2087 +856,2085 @@ var SETDEX_LCDOUBLES_SETS = {
         "Protect"
       ]
     },
-    "Gothita": {
-      "Choice Scarf": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 36,
-          "sa": 156,
-          "sd": 76,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Modest",
-        "ability": "Shadow Tag",
-        "item": "Choice Scarf",
-        "moves": [
-          "Psychic",
-          "Trick",
-          "Fake Out",
-          "Protect"
-        ]
-      }
-    },
-    "Grookey": {
-      "Bulky Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 116,
-          "at": 156,
-          "df": 36,
-          "sa": 0,
-          "sd": 196,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Careful",
-        "ability": "Grassy Surge",
-        "item": "Eviolite",
-        "moves": [
-          "Fake Out",
-          "Grassy Glide",
-          "Drain Punch",
-          "U-turn"
-        ]
+    "Choice Scarf": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 36,
+        "sa": 156,
+        "sd": 76,
+        "sp": 236
       },
-      "Swords Dance": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 236,
-          "df": 36,
-          "sa": 0,
-          "sd": 0,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Grassy Surge",
-        "item": "Life Orb",
-        "moves": [
-          "Grassy Glide",
-          "Drain Punch",
-          "Swords Dance",
-          "Protect"
-        ]
-      }
-    },
-    "Growlithe": {
-      "Tank": {
-        "level": "5",
-        "evs": {
-          "hp": 156,
-          "at": 0,
-          "df": 236,
-          "sa": 0,
-          "sd": 116,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Calm",
-        "ability": "Intimidate",
-        "item": "Eviolite",
-        "moves": [
-          "Heat Wave",
-          "Helping Hand",
-          "Will-O-Wisp",
-          "Morning Sun"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Fast Support": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 236,
-          "sa": 36,
-          "sd": 36,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Intimidate",
-        "item": "Eviolite",
-        "moves": [
-          "Overheat",
-          "Will-O-Wisp",
-          "Snarl",
-          "Morning Sun"
-        ]
+      "nature": "Modest",
+      "ability": "Shadow Tag",
+      "item": "Choice Scarf",
+      "moves": [
+        "Psychic",
+        "Trick",
+        "Fake Out",
+        "Protect"
+      ]
+    }
+  },
+  "Grookey": {
+    "Bulky Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 116,
+        "at": 156,
+        "df": 36,
+        "sa": 0,
+        "sd": 196,
+        "sp": 0
       },
-      "Fast Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 196,
-          "df": 76,
-          "sa": 0,
-          "sd": 36,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Intimidate",
-        "item": "Eviolite",
-        "moves": [
-          "Flare Blitz",
-          "Play Rough",
-          "Morning Sun",
-          "Protect"
-        ]
-      }
-    },
-    "Hippopotas": {
-      "Sand Stream": {
-        "level": "5",
-        "evs": {
-          "hp": 52,
-          "at": 100,
-          "df": 132,
-          "sa": 0,
-          "sd": 180,
-          "sp": 20
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Careful",
-        "ability": "Sand Stream",
-        "item": "Smooth Rock",
-        "moves": [
-          "High Horsepower",
-          "Crunch",
-          "Yawn",
-          "Stealth Rock"
-        ]
-      }
-    },
-    "Koffing": {
-      "Offensive": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 0,
-          "sa": 196,
-          "sd": 76,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Neutralizing Gas",
-        "item": "Eviolite",
-        "moves": [
-          "Sludge Bomb",
-          "Thunderbolt",
-          "Fire Blast",
-          "Protect"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Fast Support": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 156,
-          "sa": 36,
-          "sd": 76,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Neutralizing Gas",
-        "item": "Eviolite",
-        "moves": [
-          "Sludge Bomb",
-          "Will-O-Wisp",
-          "Taunt",
-          "Protect"
-        ]
+      "nature": "Careful",
+      "ability": "Grassy Surge",
+      "item": "Eviolite",
+      "moves": [
+        "Fake Out",
+        "Grassy Glide",
+        "Drain Punch",
+        "U-turn"
+      ]
+    },
+    "Swords Dance": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 236,
+        "df": 36,
+        "sa": 0,
+        "sd": 0,
+        "sp": 236
       },
-      "Tank Utility": {
-        "level": "5",
-        "evs": {
-          "hp": 116,
-          "at": 0,
-          "df": 156,
-          "sa": 36,
-          "sd": 156,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Calm",
-        "ability": "Neutralizing Gas",
-        "item": "Eviolite",
-        "moves": [
-          "Sludge Bomb",
-          "Taunt",
-          "Will-O-Wisp",
-          "Protect"
-        ]
-      }
-    },
-    "Lileep": {
-      "Swords Dance": {
-        "level": "5",
-        "evs": {
-          "hp": 68,
-          "at": 188,
-          "df": 140,
-          "sa": 0,
-          "sd": 60,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Brave",
-        "ability": "Storm Drain",
-        "item": "Eviolite",
-        "moves": [
-          "Rock Slide",
-          "Seed Bomb",
-          "Swords Dance",
-          "Protect"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Tank": {
-        "level": "5",
-        "evs": {
-          "hp": 68,
-          "at": 0,
-          "df": 220,
-          "sa": 108,
-          "sd": 60,
-          "sp": 12
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Bold",
-        "ability": "Storm Drain",
-        "item": "Eviolite",
-        "moves": [
-          "Giga Drain",
-          "Stockpile",
-          "Ancient Power",
-          "Recover"
-        ]
-      }
-    },
-    "Litten": {
-      "Fast Utility": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 116,
-          "sa": 36,
-          "sd": 116,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Intimidate",
-        "item": "Eviolite",
-        "moves": [
-          "Fake Out",
-          "Will-O-Wisp",
-          "Overheat",
-          "Parting Shot"
-        ]
-      }
-    },
-    "Magnemite": {
-      "SturdyJuice": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 36,
-          "sa": 236,
-          "sd": 0,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Modest",
-        "ability": "Sturdy",
-        "item": "Berry Juice",
-        "moves": [
-          "Thunderbolt",
-          "Flash Cannon",
-          "Substitute",
-          "Recycle"
-        ]
+      "nature": "Jolly",
+      "ability": "Grassy Surge",
+      "item": "Life Orb",
+      "moves": [
+        "Grassy Glide",
+        "Drain Punch",
+        "Swords Dance",
+        "Protect"
+      ]
+    }
+  },
+  "Growlithe": {
+    "Tank": {
+      "level": "5",
+      "evs": {
+        "hp": 156,
+        "at": 0,
+        "df": 236,
+        "sa": 0,
+        "sd": 116,
+        "sp": 0
       },
-      "Steel Beam SturdyJuice": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 36,
-          "sa": 236,
-          "sd": 0,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Modest",
-        "ability": "Sturdy",
-        "item": "Berry Juice",
-        "moves": [
-          "Steel Beam",
-          "Substitute",
-          "Recycle",
-          "Protect"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Choice Scarf": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 36,
-          "sa": 236,
-          "sd": 0,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Modest",
-        "ability": "Sturdy",
-        "item": "Choice Scarf",
-        "moves": [
-          "Volt Switch",
-          "Thunderbolt",
-          "Flash Cannon",
-          "Electroweb"
-        ]
-      }
+      "nature": "Calm",
+      "ability": "Intimidate",
+      "item": "Eviolite",
+      "moves": [
+        "Heat Wave",
+        "Helping Hand",
+        "Will-O-Wisp",
+        "Morning Sun"
+      ]
     },
-    "Mantyke": {
-      "Rain Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 0,
-          "sa": 196,
-          "sd": 116,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 9,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Modest",
-        "ability": "Swift Swim",
-        "item": "Life Orb",
-        "moves": [
-          "Scald",
-          "Air Slash",
-          "Rain Dance / Ice Beam",
-          "Protect"
-        ]
+    "Fast Support": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 236,
+        "sa": 36,
+        "sd": 36,
+        "sp": 196
       },
-      "Specially Defensive Support": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 0,
-          "sa": 196,
-          "sd": 116,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Water Absorb",
-        "item": "Eviolite",
-        "moves": [
-          "Tailwind",
-          "Scald",
-          "Air Slash",
-          "Protect"
-        ]
-      }
-    },
-    "Mareanie": {
-      "Tank": {
-        "level": "5",
-        "evs": {
-          "hp": 36,
-          "at": 92,
-          "df": 100,
-          "sa": 92,
-          "sd": 180,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Quiet",
-        "ability": "Regenerator",
-        "item": "Eviolite",
-        "moves": [
-          "Gunk Shot",
-          "Scald",
-          "Stockpile",
-          "Recover"
-        ]
-      }
-    },
-    "Mienfoo": {
-      "Fast Bulky": {
-        "level": "5",
-        "evs": {
-          "hp": 76,
-          "at": 0,
-          "df": 0,
-          "sa": 0,
-          "sd": 196,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Inner Focus",
-        "item": "Eviolite",
-        "moves": [
-          "Close Combat",
-          "Knock Off",
-          "Fake Out",
-          "Stone Edge"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Slow Bulky": {
-        "level": "5",
-        "evs": {
-          "hp": 76,
-          "at": 76,
-          "df": 196,
-          "sa": 0,
-          "sd": 116,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Careful",
-        "ability": "Inner Focus",
-        "item": "Eviolite",
-        "moves": [
-          "Close Combat",
-          "Knock Off",
-          "Fake Out",
-          "Stone Edge"
-        ]
-      }
+      "nature": "Timid",
+      "ability": "Intimidate",
+      "item": "Eviolite",
+      "moves": [
+        "Overheat",
+        "Will-O-Wisp",
+        "Snarl",
+        "Morning Sun"
+      ]
     },
-    "Morelull": {
-      "Trick Room Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 116,
-          "at": 0,
-          "df": 0,
-          "sa": 236,
-          "sd": 156,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Quiet",
-        "ability": "Effect Spore",
-        "item": "Eviolite",
-        "moves": [
-          "Moonblast",
-          "Giga Drain",
-          "Strength Sap",
-          "Pollen Puff"
-        ]
-      }
-    },
-    "Mudbray": {
-      "Bulky Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 116,
-          "at": 196,
-          "df": 36,
-          "sa": 0,
-          "sd": 156,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Adamant",
-        "ability": "Inner Focus",
-        "item": "Eviolite",
-        "moves": [
-          "High Horsepower",
-          "Heavy Slam",
-          "Rock Slide",
-          "Protect"
-        ]
+    "Fast Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 196,
+        "df": 76,
+        "sa": 0,
+        "sd": 36,
+        "sp": 196
       },
-      "Trick Room Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 116,
-          "at": 196,
-          "df": 36,
-          "sa": 0,
-          "sd": 156,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Brave",
-        "ability": "Inner Focus",
-        "item": "Eviolite",
-        "moves": [
-          "High Horsepower",
-          "Heavy Slam",
-          "Close Combat",
-          "Protect"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Choice Scarf": {
-        "level": "5",
-        "evs": {
-          "hp": 36,
-          "at": 196,
-          "df": 36,
-          "sa": 0,
-          "sd": 0,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Inner Focus",
-        "item": "Choice Scarf",
-        "moves": [
-          "High Horsepower",
-          "Heavy Slam",
-          "Close Combat",
-          "Rock Slide"
-        ]
-      }
-    },
-    "Munchlax": {
-      "Trick Room Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 76,
-          "at": 236,
-          "df": 116,
-          "sa": 0,
-          "sd": 76,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Brave",
-        "ability": "Thick Fat",
-        "item": "Eviolite",
-        "moves": [
-          "Body Slam",
-          "Zen Headbutt",
-          "Brick Break",
-          "Protect"
-        ]
-      }
-    },
-    "Oddish": {
-      "Sun Sweeper": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 0,
-          "sa": 236,
-          "sd": 76,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Chlorophyll",
-        "item": "Eviolite",
-        "moves": [
-          "Solar Beam",
-          "Sludge Bomb",
-          "Growth",
-          "Protect"
-        ]
-      }
-    },
-    "Omanyte": {
-      "Shell Smash": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 0,
-          "sa": 196,
-          "sd": 76,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Modest",
-        "ability": "Swift Swim",
-        "item": "Eviolite",
-        "moves": [
-          "Muddy Water",
-          "Shell Smash",
-          "Ice Beam",
-          "Protect"
-        ]
-      }
-    },
-    "Onix": {
-      "Dragon Dance": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 236,
-          "df": 0,
-          "sa": 0,
-          "sd": 76,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Rock Head",
-        "item": "Eviolite",
-        "moves": [
-          "Head Smash",
-          "High Horsepower",
-          "Dragon Dance",
-          "Protect"
-        ]
-      }
-    },
-    "Pawniard": {
-      "Bulky Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 76,
-          "at": 236,
-          "df": 0,
-          "sa": 0,
-          "sd": 0,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Defiant",
-        "item": "Eviolite",
-        "moves": [
-          "Iron Head",
-          "Knock Off",
-          "Sucker Punch",
-          "Protect"
-        ]
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "item": "Eviolite",
+      "moves": [
+        "Flare Blitz",
+        "Play Rough",
+        "Morning Sun",
+        "Protect"
+      ]
+    }
+  },
+  "Hippopotas": {
+    "Sand Stream": {
+      "level": "5",
+      "evs": {
+        "hp": 52,
+        "at": 100,
+        "df": 132,
+        "sa": 0,
+        "sd": 180,
+        "sp": 20
       },
-      "Choice Scarf": {
-        "level": "5",
-        "evs": {
-          "hp": 76,
-          "at": 236,
-          "df": 0,
-          "sa": 0,
-          "sd": 0,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Inner Focus",
-        "item": "Choice Scarf",
-        "moves": [
-          "Iron Head",
-          "Knock Off",
-          "Brick Break",
-          "Psycho Cut"
-        ]
-      }
-    },
-    "Ponyta-Galar": {
-      "Traain Abuser": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 76,
-          "df": 0,
-          "sa": 236,
-          "sd": 0,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Naive",
-        "ability": "Pastel Veil",
-        "item": "Life Orb",
-        "moves": [
-          "Expanding Force",
-          "Substitute",
-          "Double Kick",
-          "Protect"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Support": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 156,
-          "sa": 76,
-          "sd": 76,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Pastel Veil",
-        "item": "Eviolite",
-        "moves": [
-          "Psychic",
-          "Hypnosis",
-          "Heal Pulse",
-          "Protect"
-        ]
-      }
-    },
-    "Porygon": {
-      "Error 404\: Set Name not found": {
-        "level": "5",
-        "evs": {
-          "hp": 76,
-          "at": 0,
-          "df": 196,
-          "sa": 236,
-          "sd": 0,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Quiet",
-        "ability": "Download",
-        "item": "Eviolite",
-        "moves": [
-          "Tri Attack",
-          "Psychic",
-          "Recover",
-          "Trick Room"
-        ]
+      "nature": "Careful",
+      "ability": "Sand Stream",
+      "item": "Smooth Rock",
+      "moves": [
+        "High Horsepower",
+        "Crunch",
+        "Yawn",
+        "Stealth Rock"
+      ]
+    }
+  },
+  "Koffing": {
+    "Offensive": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 0,
+        "sa": 196,
+        "sd": 76,
+        "sp": 236
       },
-      "Utility": {
-        "level": "5",
-        "evs": {
-          "hp": 156,
-          "at": 0,
-          "df": 196,
-          "sa": 0,
-          "sd": 156,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Calm",
-        "ability": "Trace",
-        "item": "Eviolite",
-        "moves": [
-          "Tri Attack",
-          "Ice Beam",
-          "Thunder Wave",
-          "Recover"
-        ]
-      }
-    },
-    "Riolu": {
-      "Utility": {
-        "level": "5",
-        "evs": {
-          "hp": 196,
-          "at": 0,
-          "df": 196,
-          "sa": 0,
-          "sd": 116,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Impish",
-        "ability": "Prankster",
-        "item": "Eviolite",
-        "moves": [
-          "Follow Me",
-          "Helping Hand",
-          "Coaching",
-          "Circle Throw"
-        ]
-      }
-    },
-    "Rufflet": {
-      "Eviolite Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 36,
-          "at": 172,
-          "df": 36,
-          "sa": 0,
-          "sd": 36,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Hustle",
-        "item": "Eviolite",
-        "moves": [
-          "Brave Bird",
-          "Close Combat",
-          "Tailwind",
-          "Protect"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Berry Juice Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 252,
-          "df": 36,
-          "sa": 0,
-          "sd": 0,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Hustle",
-        "item": "Berry Juice",
-        "moves": [
-          "Brave Bird",
-          "Close Combat",
-          "Tailwind",
-          "Protect"
-        ]
+      "nature": "Timid",
+      "ability": "Neutralizing Gas",
+      "item": "Eviolite",
+      "moves": [
+        "Sludge Bomb",
+        "Thunderbolt",
+        "Fire Blast",
+        "Protect"
+      ]
+    },
+    "Fast Support": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 156,
+        "sa": 36,
+        "sd": 76,
+        "sp": 236
       },
-      "Choice Scarf": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 252,
-          "df": 36,
-          "sa": 0,
-          "sd": 0,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Hustle",
-        "item": "Choice Scarf",
-        "moves": [
-          "Brave Bird",
-          "Close Combat",
-          "Aerial Ace",
-          "U-turn"
-        ]
-      }
-    },
-    "Salandit": {
-      "Nasty Plot Sweeper": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 36,
-          "sa": 192,
-          "sd": 40,
-          "sp": 220
-        },
-        "ivs": {
-          "hp": 0,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Oblivious",
-        "item": "Life Orb",
-        "moves": [
-          "Nasty Plot",
-          "Sludge Bomb",
-          "Heat Wave",
-          "Protect"
-        ]
-      }
-    },
-    "Sandshrew-Alola": {
-      "Hail Sweeper": {
-        "level": "5",
-        "evs": {
-          "hp": 36,
-          "at": 236,
-          "df": 36,
-          "sa": 0,
-          "sd": 0,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Adamant",
-        "ability": "Slush Rush",
-        "item": "Life Orb",
-        "moves": [
-          "Iron Head",
-          "Triple Axel",
-          "Brick Break",
-          "Protect"
-        ]
-      }
-    },
-    "Scraggy": {
-      "Intimidate Utility": {
-        "level": "5",
-        "evs": {
-          "hp": 36,
-          "at": 156,
-          "df": 36,
-          "sa": 0,
-          "sd": 36,
-          "sp": 212
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Intimidate",
-        "item": "Eviolite",
-        "moves": [
-          "Knock Off",
-          "Fake Out",
-          "Drain Punch",
-          "Protect"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Dragon Dance": {
-        "level": "5",
-        "evs": {
-          "hp": 36,
-          "at": 156,
-          "df": 36,
-          "sa": 0,
-          "sd": 36,
-          "sp": 212
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Moxie",
-        "item": "Eviolite",
-        "moves": [
-          "Dragon Dance",
-          "Drain Punch",
-          "Knock Off",
-          "Protect"
-        ]
+      "nature": "Timid",
+      "ability": "Neutralizing Gas",
+      "item": "Eviolite",
+      "moves": [
+        "Sludge Bomb",
+        "Will-O-Wisp",
+        "Taunt",
+        "Protect"
+      ]
+    },
+    "Tank Utility": {
+      "level": "5",
+      "evs": {
+        "hp": 116,
+        "at": 0,
+        "df": 156,
+        "sa": 36,
+        "sd": 156,
+        "sp": 0
       },
-      "Bulky Support": {
-        "level": "5",
-        "evs": {
-          "hp": 196,
-          "at": 156,
-          "df": 36,
-          "sa": 0,
-          "sd": 116,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Careful",
-        "ability": "Intimidate",
-        "item": "Eviolite",
-        "moves": [
-          "Knock Off",
-          "Fake Out",
-          "Drain Punch",
-          "Roar"
-        ]
-      }
-    },
-    "Skrelp": {
-      "Trick Room Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 36,
-          "at": 0,
-          "df": 116,
-          "sa": 200,
-          "sd": 116,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Quiet",
-        "ability": "Adaptability",
-        "item": "Eviolite",
-        "moves": [
-          "Sludge Bomb",
-          "Hydro Pump",
-          "Thunderbolt",
-          "Protect"
-        ]
-      }
-    },
-    "Shellos": {
-      "Tank": {
-        "level": "5",
-        "evs": {
-          "hp": 228,
-          "at": 0,
-          "df": 132,
-          "sa": 0,
-          "sd": 100,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Relaxed",
-        "ability": "Sticky Hold",
-        "item": "Eviolite",
-        "moves": [
-          "Facade",
-          "Curse",
-          "Amnesia",
-          "Recover"
-        ]
-      }
-    },
-    "Snover": {
-      "Hail Setter": {
-        "level": "5",
-        "evs": {
-          "hp": 36,
-          "at": 20,
-          "df": 36,
-          "sa": 180,
-          "sd": 36,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Modest",
-        "ability": "Snow Warning",
-        "item": "Icy Rock",
-        "moves": [
-          "Blizzard",
-          "Ice Shard",
-          "Giga Drain",
-          "Protect"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "All-Out Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 196,
-          "at": 0,
-          "df": 36,
-          "sa": 180,
-          "sd": 36,
-          "sp": 36
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Modest",
-        "ability": "Snow Warning",
-        "item": "Life Orb",
-        "moves": [
-          "Blizzard",
-          "Giga Drain",
-          "Water Pulse",
-          "Protect"
-        ]
+      "nature": "Calm",
+      "ability": "Neutralizing Gas",
+      "item": "Eviolite",
+      "moves": [
+        "Sludge Bomb",
+        "Taunt",
+        "Will-O-Wisp",
+        "Protect"
+      ]
+    }
+  },
+  "Lileep": {
+    "Swords Dance": {
+      "level": "5",
+      "evs": {
+        "hp": 68,
+        "at": 188,
+        "df": 140,
+        "sa": 0,
+        "sd": 60,
+        "sp": 0
       },
-      "Choice Scarf": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 104,
-          "df": 0,
-          "sa": 184,
-          "sd": 0,
-          "sp": 200
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Naive",
-        "ability": "Snow Warning",
-        "item": "Choice Scarf",
-        "moves": [
-          "Blizzard",
-          "Giga Drain",
-          "Water Pulse",
-          "Weather Ball"
-        ]
-      }
-    },
-    "Solosis": {
-      "Trick Room": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 36,
-          "sa": 236,
-          "sd": 196,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Quiet",
-        "ability": "Overcoat",
-        "item": "Eviolite",
-        "moves": [
-          "Expanding Force",
-          "Psychic Terrain",
-          "Trick Room",
-          "Thunder"
-        ]
-      }
-    },
-    "Spritzee": {
-      "Trick Room": {
-        "level": "5",
-        "evs": {
-          "hp": 212,
-          "at": 0,
-          "df": 196,
-          "sa": 12,
-          "sd": 76,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Relaxed",
-        "ability": "Aroma Veil",
-        "item": "Eviolite",
-        "moves": [
-          "Moonblast",
-          "Psychic / Helping Hand",
-          "Trick Room",
-          "Protect"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
       },
-      "Nasty Plot": {
-        "level": "5",
-        "evs": {
-          "hp": 52,
-          "at": 0,
-          "df": 116,
-          "sa": 252,
-          "sd": 76,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Quiet",
-        "ability": "Aroma Veil",
-        "item": "Eviolite",
-        "moves": [
-          "Nasty Plot",
-          "Moonblast",
-          "Psychic",
-          "Trick Room"
-        ]
-      }
+      "nature": "Brave",
+      "ability": "Storm Drain",
+      "item": "Eviolite",
+      "moves": [
+        "Rock Slide",
+        "Seed Bomb",
+        "Swords Dance",
+        "Protect"
+      ]
     },
-    "Squirtle": {
-      "Utility": {
-        "level": "5",
-        "evs": {
-          "hp": 164,
-          "at": 52,
-          "df": 156,
-          "sa": 36,
-          "sd": 84,
-          "sp": 12
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Bold",
-        "ability": "Torrent",
-        "item": "Eviolite",
-        "moves": [
-          "Fake Out",
-          "Scald",
-          "Follow Me",
-          "Flip Turn"
-        ]
-      }
-    },
-    "Staryu": {
-      "Fast Bulky Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 156,
-          "sa": 116,
-          "sd": 0,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Natural Cure",
-        "item": "Eviolite",
-        "moves": [
-          "Hydro Pump",
-          "Thunderbolt",
-          "Ice Beam",
-          "Protect"
-        ]
-      }
-    },
-    "Stunky": {
-      "All-Out Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 252,
-          "df": 0,
-          "sa": 0,
-          "sd": 0,
-          "sp": 244
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Stench",
-        "item": "Life Orb",
-        "moves": [
-          "Crunch",
-          "Play Rough",
-          "Sucker Punch",
-          "Protect"
-        ]
-      }
-    },
-    "Timburr": {
-      "Bulky Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 196,
-          "df": 156,
-          "sa": 0,
-          "sd": 156,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 0
-        },
-        "nature": "Brave",
-        "ability": "Iron Fist",
-        "item": "Eviolite",
-        "moves": [
-          "Drain Punch",
-          "Knock Off",
-          "Mach Punch",
-          "Protect"
-        ]
-      }
-    },
-    "Togepi": {
-      "Support": {
-        "level": "5",
-        "evs": {
-          "hp": 76,
-          "at": 0,
-          "df": 236,
-          "sa": 36,
-          "sd": 156,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Calm",
-        "ability": "Super Luck",
-        "item": "Eviolite",
-        "moves": [
-          "Follow Me",
-          "Dazzling Gleam",
-          "Thunder Wave",
-          "Protect"
-        ]
-      }
-    },
-    "Torchic": {
-      "Baton Pass": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 116,
-          "df": 116,
-          "sa": 0,
-          "sd": 36,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Speed Boost",
-        "item": "Eviolite",
-        "moves": [
-          "Baton Pass",
-          "Flame Charge",
-          "Swords Dance",
-          "Protect"
-        ]
-      }
-    },
-    "Tyrunt": {
-      "Dragon Dance": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 204,
-          "df": 0,
-          "sa": 0,
-          "sd": 76,
-          "sp": 212
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Strong Jaw",
-        "item": "Eviolite",
-        "moves": [
-          "Dragon Dance",
-          "Rock Slide",
-          "Psychic Fangs",
-          "Protect"
-        ]
-      }
-    },
-    "Vullaby": {
-      "Offensive": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 236,
-          "df": 76,
-          "sa": 0,
-          "sd": 0,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Weak Armor",
-        "item": "Berry Juice",
-        "moves": [
-          "Knock Off",
-          "Brave Bird",
-          "Tailwind",
-          "Protect"
-        ]
+    "Tank": {
+      "level": "5",
+      "evs": {
+        "hp": 68,
+        "at": 0,
+        "df": 220,
+        "sa": 108,
+        "sd": 60,
+        "sp": 12
       },
-      "Tank": {
-        "level": "5",
-        "evs": {
-          "hp": 116,
-          "at": 76,
-          "df": 76,
-          "sa": 0,
-          "sd": 236,
-          "sp": 0
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Adamant",
-        "ability": "Overcoat",
-        "item": "Eviolite",
-        "moves": [
-          "Knock Off",
-          "Brave Bird",
-          "Tailwind",
-          "Whirlwind"
-        ]
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
       },
-      "Nasty Plot": {
-        "level": "5",
-        "evs": {
-          "hp": 116,
-          "at": 0,
-          "df": 0,
-          "sa": 236,
-          "sd": 76,
-          "sp": 36
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Modest",
-        "ability": "Weak Armor",
-        "item": "Berry Juice",
-        "moves": [
-          "Air Slash",
-          "Heat Wave",
-          "Nasty Plot",
-          "Protect"
-        ]
-      }
+      "nature": "Bold",
+      "ability": "Storm Drain",
+      "item": "Eviolite",
+      "moves": [
+        "Giga Drain",
+        "Stockpile",
+        "Ancient Power",
+        "Recover"
+      ]
+    }
+  },
+  "Litten": {
+    "Fast Utility": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 116,
+        "sa": 36,
+        "sd": 116,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Intimidate",
+      "item": "Eviolite",
+      "moves": [
+        "Fake Out",
+        "Will-O-Wisp",
+        "Overheat",
+        "Parting Shot"
+      ]
+    }
+  },
+  "Magnemite": {
+    "SturdyJuice": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 36,
+        "sa": 236,
+        "sd": 0,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Modest",
+      "ability": "Sturdy",
+      "item": "Berry Juice",
+      "moves": [
+        "Thunderbolt",
+        "Flash Cannon",
+        "Substitute",
+        "Recycle"
+      ]
     },
-    "Wingull": {
-      "Fast Attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 0,
-          "sa": 236,
-          "sd": 36,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Rain Dish",
-        "item": "Eviolite",
-        "moves": [
-          "Scald",
-          "Hurricane",
-          "Tailwind",
-          "Protect"
-        ]
-      }
+    "Steel Beam SturdyJuice": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 36,
+        "sa": 236,
+        "sd": 0,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Modest",
+      "ability": "Sturdy",
+      "item": "Berry Juice",
+      "moves": [
+        "Steel Beam",
+        "Substitute",
+        "Recycle",
+        "Protect"
+      ]
     },
-    "Woobat": {
-      "Grassy Seed Sweeper": {
-        "level": "5",
-        "evs": {
-          "hp": 76,
-          "at": 0,
-          "df": 252,
-          "sa": 0,
-          "sd": 0,
-          "sp": 180
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Simple",
-        "item": "Grassy Seed",
-        "moves": [
-          "Stored Power",
-          "Heat Wave",
-          "Calm Mind",
-          "Roost"
-        ]
-      }
+    "Choice Scarf": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 36,
+        "sa": 236,
+        "sd": 0,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Modest",
+      "ability": "Sturdy",
+      "item": "Choice Scarf",
+      "moves": [
+        "Volt Switch",
+        "Thunderbolt",
+        "Flash Cannon",
+        "Electroweb"
+      ]
+    }
+  },
+  "Mantyke": {
+    "Rain Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 0,
+        "sa": 196,
+        "sd": 116,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 9,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Modest",
+      "ability": "Swift Swim",
+      "item": "Life Orb",
+      "moves": [
+        "Scald",
+        "Air Slash",
+        "Rain Dance / Ice Beam",
+        "Protect"
+      ]
     },
-    "Zigzagoon": {
-      "Belly Drum Sweeper": {
-        "level": "5",
-        "evs": {
-          "hp": 132,
-          "at": 196,
-          "df": 108,
-          "sa": 0,
-          "sd": 28,
-          "sp": 36
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Adamant",
-        "ability": "Pickup",
-        "item": "Berry Juice",
-        "moves": [
-          "Belly Drum",
-          "Extreme Speed",
-          "Thief",
-          "Protect"
-        ]
-      }
+    "Specially Defensive Support": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 0,
+        "sa": 196,
+        "sd": 116,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Water Absorb",
+      "item": "Eviolite",
+      "moves": [
+        "Tailwind",
+        "Scald",
+        "Air Slash",
+        "Protect"
+      ]
+    }
+  },
+  "Mareanie": {
+    "Tank": {
+      "level": "5",
+      "evs": {
+        "hp": 36,
+        "at": 92,
+        "df": 100,
+        "sa": 92,
+        "sd": 180,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "Regenerator",
+      "item": "Eviolite",
+      "moves": [
+        "Gunk Shot",
+        "Scald",
+        "Stockpile",
+        "Recover"
+      ]
+    }
+  },
+  "Mienfoo": {
+    "Fast Bulky": {
+      "level": "5",
+      "evs": {
+        "hp": 76,
+        "at": 0,
+        "df": 0,
+        "sa": 0,
+        "sd": 196,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Inner Focus",
+      "item": "Eviolite",
+      "moves": [
+        "Close Combat",
+        "Knock Off",
+        "Fake Out",
+        "Stone Edge"
+      ]
     },
-    "Pichu": {
-      "Terrain Support": {
-        "level": "5",
-        "evs": {
-          "hp": 116,
-          "at": 0,
-          "df": 156,
-          "sa": 0,
-          "sd": 156,
-          "sp": 36
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Impish",
-        "ability": "Lightning Rod",
-        "item": "Eviolite",
-        "moves": [
-          "Fake Out",
-          "Electric Terrain",
-          "Thunderbolt",
-          "Protect"
-        ]
-      }
+    "Slow Bulky": {
+      "level": "5",
+      "evs": {
+        "hp": 76,
+        "at": 76,
+        "df": 196,
+        "sa": 0,
+        "sd": 116,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Careful",
+      "ability": "Inner Focus",
+      "item": "Eviolite",
+      "moves": [
+        "Close Combat",
+        "Knock Off",
+        "Fake Out",
+        "Stone Edge"
+      ]
+    }
+  },
+  "Morelull": {
+    "Trick Room Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 116,
+        "at": 0,
+        "df": 0,
+        "sa": 236,
+        "sd": 156,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "Effect Spore",
+      "item": "Eviolite",
+      "moves": [
+        "Moonblast",
+        "Giga Drain",
+        "Strength Sap",
+        "Pollen Puff"
+      ]
+    }
+  },
+  "Mudbray": {
+    "Bulky Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 116,
+        "at": 196,
+        "df": 36,
+        "sa": 0,
+        "sd": 156,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Adamant",
+      "ability": "Inner Focus",
+      "item": "Eviolite",
+      "moves": [
+        "High Horsepower",
+        "Heavy Slam",
+        "Rock Slide",
+        "Protect"
+      ]
     },
-    "Feebas": {
-      "all out attacker": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 0,
-          "df": 36,
-          "sa": 196,
-          "sd": 76,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Adaptability",
-        "item": "Life Orb",
-        "moves": [
-          "Scald",
-          "Muddy Water",
-          "Substitute",
-          "Protect"
-        ]
-      }
+    "Trick Room Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 116,
+        "at": 196,
+        "df": 36,
+        "sa": 0,
+        "sd": 156,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "Inner Focus",
+      "item": "Eviolite",
+      "moves": [
+        "High Horsepower",
+        "Heavy Slam",
+        "Close Combat",
+        "Protect"
+      ]
     },
-    "Helioptile": {
-      "terrain abuser": {
-        "level": "5",
-        "evs": {
-          "hp": 4,
-          "at": 0,
-          "df": 12,
-          "sa": 188,
-          "sd": 92,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Dry Skin",
-        "item": "Eviolite",
-        "moves": [
-          "Rising Voltage",
-          "Electric Terrain",
-          "Grass Knot",
-          "Protect"
-        ]
-      }
+    "Choice Scarf": {
+      "level": "5",
+      "evs": {
+        "hp": 36,
+        "at": 196,
+        "df": 36,
+        "sa": 0,
+        "sd": 0,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Inner Focus",
+      "item": "Choice Scarf",
+      "moves": [
+        "High Horsepower",
+        "Heavy Slam",
+        "Close Combat",
+        "Rock Slide"
+      ]
+    }
+  },
+  "Munchlax": {
+    "Trick Room Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 76,
+        "at": 236,
+        "df": 116,
+        "sa": 0,
+        "sd": 76,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "Thick Fat",
+      "item": "Eviolite",
+      "moves": [
+        "Body Slam",
+        "Zen Headbutt",
+        "Brick Break",
+        "Protect"
+      ]
+    }
+  },
+  "Oddish": {
+    "Sun Sweeper": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 0,
+        "sa": 236,
+        "sd": 76,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Chlorophyll",
+      "item": "Eviolite",
+      "moves": [
+        "Solar Beam",
+        "Sludge Bomb",
+        "Growth",
+        "Protect"
+      ]
+    }
+  },
+  "Omanyte": {
+    "Shell Smash": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 0,
+        "sa": 196,
+        "sd": 76,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Modest",
+      "ability": "Swift Swim",
+      "item": "Eviolite",
+      "moves": [
+        "Muddy Water",
+        "Shell Smash",
+        "Ice Beam",
+        "Protect"
+      ]
+    }
+  },
+  "Onix": {
+    "Dragon Dance": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 236,
+        "df": 0,
+        "sa": 0,
+        "sd": 76,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Rock Head",
+      "item": "Eviolite",
+      "moves": [
+        "Head Smash",
+        "High Horsepower",
+        "Dragon Dance",
+        "Protect"
+      ]
+    }
+  },
+  "Pawniard": {
+    "Bulky Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 76,
+        "at": 236,
+        "df": 0,
+        "sa": 0,
+        "sd": 0,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Defiant",
+      "item": "Eviolite",
+      "moves": [
+        "Iron Head",
+        "Knock Off",
+        "Sucker Punch",
+        "Protect"
+      ]
     },
-    "Vulpix-Alola": {
-      "veil setter": {
-        "level": "5",
-        "evs": {
-          "hp": 132,
-          "at": 0,
-          "df": 0,
-          "sa": 36,
-          "sd": 76,
-          "sp": 236
-        },
-        "ivs": {
-          "hp": 31,
-          "at": 0,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Timid",
-        "ability": "Snow Warning",
-        "item": "Light Clay",
-        "moves": [
-          "Aurora Veil",
-          "Blizzard",
-          "Encore",
-          "Protect"
-        ]
-      }
+    "Choice Scarf": {
+      "level": "5",
+      "evs": {
+        "hp": 76,
+        "at": 236,
+        "df": 0,
+        "sa": 0,
+        "sd": 0,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Inner Focus",
+      "item": "Choice Scarf",
+      "moves": [
+        "Iron Head",
+        "Knock Off",
+        "Brick Break",
+        "Psycho Cut"
+      ]
+    }
+  },
+  "Ponyta-Galar": {
+    "Traain Abuser": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 76,
+        "df": 0,
+        "sa": 236,
+        "sd": 0,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Naive",
+      "ability": "Pastel Veil",
+      "item": "Life Orb",
+      "moves": [
+        "Expanding Force",
+        "Substitute",
+        "Double Kick",
+        "Protect"
+      ]
     },
-    "Meowth": {
-      "fast utility": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 236,
-          "df": 0,
-          "sa": 0,
-          "sd": 36,
-          "sp": 196
-        },
-        "ivs": {
-          "hp": 0,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Technician",
-        "item": "Life Orb",
-        "moves": [
-          "Fake Out",
-          "Feint",
-          "Knock Off",
-          "Protect"
-        ]
-      }
+    "Support": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 156,
+        "sa": 76,
+        "sd": 76,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Pastel Veil",
+      "item": "Eviolite",
+      "moves": [
+        "Psychic",
+        "Hypnosis",
+        "Heal Pulse",
+        "Protect"
+      ]
+    }
+  },
+  "Porygon": {
+    "Error 404\: Set Name not found": {
+      "level": "5",
+      "evs": {
+        "hp": 76,
+        "at": 0,
+        "df": 196,
+        "sa": 236,
+        "sd": 0,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "Download",
+      "item": "Eviolite",
+      "moves": [
+        "Tri Attack",
+        "Psychic",
+        "Recover",
+        "Trick Room"
+      ]
     },
-    "Magby": {
-      "belly drum": {
-        "level": "5",
-        "evs": {
-          "hp": 0,
-          "at": 236,
-          "df": 0,
-          "sa": 0,
-          "sd": 0,
-          "sp": 252
-        },
-        "ivs": {
-          "hp": 29,
-          "at": 31,
-          "df": 31,
-          "sa": 31,
-          "sd": 31,
-          "sp": 31
-        },
-        "nature": "Jolly",
-        "ability": "Vital Spirit",
-        "item": "Berry Juice",
-        "moves": [
-          "Belly Drum",
-          "Fire Punch",
-          "Thunder Punch",
-          "Protect"
-        ]
-      }
+    "Utility": {
+      "level": "5",
+      "evs": {
+        "hp": 156,
+        "at": 0,
+        "df": 196,
+        "sa": 0,
+        "sd": 156,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Calm",
+      "ability": "Trace",
+      "item": "Eviolite",
+      "moves": [
+        "Tri Attack",
+        "Ice Beam",
+        "Thunder Wave",
+        "Recover"
+      ]
+    }
+  },
+  "Riolu": {
+    "Utility": {
+      "level": "5",
+      "evs": {
+        "hp": 196,
+        "at": 0,
+        "df": 196,
+        "sa": 0,
+        "sd": 116,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Impish",
+      "ability": "Prankster",
+      "item": "Eviolite",
+      "moves": [
+        "Follow Me",
+        "Helping Hand",
+        "Coaching",
+        "Circle Throw"
+      ]
+    }
+  },
+  "Rufflet": {
+    "Eviolite Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 36,
+        "at": 172,
+        "df": 36,
+        "sa": 0,
+        "sd": 36,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Hustle",
+      "item": "Eviolite",
+      "moves": [
+        "Brave Bird",
+        "Close Combat",
+        "Tailwind",
+        "Protect"
+      ]
+    },
+    "Berry Juice Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 252,
+        "df": 36,
+        "sa": 0,
+        "sd": 0,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Hustle",
+      "item": "Berry Juice",
+      "moves": [
+        "Brave Bird",
+        "Close Combat",
+        "Tailwind",
+        "Protect"
+      ]
+    },
+    "Choice Scarf": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 252,
+        "df": 36,
+        "sa": 0,
+        "sd": 0,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Hustle",
+      "item": "Choice Scarf",
+      "moves": [
+        "Brave Bird",
+        "Close Combat",
+        "Aerial Ace",
+        "U-turn"
+      ]
+    }
+  },
+  "Salandit": {
+    "Nasty Plot Sweeper": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 36,
+        "sa": 192,
+        "sd": 40,
+        "sp": 220
+      },
+      "ivs": {
+        "hp": 0,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Oblivious",
+      "item": "Life Orb",
+      "moves": [
+        "Nasty Plot",
+        "Sludge Bomb",
+        "Heat Wave",
+        "Protect"
+      ]
+    }
+  },
+  "Sandshrew-Alola": {
+    "Hail Sweeper": {
+      "level": "5",
+      "evs": {
+        "hp": 36,
+        "at": 236,
+        "df": 36,
+        "sa": 0,
+        "sd": 0,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Adamant",
+      "ability": "Slush Rush",
+      "item": "Life Orb",
+      "moves": [
+        "Iron Head",
+        "Triple Axel",
+        "Brick Break",
+        "Protect"
+      ]
+    }
+  },
+  "Scraggy": {
+    "Intimidate Utility": {
+      "level": "5",
+      "evs": {
+        "hp": 36,
+        "at": 156,
+        "df": 36,
+        "sa": 0,
+        "sd": 36,
+        "sp": 212
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "item": "Eviolite",
+      "moves": [
+        "Knock Off",
+        "Fake Out",
+        "Drain Punch",
+        "Protect"
+      ]
+    },
+    "Dragon Dance": {
+      "level": "5",
+      "evs": {
+        "hp": 36,
+        "at": 156,
+        "df": 36,
+        "sa": 0,
+        "sd": 36,
+        "sp": 212
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Moxie",
+      "item": "Eviolite",
+      "moves": [
+        "Dragon Dance",
+        "Drain Punch",
+        "Knock Off",
+        "Protect"
+      ]
+    },
+    "Bulky Support": {
+      "level": "5",
+      "evs": {
+        "hp": 196,
+        "at": 156,
+        "df": 36,
+        "sa": 0,
+        "sd": 116,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Careful",
+      "ability": "Intimidate",
+      "item": "Eviolite",
+      "moves": [
+        "Knock Off",
+        "Fake Out",
+        "Drain Punch",
+        "Roar"
+      ]
+    }
+  },
+  "Skrelp": {
+    "Trick Room Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 36,
+        "at": 0,
+        "df": 116,
+        "sa": 200,
+        "sd": 116,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "Adaptability",
+      "item": "Eviolite",
+      "moves": [
+        "Sludge Bomb",
+        "Hydro Pump",
+        "Thunderbolt",
+        "Protect"
+      ]
+    }
+  },
+  "Shellos": {
+    "Tank": {
+      "level": "5",
+      "evs": {
+        "hp": 228,
+        "at": 0,
+        "df": 132,
+        "sa": 0,
+        "sd": 100,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Relaxed",
+      "ability": "Sticky Hold",
+      "item": "Eviolite",
+      "moves": [
+        "Facade",
+        "Curse",
+        "Amnesia",
+        "Recover"
+      ]
+    }
+  },
+  "Snover": {
+    "Hail Setter": {
+      "level": "5",
+      "evs": {
+        "hp": 36,
+        "at": 20,
+        "df": 36,
+        "sa": 180,
+        "sd": 36,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Modest",
+      "ability": "Snow Warning",
+      "item": "Icy Rock",
+      "moves": [
+        "Blizzard",
+        "Ice Shard",
+        "Giga Drain",
+        "Protect"
+      ]
+    },
+    "All-Out Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 196,
+        "at": 0,
+        "df": 36,
+        "sa": 180,
+        "sd": 36,
+        "sp": 36
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Modest",
+      "ability": "Snow Warning",
+      "item": "Life Orb",
+      "moves": [
+        "Blizzard",
+        "Giga Drain",
+        "Water Pulse",
+        "Protect"
+      ]
+    },
+    "Choice Scarf": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 104,
+        "df": 0,
+        "sa": 184,
+        "sd": 0,
+        "sp": 200
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Naive",
+      "ability": "Snow Warning",
+      "item": "Choice Scarf",
+      "moves": [
+        "Blizzard",
+        "Giga Drain",
+        "Water Pulse",
+        "Weather Ball"
+      ]
+    }
+  },
+  "Solosis": {
+    "Trick Room": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 36,
+        "sa": 236,
+        "sd": 196,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "Overcoat",
+      "item": "Eviolite",
+      "moves": [
+        "Expanding Force",
+        "Psychic Terrain",
+        "Trick Room",
+        "Thunder"
+      ]
+    }
+  },
+  "Spritzee": {
+    "Trick Room": {
+      "level": "5",
+      "evs": {
+        "hp": 212,
+        "at": 0,
+        "df": 196,
+        "sa": 12,
+        "sd": 76,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Relaxed",
+      "ability": "Aroma Veil",
+      "item": "Eviolite",
+      "moves": [
+        "Moonblast",
+        "Psychic / Helping Hand",
+        "Trick Room",
+        "Protect"
+      ]
+    },
+    "Nasty Plot": {
+      "level": "5",
+      "evs": {
+        "hp": 52,
+        "at": 0,
+        "df": 116,
+        "sa": 252,
+        "sd": 76,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "Aroma Veil",
+      "item": "Eviolite",
+      "moves": [
+        "Nasty Plot",
+        "Moonblast",
+        "Psychic",
+        "Trick Room"
+      ]
+    }
+  },
+  "Squirtle": {
+    "Utility": {
+      "level": "5",
+      "evs": {
+        "hp": 164,
+        "at": 52,
+        "df": 156,
+        "sa": 36,
+        "sd": 84,
+        "sp": 12
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Bold",
+      "ability": "Torrent",
+      "item": "Eviolite",
+      "moves": [
+        "Fake Out",
+        "Scald",
+        "Follow Me",
+        "Flip Turn"
+      ]
+    }
+  },
+  "Staryu": {
+    "Fast Bulky Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 156,
+        "sa": 116,
+        "sd": 0,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Natural Cure",
+      "item": "Eviolite",
+      "moves": [
+        "Hydro Pump",
+        "Thunderbolt",
+        "Ice Beam",
+        "Protect"
+      ]
+    }
+  },
+  "Stunky": {
+    "All-Out Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 0,
+        "sp": 244
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Stench",
+      "item": "Life Orb",
+      "moves": [
+        "Crunch",
+        "Play Rough",
+        "Sucker Punch",
+        "Protect"
+      ]
+    }
+  },
+  "Timburr": {
+    "Bulky Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 196,
+        "df": 156,
+        "sa": 0,
+        "sd": 156,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "Iron Fist",
+      "item": "Eviolite",
+      "moves": [
+        "Drain Punch",
+        "Knock Off",
+        "Mach Punch",
+        "Protect"
+      ]
+    }
+  },
+  "Togepi": {
+    "Support": {
+      "level": "5",
+      "evs": {
+        "hp": 76,
+        "at": 0,
+        "df": 236,
+        "sa": 36,
+        "sd": 156,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Calm",
+      "ability": "Super Luck",
+      "item": "Eviolite",
+      "moves": [
+        "Follow Me",
+        "Dazzling Gleam",
+        "Thunder Wave",
+        "Protect"
+      ]
+    }
+  },
+  "Torchic": {
+    "Baton Pass": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 116,
+        "df": 116,
+        "sa": 0,
+        "sd": 36,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Speed Boost",
+      "item": "Eviolite",
+      "moves": [
+        "Baton Pass",
+        "Flame Charge",
+        "Swords Dance",
+        "Protect"
+      ]
+    }
+  },
+  "Tyrunt": {
+    "Dragon Dance": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 204,
+        "df": 0,
+        "sa": 0,
+        "sd": 76,
+        "sp": 212
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Strong Jaw",
+      "item": "Eviolite",
+      "moves": [
+        "Dragon Dance",
+        "Rock Slide",
+        "Psychic Fangs",
+        "Protect"
+      ]
+    }
+  },
+  "Vullaby": {
+    "Offensive": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 236,
+        "df": 76,
+        "sa": 0,
+        "sd": 0,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Weak Armor",
+      "item": "Berry Juice",
+      "moves": [
+        "Knock Off",
+        "Brave Bird",
+        "Tailwind",
+        "Protect"
+      ]
+    },
+    "Tank": {
+      "level": "5",
+      "evs": {
+        "hp": 116,
+        "at": 76,
+        "df": 76,
+        "sa": 0,
+        "sd": 236,
+        "sp": 0
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Adamant",
+      "ability": "Overcoat",
+      "item": "Eviolite",
+      "moves": [
+        "Knock Off",
+        "Brave Bird",
+        "Tailwind",
+        "Whirlwind"
+      ]
+    },
+    "Nasty Plot": {
+      "level": "5",
+      "evs": {
+        "hp": 116,
+        "at": 0,
+        "df": 0,
+        "sa": 236,
+        "sd": 76,
+        "sp": 36
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Modest",
+      "ability": "Weak Armor",
+      "item": "Berry Juice",
+      "moves": [
+        "Air Slash",
+        "Heat Wave",
+        "Nasty Plot",
+        "Protect"
+      ]
+    }
+  },
+  "Wingull": {
+    "Fast Attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 0,
+        "sa": 236,
+        "sd": 36,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Rain Dish",
+      "item": "Eviolite",
+      "moves": [
+        "Scald",
+        "Hurricane",
+        "Tailwind",
+        "Protect"
+      ]
+    }
+  },
+  "Woobat": {
+    "Grassy Seed Sweeper": {
+      "level": "5",
+      "evs": {
+        "hp": 76,
+        "at": 0,
+        "df": 252,
+        "sa": 0,
+        "sd": 0,
+        "sp": 180
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Simple",
+      "item": "Grassy Seed",
+      "moves": [
+        "Stored Power",
+        "Heat Wave",
+        "Calm Mind",
+        "Roost"
+      ]
+    }
+  },
+  "Zigzagoon": {
+    "Belly Drum Sweeper": {
+      "level": "5",
+      "evs": {
+        "hp": 132,
+        "at": 196,
+        "df": 108,
+        "sa": 0,
+        "sd": 28,
+        "sp": 36
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Adamant",
+      "ability": "Pickup",
+      "item": "Berry Juice",
+      "moves": [
+        "Belly Drum",
+        "Extreme Speed",
+        "Thief",
+        "Protect"
+      ]
+    }
+  },
+  "Pichu": {
+    "Terrain Support": {
+      "level": "5",
+      "evs": {
+        "hp": 116,
+        "at": 0,
+        "df": 156,
+        "sa": 0,
+        "sd": 156,
+        "sp": 36
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Impish",
+      "ability": "Lightning Rod",
+      "item": "Eviolite",
+      "moves": [
+        "Fake Out",
+        "Electric Terrain",
+        "Thunderbolt",
+        "Protect"
+      ]
+    }
+  },
+  "Feebas": {
+    "all out attacker": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 36,
+        "sa": 196,
+        "sd": 76,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Adaptability",
+      "item": "Life Orb",
+      "moves": [
+        "Scald",
+        "Muddy Water",
+        "Substitute",
+        "Protect"
+      ]
+    }
+  },
+  "Helioptile": {
+    "terrain abuser": {
+      "level": "5",
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 12,
+        "sa": 188,
+        "sd": 92,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Dry Skin",
+      "item": "Eviolite",
+      "moves": [
+        "Rising Voltage",
+        "Electric Terrain",
+        "Grass Knot",
+        "Protect"
+      ]
+    }
+  },
+  "Vulpix-Alola": {
+    "veil setter": {
+      "level": "5",
+      "evs": {
+        "hp": 132,
+        "at": 0,
+        "df": 0,
+        "sa": 36,
+        "sd": 76,
+        "sp": 236
+      },
+      "ivs": {
+        "hp": 31,
+        "at": 0,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Timid",
+      "ability": "Snow Warning",
+      "item": "Light Clay",
+      "moves": [
+        "Aurora Veil",
+        "Blizzard",
+        "Encore",
+        "Protect"
+      ]
+    }
+  },
+  "Meowth": {
+    "fast utility": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 236,
+        "df": 0,
+        "sa": 0,
+        "sd": 36,
+        "sp": 196
+      },
+      "ivs": {
+        "hp": 0,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Technician",
+      "item": "Life Orb",
+      "moves": [
+        "Fake Out",
+        "Feint",
+        "Knock Off",
+        "Protect"
+      ]
+    }
+  },
+  "Magby": {
+    "belly drum": {
+      "level": "5",
+      "evs": {
+        "hp": 0,
+        "at": 236,
+        "df": 0,
+        "sa": 0,
+        "sd": 0,
+        "sp": 252
+      },
+      "ivs": {
+        "hp": 29,
+        "at": 31,
+        "df": 31,
+        "sa": 31,
+        "sd": 31,
+        "sp": 31
+      },
+      "nature": "Jolly",
+      "ability": "Vital Spirit",
+      "item": "Berry Juice",
+      "moves": [
+        "Belly Drum",
+        "Fire Punch",
+        "Thunder Punch",
+        "Protect"
+      ]
     }
   }
 }
